@@ -6,7 +6,6 @@ const expandedFoods=[
 ];
 foods.push(...expandedFoods);
 route();
-const requestStyle=document.createElement('style');requestStyle.textContent='.food-request-button{display:block;width:calc(100% - 16px);margin:8px;padding:12px 14px;border:1px solid #377fb3;border-radius:10px;background:#edf8ff;color:#235f89;font-weight:800;cursor:pointer;text-align:center}.food-request-button:disabled{cursor:default;opacity:.8}';document.head.append(requestStyle);
 
 // Independent controls are refreshed after the existing router renders.
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
@@ -15,12 +14,8 @@ const topButton=document.createElement('button');topButton.className='back-top';
 document.body.append(dock,topButton);
 topButton.onclick=()=>window.scrollTo({top:0,behavior:reduceMotion.matches?'instant':'smooth'});
 window.addEventListener('scroll',()=>{topButton.hidden=scrollY<250},{passive:true});
-const shoppingGroups={coupang:[["쿠팡 추천 상품","Coupang pick","상품 정보·가격은 쿠팡에서 확인하세요","View product details and price on Coupang","🛍️","https://link.coupang.com/a/g9Q1lG65y8"]],amazon:[['Outward Hound 슬로우 식기','Outward Hound Fun Feeder','크기와 옵션 확인하기','Explore sizes and options','🥣','https://www.amazon.com/dp/B00FPKNRF0'],['OXO Pet POP 보관통','OXO Pet POP Container','사료·간식 보관 용품','Food and treat storage','📦','https://www.amazon.com/dp/B09T7893VT']]};
-let coupangProducts;
-async function loadCoupangProducts(){
- if(coupangProducts)return coupangProducts;
- try{const response=await Promise.race([fetch('/coupang-products.json'),new Promise((_,reject)=>setTimeout(()=>reject(new Error('timeout')),8000))]);if(!response.ok)throw new Error('coupang');const data=await response.json();coupangProducts=data.products.map(p=>[p.name,p.name,`${Number(p.price).toLocaleString('ko-KR')}원${p.rocket?' · 로켓배송':''}`,`${Number(p.price).toLocaleString('en-US')} KRW${p.rocket?' · Rocket delivery':''}`,p.image,p.url]);return coupangProducts.length?coupangProducts:shoppingGroups.coupang}catch{return shoppingGroups.coupang}
-}
+const coupangLinks=['g9Q1lG65y8','g9Q4suqYc8','g9Q5FjzTDE','g9Q68seDZY','g9Q8uAbbqe','g9Q9GJ928y','g9RaXRhBhl','g9RcpUwnkq','g9RdKJhDye','g9RfB7d0Me'];
+const shoppingGroups={coupang:coupangLinks.map((id,i)=>[`쿠팡 반려동물 추천 ${i+1}`,`Coupang pet pick ${i+1}`,'상품 정보·가격·배송을 쿠팡에서 확인하세요','Check product details, price and delivery on Coupang','🛍️',`https://link.coupang.com/a/${id}`]),amazon:[['Outward Hound 슬로우 식기','Outward Hound Fun Feeder','크기와 옵션 확인하기','Explore sizes and options','🥣','https://www.amazon.com/dp/B00FPKNRF0'],['OXO Pet POP 보관통','OXO Pet POP Container','사료·간식 보관 용품','Food and treat storage','📦','https://www.amazon.com/dp/B09T7893VT']]};
 let carouselTimer;
 async function refreshConvenience(){
  clearInterval(carouselTimer);
@@ -34,7 +29,7 @@ async function refreshConvenience(){
  section.innerHTML=`<div class="shopping-heading"><div><span class="label">SHOPPING</span><h2>${en?'Supplies for everyday pet care':'우리 아이 생활용품 둘러보기'}</h2></div><p>${en?'Two stores, more choices':'쿠팡과 Amazon에서 살펴보세요'}</p></div><div class="shopping-columns"></div><p class="shopping-disclosure">${en?'Amazon links are standard links without affiliate tracking. Icons are illustrative, not product photos. Check details, price and shipping at the store.':'Amazon은 일반 링크로 제휴 수익이 연결되지 않았습니다. 아이콘은 상품 사진이 아닙니다. 상품 정보·가격·배송은 판매처에서 확인하세요.'}</p>`;
  popular.after(section);
  const rotators=[];
- const groups={...shoppingGroups,coupang:await loadCoupangProducts()};
+ const groups=shoppingGroups;
  for(const [store,items] of Object.entries(groups)){
   const panel=document.createElement('article');panel.className='shop-panel '+store;panel.setAttribute('aria-label',store==='coupang'?'쿠팡 상품':'Amazon products');
   panel.innerHTML=`<div class="shop-banner"><div><small>${en?'PET SUPPLIES':'반려동물 용품'}</small><h3>${store==='coupang'?'쿠팡':'Amazon'}</h3></div><span>${en?'Find your next everyday essential':'급여부터 보관까지'} →</span></div><div class="shop-window"><div class="shop-track">${items.map((p,i)=>`<a class="shop-slide" href="${p[5]}" target="_blank" rel="${store==='coupang'?'sponsored noopener noreferrer':'noopener noreferrer'}" aria-label="${p[en?1:0]} (${en?'opens a new tab':'새 창'})"><div class="shop-art" aria-hidden="true">${/^https?:/.test(p[4])?`<img src="${p[4]}" alt="${p[en?1:0]}" loading="lazy">`:p[4]}</div><div class="shop-copy"><span>${en?'PRODUCT PICK':'살펴볼 상품'} ${i+1}</span><h4>${p[en?1:0]}</h4><p>${p[en?3:2]}</p><b>${en?'View at store':'판매처에서 보기'} ↗</b></div></a>`).join('')}</div></div><div class="shop-controls"><button data-prev aria-label="${en?'Previous product':'이전 상품'}">←</button><span data-count>1 / ${items.length}</span><button data-next aria-label="${en?'Next product':'다음 상품'}">→</button><button data-play>${en?'Pause':'일시정지'}</button></div>`;
@@ -53,20 +48,7 @@ new MutationObserver(records=>{if(records.some(r=>r.removedNodes.length)||!app.q
 document.addEventListener('click',e=>{if(!dock.contains(e.target))dock.querySelector('.dock-results').hidden=true});
 refreshConvenience();
 
-function enhanceFoodCountAndRequests(){
- const stats=document.querySelectorAll('.quick strong');if(stats[1]&&stats[1].textContent!==String(foods.length))stats[1].textContent=String(foods.length);
- document.querySelectorAll('#suggest,.dock-results').forEach(box=>{
-  const input=box.id==='suggest'?document.querySelector('#search'):document.querySelector('#dock-query');
-  const query=input?.value.trim();if(!query||foods.some(f=>(f[0]+' '+f[1]+' '+f[2]).toLowerCase().includes(query.toLowerCase())))return;
-  let button=box.querySelector('.food-request-button');if(!button){button=document.createElement('button');button.className='food-request-button';box.append(button)}
-  const label=en?'Request “'+query+'” for review':'“'+query+'” 음식 검토 요청하기';if(button.textContent!==label)button.textContent=label;button.onclick=()=>requestFood(button,query);
- });
-}
-async function requestFood(button,food){
- button.disabled=true;button.textContent=en?'Sending…':'요청 중…';
- try{const response=await fetch('/api/food-request',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({food,pet})});if(!response.ok)throw new Error();button.textContent=en?'✓ Request received':'✓ 요청이 접수됐어요'}catch{button.disabled=false;button.textContent=en?'Please try again':'잠시 후 다시 시도해 주세요'}
-}
-new MutationObserver(enhanceFoodCountAndRequests).observe(app,{childList:true,subtree:true});
-document.addEventListener('input',e=>{if(e.target.matches('#search,#dock-query'))setTimeout(enhanceFoodCountAndRequests)});
-enhanceFoodCountAndRequests();
+function updateFoodCount(){const stats=document.querySelectorAll('.quick strong');if(stats[1])stats[1].textContent=String(foods.length)}
+document.addEventListener('click',e=>{if(e.target.closest('[data-pet],#lang'))setTimeout(updateFoodCount)});
+updateFoodCount();
 if(!sessionStorage.getItem('petnyam-view-counted')){sessionStorage.setItem('petnyam-view-counted','1');fetch('/api/page-view',{method:'POST',keepalive:true}).catch(()=>{})}
