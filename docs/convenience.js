@@ -65,3 +65,56 @@ function updateFoodCount(){const stats=document.querySelectorAll('.quick strong'
 document.addEventListener('click',e=>{if(e.target.closest('[data-pet],#lang'))setTimeout(updateFoodCount)});
 updateFoodCount();
 if(!sessionStorage.getItem('petnyam-view-counted')){sessionStorage.setItem('petnyam-view-counted','1');fetch('/api/page-view',{method:'POST',keepalive:true}).catch(()=>{})}
+
+function prioritizeRelatedFoods(){
+ const parts=location.pathname.split('/').filter(Boolean).filter(part=>part!=='petnyam');
+ if(!['ko','en'].includes(parts[0])||parts.length!==3)return;
+ const [,,slug]=parts,petKey=parts[1],food=foods.find(item=>item[0]===slug),statusIndex=keys.indexOf(petKey),related=document.querySelector('.related');
+ if(!food||statusIndex<0||!related)return;
+ const status=food[4][statusIndex];
+ [...related.querySelectorAll('a')].sort((a,b)=>{
+  const aFood=foods.find(item=>a.getAttribute('href')?.endsWith('/'+item[0]));
+  const bFood=foods.find(item=>b.getAttribute('href')?.endsWith('/'+item[0]));
+  return Number(bFood?.[4][statusIndex]===status)-Number(aFood?.[4][statusIndex]===status);
+ }).forEach(link=>related.append(link));
+}
+new MutationObserver(prioritizeRelatedFoods).observe(app,{childList:true});
+prioritizeRelatedFoods();
+
+function applyContentEnhancements(){
+ const parts=location.pathname.split('/').filter(Boolean).filter(part=>part!=='petnyam');
+ if(!['ko','en'].includes(parts[0])||parts.length!==3)return;
+ const [lang,petKey,slug]=parts,food=foods.find(item=>item[0]===slug),petInfo=pets[petKey],statusIndex=keys.indexOf(petKey),detail=document.querySelector('.detail');
+ if(!food||!petInfo||statusIndex<0||!detail)return;
+ const english=lang==='en',foodName=food[english?2:1],petName=petInfo[english?1:0],verdict=stat[food[4][statusIndex]][english?1:0];
+ const description=english
+  ? `Can a ${petName.toLowerCase()} eat ${foodName.toLowerCase()}? Check PetNyam's ${verdict.toLowerCase()} result, key cautions, what to record after eating, and reviewed sources.`
+  : `${petName} ${foodName}, 먹어도 될까요? PetNyam의 ‘${verdict}’ 판정과 급여 전 확인할 주의사항, 섭취 뒤 기록할 정보, 검토 출처를 확인하세요.`;
+ document.querySelector('meta[name="description"]')?.setAttribute('content',description);
+ document.querySelector('meta[property="og:description"]')?.setAttribute('content',description);
+ document.querySelector('meta[property="og:title"]')?.setAttribute('content',document.title);
+ const reasonHeading=detail.querySelector('.info h2');
+ if(reasonHeading){
+  const finalConsonant=(food[1].charCodeAt(food[1].length-1)-0xac00)%28!==0;
+  reasonHeading.textContent=english?`What does ${foodName.toLowerCase()} mean for ${petName.toLowerCase()}s?`:`${petName}에게 ${foodName}${finalConsonant?'은':'는'} 어떤가요?`;
+ }
+ const labels=detail.querySelectorAll('.info .label');
+ if(labels[1])labels[1].textContent=english?'BEFORE OR AFTER EATING':'섭취 전·후 확인할 점';
+ if(['danger','unknown'].includes(food[4][statusIndex])){
+  const secondCaution=detail.querySelector('.info ul li:nth-child(2)');
+  if(secondCaution)secondCaution.textContent=english
+   ? 'Record the food, amount and time eaten before contacting a veterinarian.'
+   : '먹었다면 음식 종류·양·시간을 기록해 동물병원에 전달하세요.';
+ }
+ const sources=detail.querySelectorAll('.info')[2];
+ if(sources&&!sources.querySelector('.source-context')){
+  const context=document.createElement('p');
+  context.className='source-context';
+  context.textContent=english
+   ? 'This V1 result summarizes the public sources linked above. Individual health conditions and the amount eaten need veterinary advice.'
+   : '이 V1 결과는 위에 연결한 공개 출처를 바탕으로 정리했습니다. 개별 건강 상태와 섭취량은 수의사 판단이 우선합니다.';
+  sources.append(context);
+ }
+}
+new MutationObserver(applyContentEnhancements).observe(app,{childList:true});
+applyContentEnhancements();
