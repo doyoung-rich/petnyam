@@ -12,6 +12,12 @@ const required = [
   ["ko/dog/grape/index.html", "<h1>먹이면 안 돼요</h1>"],
   ["en/cat/onion/index.html", "Can a cat eat onion?"],
   ["policy/terms/index.html", "이용약관"],
+  ["policy/privacy/index.html", "Google AdSense 스크립트"],
+  ["policy/contact/index.html", "jungdo63@gmail.com"],
+  ["guides/food-emergency/index.html", "연락 전에 정리할 정보"],
+  ["guides/read-a-verdict/index.html", "네 가지 상태"],
+  ["guides/new-food-checklist/index.html", "새 음식을 주기 전"],
+  ["ads.txt", "google.com, pub-2911341623586356, DIRECT, f08c47fec0942fa0"],
 ];
 
 for (const [file, expected] of required) {
@@ -23,6 +29,6 @@ for (const [file, expected] of required) {
 
 const sitemap = await readFile(join(docs, "sitemap.xml"), "utf8");
 const count = (sitemap.match(/<loc>/g) ?? []).length;
-if (count !== 505) throw new Error(`Expected 505 sitemap URLs, found ${count}`);
+if (count !== 510) throw new Error(`Expected 510 sitemap URLs, found ${count}`);
 if (/\/(강아지|safe|Food search)</.test(sitemap)) throw new Error("Sitemap contains a non-route value.");
 console.log(`GitHub Pages deployment files verified: ${count} sitemap URLs.`);
