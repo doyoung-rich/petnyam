@@ -26,6 +26,7 @@ const foods = [...(`${app}\n${convenience}`).matchAll(
 )].map((match) => ({ slug: match[1], ko: match[2], en: match[3], emoji: match[4], results: match.slice(5) }));
 const uniqueFoods = [...new Map(foods.map((food) => [food.slug, food])).values()];
 const template = (await readFile(join(docs, "index.html"), "utf8"))
+  .replace('/convenience.js?v=3', '/convenience.js?v=4')
   .replace(/(<a data-nav="trust" href="\/#trust">검증 원칙<\/a>)(?:<a data-nav="guides" href="\/guides">이용 가이드<\/a>)*/, '$1<a data-nav="guides" href="/guides">이용 가이드</a>')
   .replace(/(<a href="\/policy\/disclaimer">의학적 면책<\/a>)(?:<a href="\/guides">이용 가이드<\/a><a href="\/policy\/contact">문의<\/a>)*/, '$1<a href="/guides">이용 가이드</a><a href="/policy/contact">문의</a>');
 await writeFile(join(docs, "index.html"), template);
