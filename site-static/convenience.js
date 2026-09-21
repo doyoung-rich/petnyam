@@ -54,7 +54,7 @@ document.addEventListener('click',e=>{if(!dock.contains(e.target))dock.querySele
 refreshConvenience();
 
 function enhanceFoodCountAndRequests(){
- const stats=document.querySelectorAll('.quick strong');if(stats[1])stats[1].textContent=String(foods.length);
+ const stats=document.querySelectorAll('.quick strong');if(stats[1]&&stats[1].textContent!==String(foods.length))stats[1].textContent=String(foods.length);
  document.querySelectorAll('#suggest,.dock-results').forEach(box=>{
   const input=box.id==='suggest'?document.querySelector('#search'):document.querySelector('#dock-query');
   const query=input?.value.trim();if(!query||foods.some(f=>(f[0]+' '+f[1]+' '+f[2]).toLowerCase().includes(query.toLowerCase())))return;
