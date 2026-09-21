@@ -59,7 +59,7 @@ function enhanceFoodCountAndRequests(){
   const input=box.id==='suggest'?document.querySelector('#search'):document.querySelector('#dock-query');
   const query=input?.value.trim();if(!query||foods.some(f=>(f[0]+' '+f[1]+' '+f[2]).toLowerCase().includes(query.toLowerCase())))return;
   let button=box.querySelector('.food-request-button');if(!button){button=document.createElement('button');button.className='food-request-button';box.append(button)}
-  button.textContent=en?'Request “'+query+'” for review':'“'+query+'” 음식 검토 요청하기';button.onclick=()=>requestFood(button,query);
+  const label=en?'Request “'+query+'” for review':'“'+query+'” 음식 검토 요청하기';if(button.textContent!==label)button.textContent=label;button.onclick=()=>requestFood(button,query);
  });
 }
 async function requestFood(button,food){
