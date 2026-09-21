@@ -105,3 +105,17 @@ function applyContentEnhancements(){
 }
 new MutationObserver(applyContentEnhancements).observe(app,{childList:true});
 applyContentEnhancements();
+
+function addGuideNavigation(){
+ const nav=document.querySelector('header nav');
+ if(!nav||nav.querySelector('[data-nav="guides"]'))return;
+ const link=document.createElement('a');
+ link.href='/guides';link.dataset.nav='guides';link.textContent='이용 가이드';
+ nav.append(link);
+}
+addGuideNavigation();
+document.addEventListener('click',event=>{
+ const link=event.target.closest('a[data-nav="guides"]');
+ if(!link||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+ event.preventDefault();event.stopImmediatePropagation();location.assign(link.href);
+},true);
