@@ -16,6 +16,19 @@ topButton.onclick=()=>window.scrollTo({top:0,behavior:reduceMotion.matches?'inst
 window.addEventListener('scroll',()=>{topButton.hidden=scrollY<250},{passive:true});
 const coupangLinks=['g9Q1lG65y8','g9Q4suqYc8','g9Q5FjzTDE','g9Q68seDZY','g9Q8uAbbqe','g9Q9GJ928y','g9RaXRhBhl','g9RcpUwnkq','g9RdKJhDye','g9RfB7d0Me'];
 const shoppingGroups={coupang:coupangLinks.map((id,i)=>[`쿠팡 반려동물 추천 ${i+1}`,`Coupang pet pick ${i+1}`,'상품 정보·가격·배송을 쿠팡에서 확인하세요','Check product details, price and delivery on Coupang','🛍️',`https://link.coupang.com/a/${id}`]),amazon:[['Outward Hound 슬로우 식기','Outward Hound Fun Feeder','크기와 옵션 확인하기','Explore sizes and options','🥣','https://www.amazon.com/dp/B00FPKNRF0'],['OXO Pet POP 보관통','OXO Pet POP Container','사료·간식 보관 용품','Food and treat storage','📦','https://www.amazon.com/dp/B09T7893VT']]};
+let coupangProducts;
+async function loadCoupangProducts(){
+ if(coupangProducts)return coupangProducts;
+ try{
+  const base=location.pathname.startsWith('/petnyam')?'/petnyam':'';
+  const response=await fetch(`${base}/coupang-products.json`,{cache:'no-cache'});
+  if(!response.ok)throw new Error('product data unavailable');
+  const data=await response.json();
+  const products=(data.products||[]).map(p=>[p.name,p.name,`${Number(p.price).toLocaleString('ko-KR')}원${p.rocket?' · 로켓배송':''}`,`${Number(p.price).toLocaleString('en-US')} KRW${p.rocket?' · Rocket delivery':''}`,p.image,p.url]).filter(p=>p[0]&&p[4]&&p[5]);
+  coupangProducts=products.length?products:shoppingGroups.coupang;
+ }catch{coupangProducts=shoppingGroups.coupang}
+ return coupangProducts;
+}
 let carouselTimer;
 async function refreshConvenience(){
  clearInterval(carouselTimer);
@@ -29,7 +42,7 @@ async function refreshConvenience(){
  section.innerHTML=`<div class="shopping-heading"><div><span class="label">SHOPPING</span><h2>${en?'Supplies for everyday pet care':'우리 아이 생활용품 둘러보기'}</h2></div><p>${en?'Two stores, more choices':'쿠팡과 Amazon에서 살펴보세요'}</p></div><div class="shopping-columns"></div><p class="shopping-disclosure">${en?'Amazon links are standard links without affiliate tracking. Icons are illustrative, not product photos. Check details, price and shipping at the store.':'Amazon은 일반 링크로 제휴 수익이 연결되지 않았습니다. 아이콘은 상품 사진이 아닙니다. 상품 정보·가격·배송은 판매처에서 확인하세요.'}</p>`;
  popular.after(section);
  const rotators=[];
- const groups=shoppingGroups;
+ const groups={...shoppingGroups,coupang:await loadCoupangProducts()};
  for(const [store,items] of Object.entries(groups)){
   const panel=document.createElement('article');panel.className='shop-panel '+store;panel.setAttribute('aria-label',store==='coupang'?'쿠팡 상품':'Amazon products');
   panel.innerHTML=`<div class="shop-banner"><div><small>${en?'PET SUPPLIES':'반려동물 용품'}</small><h3>${store==='coupang'?'쿠팡':'Amazon'}</h3></div><span>${en?'Find your next everyday essential':'급여부터 보관까지'} →</span></div><div class="shop-window"><div class="shop-track">${items.map((p,i)=>`<a class="shop-slide" href="${p[5]}" target="_blank" rel="${store==='coupang'?'sponsored noopener noreferrer':'noopener noreferrer'}" aria-label="${p[en?1:0]} (${en?'opens a new tab':'새 창'})"><div class="shop-art" aria-hidden="true">${/^https?:/.test(p[4])?`<img src="${p[4]}" alt="${p[en?1:0]}" loading="lazy">`:p[4]}</div><div class="shop-copy"><span>${en?'PRODUCT PICK':'살펴볼 상품'} ${i+1}</span><h4>${p[en?1:0]}</h4><p>${p[en?3:2]}</p><b>${en?'View at store':'판매처에서 보기'} ↗</b></div></a>`).join('')}</div></div><div class="shop-controls"><button data-prev aria-label="${en?'Previous product':'이전 상품'}">←</button><span data-count>1 / ${items.length}</span><button data-next aria-label="${en?'Next product':'다음 상품'}">→</button><button data-play>${en?'Pause':'일시정지'}</button></div>`;
