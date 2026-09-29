@@ -5,12 +5,12 @@ function syncLanguage(){
  document.querySelector('#lang').textContent='🌐 '+(en?'EN':'한글')+' ▾';
  document.querySelector('#lang').setAttribute('aria-label',en?'Choose language':'언어 선택');
  document.querySelectorAll('[data-language]').forEach(b=>{const selected=b.dataset.language===(en?'en':'ko');b.setAttribute('aria-pressed',String(selected));b.querySelector('span').textContent=selected?'✓':''});
- const labels=en?['Food search','Popular foods','Our approach']:['음식 검색','인기 음식','검증 원칙'];
- document.querySelectorAll('[data-nav]').forEach((a,i)=>{a.textContent=labels[i];a.href=(en?'/en':'/')+'#'+a.dataset.nav});
+ const labels=en?{search:'Food search',popular:'Popular foods',trust:'Our approach',guides:'Guides'}:{search:'음식 검색',popular:'인기 음식',trust:'검증 원칙',guides:'이용 가이드'};
+ document.querySelectorAll('[data-nav]').forEach(a=>{a.textContent=labels[a.dataset.nav]||a.textContent;a.href=a.dataset.nav==='guides'?'/guides/':(en?'/en':'/')+'#'+a.dataset.nav});
  document.querySelector('.brand').href=en?'/en':'/';
  const footer=document.querySelector('footer');footer.querySelector('p').textContent=en?'Clearer food-safety information for pet families.':'반려동물 음식 안전 정보를 더 빠르고 분명하게.';
  footer.querySelector('small').textContent=en?'© 2026 PetNyam. This service does not replace veterinary care.':'© 2026 PetNyam. 본 서비스는 수의사의 진료를 대신하지 않습니다.';
- footer.querySelectorAll('a').forEach((a,i)=>{a.textContent=(en?['Terms','Privacy','Disclaimer']:['이용약관','개인정보처리방침','의학적 면책'])[i];a.search=en?'?lang=en':''});
+ footer.querySelectorAll('a').forEach((a,i)=>{a.textContent=(en?['Terms','Privacy','Disclaimer','Guides','Contact']:['이용약관','개인정보처리방침','의학적 면책','이용 가이드','문의'])[i]||a.textContent;a.search=en?'?lang=en':''});
 }
 const languageButton=document.querySelector('#lang'),languageOptions=document.querySelector('#language-options');
 function closeLanguages(){languageOptions.hidden=true;languageButton.setAttribute('aria-expanded','false')}
