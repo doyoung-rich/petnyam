@@ -11,4 +11,5 @@ for (const file of ["index.html", "CNAME", "robots.txt", ".nojekyll"]) {
 
 await import("./generate-static-details.mjs");
 await import("./generate-discovery.mjs");
+await import("./update-priority-pages.mjs");
 console.log("Prepared the existing GitHub Pages deployment files without replacing domain-specific assets or settings.");
