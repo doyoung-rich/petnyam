@@ -1,5 +1,6 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
 import {normalizeVisibleAddresses} from './addresses.js?v=2';
+import {syncSearchMetadata,evidenceOverview} from './search-metadata.js';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';
 const akc='https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/';
@@ -38,5 +39,6 @@ if(typeof document!=='undefined'){
   const trust=app.querySelector('#trust');if(trust&&!trust.dataset.editorial){trust.dataset.editorial='1';trust.innerHTML='<div><div class="label">펫냠의 정보 기준</div><h2>음식 이름보다<br>동물과 상황을 함께 봅니다.</h2></div><div><p>같은 음식도 동물종, 조리 방식, 첨가 성분과 건강 상태에 따라 판단이 달라집니다. 출처가 연결된 설명을 읽고, 상세 근거가 부족한 조합은 추가 확인이 필요합니다.</p><p>공개 자료를 AI 보조로 정리하며 수의사의 진료·감수를 대신하지 않습니다. 광고 상품은 음식 안전 판정의 근거가 아닙니다.</p><a href="/guides/read-a-verdict/">판정 기준 읽기 →</a> · <a href="/policy/contact/">정보 오류 제보 →</a></div>';}
   if(hero&&!app.querySelector('.reader-guide')){const guide=document.createElement('section');guide.className='section reader-guide';guide.innerHTML='<div class="label">검색 다음에 확인할 것</div><h2>음식 이름만으로 판단하기 어려울 때</h2><p>먹이기 전에는 손질·첨가물을, 이미 먹었다면 제품·양·시각을 함께 확인하세요.</p><div class="cards"><a class="card" href="/guides/read-a-verdict/"><div><h3>판정 읽는 법</h3><p>가능·주의·금지·정보부족의 의미</p></div></a><a class="card" href="/guides/processed-food-label/"><div><h3>성분표 확인법</h3><p>같은 음식명, 다른 제품 성분</p></div></a><a class="card" href="/guides/food-emergency/"><div><h3>이미 먹었다면</h3><p>병원에 전달할 기록 준비</p></div></a></div>';app.insertBefore(guide,app.querySelector('#trust'));}
  }
- new MutationObserver(enrich).observe(document.querySelector('#app'),{childList:true});enrich();
+ function updateSearch(){enrich();const app=document.querySelector('#app');if(app?.querySelector('.hero')&&!app.querySelector('[data-search-overview]'))app.insertAdjacentHTML('beforeend',evidenceOverview(document.documentElement.lang==='en'));const article=app?.querySelector('article');if(article&&(article.textContent.includes('상세 근거 설명이 아직 충분하지')||article.textContent.includes('has not yet been established'))){const checked=app.querySelector('.verdict span');if(checked)checked.textContent=document.documentElement.lang==='en'?'Legacy classification; detailed evidence incomplete. Not verified feeding advice.':'기존 데이터 분류 · 상세 근거 보강 필요 · 안전 보증 아님';}syncSearchMetadata();}
+ new MutationObserver(updateSearch).observe(document.querySelector('#app'),{childList:true});updateSearch();
 }

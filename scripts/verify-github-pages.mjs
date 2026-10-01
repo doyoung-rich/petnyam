@@ -10,7 +10,7 @@ const required = [
   ["robots.txt", `Sitemap: ${origin}/sitemap.xml`],
   ["foods/index.html", "반려동물별 음식 찾아보기"],
   ["sitemap.xml", `${origin}/ko/dog/grape`],
-  ["ko/dog/grape/index.html", "<h1>먹이면 안 돼요</h1>"],
+  ["ko/dog/grape/index.html", "강아지 포도 먹어도 될까?"],
   ["en/cat/onion/index.html", "Can cats eat onions?"],
   ["policy/terms/index.html", "이용약관"],
   ["policy/privacy/index.html", "Google AdSense 스크립트"],

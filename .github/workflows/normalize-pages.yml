@@ -6,6 +6,10 @@ on:
       - scripts/normalize-addresses.mjs
       - scripts/verify-addresses.mjs
       - scripts/update-priority-pages.mjs
+      - scripts/enhance-search.mjs
+      - scripts/verify-search.mjs
+      - docs/search-metadata.js
+      - docs/editorial.js
       - docs/addresses.js
       - docs/priority-content.js
       - .github/workflows/normalize-pages.yml
@@ -30,6 +34,8 @@ jobs:
           node scripts/normalize-addresses.mjs
           node scripts/verify-github-pages.mjs
           node scripts/verify-addresses.mjs
+          node scripts/enhance-search.mjs
+          node scripts/verify-search.mjs
       - name: Commit generated pages
         run: |
           git config user.name "github-actions[bot]"
