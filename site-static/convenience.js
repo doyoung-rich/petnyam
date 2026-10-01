@@ -110,7 +110,7 @@ function addGuideNavigation(){
  const nav=document.querySelector('header nav');
  if(!nav||nav.querySelector('[data-nav="guides"]'))return;
  const link=document.createElement('a');
- link.href='/guides';link.dataset.nav='guides';link.textContent='이용 가이드';
+ link.href='/guides/';link.dataset.nav='guides';link.textContent='이용 가이드';
  nav.append(link);
 }
 addGuideNavigation();
