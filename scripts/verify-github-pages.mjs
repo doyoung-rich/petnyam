@@ -8,6 +8,7 @@ const origin = "https://petnyam.com";
 const required = [
   ["index.html", "<link rel=\"canonical\" href=\"https://petnyam.com/\">"],
   ["robots.txt", `Sitemap: ${origin}/sitemap.xml`],
+  ["foods/index.html", "반려동물별 음식 찾아보기"],
   ["sitemap.xml", `${origin}/ko/dog/grape`],
   ["ko/dog/grape/index.html", "<h1>먹이면 안 돼요</h1>"],
   ["en/cat/onion/index.html", "Can a cat eat onion?"],
@@ -34,6 +35,12 @@ for (const [file, expected] of required) {
 
 const sitemap = await readFile(join(docs, "sitemap.xml"), "utf8");
 const count = (sitemap.match(/<loc>/g) ?? []).length;
-if (count !== 515) throw new Error(`Expected 515 sitemap URLs, found ${count}`);
+if (count !== 516) throw new Error(`Expected 516 sitemap URLs, found ${count}`);
+const icon = await readFile(join(docs, "favicon.ico"));
+if (icon.readUInt16LE(2) !== 1 || icon.readUInt16LE(4) !== 1) throw new Error("Invalid ICO header.");
+const directory = await readFile(join(docs, "foods/index.html"), "utf8");
+const foodLinks = [...directory.matchAll(/href="(\/ko\/[^\"]+)"/g)];
+if (foodLinks.length !== 250) throw new Error("Expected 250 food directory links.");
+for (const [, route] of foodLinks) await stat(join(docs, route.slice(1), "index.html"));
 if (/\/(강아지|safe|Food search)</.test(sitemap)) throw new Error("Sitemap contains a non-route value.");
 console.log(`GitHub Pages deployment files verified: ${count} sitemap URLs.`);

@@ -72,7 +72,7 @@ function detailMarkup({ lang, petKey, food }) {
   return { head, pageUrl };
 }
 
-const urls = [origin + "/"];
+const urls = [origin + "/", origin + "/foods/"];
 for (const lang of ["ko", "en"]) {
   for (const petKey of Object.keys(pets)) {
     for (const food of uniqueFoods) {
