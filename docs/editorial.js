@@ -1,5 +1,5 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
-import {normalizeVisibleAddresses} from './addresses.js';
+import {normalizeVisibleAddresses} from './addresses.js?v=2';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';
 const akc='https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/';

@@ -9,7 +9,7 @@ for(const dir of ['docs','site-static'])for(const relative of readdirSync(resolv
  const path=resolve(root,dir,relative);let s=readFileSync(path,'utf8');const previous=s;
  s=s.replace(/href=(["'])([^"']+)\1/g,(all,q,url)=>`href=${q}${finalAddress(url)}${q}`)
  .replace(/(property="og:url" content=")([^"]+)(")/g,(_,a,url,b)=>a+finalAddress(url)+b)
- .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=5');
+ .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=6');
  if(s!==previous){writeFileSync(path,s);changed++;}
  checked++;
 }
