@@ -1,0 +1,49 @@
+name: Normalize final page addresses
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/normalize-addresses.mjs
+      - scripts/verify-addresses.mjs
+      - scripts/update-priority-pages.mjs
+      - docs/addresses.js
+      - docs/priority-content.js
+      - .github/workflows/normalize-pages.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: normalize-final-addresses
+  cancel-in-progress: false
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Update evidence pages and normalize addresses
+        run: |
+          node scripts/update-priority-pages.mjs
+          node scripts/normalize-addresses.mjs
+          node scripts/verify-github-pages.mjs
+          node scripts/verify-addresses.mjs
+      - name: Commit generated pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs site-static
+          if ! git diff --cached --quiet; then
+            git commit -m "Normalize canonical URLs, internal links and sitemap"
+            git push
+          fi
+      - name: Request existing branch-based Pages build
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.request('POST /repos/{owner}/{repo}/pages/builds', {
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });

@@ -17,4 +17,4 @@ for(const [key,r] of Object.entries(priorityContent))for(const lang of ['ko','en
 for(const path of ['docs/index.html','docs/en/index.html','docs/404.html']){
  writeFileSync(path,readFileSync(path,'utf8').replace(/editorial\.js\?v=\d+/g,'editorial.js?v=4'));updated.push(path);
 }
-console.log(`Updated and checked ${updated.length} pages; 5 topics in two languages.`);
+console.log(`Updated and checked ${updated.length} pages; ${Object.keys(priorityContent).length} topics in two languages.`);

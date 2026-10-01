@@ -1,4 +1,5 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
+import {normalizeVisibleAddresses} from './addresses.js';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';
 const akc='https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/';
@@ -27,6 +28,7 @@ export function detailArticle(key,english=false){
 }
 if(typeof document!=='undefined'){
  function enrich(){
+  normalizeVisibleAddresses();
   const app=document.querySelector('#app');if(!app)return;
   const hero=app.querySelector('.hero .copy');
   if(hero&&!hero.dataset.editorial){hero.dataset.editorial='1';const finder=hero.querySelector('.finder');hero.innerHTML=document.documentElement.lang==='en'?introEn:introKo;if(finder)hero.append(finder);}
