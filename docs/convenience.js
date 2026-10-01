@@ -96,7 +96,7 @@ function applyContentEnhancements(){
  const parts=location.pathname.split('/').filter(Boolean).filter(part=>part!=='petnyam');
  if(!['ko','en'].includes(parts[0])||parts.length!==3)return;
  const [lang,petKey,slug]=parts,food=foods.find(item=>item[0]===slug),petInfo=pets[petKey],statusIndex=keys.indexOf(petKey),detail=document.querySelector('.detail');
- if(!food||!petInfo||statusIndex<0||!detail)return;
+ if(!food||!petInfo||statusIndex<0||!detail||detail.querySelector("article[data-editorial]"))return;
  const english=lang==='en',foodName=food[english?2:1],petName=petInfo[english?1:0],verdict=stat[food[4][statusIndex]][english?1:0];
  const description=english
   ? `Can a ${petName.toLowerCase()} eat ${foodName.toLowerCase()}? Check PetNyam's ${verdict.toLowerCase()} result, key cautions, what to record after eating, and reviewed sources.`
