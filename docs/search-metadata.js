@@ -1,10 +1,13 @@
 import {priorityContent} from './priority-content.js';
+import {featureArticles} from './feature-articles.js';
 export function pageGraph(url,title,description,lang){
  const origin='https://petnyam.com', path=new URL(url).pathname;
  const match=path.match(/^\/(ko|en)\/([^/]+\/[^/]+)\/$/);
  const record=match&&priorityContent[match[2]], content=record?.[match[1]];
  const page={'@type':content?'Article':'WebPage','@id':url+'#page',url,name:title,inLanguage:lang,description,isPartOf:{'@id':origin+'/#website'},publisher:{'@id':origin+'/#publisher'}};
  if(content)Object.assign(page,{headline:content[0],dateModified:'2026-10-02',citation:record.sources.map(([,source])=>source)});
+ const feature=featureArticles[path];
+ if(feature)Object.assign(page,{'@type':'Article',headline:feature.title,datePublished:'2026-10-05',dateModified:'2026-10-05',citation:feature.sources});
  const graph=[{'@type':'Organization','@id':origin+'/#publisher',name:'PetNyam',url:origin+'/'},{'@type':'WebSite','@id':origin+'/#website',name:'PetNyam',url:origin+'/',publisher:{'@id':origin+'/#publisher'}},page];
  if(path!=='/')graph.push({'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'PetNyam',item:origin+'/'},{'@type':'ListItem',position:2,name:title,item:url}]});
  if(content)graph.push({'@type':'FAQPage','@id':url+'#questions',mainEntity:[2,4].map(i=>({'@type':'Question',name:content[i],acceptedAnswer:{'@type':'Answer',text:content[i+1]}}))});

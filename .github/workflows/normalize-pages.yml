@@ -6,6 +6,8 @@ on:
       - scripts/normalize-addresses.mjs
       - scripts/verify-addresses.mjs
       - scripts/update-priority-pages.mjs
+      - scripts/update-feature-articles.mjs
+      - docs/feature-articles.js
       - scripts/enhance-search.mjs
       - scripts/verify-search.mjs
       - docs/search-metadata.js
@@ -31,6 +33,7 @@ jobs:
       - name: Update evidence pages and normalize addresses
         run: |
           node scripts/update-priority-pages.mjs
+          node scripts/update-feature-articles.mjs
           node scripts/normalize-addresses.mjs
           node scripts/verify-github-pages.mjs
           node scripts/verify-addresses.mjs
