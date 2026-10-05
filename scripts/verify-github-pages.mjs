@@ -23,6 +23,8 @@ const required = [
   ["guides/main-meal-or-treat/index.html", "주식과 간식"],
   ["guides/food-storage-record/index.html", "남겨둘 정보"],
   ["guides/changing-foods-safely/index.html", "무엇이 달라졌는지"],
+  ["guides/coton-de-tulear-life/index.html", "실제 보호자 메모"],
+  ["guides/coton-de-tulear-life-en/index.html", "The real caregiver's note"],
   ["ads.txt", "google.com, pub-2911341623586356, DIRECT, f08c47fec0942fa0"],
 ];
 
@@ -35,7 +37,7 @@ for (const [file, expected] of required) {
 
 const sitemap = await readFile(join(docs, "sitemap.xml"), "utf8");
 const count = (sitemap.match(/<loc>/g) ?? []).length;
-if (count !== 520) throw new Error(`Expected 520 sitemap URLs, found ${count}`);
+if (count !== 522) throw new Error(`Expected 522 sitemap URLs, found ${count}`);
 const icon = await readFile(join(docs, "favicon.ico"));
 if (icon.readUInt16LE(2) !== 1 || icon.readUInt16LE(4) !== 1) throw new Error("Invalid ICO header.");
 const directory = await readFile(join(docs, "foods/index.html"), "utf8");

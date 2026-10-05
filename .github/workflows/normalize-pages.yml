@@ -9,6 +9,7 @@ on:
       - scripts/update-feature-articles.mjs
       - docs/feature-articles.js
       - docs/keyword-articles.js
+      - docs/coton-articles.js
       - scripts/enhance-search.mjs
       - scripts/verify-search.mjs
       - docs/search-metadata.js

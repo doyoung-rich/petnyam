@@ -1,5 +1,7 @@
 import { keywordArticles } from './keyword-articles.js';
+import { cotonArticles } from './coton-articles.js';
 export const featureArticles = {
+ ...cotonArticles,
  ...keywordArticles,
  '/guides/choosing-dog-food/': {lang:'ko', title:'강아지 사료 추천보다 먼저: 선택·교체 체크리스트', description:'보호자의 공개 고민과 FDA·AKC 자료를 비교해 정리한 강아지 사료 선택, 교체 기록, 상담 준비 안내.', sources:['https://www.fda.gov/animal-veterinary/animal-health-literacy/complete-and-balanced-pet-food','https://www.akc.org/expert-advice/nutrition/right-way-switch-dog-foods/'], body:`
 <p>사료 추천을 찾다가 선택지가 더 많아져 막막해졌나요? 펫냠이 공개 보호자 사례와 영양 안내를 비교하며 먼저 정리한 것은 제품 순위가 아니라 <strong>우리 반려견의 조건과 교체 이유</strong>였습니다. 아래 목록은 구매를 유도하는 순위표가 아니라 상담과 기록을 위한 도구입니다.</p>
