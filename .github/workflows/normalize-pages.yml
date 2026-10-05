@@ -8,6 +8,7 @@ on:
       - scripts/update-priority-pages.mjs
       - scripts/update-feature-articles.mjs
       - docs/feature-articles.js
+      - docs/keyword-articles.js
       - scripts/enhance-search.mjs
       - scripts/verify-search.mjs
       - docs/search-metadata.js

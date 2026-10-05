@@ -1,4 +1,6 @@
+import { keywordArticles } from './keyword-articles.js';
 export const featureArticles = {
+ ...keywordArticles,
  '/guides/choosing-dog-food/': {lang:'ko', title:'강아지 사료 추천보다 먼저: 선택·교체 체크리스트', description:'보호자의 공개 고민과 FDA·AKC 자료를 비교해 정리한 강아지 사료 선택, 교체 기록, 상담 준비 안내.', sources:['https://www.fda.gov/animal-veterinary/animal-health-literacy/complete-and-balanced-pet-food','https://www.akc.org/expert-advice/nutrition/right-way-switch-dog-foods/'], body:`
 <p>사료 추천을 찾다가 선택지가 더 많아져 막막해졌나요? 펫냠이 공개 보호자 사례와 영양 안내를 비교하며 먼저 정리한 것은 제품 순위가 아니라 <strong>우리 반려견의 조건과 교체 이유</strong>였습니다. 아래 목록은 구매를 유도하는 순위표가 아니라 상담과 기록을 위한 도구입니다.</p>
 <h2>공개 사례: 정보를 읽어도 선택이 어려운 이유</h2><p>한 보호자는 10살 반려견의 사료를 더 경제적인 제품으로 바꾸려다가, 마케팅과 영양 정보를 어떻게 구별할지 혼란스러워졌다고 썼습니다. <a href="https://www.reddit.com/r/DogFood/comments/1rggrus/read_the_wiki_and_i_am_so_overwhelmed/">Reddit 원문</a>은 보호자의 고민을 보여주는 공개 자기보고입니다. 펫냠의 양육 경험이나 검증된 치료 사례가 아니며, 댓글의 특정 브랜드 추천·질병 주장은 이 글의 근거로 사용하지 않았습니다.</p>
