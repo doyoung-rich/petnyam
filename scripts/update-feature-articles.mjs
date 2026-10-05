@@ -23,7 +23,7 @@ for(const [route,a] of Object.entries(featureArticles)){
  await mkdir(docs+route.slice(1),{recursive:true});await writeFile(docs+route.slice(1)+'index.html',html);
 }
 let index=await readFile(docs+'guides/index.html','utf8');
-index=index.replace(/<section data-feature-articles="1">[\s\S]*?<\/section>/g,'').replace('</main>',`<section data-feature-articles="1" class="policy guide"><h2>새로운 출처 기반 읽을거리 / New articles</h2><ul>${Object.entries(featureArticles).map(([r,a])=>`<li><a href="${r}" lang="${a.lang}">${a.title}</a></li>`).join('')}</ul></section></main>`);
+index=index.replace(/<section\b[^>]*data-feature-articles="1"[^>]*>[\s\S]*?<\/section>/g,'').replace('</main>',`<section data-feature-articles="1" class="policy guide"><h2>새로운 출처 기반 읽을거리 / New articles</h2><ul>${Object.entries(featureArticles).map(([r,a])=>`<li><a href="${r}" lang="${a.lang}">${a.title}</a></li>`).join('')}</ul></section></main>`);
 await writeFile(docs+'guides/index.html',index);
 let sitemap=await readFile(docs+'sitemap.xml','utf8');
 for(const [r,a] of Object.entries(featureArticles))if(!sitemap.includes('<loc>https://petnyam.com'+r+'</loc>'))sitemap=sitemap.replace('</urlset>',`<url><loc>https://petnyam.com${r}</loc><lastmod>${a.published || '2026-10-05'}</lastmod></url></urlset>`);
