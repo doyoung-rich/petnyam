@@ -2,6 +2,7 @@ import {readFileSync,readdirSync} from 'node:fs';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {priorityContent} from '../docs/priority-content.js';
+import {getFoodRecord} from '../docs/food-page-content.js';
 const docs=resolve(dirname(fileURLToPath(import.meta.url)),'../docs');let count=0,limited=0;
 for(const relative of readdirSync(docs,{recursive:true})){
  if(!relative.endsWith('.html')||relative==='404.html')continue;
@@ -14,7 +15,8 @@ for(const relative of readdirSync(docs,{recursive:true})){
  if(!page||page.url!==canonical)throw Error(`Schema URL mismatch: ${relative}`);
  const plain=html.replace(/<script[\s\S]*?<\/script>/g,'');
  for(const faq of graph.filter(n=>n['@type']==='FAQPage'))for(const q of faq.mainEntity){if(!plain.includes(q.name)||!plain.includes(q.acceptedAnswer.text))throw Error(`FAQ not visible: ${relative}`);}
- if(plain.includes('상세 근거 설명이 아직 충분하지')||plain.includes('has not yet been established'))limited++;
+ const foodKey=plain.match(/data-food-clarity="([^"]+)"/)?.[1];
+ if((foodKey&&getFoodRecord(foodKey)?.evidence==='limited')||plain.includes('상세 근거 설명이 아직 충분하지')||plain.includes('has not yet been established'))limited++;
  count++;
 }
 for(const [key,r] of Object.entries(priorityContent))for(const lang of ['ko','en']){

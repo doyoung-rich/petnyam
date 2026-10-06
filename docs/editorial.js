@@ -1,6 +1,7 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
 import {normalizeVisibleAddresses} from './addresses.js?v=2';
 import {syncSearchMetadata,evidenceOverview} from './search-metadata.js';
+import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';
 const akc='https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/';
@@ -21,6 +22,7 @@ export const records={
 export const introKo=`<p><a href="/foods/">반려동물별 음식 목록 전체 보기 →</a></p><span class="eyebrow">반려동물 음식 안전 정보 검색</span><h1>반려동물 음식,<br><em>먹여도 될까요?</em></h1><p>펫냠은 강아지·고양이·토끼·햄스터·앵무새 보호자를 위한 음식 정보 사이트입니다. 음식 이름을 검색해 급여 가능 여부와 주의사항·참고 자료를 확인하세요.</p><div class="intro-steps" aria-label="이용 순서"><span>① 반려동물 선택</span><span>② 음식 검색</span><span>③ 이유·주의사항 확인</span></div><p class="intro-note">위험 음식 섭취가 의심되면 동물병원에 먼저 연락하세요. <a href="/guides/food-emergency/">섭취 후 확인할 정보 →</a></p>`;
 export const introEn=`<span class="eyebrow">Food information for pet families</span><h1>Check foods<br><em>before sharing</em> with your pet</h1><p>PetNyam helps owners of dogs, cats, rabbits, hamsters and parrots look up food guidance, cautions and reference sources. Choose your animal, search a food, then read the reasons and limits.</p><p>If a potentially dangerous food was eaten, contact a veterinarian. <a href="/guides/food-emergency/">Emergency guide →</a></p>`;
 export function detailArticle(key,english=false){
+ if(getFoodRecord(key))return foodArticle(key,english);
  const priority=priorityArticle(key,english);if(priority)return priority;
  const r=records[key];
  if(english)return `<section class="info"><h2>Reading this result</h2><p>This is general food information, not an individual feeding plan. Check the animal species, preparation and product ingredients before using a result.</p><p>${r?'The linked references below support the topic discussed in the Korean explanation.':'A source-specific explanation for this exact animal and food combination has not yet been established here. Do not treat the existing classification as verified feeding advice.'}</p><a href="/ko/${key}/">Read the detailed Korean explanation →</a></section>${r?`<section class="info"><h2>References</h2>${r.sources.map(([t,u])=>`<p><a href="${u}" target="_blank" rel="noopener noreferrer">${t} ↗</a></p>`).join('')}</section>`:''}`;
@@ -28,12 +30,24 @@ export function detailArticle(key,english=false){
  return `<section class="info"><div class="label">판정의 근거와 의미</div><h2>어떤 점을 확인해야 하나요?</h2><p>${r.why}</p></section><section class="info"><h2>급여 전 또는 섭취 후 확인</h2><p>${r.check}</p></section><section class="info"><h2>${r.question}</h2><p>${r.answer}</p></section><section class="info"><h2>설명에 사용한 자료</h2>${r.sources.map(([t,u])=>`<p><a href="${u}" target="_blank" rel="noopener noreferrer">${t} ↗</a></p>`).join('')}<p>자료 확인·본문 업데이트: 2026년 10월 2일 · 공개 자료를 AI 보조로 정리한 일반 정보이며 수의사 감수 완료를 뜻하지 않습니다.</p><a href="/guides/read-a-verdict/">판정 기준과 한계 →</a></section>`;
 }
 if(typeof document!=='undefined'){
+ window.petnyamFoodStatus=(pet,slug)=>getFoodRecord(pet+'/'+slug)?.status;
+ window.petnyamFoodLabel=(status,english=false)=>foodStatus[status]?.[english?'shortEn':'shortKo'];
  function enrich(){
   normalizeVisibleAddresses();
   const app=document.querySelector('#app');if(!app)return;
   const hero=app.querySelector('.hero .copy');
   if(hero&&!hero.dataset.editorial){hero.dataset.editorial='1';const finder=hero.querySelector('.finder');hero.innerHTML=document.documentElement.lang==='en'?introEn:introKo;if(finder)hero.append(finder);}
-  const article=app.querySelector('.detail article');
+  let article=app.querySelector('.detail article');
+  if(article){
+   const parts=location.pathname.split('/').filter(Boolean),key=parts.slice(-2).join('/'),english=parts[0]==='en',r=getFoodRecord(key);
+   if(r){
+    const detail=app.querySelector('.detail');
+    if(article.dataset.foodClarity!==key||article.dataset.foodLanguage!==(english?'en':'ko')){detail.classList.add('food-detail');detail.innerHTML=foodPageInner(key,english);article=detail.querySelector('article');}
+    const meta=foodPageMeta(key,english);document.title=meta.title;
+    for(const selector of ['meta[name="description"]','meta[property="og:description"]']){const node=document.querySelector(selector);if(node)node.content=meta.description;}
+    const ogTitle=document.querySelector('meta[property="og:title"]');if(ogTitle)ogTitle.content=meta.title;
+   }
+  }
   if(article){const key=location.pathname.split('/').filter(Boolean).slice(-2).join('/');const r=priorityContent[key];if(r){const english=document.documentElement.lang==='en';const c=r[english?'en':'ko'];const heading=app.querySelector('.verdict h1');if(heading)heading.textContent=c[0];document.title=c[0]+' | PetNyam';for(const selector of ['meta[name="description"]','meta[property="og:description"]']){const meta=document.querySelector(selector);if(meta)meta.content=c[1];}const ogTitle=document.querySelector('meta[property="og:title"]');if(ogTitle)ogTitle.content=document.title;const checked=app.querySelector('.verdict span');if(checked)checked.textContent=english?'Sources checked Oct 2, 2026':'자료 확인 2026.10.02';}}
   if(article&&!article.dataset.editorial){article.dataset.editorial='1';const p=location.pathname.split('/').filter(Boolean);article.innerHTML=detailArticle(p.slice(-2).join('/'),p[0]==='en');}
   const trust=app.querySelector('#trust');if(trust&&!trust.dataset.editorial){trust.dataset.editorial='1';trust.innerHTML='<div><div class="label">펫냠의 정보 기준</div><h2>음식 이름보다<br>동물과 상황을 함께 봅니다.</h2></div><div><p>같은 음식도 동물종, 조리 방식, 첨가 성분과 건강 상태에 따라 판단이 달라집니다. 출처가 연결된 설명을 읽고, 상세 근거가 부족한 조합은 추가 확인이 필요합니다.</p><p>공개 자료를 AI 보조로 정리하며 수의사의 진료·감수를 대신하지 않습니다. 광고 상품은 음식 안전 판정의 근거가 아닙니다.</p><a href="/guides/read-a-verdict/">판정 기준 읽기 →</a> · <a href="/policy/contact/">정보 오류 제보 →</a></div>';}
@@ -41,4 +55,5 @@ if(typeof document!=='undefined'){
  }
  function updateSearch(){enrich();const app=document.querySelector('#app');if(app?.querySelector('.hero')&&!app.querySelector('[data-search-overview]'))app.insertAdjacentHTML('beforeend',evidenceOverview(document.documentElement.lang==='en'));const article=app?.querySelector('article');if(article&&(article.textContent.includes('상세 근거 설명이 아직 충분하지')||article.textContent.includes('has not yet been established'))){const checked=app.querySelector('.verdict span');if(checked)checked.textContent=document.documentElement.lang==='en'?'Legacy classification; detailed evidence incomplete. Not verified feeding advice.':'기존 데이터 분류 · 상세 근거 보강 필요 · 안전 보증 아님';}syncSearchMetadata();}
  new MutationObserver(updateSearch).observe(document.querySelector('#app'),{childList:true});updateSearch();
+ document.dispatchEvent(new Event('petnyam:food-ready'));
 }

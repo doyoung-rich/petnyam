@@ -17,6 +17,12 @@ on:
       - docs/editorial.js
       - docs/addresses.js
       - docs/priority-content.js
+      - docs/food-page-content.js
+      - docs/food-page-catalog.js
+      - docs/rabbit-food-explanations.js
+      - docs/dog-cat-food-explanations.js
+      - docs/small-pet-food-explanations.js
+      - scripts/update-food-pages.mjs
       - .github/workflows/normalize-pages.yml
   workflow_dispatch:
 permissions:
@@ -36,12 +42,14 @@ jobs:
       - name: Update evidence pages and normalize addresses
         run: |
           node scripts/update-priority-pages.mjs
+          node scripts/update-food-pages.mjs
           node scripts/update-feature-articles.mjs
           node scripts/normalize-addresses.mjs
           node scripts/verify-github-pages.mjs
           node scripts/verify-addresses.mjs
           node scripts/enhance-search.mjs
           node scripts/verify-search.mjs
+          node scripts/verify-food-pages.mjs
       - name: Commit generated pages
         run: |
           git config user.name "github-actions[bot]"

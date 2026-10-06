@@ -1,11 +1,14 @@
 import {priorityContent} from './priority-content.js';
 import {featureArticles} from './feature-articles.js';
+import {getFoodRecord,foodUpdated} from './food-page-content.js';
 export function pageGraph(url,title,description,lang){
  const origin='https://petnyam.com', path=new URL(url).pathname;
  const match=path.match(/^\/(ko|en)\/([^/]+\/[^/]+)\/$/);
  const record=match&&priorityContent[match[2]], content=record?.[match[1]];
  const page={'@type':content?'Article':'WebPage','@id':url+'#page',url,name:title,inLanguage:lang,description,isPartOf:{'@id':origin+'/#website'},publisher:{'@id':origin+'/#publisher'}};
  if(content)Object.assign(page,{headline:content[0],dateModified:'2026-10-02',citation:record.sources.map(([,source])=>source)});
+ const food=match&&getFoodRecord(match[2]);
+ if(food)Object.assign(page,{'@type':'Article',headline:title.replace(' | PetNyam',''),dateModified:foodUpdated,citation:[...new Set([...(food.sources||[]).map(s=>s.url),...(record?.sources||[]).map(([,source])=>source)])]});
  const feature=featureArticles[path];
  if(feature)Object.assign(page,{'@type':'Article',headline:feature.title,datePublished:feature.published || '2026-10-05',dateModified:feature.published || '2026-10-05',citation:feature.sources});
  const graph=[{'@type':'Organization','@id':origin+'/#publisher',name:'PetNyam',url:origin+'/'},{'@type':'WebSite','@id':origin+'/#website',name:'PetNyam',url:origin+'/',publisher:{'@id':origin+'/#publisher'}},page];

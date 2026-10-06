@@ -12,6 +12,7 @@ for (const file of ["index.html", "CNAME", "robots.txt", ".nojekyll"]) {
 await import("./generate-static-details.mjs");
 await import("./generate-discovery.mjs");
 await import("./update-priority-pages.mjs");
+await import("./update-food-pages.mjs");
 await import("./update-feature-articles.mjs");
 await import("./normalize-addresses.mjs");
 await import("./verify-addresses.mjs");
