@@ -10,6 +10,7 @@ on:
       - docs/feature-articles.js
       - docs/keyword-articles.js
       - docs/coton-articles.js
+      - docs/coton-introduction.js
       - scripts/enhance-search.mjs
       - scripts/verify-search.mjs
       - docs/search-metadata.js

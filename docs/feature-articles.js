@@ -1,6 +1,8 @@
 import { keywordArticles } from './keyword-articles.js';
 import { cotonArticles } from './coton-articles.js';
+import { cotonIntroduction } from './coton-introduction.js';
 export const featureArticles = {
+ ...cotonIntroduction,
  ...cotonArticles,
  ...keywordArticles,
  '/guides/choosing-dog-food/': {lang:'ko', title:'강아지 사료 추천보다 먼저: 선택·교체 체크리스트', description:'보호자의 공개 고민과 FDA·AKC 자료를 비교해 정리한 강아지 사료 선택, 교체 기록, 상담 준비 안내.', sources:['https://www.fda.gov/animal-veterinary/animal-health-literacy/complete-and-balanced-pet-food','https://www.akc.org/expert-advice/nutrition/right-way-switch-dog-foods/'], body:`
