@@ -14,21 +14,13 @@ const topButton=document.createElement('button');topButton.className='back-top';
 document.body.append(dock,topButton);
 topButton.onclick=()=>window.scrollTo({top:0,behavior:reduceMotion.matches?'instant':'smooth'});
 window.addEventListener('scroll',()=>{topButton.hidden=scrollY<250},{passive:true});
-const coupangLinks=['g9Q1lG65y8','g9Q4suqYc8','g9Q5FjzTDE','g9Q68seDZY','g9Q8uAbbqe','g9Q9GJ928y','g9RaXRhBhl','g9RcpUwnkq','g9RdKJhDye','g9RfB7d0Me'];
-const shoppingGroups={coupang:coupangLinks.map((id,i)=>[`쿠팡 반려동물 추천 ${i+1}`,`Coupang pet pick ${i+1}`,'상품 정보·가격·배송을 쿠팡에서 확인하세요','Check product details, price and delivery on Coupang','🛍️',`https://link.coupang.com/a/${id}`]),amazon:[
-['카메라 스마트 자동급식기','Smart camera automatic feeder','5G Wi-Fi·야간 촬영·원격 급식','5G Wi-Fi, night vision and remote feeding','https://m.media-amazon.com/images/I/61nbzX7jzZL._AC_SX679_.jpg','https://link.amazon/B0i7CHwwu'],
-['자동 세척 고양이 화장실','Self-cleaning cat litter box','앱 제어·건강 모니터링','App control and health monitoring','https://m.media-amazon.com/images/I/61Gd1jlLxWL._AC_SX679_.jpg','https://link.amazon/B0hjuQD8Q'],
-['PETKIT 무선 반려동물 급수기','PETKIT wireless pet fountain','조용한 무선 펌프 급수기','Quiet wireless-pump fountain','https://m.media-amazon.com/images/I/61LhoZtKrbL._AC_SX679_.jpg','https://link.amazon/B0ejIFewA'],
-['Furbo 360° 반려견 카메라','Furbo 360° dog camera','원격 확인·간식 기능 상품','Remote viewing and treat features','https://m.media-amazon.com/images/I/71zfSRKnyNL._AC_SY300_SX300_QL70_FMwebp_.jpg','https://link.amazon/B0aCG7Ziw'],
-['Purina 반려견 GPS 트래커','Purina dog GPS tracker','실시간 위치·활동 추적','Live location and activity tracking','https://m.media-amazon.com/images/I/81MCKTTfPzL._AC_SY300_SX300_QL70_FMwebp_.jpg','https://link.amazon/B0j26XiyP'],
-['FluentPet 말하기 버튼 세트','FluentPet talking button kit','반려동물 의사소통 훈련 버튼','Communication training buttons','https://m.media-amazon.com/images/I/71U7lfQQ7QL._AC_SX300_SY300_QL70_FMwebp_.jpg','https://link.amazon/B00p4Qe1F'],
-['강아지 노즈워크 스너플 매트','Dog snuffle enrichment mat','천천히 먹기·후각 놀이','Slow feeding and scent enrichment','https://m.media-amazon.com/images/I/61k1UySJZlL._AC_UL320_.jpg','https://link.amazon/B0ip2e8yf'],
-['Dexas 휴대용 발 세척기','Dexas portable paw cleaner','산책 후 간편한 발 세척','Easy paw cleaning after walks','https://m.media-amazon.com/images/I/713JmR3jeIL._SX425_.jpg','https://link.amazon/B0cEzH0sb'],
-['Cibaabo 휴대용 강아지 물병','Cibaabo portable dog water bottle','산책·여행용 급수 물병','Travel water bottle for walks','https://m.media-amazon.com/images/I/71qM6+6m7aL._AC_SX679_.jpg','https://link.amazon/B04WWbmlc'],
-['흡착식 슬로우 피더 핥기 매트','Slow feeder lick mat','급여 속도 조절·놀이 매트','Slow feeding and enrichment mat','https://m.media-amazon.com/images/I/71mnib2nplL._AC_UL320_.jpg','https://link.amazon/B05vwZUou']
-]};
+// AFFILIATE_DISPLAY_CONFIG_START
+const affiliateDisplayEnabled=false;
+const shoppingGroups={"coupang":[],"amazon":[]};
+// AFFILIATE_DISPLAY_CONFIG_END
 let coupangProducts;
 async function loadCoupangProducts(){
+ if(!affiliateDisplayEnabled)return [];
  if(coupangProducts)return coupangProducts;
  try{
   const base=location.pathname.startsWith('/petnyam')?'/petnyam':'';
@@ -49,6 +41,7 @@ async function refreshConvenience(){
  function searchDock(){const q=input.value.trim().toLowerCase();results.hidden=!q;if(!q)return;const matches=foods.filter(f=>(f[1]+' '+f[2]+' '+f[0]).toLowerCase().includes(q));results.replaceChildren();const title=document.createElement('p');title.textContent=pets[pet][2]+' '+pets[pet][en?1:0];results.append(title);if(!matches.length){const empty=document.createElement('p');empty.textContent=en?'No matching food. Try another name.':'검색 결과가 없어요. 다른 음식 이름을 입력해 주세요.';results.append(empty)}matches.forEach(f=>{const a=document.createElement('a');a.href=`/${en?'en':'ko'}/${pet}/${f[0]}`;a.textContent=f[3]+' '+f[en?2:1]+' · '+(window.petnyamFoodLabel?.(window.petnyamFoodStatus?.(pet,f[0])||f[4][keys.indexOf(pet)],en)||stat[f[4][keys.indexOf(pet)]][en?1:2]);results.append(a)})}
  input.oninput=searchDock;dock.querySelector('form').onsubmit=e=>{e.preventDefault();searchDock()};input.onkeydown=e=>{if(e.key==='Escape')results.hidden=true};
  const popular=document.querySelector('#popular');if(!popular)return;
+ if(!affiliateDisplayEnabled){document.querySelectorAll('.shopping-section').forEach(section=>section.remove());return;}
  const section=document.createElement('section');section.id='shopping';section.className='shopping-section';
  section.innerHTML=`<div class="shopping-heading"><div><span class="label">SHOPPING</span><h2>${en?'Supplies for everyday pet care':'우리 아이 생활용품 둘러보기'}</h2></div><p>${en?'Two stores, more choices':'쿠팡과 Amazon에서 살펴보세요'}</p></div><div class="shopping-columns"></div><p class="shopping-disclosure">${en?'As an Amazon Associate, PetNyam earns from qualifying purchases. Check details, price and shipping at the store.':'Amazon 링크를 통한 적격 구매 시 수수료를 제공받을 수 있습니다. 상품 정보·가격·배송은 판매처에서 확인하세요.'}</p>`;
  (document.querySelector('.reader-guide') || document.querySelector('#trust') || popular).after(section);

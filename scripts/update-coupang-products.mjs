@@ -1,5 +1,13 @@
 import { createHmac } from 'node:crypto';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+
+const affiliateSettings=JSON.parse(await readFile(new URL('../site-static/affiliate-settings.json',import.meta.url),'utf8'));
+if(!affiliateSettings.enabled){
+ await mkdir('docs',{recursive:true});
+ await writeFile('docs/coupang-products.json',JSON.stringify({affiliateDisplay:'paused',products:[]},null,2)+'\n');
+ console.log('Affiliate shopping is paused; no product API request was sent.');
+ process.exit(0);
+}
 
 const accessKey=process.env.COUPANG_ACCESS_KEY;
 const secretKey=process.env.COUPANG_SECRET_KEY;

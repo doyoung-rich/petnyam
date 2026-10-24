@@ -18,4 +18,5 @@ await import("./normalize-addresses.mjs");
 await import("./verify-addresses.mjs");
 await import("./enhance-search.mjs");
 await import("./verify-search.mjs");
+await import("./sync-affiliate-display.mjs");
 console.log("Prepared the existing GitHub Pages deployment files without replacing domain-specific assets or settings.");

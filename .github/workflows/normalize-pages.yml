@@ -23,6 +23,8 @@ on:
       - docs/dog-cat-food-explanations.js
       - docs/small-pet-food-explanations.js
       - scripts/update-food-pages.mjs
+      - scripts/sync-affiliate-display.mjs
+      - site-static/affiliate-settings.json
       - .github/workflows/normalize-pages.yml
   workflow_dispatch:
 permissions:
@@ -50,6 +52,7 @@ jobs:
           node scripts/enhance-search.mjs
           node scripts/verify-search.mjs
           node scripts/verify-food-pages.mjs
+          node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |
           git config user.name "github-actions[bot]"

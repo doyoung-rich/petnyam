@@ -14,8 +14,10 @@ const topButton=document.createElement('button');topButton.className='back-top';
 document.body.append(dock,topButton);
 topButton.onclick=()=>window.scrollTo({top:0,behavior:reduceMotion.matches?'instant':'smooth'});
 window.addEventListener('scroll',()=>{topButton.hidden=scrollY<250},{passive:true});
-const coupangLinks=['g9Q1lG65y8','g9Q4suqYc8','g9Q5FjzTDE','g9Q68seDZY','g9Q8uAbbqe','g9Q9GJ928y','g9RaXRhBhl','g9RcpUwnkq','g9RdKJhDye','g9RfB7d0Me'];
-const shoppingGroups={coupang:coupangLinks.map((id,i)=>[`쿠팡 반려동물 추천 ${i+1}`,`Coupang pet pick ${i+1}`,'상품 정보·가격·배송을 쿠팡에서 확인하세요','Check product details, price and delivery on Coupang','🛍️',`https://link.coupang.com/a/${id}`]),amazon:[['Outward Hound 슬로우 식기','Outward Hound Fun Feeder','크기와 옵션 확인하기','Explore sizes and options','🥣','https://www.amazon.com/dp/B00FPKNRF0'],['OXO Pet POP 보관통','OXO Pet POP Container','사료·간식 보관 용품','Food and treat storage','📦','https://www.amazon.com/dp/B09T7893VT']]};
+// AFFILIATE_DISPLAY_CONFIG_START
+const affiliateDisplayEnabled=false;
+const shoppingGroups={"coupang":[],"amazon":[]};
+// AFFILIATE_DISPLAY_CONFIG_END
 let carouselTimer;
 async function refreshConvenience(){
  clearInterval(carouselTimer);
@@ -25,6 +27,7 @@ async function refreshConvenience(){
  function searchDock(){const q=input.value.trim().toLowerCase();results.hidden=!q;if(!q)return;const matches=foods.filter(f=>(f[1]+' '+f[2]+' '+f[0]).toLowerCase().includes(q));results.replaceChildren();const title=document.createElement('p');title.textContent=pets[pet][2]+' '+pets[pet][en?1:0];results.append(title);if(!matches.length){const empty=document.createElement('p');empty.textContent=en?'No matching food. Try another name.':'검색 결과가 없어요. 다른 음식 이름을 입력해 주세요.';results.append(empty)}matches.forEach(f=>{const a=document.createElement('a');a.href=`/${en?'en':'ko'}/${pet}/${f[0]}`;a.textContent=f[3]+' '+f[en?2:1]+' · '+(window.petnyamFoodLabel?.(window.petnyamFoodStatus?.(pet,f[0])||f[4][keys.indexOf(pet)],en)||stat[f[4][keys.indexOf(pet)]][en?1:2]);results.append(a)})}
  input.oninput=searchDock;dock.querySelector('form').onsubmit=e=>{e.preventDefault();searchDock()};input.onkeydown=e=>{if(e.key==='Escape')results.hidden=true};
  const popular=document.querySelector('#popular');if(!popular)return;
+ if(!affiliateDisplayEnabled){document.querySelectorAll('.shopping-section').forEach(section=>section.remove());return;}
  const section=document.createElement('section');section.id='shopping';section.className='shopping-section';
  section.innerHTML=`<div class="shopping-heading"><div><span class="label">SHOPPING</span><h2>${en?'Supplies for everyday pet care':'우리 아이 생활용품 둘러보기'}</h2></div><p>${en?'Two stores, more choices':'쿠팡과 Amazon에서 살펴보세요'}</p></div><div class="shopping-columns"></div><p class="shopping-disclosure">${en?'Amazon links are standard links without affiliate tracking. Icons are illustrative, not product photos. Check details, price and shipping at the store.':'Amazon은 일반 링크로 제휴 수익이 연결되지 않았습니다. 아이콘은 상품 사진이 아닙니다. 상품 정보·가격·배송은 판매처에서 확인하세요.'}</p>`;
  (document.querySelector('.reader-guide') || document.querySelector('#trust') || popular).after(section);
