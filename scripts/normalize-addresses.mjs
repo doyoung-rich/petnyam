@@ -9,7 +9,7 @@ for(const dir of ['docs','site-static'])for(const relative of readdirSync(resolv
  const path=resolve(root,dir,relative);let s=readFileSync(path,'utf8');const previous=s;
  s=s.replace(/href=(["'])([^"']+)\1/g,(all,q,url)=>`href=${q}${finalAddress(url)}${q}`)
  .replace(/(property="og:url" content=")([^"]+)(")/g,(_,a,url,b)=>a+finalAddress(url)+b)
- .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=9');
+ .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=10').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=3');
  const aboutLink=`<a data-about-link="1" href="${s.includes('<html lang="en"')?'/guides/about-petnyam-en/':'/guides/about-petnyam/'}">${s.includes('<html lang="en"')?'About &amp; editorial process':'운영·작성 기준'}</a>`;
  if(s.includes('data-about-link="1"'))s=s.replace(/<a data-about-link="1"[^>]*>[\s\S]*?<\/a>/g,aboutLink);
  else s=s.replace(/<\/footer>/,aboutLink+'</footer>');

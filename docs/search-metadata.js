@@ -1,6 +1,6 @@
 import {priorityContent} from './priority-content.js';
 import {featureArticles} from './feature-articles.js?v=9';
-import {getFoodRecord,foodUpdated} from './food-page-content.js?v=9';
+import {getFoodRecord,foodUpdated} from './food-page-content.js?v=10';
 export function pageGraph(url,title,description,lang){
  const origin='https://petnyam.com', path=new URL(url).pathname;
  const match=path.match(/^\/(ko|en)\/([^/]+\/[^/]+)\/$/);
@@ -14,6 +14,7 @@ export function pageGraph(url,title,description,lang){
  const graph=[{'@type':'Organization','@id':origin+'/#publisher',name:'PetNyam',url:origin+'/'},{'@type':'WebSite','@id':origin+'/#website',name:'PetNyam',url:origin+'/',publisher:{'@id':origin+'/#publisher'}},page];
  if(path!=='/')graph.push({'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'PetNyam',item:origin+'/'},{'@type':'ListItem',position:2,name:title,item:url}]});
  if(content)graph.push({'@type':'FAQPage','@id':url+'#questions',mainEntity:[2,4].map(i=>({'@type':'Question',name:content[i],acceptedAnswer:{'@type':'Answer',text:content[i+1]}}))});
+ if(!content&&food?.faq?.[lang]?.length)graph.push({'@type':'FAQPage','@id':url+'#questions',mainEntity:food.faq[lang].map(([question,answer])=>({'@type':'Question',name:question,acceptedAnswer:{'@type':'Answer',text:answer}}))});
  return {'@context':'https://schema.org','@graph':graph};
 }
 export function syncSearchMetadata(){

@@ -13,6 +13,7 @@ node scripts/verify-food-pages.mjs
 node scripts/verify-search.mjs
 node scripts/verify-coton-articles.mjs
 node scripts/verify-content-value.mjs
+node scripts/verify-food-discovery.mjs
 node scripts/verify-affiliate-pause.mjs
 ```
 
@@ -23,6 +24,8 @@ The treat calculator is implemented in `docs/treat-cost-calculator.js`, with acc
 The October 25 content revision adds a working calculator and bilingual editorial/about pages, and revises cat/mango and hamster/milk guidance. Remaining limited-evidence records stay visibly unresolved. Food records may specify `updated` for a substantive correction; unrelated records retain their dates. Guide `modified` values update structured data and sitemap dates without rewriting original publication dates.
 
 Affiliate recommendations remain paused for all visitors via `site-static/affiliate-settings.json`. Public verification/advertising IDs and the custom domain must be preserved. No AdSense re-review submission is part of a code deployment.
+
+Food discovery (October 26): the food pages offer species-specific next-food search and opt-in saved foods (maximum eight). `food-discovery-model.js` validates and filters keys; `food-discovery-view.js` renders crawlable links and controls; `food-discovery.js` enhances them and handles browser-only persistence. No searches or saved-food lists are transmitted by this feature. Clearing the list removes its one localStorage key. Static links remain usable with JavaScript disabled. Substantive apple-content changes have their own date; the discovery UI does not relabel every food as freshly reviewed.
 
 ## Retained starter documentation
 

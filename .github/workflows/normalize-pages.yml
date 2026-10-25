@@ -24,6 +24,12 @@ on:
       - docs/priority-content.js
       - docs/food-page-content.js
       - docs/food-page-catalog.js
+      - docs/food-discovery-model.js
+      - docs/food-discovery-view.js
+      - docs/food-discovery.js
+      - docs/editorial.css
+      - scripts/generate-static-details.mjs
+      - scripts/verify-food-discovery.mjs
       - docs/rabbit-food-explanations.js
       - docs/dog-cat-food-explanations.js
       - docs/small-pet-food-explanations.js
@@ -48,16 +54,13 @@ jobs:
           node-version: '22'
       - name: Update evidence pages and normalize addresses
         run: |
-          node scripts/update-priority-pages.mjs
-          node scripts/update-food-pages.mjs
-          node scripts/update-feature-articles.mjs
-          node scripts/normalize-addresses.mjs
+          node scripts/prepare-github-pages.mjs
           node scripts/verify-github-pages.mjs
           node scripts/verify-addresses.mjs
-          node scripts/enhance-search.mjs
           node scripts/verify-search.mjs
           node scripts/verify-food-pages.mjs
           node scripts/verify-content-value.mjs
+          node scripts/verify-food-discovery.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |

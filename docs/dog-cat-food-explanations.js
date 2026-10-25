@@ -238,6 +238,39 @@ dogCatFoodExplanations.cat.orange = record('caution','category',[sources.foodHaz
   ['오렌지는 고양이에게 필요한 간식이 아닙니다. 일부러 주기보다 다른 적합한 보상을 고르세요.','감귤류 범주의 산·정유 주의사항입니다. 강아지의 과육 허용을 고양이 급여 권장으로 옮기지 않았습니다.','먹었다면 과육인지 껍질인지, 음료·농축액인지 확인하세요.','껍질·잎·정유가 포함된 제품은 생과육과 별개입니다. 이상 상태라면 병원에 문의하세요.'],
   ['Orange is not a necessary cat treat; choose an established appropriate reward instead.','This applies citrus-category precautions, not dog flesh guidance as a cat recommendation.','Identify whether exposure involved flesh, peel, a drink or concentrate.','Peel, leaves and essential-oil products differ from flesh; consult a veterinarian for illness.']);
 
+dogCatFoodExplanations.dog.apple = record('safe','direct',[
+  source('AKC: preparing apples, seeds, core and dental-care limits','https://www.akc.org/expert-advice/nutrition/can-dogs-eat-apples/'),
+  source('PetMD: veterinarian-written apple guidance and dietary restrictions','https://www.petmd.com/dog/nutrition/can-dogs-eat-apples')
+], [
+  '씨·심·꼭지를 제거한 사과 과육은 강아지에게 소량 간식으로 줄 수 있습니다. 질환이나 처방식이 있다면 먼저 확인하세요.',
+  '사과 과육은 간식으로 고려할 수 있지만 완전한 주식을 대신하지 않습니다. ‘사과를 먹을 수 있다’는 말에 씨·단단한 심·가공 디저트까지 포함되지는 않습니다.',
+  '씻은 뒤 반으로 잘라 씨·심·꼭지를 제거하고, 씹고 삼키는 습관에 맞게 작게 나누세요. 처음에는 작은 조각부터 관찰하세요.',
+  '당뇨나 식이 제한이 있으면 임의로 추가하지 마세요. 사과파이·잼·가당 음료는 원재료 확인이 필요한 별도 제품입니다.'
+], [
+  'Dogs can have small treats of apple flesh without seeds, core or stem. Check first for illness or prescribed diets.',
+  'Apple flesh can be an optional treat, not a complete meal. This does not approve seeds, firm cores or desserts.',
+  'Wash, halve, remove seeds, core and stem, and cut for your dog’s chewing habits. Start with a small piece.',
+  'Check before adding it with diabetes or dietary restrictions. Pies, jam and sweetened drinks need separate ingredient checks.'
+]);
+dogCatFoodExplanations.dog.apple.updated='2026-10-26';
+dogCatFoodExplanations.dog.apple.pageTitle={ko:'강아지 사과 먹어도 될까? 씨·심·껍질 주의점',en:'Can dogs eat apples? Seeds, core, skin and preparation'};
+dogCatFoodExplanations.dog.apple.faq={
+ ko:[
+  ['씨와 심은 왜 따로 빼나요?','씨는 청산 관련 성분 때문에 제외하고, 단단한 심은 질식·막힘 위험 때문에 제거합니다. 같은 이유로 빼는 것은 아닙니다.'],
+  ['껍질도 씨처럼 꼭 제거해야 하나요?','씻은 껍질과 씨는 구분합니다. 소화가 민감한 강아지는 껍질을 벗겨 준비할 수 있습니다.'],
+  ['몇 조각까지 줄 수 있나요?','조각 크기·체중·건강·다른 간식이 달라 일률적인 개수로 정하지 않습니다. 주식과 기존 간식까지 포함한 식단 안에서 판단하세요.'],
+  ['이미 씨나 심을 먹었다면요?','먹었다고 모두 중독으로 단정하지는 않습니다. 심을 삼켰거나 호흡 이상·반복 구토·통증이 있으면 바로 병원에 연락하세요. 양과 시각도 알려 주세요.'],
+  ['사과를 씹으면 양치질을 대신하나요?','사과 간식으로 양치질이나 정기적인 치과 관리를 대신할 수는 없습니다.']
+ ],
+ en:[
+  ['Why remove both seeds and core?','Seeds contain cyanide-related compounds; the firm core poses choking or blockage concerns. They are different reasons.'],
+  ['Must I peel the apple?','Washed peel differs from seeds. Peeling may suit a dog with sensitive digestion.'],
+  ['How many pieces can I give?','Piece size, body size, health and other treats differ. Consider the complete diet rather than a universal piece count.'],
+  ['What if my dog swallowed seeds or core?','Exposure does not always mean poisoning. Call a vet promptly for a swallowed core, abnormal breathing, repeated vomiting or pain; report amount and time.'],
+  ['Does chewing apple replace brushing?','It cannot replace toothbrushing or regular veterinary dental care.']
+ ]
+};
+
 for (const species of ['dog','cat']) {
   if (Object.keys(dogCatFoodExplanations[species]).length !== 50) throw new Error(`Expected 50 food explanations for ${species}`);
   for (const [slug, item] of Object.entries(dogCatFoodExplanations[species])) for (const lang of ['ko','en']) for (const field of ['answer','why','preparation','avoid']) {
