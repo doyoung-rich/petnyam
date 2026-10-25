@@ -14,6 +14,7 @@ node scripts/verify-search.mjs
 node scripts/verify-coton-articles.mjs
 node scripts/verify-content-value.mjs
 node scripts/verify-food-discovery.mjs
+node scripts/verify-titles.mjs
 node scripts/verify-affiliate-pause.mjs
 ```
 
@@ -28,6 +29,8 @@ Affiliate recommendations remain paused for all visitors via `site-static/affili
 Food discovery (October 26): the food pages offer species-specific next-food search and opt-in saved foods (maximum eight). `food-discovery-model.js` validates and filters keys; `food-discovery-view.js` renders crawlable links and controls; `food-discovery.js` enhances them and handles browser-only persistence. No searches or saved-food lists are transmitted by this feature. Clearing the list removes its one localStorage key. Static links remain usable with JavaScript disabled. Substantive apple-content changes have their own date; the discovery UI does not relabel every food as freshly reviewed.
 
 ## Retained starter documentation
+
+PetNyam uses the shared DoyoungLab title strategy in `TITLE_STRATEGY.md`. `docs/title-strategy.js` is the single title source for both languages. `scripts/apply-title-strategy.mjs` applies titles to HTML, H1 and share metadata during preparation; food pages and the home router use the same strategy at runtime. Preserve `reports/title-baseline.json` when regenerating the before/after audit. The CSV is the compact comparison and the JSON contains search intent, candidates, recommendation reasoning, introductory paragraph excerpts and thumbnail plans. Neither report is a performance claim, and title-only changes do not relabel veterinary source-review dates.
 
 # vinext-starter
 

@@ -1,8 +1,9 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
 import {normalizeVisibleAddresses} from './addresses.js?v=2';
-import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=10';
-import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=10';
+import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=11';
+import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=11';
 import {mountFoodDiscovery} from './food-discovery.js?v=1';
+import {applySiteTitle} from './title-strategy.js?v=1';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';
 const akc='https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/';
@@ -31,6 +32,13 @@ export function detailArticle(key,english=false){
  return `<section class="info"><div class="label">판정의 근거와 의미</div><h2>어떤 점을 확인해야 하나요?</h2><p>${r.why}</p></section><section class="info"><h2>급여 전 또는 섭취 후 확인</h2><p>${r.check}</p></section><section class="info"><h2>${r.question}</h2><p>${r.answer}</p></section><section class="info"><h2>설명에 사용한 자료</h2>${r.sources.map(([t,u])=>`<p><a href="${u}" target="_blank" rel="noopener noreferrer">${t} ↗</a></p>`).join('')}<p>자료 확인·본문 업데이트: 2026년 10월 2일 · 공개 자료를 AI 보조로 정리한 일반 정보이며 수의사 감수 완료를 뜻하지 않습니다.</p><a href="/guides/read-a-verdict/">판정 기준과 한계 →</a></section>`;
 }
 if(typeof document!=='undefined'){
+ function syncPageTitle(){
+  const parts=location.pathname.split('/').filter(Boolean),record=getFoodRecord(parts.slice(-2).join('/'));
+  if(!record){applySiteTitle();return;}
+  const meta=foodPageMeta(record.key,parts[0]==='en');document.title=meta.title;
+  const heading=document.querySelector('#app h1');if(heading)heading.textContent=meta.title.replace(' | PetNyam','');
+  for(const selector of ['meta[property="og:title"]','meta[name="twitter:title"]']){const node=document.querySelector(selector);if(node)node.content=meta.title;}
+ }
  window.petnyamFoodStatus=(pet,slug)=>getFoodRecord(pet+'/'+slug)?.status;
  window.petnyamFoodLabel=(status,english=false)=>foodStatus[status]?.[english?'shortEn':'shortKo'];
  function enrich(){
@@ -52,6 +60,7 @@ if(typeof document!=='undefined'){
   if(article){const key=location.pathname.split('/').filter(Boolean).slice(-2).join('/');const r=priorityContent[key];if(r){const english=document.documentElement.lang==='en';const c=r[english?'en':'ko'];const heading=app.querySelector('.verdict h1');if(heading)heading.textContent=c[0];document.title=c[0]+' | PetNyam';for(const selector of ['meta[name="description"]','meta[property="og:description"]']){const meta=document.querySelector(selector);if(meta)meta.content=c[1];}const ogTitle=document.querySelector('meta[property="og:title"]');if(ogTitle)ogTitle.content=document.title;const checked=app.querySelector('.verdict span');if(checked)checked.textContent=english?'Sources checked Oct 2, 2026':'자료 확인 2026.10.02';}}
   if(article&&!article.dataset.editorial){article.dataset.editorial='1';const p=location.pathname.split('/').filter(Boolean);article.innerHTML=detailArticle(p.slice(-2).join('/'),p[0]==='en');}
   mountFoodDiscovery();
+  syncPageTitle();
   const trust=app.querySelector('#trust');if(trust&&!trust.dataset.editorial){trust.dataset.editorial='1';trust.innerHTML='<div><div class="label">펫냠의 정보 기준</div><h2>음식 이름보다<br>동물과 상황을 함께 봅니다.</h2></div><div><p>같은 음식도 동물종, 조리 방식, 첨가 성분과 건강 상태에 따라 판단이 달라집니다. 출처가 연결된 설명을 읽고, 상세 근거가 부족한 조합은 추가 확인이 필요합니다.</p><p>공개 자료를 AI 보조로 정리하며 수의사의 진료·감수를 대신하지 않습니다. 광고 상품은 음식 안전 판정의 근거가 아닙니다.</p><a href="/guides/read-a-verdict/">판정 기준 읽기 →</a> · <a href="/policy/contact/">정보 오류 제보 →</a></div>';}
   if(hero&&!app.querySelector('.reader-guide')){const guide=document.createElement('section');guide.className='section reader-guide';guide.innerHTML='<div class="label">검색 다음에 확인할 것</div><h2>음식 이름만으로 판단하기 어려울 때</h2><p>먹이기 전에는 손질·첨가물을, 이미 먹었다면 제품·양·시각을 함께 확인하세요.</p><div class="cards"><a class="card" href="/guides/read-a-verdict/"><div><h3>판정 읽는 법</h3><p>가능·주의·금지·정보부족의 의미</p></div></a><a class="card" href="/guides/processed-food-label/"><div><h3>성분표 확인법</h3><p>같은 음식명, 다른 제품 성분</p></div></a><a class="card" href="/guides/food-emergency/"><div><h3>이미 먹었다면</h3><p>병원에 전달할 기록 준비</p></div></a></div>';app.insertBefore(guide,app.querySelector('#trust'));}
  }

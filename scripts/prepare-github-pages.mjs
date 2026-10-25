@@ -15,6 +15,7 @@ await import("./update-priority-pages.mjs");
 await import("./update-food-pages.mjs");
 await import("./update-feature-articles.mjs");
 await import("./normalize-addresses.mjs");
+await import("./apply-title-strategy.mjs");
 await import("./verify-addresses.mjs");
 await import("./enhance-search.mjs");
 await import("./verify-search.mjs");

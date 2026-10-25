@@ -12,13 +12,13 @@ for(const lang of ['ko','en'])for(const pet of Object.keys(petCatalog))for(const
   .replace(/<title>[^<]*<\/title>/,`<title>${esc(meta.title)}</title>`)
   .replace(/(name="description"|property="og:description") content="[^"]*"/g,`$1 content="${esc(meta.description)}"`)
   .replace(/property="og:title" content="[^"]*"/,`property="og:title" content="${esc(meta.title)}"`)
-  .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=10').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=3')
+  .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=11').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=3')
   .replace(/app\.js\?v=\d+/g,'app.js?v=8').replace(/convenience\.js\?v=\d+/g,'convenience.js?v=8');
  await writeFile(file,tidy(html));count++;
 }
 for(const name of ['index.html','en/index.html','404.html']){
  const file=new URL(name,docs);let html=await readFile(file,'utf8');
- html=html.replace(/editorial\.js\?v=\d+/g,'editorial.js?v=10').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=3')
+ html=html.replace(/editorial\.js\?v=\d+/g,'editorial.js?v=11').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=3')
   .replace(/app\.js\?v=\d+/g,'app.js?v=8').replace(/convenience\.js\?v=\d+/g,'convenience.js?v=8');
  if(name==='en/index.html')html=html.replace('<html lang="ko"','<html lang="en"');
  await writeFile(file,tidy(html));

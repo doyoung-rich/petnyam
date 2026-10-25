@@ -2,6 +2,7 @@ import { keywordArticles } from './keyword-articles.js?v=9';
 import { cotonArticles } from './coton-articles.js';
 import { cotonIntroduction } from './coton-introduction.js';
 import { aboutPetnyam } from './about-petnyam.js';
+import {siteTitles} from './title-strategy.js?v=1';
 export const featureArticles = {
  ...aboutPetnyam,
  ...cotonIntroduction,
@@ -25,3 +26,4 @@ export const featureArticles = {
 <h2>Nutrition still matters when considering an alternative</h2><p>FDA explains that the nutritional adequacy statement identifies whether a U.S. pet food is intended as a complete diet and for which life stage. Treats and supplements generally are not sole diets. Do not replace an appropriate complete diet with treats or an improvised recipe just because its marketing sounds cleaner. <a href="https://www.fda.gov/animal-veterinary/animal-health-literacy/complete-and-balanced-pet-food">FDA label guidance</a>.</p><p>If your cat is on a therapeutic diet, ask the treating veterinarian before changing it. If your cat seems ill, seek veterinary advice rather than trying to diagnose contamination from a headline. This site cannot determine whether a symptom is caused by food.</p>
 <h2>Quick answers</h2><h3>Does detected mean unsafe?</h3><p>Not by itself. The study summary expressly distinguishes detection from an individual safety determination. Do not turn its category findings into a diagnosis.</p><h3>Can this article recommend the safest brand?</h3><p>No. We have not independently tested products or established a comparable, current dataset for that claim. Affiliate links and customer ratings would not fill that evidence gap.</p><h3>What should I do first?</h3><p>Identify the exact product and lot, check current recall notices, and bring your records and specific concern to your veterinarian. Avoid treating fear-driven marketing as a substitute for evidence.</p><p><a href="/en/">Search PetNyam food information</a> · <a href="/guides/">All guides (includes Korean articles)</a></p>`}
 };
+for(const [path,article] of Object.entries(featureArticles))if(siteTitles[path])article.title=siteTitles[path];

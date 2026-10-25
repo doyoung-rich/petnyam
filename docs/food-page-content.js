@@ -5,6 +5,7 @@ import {smallPetFoodExplanations} from './small-pet-food-explanations.js?v=9';
 import {priorityContent} from './priority-content.js';
 import {findNextFoods} from './food-discovery-model.js';
 import {foodDiscoveryView,quickFoodSaveView} from './food-discovery-view.js';
+import {foodTitle,titleWithBrand} from './title-strategy.js?v=1';
 
 export const foodUpdated = '2026-10-07';
 const explanations = {...dogCatFoodExplanations, rabbit:rabbitFoodExplanations, ...smallPetFoodExplanations};
@@ -26,9 +27,7 @@ export function getFoodRecord(key) {
 }
 export function foodPageMeta(key,english=false) {
  const record=getFoodRecord(key); if(!record)return null;
- const foodName=({apple:'apples',grape:'grapes',onion:'onions',carrot:'carrots',blueberry:'blueberries',banana:'bananas',strawberry:'strawberries',pear:'pears',peach:'peaches',orange:'oranges',lemon:'lemons',mango:'mangoes',potato:'potatoes',tomato:'tomatoes',cucumber:'cucumbers',mushroom:'mushrooms',egg:'eggs',almond:'almonds',peanut:'peanuts'})[record.food.slug]||record.food.en.toLowerCase();
- const heading=record.pageTitle?.[english?'en':'ko']||(english?`Can ${record.pet.plural} eat ${foodName}?`:`${record.pet.ko} ${record.food.ko} 먹어도 될까?`);
- return {title:heading+' | PetNyam',description:text(record[english?'en':'ko'].answer)};
+ return {title:titleWithBrand(foodTitle(record,english)),description:text(record[english?'en':'ko'].answer)};
 }
 function section(id,title,body) {
  return `<section class="info food-explanation" id="${id}"><h2>${title}</h2><p>${escape(text(body))}</p></section>`;

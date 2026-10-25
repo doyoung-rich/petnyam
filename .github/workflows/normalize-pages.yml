@@ -20,6 +20,9 @@ on:
       - scripts/verify-search.mjs
       - docs/search-metadata.js
       - docs/editorial.js
+      - docs/title-strategy.js
+      - scripts/apply-title-strategy.mjs
+      - scripts/verify-titles.mjs
       - docs/addresses.js
       - docs/priority-content.js
       - docs/food-page-content.js
@@ -60,6 +63,7 @@ jobs:
           node scripts/verify-search.mjs
           node scripts/verify-food-pages.mjs
           node scripts/verify-content-value.mjs
+          node scripts/verify-titles.mjs
           node scripts/verify-food-discovery.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
