@@ -1,7 +1,9 @@
-import { keywordArticles } from './keyword-articles.js';
+import { keywordArticles } from './keyword-articles.js?v=9';
 import { cotonArticles } from './coton-articles.js';
 import { cotonIntroduction } from './coton-introduction.js';
+import { aboutPetnyam } from './about-petnyam.js';
 export const featureArticles = {
+ ...aboutPetnyam,
  ...cotonIntroduction,
  ...cotonArticles,
  ...keywordArticles,

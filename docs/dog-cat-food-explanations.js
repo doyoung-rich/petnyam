@@ -121,6 +121,21 @@ for (const species of ['dog','cat']) for (const [slug, [formKo, formEn]] of Obje
     [`${names[slug].en[0].toUpperCase() + names[slug].en.slice(1)}: consider only an occasional treat of ${formEn}.`, category ? 'Cooked-meat category guidance does not test every pork cut or product.' : 'The linked treat guidance includes the cooked form; one ingredient is not a balanced meal.', `Cool and cut ${formEn}.`, 'This excludes raw, smoked and seasoned canned products. Check first for prescribed diets or food allergies.']);
 }
 
+dogCatFoodExplanations.cat.mango = record('caution','direct',[
+  source('PetMD: veterinarian-authored feline fruit guidance (mango named)', 'https://www.petmd.com/cat/nutrition/which-fruits-can-cats-eat'), sources.catDiet
+], [
+  '고양이에게 망고는 필수가 아닙니다. 건강한 고양이도 새 간식으로 주기 전 식단 조건을 확인하세요.',
+  '수의사가 작성·검토한 PetMD 고양이 과일 안내에는 망고가 포함됩니다. 다만 과일은 주식을 대신하지 않는 선택적 간식입니다. 이 자료를 면역력 향상이나 치료 효과의 근거로 확대하지 않습니다.',
+  '펫냠의 준비 기준은 씨와 껍질을 제외한 무첨가 과육입니다. 새로운 음식은 수의사에게 먼저 확인하고 작은 조각부터 반응을 살피세요. 이는 출처가 모든 가공 형태를 승인한다는 뜻이 아닙니다.',
+  '당뇨·처방식·식이 제한이 있으면 임의로 추가하지 마세요. 망고 주스·시럽·아이스크림은 과육 안내와 별개입니다.'
+], [
+  'Mango is optional, not necessary for cats. Check dietary restrictions before offering it as a new treat.',
+  'Veterinarian-authored and reviewed PetMD feline fruit guidance names mango. Fruit remains an optional treat, not a meal; we do not extend this into immunity or treatment claims.',
+  'PetNyam limits its preparation guidance to plain flesh without the stone or skin. Check a new food with your vet first and start with a small piece. The source does not approve every processed form.',
+  'Do not add it without advice for diabetes, prescribed diets or food restrictions. Juice, syrup and ice cream are separate products.'
+]);
+dogCatFoodExplanations.cat.mango.updated = '2026-10-25';
+
 for (const species of ['dog','cat']) {
   dogCatFoodExplanations[species].egg = record('safe','direct',[species === 'dog' ? sources.dogTreats : sources.catTreats, sources.rawFood],
     ['계란은 완전히 익히고 양념하지 않은 형태만 간식으로 고려하세요.','익힌 계란은 간식 예시에 포함되지만 계란만으로 주식을 구성할 수는 없습니다.','흰자와 노른자를 모두 익혀 식힌 뒤 작게 나누세요.','날계란·소금·버터를 넣은 계란 요리와 마요네즈는 같은 판단이 아닙니다.'],

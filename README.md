@@ -1,3 +1,31 @@
+# PetNyam production (GitHub Pages)
+
+The public site at `https://petnyam.com/` is deployed from **`main` → `/docs`** using GitHub Pages. Keep its custom domain and existing deployment. The starter/Worker material below is retained history, not the publishing instructions for PetNyam.
+
+The deployed static site's food records and bilingual renderers live in `docs/*-food-explanations.js` and `docs/food-page-content.js`. Guides are authored in `docs/feature-articles.js` and its imported modules. The original static search application is retained in `site-static/`; the preparation scripts preserve its search behavior and settings while generating the public HTML in `/docs`. Do not edit only a generated food or guide HTML file, since a later build will replace it.
+
+Run `npm run pages:prepare` to regenerate the existing Pages output. Then run:
+
+```
+node scripts/verify-github-pages.mjs
+node scripts/verify-addresses.mjs
+node scripts/verify-food-pages.mjs
+node scripts/verify-search.mjs
+node scripts/verify-coton-articles.mjs
+node scripts/verify-content-value.mjs
+node scripts/verify-affiliate-pause.mjs
+```
+
+These static checks need Node.js and no dependency installation. They validate output consistency and calculator behavior, not veterinary approval or AdSense eligibility.
+
+The treat calculator is implemented in `docs/treat-cost-calculator.js`, with accessible markup in `docs/treat-cost-calculator-view.js`. It runs locally in the visitor's browser. Preserve its distinction between consumed value and actual bag purchases. Do not turn the example usage into a feeding recommendation.
+
+The October 25 content revision adds a working calculator and bilingual editorial/about pages, and revises cat/mango and hamster/milk guidance. Remaining limited-evidence records stay visibly unresolved. Food records may specify `updated` for a substantive correction; unrelated records retain their dates. Guide `modified` values update structured data and sitemap dates without rewriting original publication dates.
+
+Affiliate recommendations remain paused for all visitors via `site-static/affiliate-settings.json`. Public verification/advertising IDs and the custom domain must be preserved. No AdSense re-review submission is part of a code deployment.
+
+## Retained starter documentation
+
 # vinext-starter
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.

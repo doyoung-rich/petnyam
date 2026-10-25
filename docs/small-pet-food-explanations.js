@@ -155,6 +155,21 @@ const processed = {
   sausage: ['소금·지방·조미료 등이 들어간 가공육이며 제조법마다 원재료가 다릅니다.', 'A processed meat with product-dependent salt, fat and seasonings.'],
   ham: ['햄은 생고기나 무양념 익힌 고기와 달리 염지·가공한 제품입니다.', 'Cured processed ham is different from unseasoned cooked meat.'],
 };
+smallPetFoodExplanations.hamster.milk = make('unknown', 'limited', [
+  {title:'UC Davis School of Veterinary Medicine: hamster water and basic diet', url:'https://healthtopics.vetmed.ucdavis.edu/health-topics/exotics/hamster-care'}, sources.rspca
+], [
+  '성체 햄스터의 물 대신 우유를 주지 마세요. 우유를 새 간식으로 추가할 근거도 이 페이지에서 확보하지 못했습니다.',
+  '기본 사육 자료는 신선한 물 제공을 안내합니다. 펫냠은 이를 바탕으로 우유를 음료 대체물로 권하지 않습니다. 해당 자료가 우유의 안전량·독성량이나 모든 햄스터의 유당 소화 능력을 입증하는 것은 아닙니다.',
+  '성체의 음료인지, 어미 없이 남은 새끼의 수유 문제인지 먼저 구분하세요. 새끼는 일반 우유·락토프리 우유로 임의 수유하지 말고 햄스터를 진료하는 병원에 수유 계획을 문의하세요.',
+  '락토프리라는 말만으로 햄스터용 식단이 되는 것은 아닙니다. 초코우유·가당 우유는 다른 성분까지 확인해야 합니다. 이미 먹었다면 제품·추정량·시각을 기록하고 설사·먹지 않음 등 변화가 있으면 바로 병원에 연락하세요.'
+], [
+  'Do not replace an adult hamster’s water with milk. This page has not established support for adding milk as a new treat.',
+  'Basic husbandry guidance recommends fresh water. Our advice against replacing it with milk applies that guidance; it does not establish a safe or toxic milk dose or prove lactose intolerance in every hamster.',
+  'Distinguish an adult’s drink from feeding an orphaned pup. Do not improvise pup feeding with ordinary or lactose-free milk; ask a hamster-experienced veterinarian for a plan.',
+  'Lactose-free does not make a product a hamster diet. Flavored or sweetened milk needs additional ingredient checks. After ingestion, record the product, amount and time; contact a vet promptly for diarrhea, not eating or other changes.'
+]);
+smallPetFoodExplanations.hamster.milk.updated = '2026-10-25';
+
 for (const pet of ['hamster', 'parrot']) {
   for (const [slug, [whyKo, whyEn]] of Object.entries(processed)) {
     const [koName, enName] = names[slug];

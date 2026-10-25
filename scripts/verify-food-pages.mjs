@@ -19,11 +19,11 @@ for(const pet of Object.keys(petCatalog))for(const food of foodCatalog){
   for(const id of ['food-why','food-preparation','food-avoid','food-eaten','food-sources'])assert.ok(html.includes(`id="${id}"`),`${key} ${id}`);
   assert.ok(html.includes(foodStatus[r.status][lang]));
   assert.ok(!html.includes('상세 근거 설명이 아직 충분하지')&&!html.includes('PetNyam V1 데이터'));
-  assert.ok(html.includes('editorial.js?v=8'));assert.ok(html.includes('editorial.css?v=2'));
+  assert.ok(html.includes('editorial.js?v=9'));assert.ok(html.includes('editorial.css?v=2'));
   for(const s of r.sources)assert.ok(html.includes(s.url));
   const schema=JSON.parse(html.match(/id="petnyam-search-metadata">([\s\S]*?)<\/script>/)[1]);
   const page=schema['@graph'].find(n=>n['@id']===url+'#page');
-  assert.equal(page.inLanguage,lang);assert.equal(page.dateModified,foodUpdated);
+  assert.equal(page.inLanguage,lang);assert.equal(page.dateModified,r.updated||foodUpdated);
   assert.ok(page.citation.every(s=>html.includes(s)));
   assert.ok(html.includes(`<title>${foodPageMeta(key,lang==='en').title}</title>`));
   if(pet==='rabbit')assert.ok(!html.includes('구토·')&&!html.includes('vomiting, weakness'));

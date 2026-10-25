@@ -9,6 +9,11 @@ on:
       - scripts/update-feature-articles.mjs
       - docs/feature-articles.js
       - docs/keyword-articles.js
+      - docs/about-petnyam.js
+      - docs/treat-cost-calculator.js
+      - docs/treat-cost-calculator-view.js
+      - docs/treat-cost-calculator.css
+      - scripts/verify-content-value.mjs
       - docs/coton-articles.js
       - docs/coton-introduction.js
       - scripts/enhance-search.mjs
@@ -52,6 +57,7 @@ jobs:
           node scripts/enhance-search.mjs
           node scripts/verify-search.mjs
           node scripts/verify-food-pages.mjs
+          node scripts/verify-content-value.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |
