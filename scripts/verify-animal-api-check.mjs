@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
-import {normalizeServiceKey,providerResult,checkOperation} from './check-animal-api.mjs';
+import {normalizeServiceKey,providerResult,checkOperation,animalOperations} from './check-animal-api.mjs';
+const operations=animalOperations({ANIMAL_GO_KR_API_KEY:'rescue-test',ANIMAL_REGISTER_API_KEY:'register-test',ANIMAL_LOST_API_KEY:'obsolete-test'});
+assert.equal(operations.length,2);assert.ok(operations.every(operation=>!operation.path.includes('lossInfoService')));
+assert.deepEqual(operations.map(operation=>operation.key),['register-test','rescue-test']);
 assert.equal(normalizeServiceKey('abc%2Bdef%2Fghi%3D'),'abc+def/ghi=');
 assert.equal(normalizeServiceKey(' abc+def/ghi= '),'abc+def/ghi=');
 assert.equal(normalizeServiceKey(''),null);

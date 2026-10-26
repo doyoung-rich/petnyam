@@ -57,13 +57,14 @@ export async function checkOperation({label,path,key,params={},requiresIdentity=
   return {label,status:'connection-failed',reason};
  }
 }
-export async function runAnimalChecks(env=process.env){
- const operations=[
-  {label:'분실 API · 시도 목록',path:'lossInfoService/lossInfoSido',key:env.ANIMAL_LOST_API_KEY,params:{numOfRows:30,pageNo:1}},
-  {label:'분실 API · 분실동물 목록',path:'lossInfoService/lossInfo',key:env.ANIMAL_LOST_API_KEY,params:{numOfRows:1,pageNo:1}},
+export function animalOperations(env=process.env){
+ return [
   {label:'등록 API · 필수 입력 확인',path:'animalInfoSrvc_v3/animalInfo_v3',key:env.ANIMAL_REGISTER_API_KEY,requiresIdentity:true},
   {label:'구조 API · 시도 목록',path:'abandonmentPublicService_v2/sido_v2',key:env.ANIMAL_RESCUE_API_KEY||env.ANIMAL_GO_KR_API_KEY,params:{numOfRows:30,pageNo:1}}
  ];
+}
+export async function runAnimalChecks(env=process.env){
+ const operations=animalOperations(env);
  const results=[];for(const operation of operations)results.push(await checkOperation(operation));
  const report={checkedAt:new Date().toISOString(),results,notice:'Only sanitized status and counts. No service keys, raw responses, owner names, phone numbers or registration IDs are logged or saved.'};
  await writeFile('animal-api-health.json',JSON.stringify(report,null,2)+'\n');
