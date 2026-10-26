@@ -13,6 +13,13 @@ const response=body=>({ok:true,status:200,text:async()=>body});
 let urlSeen;
 const success=await checkOperation({label:'test',path:'lossInfoService/lossInfoSido',key:secret},async url=>{urlSeen=url;return response(JSON.stringify({response:{header:{resultCode:'00'},body:{items:{item:[{orgCd:'123'}]}}}}));});
 assert.equal(urlSeen.protocol,'https:');assert.equal(urlSeen.searchParams.get('serviceKey'),secret);assert.equal(success.status,'success');assert.equal(success.itemCount,1);
+// An Encoding key copied from the portal must arrive as the same credential,
+// rather than being encoded twice in the outgoing request.
+await checkOperation({label:'encoded-key-test',path:'abandonmentPublicService_v2/sido_v2',key:encodeURIComponent(secret)},async url=>{
+ assert.equal(url.searchParams.get('serviceKey'),secret);
+ assert.ok(!url.search.includes('%252B')&&!url.search.includes('%252F'));
+ return response('{"response":{"header":{"resultCode":"00"},"body":{"items":{}}}}');
+});
 const xml=providerResult('<OpenAPI_ServiceResponse><returnReasonCode>30</returnReasonCode><returnAuthMsg>SERVICE_KEY_IS_NOT_REGISTERED_ERROR</returnAuthMsg></OpenAPI_ServiceResponse>');
 assert.equal(xml.code,'30');assert.equal(xml.denied,true);
 const forbidden=await checkOperation({label:'test',path:'lossInfoService/lossInfo',key:secret},async()=>({ok:false,status:403,text:async()=>'<returnReasonCode>20</returnReasonCode><returnAuthMsg>SERVICE_ACCESS_DENIED_ERROR</returnAuthMsg>'}));
