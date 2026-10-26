@@ -52,7 +52,7 @@ export async function checkOperation({label,path,key,params={},requiresIdentity=
   return {label,status:'provider-response',code:result.code};
  }catch(error){
   const raw=String(error?.cause?.code||error?.code||error?.name||'unknown');
-  const reason=/^[A-Z0-9_]{1,60}$/i.test(raw)?raw:'unknown';
+  const reason=['TimeoutError','AbortError'].includes(error?.name)||raw==='ABORT_ERR'?'timeout':/^[A-Z0-9_]{1,60}$/i.test(raw)?raw:'unknown';
   return {label,status:'connection-failed',reason};
  }
 }
