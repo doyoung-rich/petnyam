@@ -30,6 +30,9 @@ jobs:
           ANIMAL_LOST_API_KEY: ${{ secrets.ANIMAL_LOST_API_KEY }}
           ANIMAL_REGISTER_API_KEY: ${{ secrets.ANIMAL_REGISTER_API_KEY }}
         run: node scripts/check-animal-api.mjs
+      - name: Diagnose network access without sending a key
+        if: failure()
+        run: curl --ipv4 --silent --show-error --max-time 20 --output /dev/null --write-out 'Unauthenticated HTTPS status=%{http_code}\n' 'https://apis.data.go.kr/1543061/lossInfoService/lossInfoSido?_type=json'
       - name: Preserve sanitized diagnostic result
         if: always()
         uses: actions/upload-artifact@v4

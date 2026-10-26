@@ -1,5 +1,19 @@
 import {appendFile,writeFile} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
+import {request} from 'node:https';
+
+// Explicit IPv4 avoids unavailable IPv6 routes on hosted runners; TLS verification stays on.
+export function apiFetch(url,{signal}={}){
+ return new Promise((resolve,reject)=>{
+  const req=request(url,{family:4,signal,headers:{accept:'application/json'}},res=>{
+   const chunks=[];let size=0;
+   res.on('data',chunk=>{size+=chunk.length;if(size>2000000){req.destroy(Object.assign(new Error('response limit'),{code:'RESPONSE_TOO_LARGE'}));}else chunks.push(chunk);});
+   res.on('end',()=>resolve({ok:res.statusCode>=200&&res.statusCode<300,status:res.statusCode,text:async()=>Buffer.concat(chunks).toString('utf8')}));
+   res.on('error',reject);
+  });
+  req.on('error',reject);req.end();
+ });
+}
 
 // Never log request URLs, keys, raw provider errors, or animal/owner records.
 export function normalizeServiceKey(value){
@@ -20,7 +34,7 @@ export function providerResult(text){
  return {code,itemCount,parameterError:/PARAMETER|PARAM|필수|입력|등록번호|소유자/i.test(message),
   denied:/ACCESS_DENIED|PERMISSION_DENIED|NOT_REGISTERED|SERVICE_KEY|인증키|접근 권한/i.test(message)};
 }
-export async function checkOperation({label,path,key,params={},requiresIdentity=false},fetcher=fetch){
+export async function checkOperation({label,path,key,params={},requiresIdentity=false},fetcher=apiFetch){
  let normalized;try{normalized=normalizeServiceKey(key);}catch{return {label,status:'invalid-key-format'};}
  if(!normalized)return {label,status:'missing-secret'};
  const url=new URL('https://apis.data.go.kr/1543061/'+path);
@@ -36,7 +50,11 @@ export async function checkOperation({label,path,key,params={},requiresIdentity=
   if(['00','0','NORMAL_CODE','NORMAL_SERVICE'].includes(result.code))return {label,status:'success',code:result.code,itemCount:requiresIdentity?undefined:result.itemCount,scope:requiresIdentity?'No owner identity supplied; no ownership verification performed.':undefined};
   if(requiresIdentity&&result.parameterError)return {label,status:'identity-required',code:result.code,scope:'Provider requests identity fields. Real registration lookup and ownership were not verified.'};
   return {label,status:'provider-response',code:result.code};
- }catch{return {label,status:'connection-failed'};}
+ }catch(error){
+  const raw=String(error?.cause?.code||error?.code||error?.name||'unknown');
+  const reason=/^[A-Z0-9_]{1,60}$/i.test(raw)?raw:'unknown';
+  return {label,status:'connection-failed',reason};
+ }
 }
 export async function runAnimalChecks(env=process.env){
  const operations=[

@@ -15,7 +15,7 @@ assert.equal(xml.code,'30');assert.equal(xml.denied,true);
 const privateBody=JSON.stringify({response:{header:{resultCode:'00'},body:{items:{item:[{callName:'PRIVATE_OWNER',callTel:'PRIVATE_PHONE',rfidCd:'PRIVATE_RFID'}]}}}});
 const privateResult=await checkOperation({label:'test',path:'lossInfoService/lossInfo',key:secret},async()=>response(privateBody));
 assert.ok(!JSON.stringify(privateResult).includes('PRIVATE_'));assert.ok(!JSON.stringify(privateResult).includes(secret));
-const failed=await checkOperation({label:'test',path:'lossInfoService/lossInfo',key:secret},async()=>{throw new Error('URL contained '+secret);});assert.deepEqual(failed,{label:'test',status:'connection-failed'});
+const failed=await checkOperation({label:'test',path:'lossInfoService/lossInfo',key:secret},async()=>{throw new Error('URL contained '+secret);});assert.deepEqual(failed,{label:'test',status:'connection-failed',reason:'Error'});
 const required=await checkOperation({label:'test',path:'animalInfoSrvc_v3/animalInfo_v3',key:secret,requiresIdentity:true},async()=>response('{"response":{"header":{"resultCode":"10","resultMsg":"필수 입력 오류"}}}'));
 assert.equal(required.status,'identity-required');assert.ok(required.scope.includes('not verified'));
 assert.equal((await checkOperation({label:'test',path:'lossInfoService/lossInfo',key:''})).status,'missing-secret');
