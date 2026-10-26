@@ -1,0 +1,39 @@
+name: Check animal API connections
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/check-animal-api.yml
+      - scripts/check-animal-api.mjs
+      - scripts/verify-animal-api-check.mjs
+permissions:
+  contents: read
+concurrency:
+  group: animal-api-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify sanitizer and key handling with synthetic data
+        run: node scripts/verify-animal-api-check.mjs
+      - name: Check API responses without publishing private data
+        env:
+          ANIMAL_GO_KR_API_KEY: ${{ secrets.ANIMAL_GO_KR_API_KEY }}
+          ANIMAL_RESCUE_API_KEY: ${{ secrets.ANIMAL_RESCUE_API_KEY }}
+          ANIMAL_LOST_API_KEY: ${{ secrets.ANIMAL_LOST_API_KEY }}
+          ANIMAL_REGISTER_API_KEY: ${{ secrets.ANIMAL_REGISTER_API_KEY }}
+        run: node scripts/check-animal-api.mjs
+      - name: Preserve sanitized diagnostic result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: animal-api-health
+          path: animal-api-health.json
+          retention-days: 7

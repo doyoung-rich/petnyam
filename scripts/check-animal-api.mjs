@@ -1,0 +1,56 @@
+import {appendFile,writeFile} from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+
+// Never log request URLs, keys, raw provider errors, or animal/owner records.
+export function normalizeServiceKey(value){
+ const key=String(value||'').trim();
+ if(!key)return null;
+ if(/\s|https?:\/\/|serviceKey=/i.test(key))throw new Error('invalid-key-format');
+ try{return /%[0-9a-f]{2}/i.test(key)?decodeURIComponent(key):key;}catch{throw new Error('invalid-key-format');}
+}
+export function providerResult(text){
+ let json;try{json=JSON.parse(text);}catch{}
+ const header=json?.response?.header||json?.header;
+ const xml=tag=>text.match(new RegExp('<'+tag+'(?:\\s[^>]*)?>([\\s\\S]*?)</'+tag+'>','i'))?.[1]?.trim();
+ const rawCode=String(header?.resultCode??xml('resultCode')??xml('returnReasonCode')??'');
+ const code=/^[A-Z0-9_-]{1,12}$/i.test(rawCode)?rawCode:'unrecognized';
+ const message=String(header?.resultMsg||header?.errorMsg||xml('returnAuthMsg')||xml('errMsg')||'');
+ const rows=json?.response?.body?.items?.item??json?.body?.items?.item;
+ const itemCount=rows?Array.isArray(rows)?rows.length:1:(text.match(/<item(?:\s[^>]*)?>/g)||[]).length;
+ return {code,itemCount,parameterError:/PARAMETER|PARAM|필수|입력|등록번호|소유자/i.test(message),
+  denied:/ACCESS_DENIED|PERMISSION_DENIED|NOT_REGISTERED|SERVICE_KEY|인증키|접근 권한/i.test(message)};
+}
+export async function checkOperation({label,path,key,params={},requiresIdentity=false},fetcher=fetch){
+ let normalized;try{normalized=normalizeServiceKey(key);}catch{return {label,status:'invalid-key-format'};}
+ if(!normalized)return {label,status:'missing-secret'};
+ const url=new URL('https://apis.data.go.kr/1543061/'+path);
+ url.searchParams.set('serviceKey',normalized);url.searchParams.set('_type','json');
+ for(const [name,value] of Object.entries(params))url.searchParams.set(name,String(value));
+ try{
+  const response=await fetcher(url,{signal:AbortSignal.timeout(25000),redirect:'error'});
+  if(!response.ok)return {label,status:'http-error',http:response.status};
+  const text=await response.text();
+  if(text.length>2000000)return {label,status:'response-too-large'};
+  const result=providerResult(text);
+  if(result.denied||['20','22','23','29','30','31'].includes(result.code))return {label,status:'provider-rejected',code:result.code};
+  if(['00','0','NORMAL_CODE','NORMAL_SERVICE'].includes(result.code))return {label,status:'success',code:result.code,itemCount:requiresIdentity?undefined:result.itemCount,scope:requiresIdentity?'No owner identity supplied; no ownership verification performed.':undefined};
+  if(requiresIdentity&&result.parameterError)return {label,status:'identity-required',code:result.code,scope:'Provider requests identity fields. Real registration lookup and ownership were not verified.'};
+  return {label,status:'provider-response',code:result.code};
+ }catch{return {label,status:'connection-failed'};}
+}
+export async function runAnimalChecks(env=process.env){
+ const operations=[
+  {label:'분실 API · 시도 목록',path:'lossInfoService/lossInfoSido',key:env.ANIMAL_LOST_API_KEY,params:{numOfRows:30,pageNo:1}},
+  {label:'분실 API · 분실동물 목록',path:'lossInfoService/lossInfo',key:env.ANIMAL_LOST_API_KEY,params:{numOfRows:1,pageNo:1}},
+  {label:'등록 API · 필수 입력 확인',path:'animalInfoSrvc_v3/animalInfo_v3',key:env.ANIMAL_REGISTER_API_KEY,requiresIdentity:true},
+  {label:'구조 API · 시도 목록',path:'abandonmentPublicService_v2/sido_v2',key:env.ANIMAL_RESCUE_API_KEY||env.ANIMAL_GO_KR_API_KEY,params:{numOfRows:30,pageNo:1}}
+ ];
+ const results=[];for(const operation of operations)results.push(await checkOperation(operation));
+ const report={checkedAt:new Date().toISOString(),results,notice:'Only sanitized status and counts. No service keys, raw responses, owner names, phone numbers or registration IDs are logged or saved.'};
+ await writeFile('animal-api-health.json',JSON.stringify(report,null,2)+'\n');
+ if(env.GITHUB_STEP_SUMMARY)await appendFile(env.GITHUB_STEP_SUMMARY,'## Animal API connection checks\n\n|API|Status|Code|Returned items|\n|---|---|---|---|\n'+results.map(r=>`|${r.label}|${r.status}|${r.code||r.http||''}|${r.itemCount??''}|`).join('\n')+'\n\nRegistration lookup was not performed with real owner identity.\n');
+ console.log(JSON.stringify(report));
+ if(results.some(result=>!['success','identity-required'].includes(result.status)))process.exitCode=1;
+ return report;
+}
+if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href)await runAnimalChecks();
