@@ -31,7 +31,8 @@ export function providerResult(text){
  const message=String(header?.resultMsg||header?.errorMsg||xml('returnAuthMsg')||xml('errMsg')||'');
  const rows=json?.response?.body?.items?.item??json?.body?.items?.item;
  const itemCount=rows?Array.isArray(rows)?rows.length:1:(text.match(/<item(?:\s[^>]*)?>/g)||[]).length;
- return {code,itemCount,parameterError:/PARAMETER|PARAM|필수|입력|등록번호|소유자/i.test(message),
+ const authReason=['SERVICE_ACCESS_DENIED_ERROR','SERVICE_KEY_IS_NOT_REGISTERED_ERROR','DEADLINE_HAS_EXPIRED_ERROR','PERMISSION_DENIED','SERVICE_KEY_IS_NULL'].find(value=>text.includes(value));
+ return {code,itemCount,authReason,parameterError:/PARAMETER|PARAM|필수|입력|등록번호|소유자/i.test(message),
   denied:/ACCESS_DENIED|PERMISSION_DENIED|NOT_REGISTERED|SERVICE_KEY|인증키|접근 권한/i.test(message)};
 }
 export async function checkOperation({label,path,key,params={},requiresIdentity=false},fetcher=apiFetch){
@@ -42,11 +43,11 @@ export async function checkOperation({label,path,key,params={},requiresIdentity=
  for(const [name,value] of Object.entries(params))url.searchParams.set(name,String(value));
  try{
   const response=await fetcher(url,{signal:AbortSignal.timeout(25000),redirect:'error'});
-  if(!response.ok)return {label,status:'http-error',http:response.status};
   const text=await response.text();
   if(text.length>2000000)return {label,status:'response-too-large'};
   const result=providerResult(text);
-  if(result.denied||['20','22','23','29','30','31'].includes(result.code))return {label,status:'provider-rejected',code:result.code};
+  if(result.denied||result.authReason||['20','22','23','29','30','31'].includes(result.code))return {label,status:'provider-rejected',http:response.status,code:result.code,reason:result.authReason};
+  if(!response.ok)return {label,status:'http-error',http:response.status};
   if(['00','0','NORMAL_CODE','NORMAL_SERVICE'].includes(result.code))return {label,status:'success',code:result.code,itemCount:requiresIdentity?undefined:result.itemCount,scope:requiresIdentity?'No owner identity supplied; no ownership verification performed.':undefined};
   if(requiresIdentity&&result.parameterError)return {label,status:'identity-required',code:result.code,scope:'Provider requests identity fields. Real registration lookup and ownership were not verified.'};
   return {label,status:'provider-response',code:result.code};

@@ -12,6 +12,8 @@ const success=await checkOperation({label:'test',path:'lossInfoService/lossInfoS
 assert.equal(urlSeen.protocol,'https:');assert.equal(urlSeen.searchParams.get('serviceKey'),secret);assert.equal(success.status,'success');assert.equal(success.itemCount,1);
 const xml=providerResult('<OpenAPI_ServiceResponse><returnReasonCode>30</returnReasonCode><returnAuthMsg>SERVICE_KEY_IS_NOT_REGISTERED_ERROR</returnAuthMsg></OpenAPI_ServiceResponse>');
 assert.equal(xml.code,'30');assert.equal(xml.denied,true);
+const forbidden=await checkOperation({label:'test',path:'lossInfoService/lossInfo',key:secret},async()=>({ok:false,status:403,text:async()=>'<returnReasonCode>20</returnReasonCode><returnAuthMsg>SERVICE_ACCESS_DENIED_ERROR</returnAuthMsg>'}));
+assert.equal(forbidden.reason,'SERVICE_ACCESS_DENIED_ERROR');assert.equal(forbidden.http,403);
 const privateBody=JSON.stringify({response:{header:{resultCode:'00'},body:{items:{item:[{callName:'PRIVATE_OWNER',callTel:'PRIVATE_PHONE',rfidCd:'PRIVATE_RFID'}]}}}});
 const privateResult=await checkOperation({label:'test',path:'lossInfoService/lossInfo',key:secret},async()=>response(privateBody));
 assert.ok(!JSON.stringify(privateResult).includes('PRIVATE_'));assert.ok(!JSON.stringify(privateResult).includes(secret));
