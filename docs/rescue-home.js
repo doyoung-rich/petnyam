@@ -8,6 +8,7 @@ export function registrationBanner(english=false){return `<section class="regist
 export function mountRescueHome(){
  const hero=document.querySelector('#app .hero');if(!hero){document.querySelector('[data-registration-shortcut]')?.remove();document.body.classList.remove('has-rescue-home');return;}
  const english=document.documentElement.lang==='en';let visual=hero.querySelector('.visual');if(!visual){visual=document.createElement('div');visual.className='visual';hero.append(visual);}
+ const copy=hero.querySelector('.copy');if(copy&&!copy.querySelector('[data-pet-age-banner]')){const finder=copy.querySelector('.finder');if(finder)finder.insertAdjacentHTML('beforebegin',petAgeBanner(english));else copy.insertAdjacentHTML('beforeend',petAgeBanner(english));}
  visual.classList.add('rescue-visual');if(!visual.querySelector('[data-rescue-panel]'))visual.innerHTML=rescuePanel(english);
  if(!document.querySelector('[data-registration-banner]'))hero.insertAdjacentHTML('afterend',registrationBanner(english));
  document.body.classList.add('has-rescue-home');const dock=document.querySelector('.search-dock');if(dock&&!dock.querySelector('[data-registration-shortcut]'))dock.insertAdjacentHTML('afterbegin',`<a data-registration-shortcut class="registration-shortcut" href="${registrationAgency}" target="_blank" rel="noopener noreferrer">${english?'Is your dog registered? Start registration ↗':'동물등록 아직 안 하셨나요?　등록하기 ↗'}</a>`);
@@ -21,3 +22,4 @@ export function mountRescueHome(){
   const render=()=>{const rows=data.items.filter(i=>!select.value||i.region===select.value);track.innerHTML=rescueCards(rows,english);track.scrollLeft=0;const time=new Date(data.updatedAt).toLocaleString(english?'en-GB':'ko-KR',{timeZone:'Asia/Seoul'});const stale=Date.now()-Date.parse(data.updatedAt)>24*60*60*1000;status.textContent=(english?`Updated ${time} KST · ${rows.length} collected notices. `:`${time} 갱신 · 수집 공고 ${rows.length}건. `)+(stale?(english?'Update delayed; check official notices.':'갱신이 지연되어 공식 최신 공고를 확인해 주세요.'):(english?'Recent notices only, not a complete national list.':'최근 공고 일부이며 전국 전체 건수는 아닙니다.'));if(!rows.length)track.innerHTML=`<p>${english?'No collected notices in this view. Check the official list.':'수집된 공고가 없습니다. 공식 전체 목록을 확인해 주세요.'}</p>`;};select.onchange=render;render();
  }).catch(()=>{status.textContent=english?'Could not refresh notices. Use the official list below.':'공고를 갱신하지 못했습니다. 아래 공식 전체 목록을 확인해 주세요.';});
 }
+import {petAgeBanner} from './pet-age-banner.js?v=1';

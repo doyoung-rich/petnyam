@@ -1,6 +1,7 @@
 import { detailArticle, introEn, introKo } from '../docs/editorial.js';
 import {savedFoodsView} from '../docs/food-discovery-view.js';
 import {rescuePanel,registrationBanner} from '../docs/rescue-home.js';
+import {petAgeBanner} from '../docs/pet-age-banner.js';
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -29,7 +30,7 @@ const foods = [...(`${app}\n${convenience}`).matchAll(
 )].map((match) => ({ slug: match[1], ko: match[2], en: match[3], emoji: match[4], results: match.slice(5) }));
 const uniqueFoods = [...new Map(foods.map((food) => [food.slug, food])).values()];
 let rescueData;try{rescueData=JSON.parse(await readFile(join(docs,'data/rescue-animals.json'),'utf8'));}catch{}
-const homeTemplate=(await readFile(join(docs, "index.html"), "utf8")).replace(/<main id="app">[\s\S]*?<\/main>/,`<main id="app"><section class="hero"><div class="copy">${introKo}<a href="/guides/">이용 가이드 보기 →</a></div><div class="visual rescue-visual">${rescuePanel(false,rescueData)}</div></section>${registrationBanner(false)}${savedFoodsView(false)}</main>`);
+const homeTemplate=(await readFile(join(docs, "index.html"), "utf8")).replace(/<main id="app">[\s\S]*?<\/main>/,`<main id="app"><section class="hero"><div class="copy">${introKo}${petAgeBanner(false)}<a href="/guides/">이용 가이드 보기 →</a></div><div class="visual rescue-visual">${rescuePanel(false,rescueData)}</div></section>${registrationBanner(false)}${savedFoodsView(false)}</main>`);
 await writeFile(join(docs,'index.html'),homeTemplate);
 const template = homeTemplate.replace(/<main id="app">[\s\S]*?<\/main>/,'<main id="app"></main>');
 const contentTemplate = template.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<div class="language">[\s\S]*?<\/div><\/div>/,'<a href="/en/">EN</a>');
@@ -95,7 +96,7 @@ const englishHome = template
   .replace(/<meta property="og:description" content="[^"]*">/, '<meta property="og:description" content="Search food-safety results and reviewed sources for companion animals.">')
   .replace(/<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${englishHomeUrl}">`)
   .replace(/<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${englishHomeUrl}"><link rel="alternate" hreflang="ko" href="${origin}/"><link rel="alternate" hreflang="en" href="${englishHomeUrl}"><link rel="alternate" hreflang="x-default" href="${origin}/">`)
-  .replace('<main id="app"></main>', '<main id="app"><section class="hero"><div class="copy">'+introEn+'</div><div class="visual rescue-visual">'+rescuePanel(true,rescueData)+'</div></section>'+registrationBanner(true)+savedFoodsView(true)+'</main>');
+  .replace('<main id="app"></main>', '<main id="app"><section class="hero"><div class="copy">'+introEn+petAgeBanner(true)+'</div><div class="visual rescue-visual">'+rescuePanel(true,rescueData)+'</div></section>'+registrationBanner(true)+savedFoodsView(true)+'</main>');
 await mkdir(join(docs, "en"), { recursive: true });
 await writeFile(join(docs, "en", "index.html"), englishHome);
 urls.push(englishHomeUrl);

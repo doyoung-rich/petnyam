@@ -21,6 +21,12 @@ on:
       - docs/search-metadata.js
       - docs/editorial.js
       - docs/rescue-home.js
+      - docs/pet-age-model.js
+      - docs/pet-age-calculator.js
+      - docs/pet-age-articles.js
+      - docs/pet-age-banner.js
+      - docs/pet-age-calculator.css
+      - scripts/verify-pet-age.mjs
       - docs/title-strategy.js
       - scripts/apply-title-strategy.mjs
       - scripts/verify-titles.mjs
@@ -67,6 +73,7 @@ jobs:
           node scripts/verify-titles.mjs
           node scripts/verify-food-discovery.mjs
           node scripts/verify-rescue-home.mjs
+          node scripts/verify-pet-age.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |

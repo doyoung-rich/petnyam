@@ -2,8 +2,10 @@ import { keywordArticles } from './keyword-articles.js?v=9';
 import { cotonArticles } from './coton-articles.js';
 import { cotonIntroduction } from './coton-introduction.js';
 import { aboutPetnyam } from './about-petnyam.js';
+import {petAgeArticles} from './pet-age-articles.js';
 import {siteTitles} from './title-strategy.js?v=1';
 export const featureArticles = {
+ ...petAgeArticles,
  ...aboutPetnyam,
  ...cotonIntroduction,
  ...cotonArticles,

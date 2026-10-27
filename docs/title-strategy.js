@@ -2,6 +2,8 @@
 // Hooks must be supported by the existing food explanation; uncertainty stays explicit.
 export const titleStrategyVersion='doyounglab-v1';
 export const siteTitles={
+ '/guides/pet-age-calculator/':'강아지 나이 계산기, 사람 나이로 몇 살일까? 체급별 환산',
+ '/guides/pet-age-calculator-en/':'Dog Age Calculator: How Old in Human Years? Compare by Size',
  '/':'반려동물 음식 먹어도 될까? 동물별 주의사항 검색',
  '/en/':'Can My Pet Eat This? Food Risks and Preparation by Species',
  '/foods/':'반려동물 음식 목록, 무엇을 확인할까? 동물별 판정 찾기',

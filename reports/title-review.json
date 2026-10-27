@@ -1,6 +1,6 @@
 {
   "strategy": "doyounglab-v1",
-  "pages": 527,
+  "pages": 529,
   "review": [
     {
       "path": "/404.html",
@@ -13595,6 +13595,86 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "반려동물 새 음식"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/pet-age-calculator-en/",
+      "language": "en",
+      "keyword": "Dog Age Calculator",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Dog Age Calculator: How Old in Human Years? Compare by Size | PetNyam",
+      "final": "Dog Age Calculator: How Old in Human Years? Compare by Size",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Dog Age Calculator: How Old in Human Years? Compare by Size"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "A three-year-old dog is not always comparable to a 21-year-old person. Early development and adult size change the comparison. This calculator uses an AAHA comparison chart rather than multiplying every age by seven.",
+        "Choose your pet and actual age. The initial values are an example.",
+        "For a growing dog, use expected adult size. Weight bands follow the source chart in pounds; kilogram values are rounded."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Dog Age Calculator"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/pet-age-calculator/",
+      "language": "ko",
+      "keyword": "강아지 나이 계산기",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지 나이 계산기, 사람 나이로 몇 살일까? 체급별 환산 | PetNyam",
+      "final": "강아지 나이 계산기, 사람 나이로 몇 살일까? 체급별 환산",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지 나이 계산기, 사람 나이로 몇 살일까? 체급별 환산"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "강아지 3살이면 사람 나이로 무조건 21살일까요? 어린 시기의 성장 속도와 성견 체급이 달라 단순히 7을 곱하는 방식으로는 설명하기 어렵습니다. 펫냠은 AAHA 공개 나이 비교표를 바탕으로 강아지와 고양이의 나이를 대략 비교합니다.",
+        "반려동물과 실제 나이를 선택하세요. 처음 표시되는 값은 계산 예시입니다.",
+        "성장 중인 강아지는 성견이 되었을 때의 체급을 선택하세요. 원자료의 파운드 체급 구분을 따르며 kg은 근삿값입니다."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지 나이 계산기"
       },
       "proof": "page-content"
     },
