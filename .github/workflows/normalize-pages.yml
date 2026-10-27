@@ -12,6 +12,9 @@ on:
       - docs/about-petnyam.js
       - docs/operator-story.js
       - docs/operator-story.css
+      - docs/guide-library.js
+      - docs/guide-library.css
+      - docs/images/guides/**
       - scripts/verify-operator-story.mjs
       - docs/images/owner/**
       - docs/treat-cost-calculator.js
@@ -26,6 +29,10 @@ on:
       - docs/editorial.js
       - docs/rescue-home.js
       - docs/pet-age-model.js
+      - docs/age-food-keywords.js
+      - docs/app.js
+      - site-static/app.js
+      - scripts/verify-visitor-flow.mjs
       - docs/pet-age-calculator.js
       - docs/pet-age-articles.js
       - docs/pet-age-banner.js
@@ -79,6 +86,7 @@ jobs:
           node scripts/verify-rescue-home.mjs
           node scripts/verify-pet-age.mjs
           node scripts/verify-operator-story.mjs
+          node scripts/verify-visitor-flow.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |

@@ -2,6 +2,7 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {featureArticles} from '../docs/feature-articles.js';
 import {pageGraph} from '../docs/search-metadata.js';
+import {guideLibraryView} from '../docs/guide-library.js';
 const docs=fileURLToPath(new URL('../docs/',import.meta.url));
 const template=await readFile(docs+'guides/new-food-checklist/index.html','utf8');
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
@@ -27,7 +28,7 @@ for(const [route,a] of Object.entries(featureArticles)){
  await mkdir(docs+route.slice(1),{recursive:true});await writeFile(docs+route.slice(1)+'index.html',html);
 }
 let index=await readFile(docs+'guides/index.html','utf8');
-index=index.replace(/<section\b[^>]*data-feature-articles="1"[^>]*>[\s\S]*?<\/section>/g,'').replace('</main>',`<section data-feature-articles="1" class="policy guide"><h2>새로운 출처 기반 읽을거리 / New articles</h2><ul>${Object.entries(featureArticles).map(([r,a])=>`<li><a href="${r}" lang="${a.lang}">${a.title}</a></li>`).join('')}</ul></section></main>`);
+index=index.replace(/<main id="app">[\s\S]*?<\/main>/,`<main id="app">${guideLibraryView()}</main>`).replace(/<link rel="stylesheet" href="\/guide-library\.css(?:\?v=\d+)?">/g,'').replace('</head>','<link rel="stylesheet" href="/guide-library.css?v=1"></head>');
 await writeFile(docs+'guides/index.html',index);
 let sitemap=await readFile(docs+'sitemap.xml','utf8');
 for(const [r,a] of Object.entries(featureArticles)){

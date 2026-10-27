@@ -7,6 +7,10 @@ let changed=0,checked=0;
 for(const dir of ['docs','site-static'])for(const relative of readdirSync(resolve(root,dir),{recursive:true})){
  if(!relative.endsWith('.html'))continue;
  const path=resolve(root,dir,relative);let s=readFileSync(path,'utf8');const previous=s;
+ const english=s.includes('<html lang="en"');
+ s=s.replace(/<header\b[\s\S]*?<\/header>/,header=>header.replace(/<a\b[^>]*>(?:검증 원칙|Our (?:approach|method))<\/a>/g,`<a data-nav="age" href="${english?'/guides/pet-age-calculator-en/':'/guides/pet-age-calculator/'}">${english?'Pet age calculator':'동물 나이 계산기'}</a>`));
+ s=s.replace(/<header\b[\s\S]*?<\/header>/,header=>header.replace(/<a\b(?=[^>]*data-nav="age")[^>]*>[\s\S]*?<\/a>/g,`<a data-nav="age" href="${english?'/guides/pet-age-calculator-en/':'/guides/pet-age-calculator/'}">${english?'Pet age calculator':'동물 나이 계산기'}</a>`));
+ s=s.replace(/app\.js\?v=\d+/g,'app.js?v=9');
  s=s.replace(/href=(["'])([^"']+)\1/g,(all,q,url)=>`href=${q}${finalAddress(url)}${q}`)
  .replace(/(property="og:url" content=")([^"]+)(")/g,(_,a,url,b)=>a+finalAddress(url)+b)
  .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=13').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=5');

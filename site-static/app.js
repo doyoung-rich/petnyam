@@ -6,8 +6,8 @@ function syncLanguage(){
  document.querySelector('#lang').textContent='🌐 '+(en?'EN':'한글')+' ▾';
  document.querySelector('#lang').setAttribute('aria-label',en?'Choose language':'언어 선택');
  document.querySelectorAll('[data-language]').forEach(b=>{const selected=b.dataset.language===(en?'en':'ko');b.setAttribute('aria-pressed',String(selected));b.querySelector('span').textContent=selected?'✓':''});
- const labels=en?['Food search','Popular foods','Our approach']:['음식 검색','인기 음식','검증 원칙'];
- document.querySelectorAll('[data-nav]').forEach((a,i)=>{a.textContent=labels[i];a.href=(en?'/en':'/')+'#'+a.dataset.nav});
+ const labels=en?{search:'Food search',popular:'Popular foods',age:'Pet age calculator',guides:'Guides'}:{search:'음식 검색',popular:'인기 음식',age:'동물 나이 계산기',guides:'이용 가이드'};
+ document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav==='trust')a.dataset.nav='age';a.textContent=labels[a.dataset.nav]||a.textContent;a.href=a.dataset.nav==='age'?(en?'/guides/pet-age-calculator-en/':'/guides/pet-age-calculator/'):a.dataset.nav==='guides'?'/guides/':(en?'/en':'/')+'#'+a.dataset.nav});
  document.querySelector('.brand').href=en?'/en':'/';
  const footer=document.querySelector('footer');footer.querySelector('p').textContent=en?'Clearer food-safety information for pet families.':'반려동물 음식 안전 정보를 더 빠르고 분명하게.';
  footer.querySelector('small').textContent=en?'© 2026 PetNyam. This service does not replace veterinary care.':'© 2026 PetNyam. 본 서비스는 수의사의 진료를 대신하지 않습니다.';
