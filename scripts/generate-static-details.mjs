@@ -1,5 +1,6 @@
 import { detailArticle, introEn, introKo } from '../docs/editorial.js';
 import {savedFoodsView} from '../docs/food-discovery-view.js';
+import {rescuePanel,registrationBanner} from '../docs/rescue-home.js';
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -27,7 +28,8 @@ const foods = [...(`${app}\n${convenience}`).matchAll(
   /\['([^']+)','([^']+)','([^']+)','([^']+)',\['([^']+)','([^']+)','([^']+)','([^']+)','([^']+)'\]\]/g,
 )].map((match) => ({ slug: match[1], ko: match[2], en: match[3], emoji: match[4], results: match.slice(5) }));
 const uniqueFoods = [...new Map(foods.map((food) => [food.slug, food])).values()];
-const homeTemplate=(await readFile(join(docs, "index.html"), "utf8")).replace(/<main id="app">[\s\S]*?<\/main>/,`<main id="app"><section class="hero"><div class="copy">${introKo}<a href="/guides/">이용 가이드 보기 →</a></div><div class="visual"></div></section>${savedFoodsView(false)}</main>`);
+let rescueData;try{rescueData=JSON.parse(await readFile(join(docs,'data/rescue-animals.json'),'utf8'));}catch{}
+const homeTemplate=(await readFile(join(docs, "index.html"), "utf8")).replace(/<main id="app">[\s\S]*?<\/main>/,`<main id="app"><section class="hero"><div class="copy">${introKo}<a href="/guides/">이용 가이드 보기 →</a></div><div class="visual rescue-visual">${rescuePanel(false,rescueData)}</div></section>${registrationBanner(false)}${savedFoodsView(false)}</main>`);
 await writeFile(join(docs,'index.html'),homeTemplate);
 const template = homeTemplate.replace(/<main id="app">[\s\S]*?<\/main>/,'<main id="app"></main>');
 const contentTemplate = template.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<div class="language">[\s\S]*?<\/div><\/div>/,'<a href="/en/">EN</a>');
@@ -93,7 +95,7 @@ const englishHome = template
   .replace(/<meta property="og:description" content="[^"]*">/, '<meta property="og:description" content="Search food-safety results and reviewed sources for companion animals.">')
   .replace(/<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${englishHomeUrl}">`)
   .replace(/<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${englishHomeUrl}"><link rel="alternate" hreflang="ko" href="${origin}/"><link rel="alternate" hreflang="en" href="${englishHomeUrl}"><link rel="alternate" hreflang="x-default" href="${origin}/">`)
-  .replace('<main id="app"></main>', '<main id="app"><section class="hero"><div class="copy">'+introEn+'</div></section>'+savedFoodsView(true)+'</main>');
+  .replace('<main id="app"></main>', '<main id="app"><section class="hero"><div class="copy">'+introEn+'</div><div class="visual rescue-visual">'+rescuePanel(true,rescueData)+'</div></section>'+registrationBanner(true)+savedFoodsView(true)+'</main>');
 await mkdir(join(docs, "en"), { recursive: true });
 await writeFile(join(docs, "en", "index.html"), englishHome);
 urls.push(englishHomeUrl);
@@ -107,6 +109,7 @@ const policies = {
 policies.privacy[3]=policies.privacy[3].replace('<h2>광고와 쿠키</h2>','<h2>광고와 쿠키</h2><p>Google 및 제3자 광고 사업자는 광고 제공·측정과 부정 사용 방지를 위해 쿠키, 웹 비콘, IP 주소, 브라우저·기기 식별자와 접속 정보를 수집·이용·공유할 수 있습니다. 제3자가 브라우저에 쿠키를 저장하거나 읽을 수 있습니다. 자세한 내용은 <a href="https://policies.google.com/technologies/partner-sites">Google 파트너 사이트에서의 데이터 사용</a>을 확인하세요.</p>').replace('<h2>문의 및 변경</h2>','<h2>외부 판매처와 문의 이메일</h2><p>쿠팡·Amazon 제휴 링크를 누르면 해당 판매처로 이동하며 클릭·구매 추적과 개인정보 처리에는 판매처의 정책이 적용됩니다. 상품 이미지 표시 시 외부 이미지 서버에 브라우저가 요청을 보낼 수 있습니다. 이메일 문의는 사용자의 이메일 서비스와 운영자의 메일 서비스에서 처리됩니다. 비밀번호·결제정보·민감한 개인정보를 문의에 포함하지 마세요.</p><h2>선택권</h2><p>브라우저 설정에서 쿠키를 관리하고 <a href="https://myadcenter.google.com/">Google 내 광고 센터</a>에서 광고 개인화 설정을 확인할 수 있습니다. 쿠키 설정 변경이 모든 데이터 수집을 중단한다는 뜻은 아닙니다. 지역별 동의 화면이 제공되는 경우 해당 선택을 이용하세요.</p><h2>문의 및 변경</h2>').replace('시행일: 2026년 9월 21일','업데이트: 2026년 10월 2일');
 policies.privacy[3]=policies.privacy[3].replace('<h2>접속과 외부 서비스</h2>','<h2>선택한 음식의 브라우저 저장</h2><p>음식 페이지에서 ‘이 음식 저장’을 누른 경우에만 음식·동물종의 페이지 식별자를 이 브라우저의 localStorage에 최대 8개 저장합니다. 저장 기능은 해당 목록을 서버로 전송하지 않으며 이름·건강 정보·검색 기록을 함께 저장하지 않습니다. 같은 브라우저에서 재방문하면 이 목록을 읽어 보여줍니다. 저장 해제, ‘목록 비우기’ 또는 브라우저의 사이트 데이터 삭제로 지울 수 있습니다. 공용 기기에서는 사용 후 목록을 비워 주세요.</p><h2>접속과 외부 서비스</h2>').replace('업데이트: 2026년 10월 2일','업데이트: 2026년 10월 26일');
 policies.terms[3]=policies.terms[3].replace('쿠팡 파트너스 링크가 있는 경우','쿠팡 파트너스 또는 Amazon Associates 링크가 있는 경우');
+policies.privacy[3]=policies.privacy[3].replace('<h2>접속과 외부 서비스</h2>','<h2>공공 보호동물 공고와 외부 사진</h2><p>메인 화면은 국가동물보호정보시스템에서 수집한 공개 공고 일부를 표시합니다. 사진은 공식 사이트에서 불러오므로 해당 서비스에 접속 정보가 전달될 수 있습니다. 동물등록 버튼은 공식 대행기관 안내로 연결되며 펫냠은 소유자 이름·등록번호를 입력받지 않습니다.</p><h2>접속과 외부 서비스</h2>');
 for (const [slug, [title, description, heading, body]] of Object.entries(policies)) {
   const pageUrl = `${origin}/policy/${slug}`;
   const policyPage = contentTemplate

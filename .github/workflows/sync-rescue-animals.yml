@@ -1,0 +1,44 @@
+name: Refresh public rescue notices
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync-rescue-animals.mjs
+      - .github/workflows/sync-rescue-animals.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */3 * * *'
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: normalize-final-addresses
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Refresh public fields only
+        env:
+          ANIMAL_GO_KR_API_KEY: ${{ secrets.ANIMAL_GO_KR_API_KEY }}
+          ANIMAL_RESCUE_API_KEY: ${{ secrets.ANIMAL_RESCUE_API_KEY }}
+        run: node scripts/sync-rescue-animals.mjs
+      - name: Commit public snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/rescue-animals.json docs/index.html docs/en/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh public rescue animal notices"
+            git pull --rebase origin main
+            git push
+          fi
+      - name: Request existing Pages build
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.request('POST /repos/{owner}/{repo}/pages/builds', {owner:context.repo.owner,repo:context.repo.repo});

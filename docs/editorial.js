@@ -3,6 +3,7 @@ import {normalizeVisibleAddresses} from './addresses.js?v=2';
 import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=11';
 import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=11';
 import {mountFoodDiscovery} from './food-discovery.js?v=1';
+import {mountRescueHome} from './rescue-home.js?v=1';
 import {applySiteTitle} from './title-strategy.js?v=1';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';
@@ -59,6 +60,7 @@ if(typeof document!=='undefined'){
   }
   if(article){const key=location.pathname.split('/').filter(Boolean).slice(-2).join('/');const r=priorityContent[key];if(r){const english=document.documentElement.lang==='en';const c=r[english?'en':'ko'];const heading=app.querySelector('.verdict h1');if(heading)heading.textContent=c[0];document.title=c[0]+' | PetNyam';for(const selector of ['meta[name="description"]','meta[property="og:description"]']){const meta=document.querySelector(selector);if(meta)meta.content=c[1];}const ogTitle=document.querySelector('meta[property="og:title"]');if(ogTitle)ogTitle.content=document.title;const checked=app.querySelector('.verdict span');if(checked)checked.textContent=english?'Sources checked Oct 2, 2026':'자료 확인 2026.10.02';}}
   if(article&&!article.dataset.editorial){article.dataset.editorial='1';const p=location.pathname.split('/').filter(Boolean);article.innerHTML=detailArticle(p.slice(-2).join('/'),p[0]==='en');}
+  mountRescueHome();
   mountFoodDiscovery();
   syncPageTitle();
   const trust=app.querySelector('#trust');if(trust&&!trust.dataset.editorial){trust.dataset.editorial='1';trust.innerHTML='<div><div class="label">펫냠의 정보 기준</div><h2>음식 이름보다<br>동물과 상황을 함께 봅니다.</h2></div><div><p>같은 음식도 동물종, 조리 방식, 첨가 성분과 건강 상태에 따라 판단이 달라집니다. 출처가 연결된 설명을 읽고, 상세 근거가 부족한 조합은 추가 확인이 필요합니다.</p><p>공개 자료를 AI 보조로 정리하며 수의사의 진료·감수를 대신하지 않습니다. 광고 상품은 음식 안전 판정의 근거가 아닙니다.</p><a href="/guides/read-a-verdict/">판정 기준 읽기 →</a> · <a href="/policy/contact/">정보 오류 제보 →</a></div>';}

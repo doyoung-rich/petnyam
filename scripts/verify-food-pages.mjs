@@ -19,7 +19,7 @@ for(const pet of Object.keys(petCatalog))for(const food of foodCatalog){
   for(const id of ['food-why','food-preparation','food-avoid','food-eaten','food-sources'])assert.ok(html.includes(`id="${id}"`),`${key} ${id}`);
   assert.ok(html.includes(foodStatus[r.status][lang]));
   assert.ok(!html.includes('상세 근거 설명이 아직 충분하지')&&!html.includes('PetNyam V1 데이터'));
-  assert.ok(html.includes('editorial.js?v=11'));assert.ok(html.includes('editorial.css?v=3'));
+  assert.ok(html.includes('editorial.js?v=12'));assert.ok(html.includes('editorial.css?v=4'));
   for(const s of r.sources)assert.ok(html.includes(s.url));
   const schema=JSON.parse(html.match(/id="petnyam-search-metadata">([\s\S]*?)<\/script>/)[1]);
   const page=schema['@graph'].find(n=>n['@id']===url+'#page');
