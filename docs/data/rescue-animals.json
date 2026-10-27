@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T19:34:17.451Z",
+  "updatedAt": "2026-10-27T19:35:55.686Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
     {
@@ -10,7 +10,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310532.jpg"
     },
     {
       "notice": "제주-제주-2026-02572",
@@ -19,7 +19,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310925.jpg"
     },
     {
       "notice": "경남-창원1-2026-00765",
@@ -28,7 +28,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510177.jpg"
     },
     {
       "notice": "경남-의령-2026-00145",
@@ -37,7 +37,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271410381[1].jpg"
     },
     {
       "notice": "경남-거제-2026-00539",
@@ -46,7 +46,7 @@
       "foundDate": "2026-10-27",
       "age": "2022(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110670[1].jpg"
     },
     {
       "notice": "경남-거제-2026-00538",
@@ -55,7 +55,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110376[1].jpg"
     },
     {
       "notice": "경남-밀양-2026-00613",
@@ -64,7 +64,7 @@
       "foundDate": "2026-10-27",
       "age": "2020(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510757.jpg"
     },
     {
       "notice": "경남-사천-2026-00317",
@@ -73,7 +73,7 @@
       "foundDate": "2026-10-27",
       "age": "2022(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610270910752.jpg"
     },
     {
       "notice": "경남-진주-2026-00375",
@@ -82,7 +82,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110277.jpg"
     },
     {
       "notice": "경북-울진-2026-00205",
@@ -91,7 +91,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110406.jpg"
     },
     {
       "notice": "경북-성주-2026-00323",
@@ -100,7 +100,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310257.jpg"
     },
     {
       "notice": "경북-성주-2026-00322",
@@ -109,7 +109,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271210159.jpg"
     },
     {
       "notice": "경북-성주-2026-00321",
@@ -118,7 +118,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271210570.jpg"
     },
     {
       "notice": "경북-경산-2026-00446",
@@ -127,7 +127,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610272210482.png"
     },
     {
       "notice": "경북-경산-2026-00445",
@@ -136,7 +136,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610272210213[1].png"
     },
     {
       "notice": "경북-경산-2026-00444",
@@ -145,7 +145,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610272210213.png"
     },
     {
       "notice": "경북-경산-2026-00443",
@@ -154,7 +154,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027221056.jpg"
     },
     {
       "notice": "경북-경산-2026-00442",
@@ -163,7 +163,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610272210437.jpg"
     },
     {
       "notice": "경북-문경-2026-00352",
@@ -172,7 +172,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110977[1].jpg"
     },
     {
       "notice": "경북-문경-2026-00351",
@@ -181,7 +181,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110744.jpg"
     },
     {
       "notice": "경북-영천-2026-00292",
@@ -190,7 +190,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510789.jpg"
     },
     {
       "notice": "경북-영천-2026-00291",
@@ -199,7 +199,7 @@
       "foundDate": "2026-10-27",
       "age": "2021(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510423[1].jpg"
     },
     {
       "notice": "경북-영천-2026-00290",
@@ -208,7 +208,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510316.jpg"
     },
     {
       "notice": "경북-영천-2026-00289",
@@ -217,7 +217,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027151019[1].jpg"
     },
     {
       "notice": "경북-영천-2026-00288",
@@ -226,7 +226,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510932.jpg"
     },
     {
       "notice": "경북-영주-2026-00275",
@@ -235,7 +235,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027161020[1].jpg"
     },
     {
       "notice": "경북-영주-2026-00274",
@@ -244,7 +244,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510528.jpg"
     },
     {
       "notice": "경북-영주-2026-00273",
@@ -253,7 +253,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027151093.jpg"
     },
     {
       "notice": "경북-영주-2026-00272",
@@ -262,7 +262,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510637.jpg"
     },
     {
       "notice": "경북-김천-2026-00342",
@@ -271,7 +271,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510790.jpg"
     },
     {
       "notice": "경북-경주-2026-00858",
@@ -280,7 +280,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610577.jpg"
     },
     {
       "notice": "경북-경주-2026-00857",
@@ -289,7 +289,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271510748.jpg"
     },
     {
       "notice": "경북-경주-2026-00856",
@@ -298,7 +298,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310371.jpg"
     },
     {
       "notice": "경북-경주-2026-00855",
@@ -307,7 +307,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310793.jpg"
     },
     {
       "notice": "전북-김제-2026-00310",
@@ -316,7 +316,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271410549.jpg"
     },
     {
       "notice": "전북-정읍-2026-00415",
@@ -325,7 +325,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010406.jpg"
     },
     {
       "notice": "전북-정읍-2026-00414",
@@ -334,7 +334,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010741.jpg"
     },
     {
       "notice": "전북-정읍-2026-00413",
@@ -343,7 +343,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027101085.jpg"
     },
     {
       "notice": "전북-정읍-2026-00412",
@@ -352,7 +352,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010959.jpg"
     },
     {
       "notice": "전북-정읍-2026-00411",
@@ -361,7 +361,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027101023.jpg"
     },
     {
       "notice": "전북-정읍-2026-00410",
@@ -370,7 +370,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610270910388.jpg"
     },
     {
       "notice": "전북-정읍-2026-00409",
@@ -379,7 +379,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610270910564.jpg"
     },
     {
       "notice": "전북-군산-2026-00930",
@@ -388,7 +388,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110144.jpg"
     },
     {
       "notice": "전북-군산-2026-00929",
@@ -397,7 +397,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110760.jpg"
     },
     {
       "notice": "전북-군산-2026-00928",
@@ -406,7 +406,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110222.jpg"
     },
     {
       "notice": "전북-군산-2026-00927",
@@ -415,7 +415,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027111083[1].jpg"
     },
     {
       "notice": "전북-군산-2026-00926",
@@ -424,7 +424,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110685.jpg"
     },
     {
       "notice": "전북-군산-2026-00925",
@@ -433,7 +433,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110734.jpg"
     },
     {
       "notice": "전북-군산-2026-00924",
@@ -442,7 +442,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110916.jpg"
     },
     {
       "notice": "전북-군산-2026-00923",
@@ -451,7 +451,7 @@
       "foundDate": "2026-10-27",
       "age": "2021(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010715.jpg"
     },
     {
       "notice": "전북-전주-2026-01046",
@@ -460,7 +460,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710666[1].jpg"
     },
     {
       "notice": "전북-전주-2026-01045",
@@ -469,7 +469,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710379[1].jpg"
     },
     {
       "notice": "전북-전주-2026-01044",
@@ -478,7 +478,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271210986.jpg"
     },
     {
       "notice": "전북-전주-2026-01043",
@@ -487,7 +487,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110673.jpg"
     },
     {
       "notice": "전북-전주-2026-01042",
@@ -496,7 +496,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "종료(반환)",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010878.jpg"
     },
     {
       "notice": "충남-당진-2026-00513",
@@ -505,7 +505,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310500.jpg"
     },
     {
       "notice": "충남-당진-2026-00512",
@@ -514,7 +514,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027131050.jpg"
     },
     {
       "notice": "충남-당진-2026-00511",
@@ -523,7 +523,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310171.jpg"
     },
     {
       "notice": "충남-당진-2026-00510",
@@ -532,7 +532,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310707.jpg"
     },
     {
       "notice": "충남-당진-2026-00509",
@@ -541,7 +541,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310686.jpg"
     },
     {
       "notice": "충남-서천-2026-00081",
@@ -550,7 +550,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610437.jpg"
     },
     {
       "notice": "충남-서천-2026-00080",
@@ -559,7 +559,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027161063.jpg"
     },
     {
       "notice": "충남-서천-2026-00079",
@@ -568,7 +568,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610561.jpg"
     },
     {
       "notice": "충남-부여-2026-00371",
@@ -577,7 +577,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710681.jpg"
     },
     {
       "notice": "충남-부여-2026-00370",
@@ -586,7 +586,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710520.jpg"
     },
     {
       "notice": "충남-부여-2026-00369",
@@ -595,7 +595,7 @@
       "foundDate": "2026-10-27",
       "age": "2018(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610789.jpg"
     },
     {
       "notice": "충남-서산-2026-00571",
@@ -604,7 +604,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610325.jpg"
     },
     {
       "notice": "충남-서산-2026-00570",
@@ -613,7 +613,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610688.jpg"
     },
     {
       "notice": "충남-아산-2026-00388",
@@ -622,7 +622,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271110718[1].jpg"
     },
     {
       "notice": "충남-공주-2026-00245",
@@ -631,7 +631,7 @@
       "foundDate": "2026-10-27",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310530[1].jpg"
     },
     {
       "notice": "충남-천안-2026-00594",
@@ -640,7 +640,7 @@
       "foundDate": "2026-10-27",
       "age": "2013(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027141001[1].jpg"
     },
     {
       "notice": "충북-청주-2026-00879",
@@ -649,7 +649,7 @@
       "foundDate": "2026-10-27",
       "age": "2022(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271410542[2].jpg"
     },
     {
       "notice": "충북-청주-2026-00878",
@@ -658,7 +658,7 @@
       "foundDate": "2026-10-27",
       "age": "2020(년생)",
       "status": "종료(반환)",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310956.jpeg"
     },
     {
       "notice": "충북-청주-2026-00877",
@@ -667,7 +667,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310239.jpg"
     },
     {
       "notice": "충북-청주-2026-00876",
@@ -676,7 +676,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310441[1].jpg"
     },
     {
       "notice": "충북-청주-2026-00875",
@@ -685,7 +685,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310636[1].jpg"
     },
     {
       "notice": "충북-청주-2026-00874",
@@ -694,7 +694,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310135.jpg"
     },
     {
       "notice": "충북-청주-2026-00873",
@@ -703,7 +703,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310991[1].jpg"
     },
     {
       "notice": "충북-청주-2026-00872",
@@ -712,7 +712,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310123.jpg"
     },
     {
       "notice": "충북-증평-2026-00113",
@@ -721,7 +721,7 @@
       "foundDate": "2026-10-27",
       "age": "2022(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271910298.jpeg"
     },
     {
       "notice": "충북-음성-2026-00425",
@@ -730,7 +730,7 @@
       "foundDate": "2026-10-27",
       "age": "2020(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271310299.jpg"
     },
     {
       "notice": "충북-옥천-2026-00448",
@@ -739,7 +739,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710367.jpeg"
     },
     {
       "notice": "충북-옥천-2026-00447",
@@ -748,7 +748,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027171081.jpeg"
     },
     {
       "notice": "충북-옥천-2026-00446",
@@ -757,7 +757,7 @@
       "foundDate": "2026-10-27",
       "age": "2013(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710614.jpeg"
     },
     {
       "notice": "강원-화천-2026-00057",
@@ -766,7 +766,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710138[1].jpg"
     },
     {
       "notice": "강원-화천-2026-00056",
@@ -775,7 +775,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261027171052[1].jpg"
     },
     {
       "notice": "강원-화천-2026-00055",
@@ -784,7 +784,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710578.jpg"
     },
     {
       "notice": "강원-화천-2026-00054",
@@ -793,7 +793,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710599[2].jpg"
     },
     {
       "notice": "강원-화천-2026-00053",
@@ -802,7 +802,7 @@
       "foundDate": "2026-10-27",
       "age": "2021(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710149[1].jpg"
     },
     {
       "notice": "강원-정선-2026-00100",
@@ -811,7 +811,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010485.jpg"
     },
     {
       "notice": "강원-정선-2026-00099",
@@ -820,7 +820,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010308.jpg"
     },
     {
       "notice": "강원-정선-2026-00098",
@@ -829,7 +829,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010965.jpg"
     },
     {
       "notice": "강원-정선-2026-00097",
@@ -838,7 +838,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271010108.jpg"
     },
     {
       "notice": "경기-여주-2026-00447",
@@ -847,7 +847,7 @@
       "foundDate": "2026-10-27",
       "age": "2021(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710614[1].jpg"
     },
     {
       "notice": "경기-여주-2026-00446",
@@ -856,7 +856,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710640[1].jpg"
     },
     {
       "notice": "경기-광주-2026-00636",
@@ -865,7 +865,7 @@
       "foundDate": "2026-10-27",
       "age": "2023(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610273[2].jpg"
     },
     {
       "notice": "경기-광주-2026-00635",
@@ -874,7 +874,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271610811[2].jpg"
     },
     {
       "notice": "경기-화성-2026-01560",
@@ -883,7 +883,7 @@
       "foundDate": "2026-10-27",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710622[1].jpg"
     },
     {
       "notice": "경기-화성-2026-01559",
@@ -892,7 +892,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710765.jpg"
     },
     {
       "notice": "경기-화성-2026-01558",
@@ -901,7 +901,7 @@
       "foundDate": "2026-10-27",
       "age": "2024(년생)",
       "status": "보호중",
-      "photo": ""
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610271710421.jpg"
     }
   ]
 }
