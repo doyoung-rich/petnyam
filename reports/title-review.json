@@ -13123,15 +13123,15 @@
     {
       "path": "/guides/about-petnyam-en/",
       "language": "en",
-      "keyword": "About PetNyam",
+      "keyword": "Why I Built PetNyam",
       "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "About PetNyam: who runs it and how food guidance is prepared | PetNyam",
-      "final": "About PetNyam: How Do We Research and Update Food Guidance?",
+      "final": "Why I Built PetNyam: Two Dogs, Three Cats and Food Questions",
       "changed": true,
       "candidates": [
         {
           "type": "종합 추천형",
-          "title": "About PetNyam: How Do We Research and Update Food Guidance?"
+          "title": "Why I Built PetNyam: Two Dogs, Three Cats and Food Questions"
         },
         {
           "type": "숫자형",
@@ -13146,9 +13146,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "PetNyam helps caregivers check the animal species and the ingredient before sharing food. The operator is 정도영 (Jung Do-young) . Questions and correction reports can be sent to jungdo63@gmail.com .",
-        "The operator owns a Coton de Tulear and created PetNyam to reduce repeated searches about pet foods. His supplied observations describe an active dog that barks a lot, plays energetically at dog cafés, attracts people’s curiosity, and is fairly sweet-natured. These are identified in the caregiver’s Coton note . One dog’s behavior is not evidence of breed-wide temperament or food safety.",
-        "Cat and mango: veterinarian-authored feline fruit guidance explicitly names mango, so we replaced the unresolved verdict with conditional guidance. That does not approve mango desserts or replacing a complete diet. Hamster and milk: basic husbandry guidance supports providing water, but does not establish a safe or toxic milk dose. Adult drinking and neonatal feeding are separate questions."
+        "Hello, I’m Jung Do-young (정도영) , the person behind PetNyam. I live with two dogs— Hong-i , a Boston Terrier, and Seol-i , a Pomeranian—and three cats, Leon, Jjokkomi and Mini .",
+        "PetNyam began with questions about the animals in my life. Repeated food searches were inconvenient, and it was even harder to find well-supported guidance for animals other than dogs and cats.",
+        "I wondered whether apples were suitable for Hong-i and Seol-i. A saying I had heard about apples at night made me wonder about dogs, so I searched. That personal question does not establish that the saying applies to dogs."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -13156,22 +13156,22 @@
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "About PetNyam"
+        "text": "Why I Built PetNyam"
       },
       "proof": "page-content"
     },
     {
       "path": "/guides/about-petnyam/",
       "language": "ko",
-      "keyword": "펫냠은 어떻게 정보를 만들까",
+      "keyword": "반려동물 음식 정보",
       "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "펫냠 소개: 운영자·자료 선택·음식 판정과 수정 방법 | PetNyam",
-      "final": "펫냠은 어떻게 정보를 만들까? 운영자·출처·수정 기준",
+      "final": "반려동물 음식 정보, 왜 직접 찾았을까? 다섯 아이와 펫냠을 운영하는 이유",
       "changed": true,
       "candidates": [
         {
           "type": "종합 추천형",
-          "title": "펫냠은 어떻게 정보를 만들까? 운영자·출처·수정 기준"
+          "title": "반려동물 음식 정보, 왜 직접 찾았을까? 다섯 아이와 펫냠을 운영하는 이유"
         },
         {
           "type": "숫자형",
@@ -13186,9 +13186,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "펫냠은 반려동물에게 음식을 나눠주기 전에 동물종과 재료를 함께 확인하도록 만든 음식 정보 서비스입니다. 운영자는 정도영 이며, 문의와 오류 제보는 jungdo63@gmail.com 으로 받습니다.",
-        "운영자는 꼬똥 드 툴레아를 키우며, 반려동물 음식 정보를 매번 검색하는 번거로움을 줄이고 싶어 펫냠을 만들었습니다. 운영자가 제공한 경험은 ‘활발하고 많이 짖으며, 애견카페에서 잘 놀고 사람들의 관심을 받으며, 나름 착하다’는 생활 관찰입니다. 이 관찰은 꼬똥 보호자 메모 에 별도로 표시했습니다. 한 마리의 경험을 견종 전체의 성격이나 음식 안전성으로 일반화하지 않습니다.",
-        "운영자가 알려 준 경험만 실제 경험으로 표시합니다. 비용 예제와 기록 양식은 설명용이며 가상의 구매를 실제 영수증처럼 제시하지 않습니다. 간식 비용 계산기 는 중량당 가격·사용 비용·구매 봉지 수를 계산합니다. 가격이 낮다는 결과로 영양이나 급여 적합성을 판정하지 않으며, 계산기 입력값은 저장하거나 전송하지 않습니다."
+        "안녕하세요. 펫냠을 운영하는 정도영 입니다. 저는 보스턴테리어 홍이 , 포메라니안 설이 , 고양이 레옹이·쪼꼬미·미니 와 함께 살고 있습니다. 강아지 두 마리와 고양이 세 마리, 다섯 아이의 보호자입니다.",
+        "펫냠은 함께 사는 아이들에게 관심을 갖다 생긴 작은 궁금증에서 시작했습니다. 어떤 음식을 줘도 되는지 매번 검색하는 일이 번거롭기도 했지만, 강아지와 고양이 외의 동물은 근거가 있는 답을 찾기가 더 어려웠습니다.",
+        "홍이와 설이가 사과를 먹어도 되는지 궁금했습니다. 사람도 ‘밤에 먹는 사과는 좋지 않다’는 말을 하잖아요. 그 말이 떠올라 강아지는 어떨지 검색해 봤습니다. 그 속설을 강아지에게 그대로 적용할 수 있다는 뜻은 아닙니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -13196,7 +13196,7 @@
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "펫냠은 어떻게 정보를 만들까"
+        "text": "반려동물 음식 정보"
       },
       "proof": "page-content"
     },

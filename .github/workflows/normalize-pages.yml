@@ -10,6 +10,10 @@ on:
       - docs/feature-articles.js
       - docs/keyword-articles.js
       - docs/about-petnyam.js
+      - docs/operator-story.js
+      - docs/operator-story.css
+      - scripts/verify-operator-story.mjs
+      - docs/images/owner/**
       - docs/treat-cost-calculator.js
       - docs/treat-cost-calculator-view.js
       - docs/treat-cost-calculator.css
@@ -74,6 +78,7 @@ jobs:
           node scripts/verify-food-discovery.mjs
           node scripts/verify-rescue-home.mjs
           node scripts/verify-pet-age.mjs
+          node scripts/verify-operator-story.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |

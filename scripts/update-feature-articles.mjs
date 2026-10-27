@@ -11,6 +11,7 @@ for(const [route,a] of Object.entries(featureArticles)){
  html=html.replace(/<main[\s\S]*?<\/main>/,`<main id="app"><article class="policy guide"><a href="/guides/">← ${a.lang==='en'?'All guides':'이용 가이드'}</a><div class="label">PETNYAM • SOURCE-BASED GUIDE</div><h1>${esc(a.title)}</h1>${a.body}<hr><p>${a.lang==='en'?'Published and sources checked: October 5, 2026. PetNyam editorial summary, prepared with AI assistance. Not independently reviewed by a veterinarian; not diagnosis or an individualized feeding plan.':'발행·자료 확인: 2026년 10월 5일. PetNyam이 공개 자료를 AI 보조로 정리했습니다. 수의사의 개별 검수를 받은 글이 아니며 진단·개별 급여 처방을 대신하지 않습니다.'}</p></article></main>`);
  if(a.published==='2026-10-06')html=html.replace('발행·자료 확인: 2026년 10월 5일.', '발행: 2026년 10월 6일. 계산 예시는 직접 검산했으며, 외부 자료가 있는 글은 같은 날짜에 확인했습니다.');
  if(a.footer)html=html.replace(/(<hr><p>)[\s\S]*?(<\/p><\/article><\/main>)/,`$1${esc(a.footer)}$2`);
+ if(a.schemaType==='AboutPage')html=html.replace('PETNYAM • SOURCE-BASED GUIDE',a.lang==='en'?'PETNYAM • THE PERSON BEHIND THE SITE':'PETNYAM • 다섯 아이의 보호자가 만드는 곳');
  if(a.alternates){
   const links=Object.entries(a.alternates).map(([lang,path])=>`<link rel="alternate" hreflang="${lang}" href="https://petnyam.com${path}">`).join('');
   html=html.replace('</head>',links+'</head>');
