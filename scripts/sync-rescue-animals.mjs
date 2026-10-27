@@ -6,7 +6,8 @@ import {safePhoto,rescuePanel} from '../docs/rescue-home.js';
 const root=dirname(dirname(fileURLToPath(import.meta.url)));
 const text=(value,max=100)=>String(value??'').replace(/[\u0000-\u001f]/g,'').slice(0,max);
 const date=value=>/^\d{8}$/.test(String(value))?String(value).replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3'):'';
-// Public notice fields only. No owner names, contact numbers, RFID or animal registration IDs.
+// Public notice fields only. Official legacy photo URLs are upgraded to HTTPS.
+// No owner names, contact numbers, RFID or animal registration IDs.
 export function publicAnimal(item){return {notice:text(item.noticeNo,50),kind:text(item.kindFullNm||item.kindNm||item.kindCd),region:text(item.orgNm),foundDate:date(item.happenDt),age:text(item.age,50),status:text(item.processState,40),photo:safePhoto(item.popfile1||item.popfile||item.filename)};}
 export async function syncRescueAnimals(env=process.env,fetcher=apiFetch){
  const key=normalizeServiceKey(env.ANIMAL_RESCUE_API_KEY||env.ANIMAL_GO_KR_API_KEY);if(!key)throw Error('Rescue credential missing');

@@ -5,7 +5,8 @@ import {publicAnimal,syncRescueAnimals} from './sync-rescue-animals.mjs';
 const record=publicAnimal({noticeNo:'TEST-1',kindFullNm:'<script>',orgNm:'서울',happenDt:'20261027',age:'2025',processState:'보호중',popfile1:'https://www.animal.go.kr/photo.jpg',careTel:'private',chargeNm:'private',rfidCd:'private',dogRegNo:'private'});
 assert.equal(record.foundDate,'2026-10-27');assert.ok(!JSON.stringify(record).includes('private'));
 assert.ok(rescueCards([record]).includes('&lt;script&gt;'));assert.ok(!rescueCards([record]).includes('<script>'));
-for(const bad of ['http://animal.go.kr/a','javascript:alert(1)','https://animal.go.kr.evil.test/a','https://evil.test/a'])assert.equal(safePhoto(bad),'');
+for(const bad of ['javascript:alert(1)','https://animal.go.kr.evil.test/a','https://evil.test/a'])assert.equal(safePhoto(bad),'');
+assert.equal(safePhoto('http://openapi.animal.go.kr/a'),'https://openapi.animal.go.kr/a');
 assert.ok(safePhoto('https://www.animal.go.kr/a'));
 for(const en of [false,true]){const panel=rescuePanel(en);assert.ok(panel.includes('data-rescue-next'));assert.ok(panel.includes('data-rescue-region'));assert.ok(panel.includes('publicList.do'));assert.ok(registrationBanner(en).includes('recordAgencyList.do'));}
 // Provider failure cannot replace a last successful public snapshot.
