@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T18:21:08.834Z",
+  "updatedAt": "2026-10-29T00:55:45.942Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
     {
@@ -11,6 +11,15 @@
       "age": "2026(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610282010934.jpg"
+    },
+    {
+      "notice": "대전-유성-2026-00299",
+      "kind": "[고양이] 코숏",
+      "region": "대전광역시 유성구",
+      "foundDate": "2026-10-28",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610290810992.png"
     },
     {
       "notice": "광주-해남-2026-00112",
@@ -38,6 +47,15 @@
       "age": "2021(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610281610855.jpg"
+    },
+    {
+      "notice": "광주-목포-2026-00151",
+      "kind": "[개] 진도견",
+      "region": "전남광주통합특별시 목포시",
+      "foundDate": "2026-10-28",
+      "age": "2014(년생)",
+      "status": "종료(반환)",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610290410216.jpg"
     },
     {
       "notice": "제주-제주-2026-02581",
@@ -884,24 +902,6 @@
       "age": "2026(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610281810329.jpg"
-    },
-    {
-      "notice": "경기-평택-2026-00749",
-      "kind": "[개] 믹스견",
-      "region": "경기도 평택시",
-      "foundDate": "2026-10-28",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261028151083.jpg"
-    },
-    {
-      "notice": "경기-평택-2026-00748",
-      "kind": "[개] 믹스견",
-      "region": "경기도 평택시",
-      "foundDate": "2026-10-28",
-      "age": "2023(년생)",
-      "status": "종료(반환)",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610280910308.jpg"
     }
   ]
 }
