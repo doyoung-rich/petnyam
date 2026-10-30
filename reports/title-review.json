@@ -1,6 +1,6 @@
 {
   "strategy": "doyounglab-v1",
-  "pages": 529,
+  "pages": 535,
   "review": [
     {
       "path": "/404.html",
@@ -13108,7 +13108,7 @@
       "bodyOpening": [
         "반려동물 종류를 먼저 고른 다음 음식별 설명을 읽어주세요. 같은 음식도 동물종·손질·첨가물에 따라 판단이 달라집니다.",
         "이 목록은 기존 음식 페이지를 찾는 안내입니다. 모든 조합의 상세 근거가 충분한 것은 아니며, 목록에 있다는 이유만으로 급여 가능하다는 뜻은 아닙니다.",
-        "판정의 의미와 한계 · 제품 성분표 확인법 · 위험 음식 섭취 후 확인할 정보"
+        "현재 강아지에 대한 별도 안내 글입니다. 다른 동물의 판정으로 적용하지 마세요."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -13197,6 +13197,166 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "반려동물 음식 정보"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/can-dogs-eat-kiwi-en/",
+      "language": "en",
+      "keyword": "Can Dogs Eat Kiwi",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Can Dogs Eat Kiwi? Peel It and Avoid Whole-Fruit Choking Risks | PetNyam",
+      "final": "Can Dogs Eat Kiwi? Peel It and Avoid Whole-Fruit Choking Risks",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Can Dogs Eat Kiwi? Peel It and Avoid Whole-Fruit Choking Risks"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "Small amounts of prepared kiwi flesh can be considered as an occasional dog treat. That does not mean offering a whole fruit or treating peel and flesh as interchangeable.",
+        "AKC distinguishes the choking risk of a whole kiwi from the digestive burden of its tough skin. Remove the skin and prepare small pieces. Large portions may cause digestive upset and should not replace a complete diet.",
+        "Those are different products. Read their ingredient lists rather than transferring guidance for plain flesh to every kiwi-labelled food. Discuss new treats with the veterinarian managing a medical or prescription diet."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Can Dogs Eat Kiwi"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/can-dogs-eat-kiwi/",
+      "language": "ko",
+      "keyword": "강아지 키위 먹어도 될까",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지 키위 먹어도 될까? 껍질·통째 급여와 작은 조각의 차이 | PetNyam",
+      "final": "강아지 키위 먹어도 될까? 껍질·통째 급여와 작은 조각의 차이",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지 키위 먹어도 될까? 껍질·통째 급여와 작은 조각의 차이"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "강아지에게 키위는 손질한 과육을 소량 간식으로 고려할 수 있습니다. 다만 ‘키위를 먹을 수 있다’는 안내에는 통째로 삼키게 하거나 껍질까지 많이 주는 상황이 포함되지 않습니다.",
+        "AKC는 통째 키위의 질식 위험과 질긴 껍질의 소화 부담을 구분해 설명합니다. 껍질을 제거하고 먹기 쉬운 작은 조각으로 준비하는 것이 안내의 핵심입니다. 과육을 잘 먹는다고 껍질도 같은 방식으로 줄 수 있는 것은 아닙니다.",
+        "키위의 영양성분을 이유로 주식 대신 주거나 특정 건강 문제의 해결책으로 사용하지 마세요. 식이섬유가 많은 과일을 많이 먹으면 소화 문제가 생길 수 있습니다. 질환 관리나 처방식을 사용 중이라면 새로운 간식을 추가하기 전 담당 수의사와 확인하세요."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지 키위 먹어도 될까"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/can-dogs-eat-raspberries-en/",
+      "language": "en",
+      "keyword": "Can Dogs Eat Raspberries",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Can Dogs Eat Raspberries? Small Portions and Product Labels Matter | PetNyam",
+      "final": "Can Dogs Eat Raspberries? Small Portions and Product Labels Matter",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Can Dogs Eat Raspberries? Small Portions and Product Labels Matter"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "Raspberries can be considered as a small occasional dog treat, rather than a replacement for a complete diet. Plain fruit and sweetened raspberry products are different questions.",
+        "AKC describes a low naturally occurring amount in raspberries and distinguishes it from concentrated xylitol products. The presence of a substance does not mean every food delivers the same exposure. That distinction does not make sugar-free products safe for dogs.",
+        "AKC notes digestive upset after excessive intake. If a dog already ate some, record the product, approximate amount, time and changes from normal."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Can Dogs Eat Raspberries"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/can-dogs-eat-raspberries/",
+      "language": "ko",
+      "keyword": "강아지 라즈베리 먹어도 될까",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지 라즈베리 먹어도 될까? 소량 급여와 가공제품 주의점 | PetNyam",
+      "final": "강아지 라즈베리 먹어도 될까? 소량 급여와 가공제품 주의점",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지 라즈베리 먹어도 될까? 소량 급여와 가공제품 주의점"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "라즈베리는 강아지에게 소량의 간식으로 고려할 수 있지만, 많이 먹어도 되는 과일이라는 뜻은 아닙니다. 생과일과 설탕·감미료가 더해진 제품도 구분해야 합니다.",
+        "AKC는 라즈베리에 자연적으로 소량의 자일리톨이 포함된다고 설명하면서도, 이를 농축된 자일리톨 제품과 같은 노출로 취급하지 않습니다. ‘포함되어 있다’와 ‘같은 양의 위험 성분을 섭취했다’는 말은 다릅니다. 반대로 이 차이를 이유로 무설탕 제품을 안전하다고 판단해서도 안 됩니다.",
+        "AKC는 과량 섭취 뒤 소화 문제가 나타날 수 있다고 안내합니다. 더 잘 먹는다는 이유로 양을 계속 늘리지 마세요. 이미 먹었다면 대략의 개수·제품·시각과 평소와 달라진 상태를 기록하는 편이 도움이 됩니다."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지 라즈베리 먹어도 될까"
       },
       "proof": "page-content"
     },
@@ -13397,6 +13557,86 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "꼬똥 드 툴레아 많이 짖을까"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/dog-friendly-places-korea-en/",
+      "language": "en",
+      "keyword": "Dog-Friendly Places in Korea",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Dog-Friendly Places in Korea: Compare Chuncheon, Daejeon and Uiseong | PetNyam",
+      "final": "Dog-Friendly Places in Korea: Compare Chuncheon, Daejeon and Uiseong",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Dog-Friendly Places in Korea: Compare Chuncheon, Daejeon and Uiseong"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "Three places in different Korean regions offer starting points for a dog-friendly outing: d.forest in Chuncheon, Daejeon Pet Park and Uiseong Pet World. This is a comparison of official information, not a claim that PetNyam’s operator visited with his dogs.",
+        "Its official rules restrict animals other than dogs. Check leash-required areas, designated off-leash spaces and the policy on outside food. The FAQ also notes that slopes and steps can limit stroller access. A dog-friendly venue does not automatically accommodate cats or every mobility need.",
+        "Official visitor guide · Official FAQ"
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Dog-Friendly Places in Korea"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/dog-friendly-places-korea/",
+      "language": "ko",
+      "keyword": "강아지와 가볼만한곳",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지와 가볼만한곳, 어디가 좋을까? 춘천·대전·의성 동반 규정 비교 | PetNyam",
+      "final": "강아지와 가볼만한곳, 어디가 좋을까? 춘천·대전·의성 동반 규정 비교",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지와 가볼만한곳, 어디가 좋을까? 춘천·대전·의성 동반 규정 비교"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "강아지와 갈 곳을 찾을 때는 예쁜 사진보다 우리 아이가 입장할 수 있는지부터 확인하는 편이 좋습니다. 이번에는 강원·충청·경북에서 살펴볼 수 있는 세 곳을 골라 공식 이용 안내의 차이를 정리했습니다. 운영자가 홍이·설이와 다녀온 후기는 아니며, 전국 장소를 비교해 나갈 첫 안내 글입니다.",
+        "공식 안내는 반려견 이외 동물의 입장을 제한합니다. 고양이도 함께 키우는 가정이라면 ‘반려동물 동반’이라는 표현만 보고 모두 데려갈 수 있다고 생각하지 마세요. 일반 이동 구간의 산책줄 원칙과 목줄을 풀 수 있는 지정 공간도 구분해야 합니다.",
+        "공식 FAQ는 외부 음식 반입 제한과 경사·계단 구간에서의 유모차 이동 어려움도 안내합니다. 간식이나 유모차를 챙기기 전에 이용 구역의 조건을 먼저 살펴보세요. 강아지숲 공식 이용 안내 ↗ · 공식 FAQ ↗"
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지와 가볼만한곳"
       },
       "proof": "page-content"
     },

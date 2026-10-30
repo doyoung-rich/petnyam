@@ -13,6 +13,9 @@ on:
       - docs/operator-story.js
       - docs/operator-story.css
       - docs/guide-library.js
+      - docs/new-information-articles.js
+      - docs/home-information.js
+      - scripts/verify-new-information.mjs
       - docs/guide-library.css
       - docs/images/guides/**
       - scripts/verify-operator-story.mjs
@@ -87,6 +90,7 @@ jobs:
           node scripts/verify-pet-age.mjs
           node scripts/verify-operator-story.mjs
           node scripts/verify-visitor-flow.mjs
+          node scripts/verify-new-information.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |

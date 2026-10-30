@@ -2,6 +2,12 @@
 // Hooks must be supported by the existing food explanation; uncertainty stays explicit.
 export const titleStrategyVersion='doyounglab-v1';
 export const siteTitles={
+ '/guides/dog-friendly-places-korea/':'강아지와 가볼만한곳, 어디가 좋을까? 춘천·대전·의성 동반 규정 비교',
+ '/guides/dog-friendly-places-korea-en/':'Dog-Friendly Places in Korea: Compare Chuncheon, Daejeon and Uiseong',
+ '/guides/can-dogs-eat-kiwi/':'강아지 키위 먹어도 될까? 껍질·통째 급여와 작은 조각의 차이',
+ '/guides/can-dogs-eat-kiwi-en/':'Can Dogs Eat Kiwi? Peel It and Avoid Whole-Fruit Choking Risks',
+ '/guides/can-dogs-eat-raspberries/':'강아지 라즈베리 먹어도 될까? 소량 급여와 가공제품 주의점',
+ '/guides/can-dogs-eat-raspberries-en/':'Can Dogs Eat Raspberries? Small Portions and Product Labels Matter',
  '/guides/pet-age-calculator/':'강아지 나이 계산기, 사람 나이로 몇 살일까? 체급별 환산',
  '/guides/pet-age-calculator-en/':'Dog Age Calculator: How Old in Human Years? Compare by Size',
  '/':'반려동물 음식 먹어도 될까? 동물별 주의사항 검색',
