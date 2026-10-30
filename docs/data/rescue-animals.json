@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T18:28:27.665Z",
+  "updatedAt": "2026-10-30T00:58:52.982Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
     {
@@ -11,6 +11,15 @@
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610291610157.jpg"
+    },
+    {
+      "notice": "대구-달성-2026-00473",
+      "kind": "[개] 믹스견",
+      "region": "대구광역시 달성군",
+      "foundDate": "2026-10-29",
+      "age": "2017(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610291510366.jpg"
     },
     {
       "notice": "세종-세종-2026-00313",
@@ -893,15 +902,6 @@
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610291310940.jpg"
-    },
-    {
-      "notice": "충남-보령-2026-00358",
-      "kind": "[고양이] 한국 고양이",
-      "region": "충청남도 보령시",
-      "foundDate": "2026-10-29",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610291310526.jpg"
     }
   ]
 }
