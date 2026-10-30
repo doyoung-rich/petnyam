@@ -1,0 +1,43 @@
+name: Refresh Nongsaro feed ingredients
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync-feed-materials.mjs
+      - .github/workflows/sync-feed-materials.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '37 19 * * 0'
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: normalize-final-addresses
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch public ingredient fields without exposing key
+        env:
+          NONGSARO_FEED_API_KEY: ${{ secrets.NONGSARO_FEED_API_KEY }}
+        run: node scripts/sync-feed-materials.mjs
+      - name: Save public ingredient snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/feed-materials.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Nongsaro public feed ingredients"
+            git pull --rebase origin main
+            git push
+          fi
+      - name: Request existing Pages build
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.request('POST /repos/{owner}/{repo}/pages/builds', {owner:context.repo.owner,repo:context.repo.repo});
