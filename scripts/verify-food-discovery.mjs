@@ -68,7 +68,7 @@ for(const lang of ['ko','en'])for(const pet of Object.keys(petCatalog))for(const
  for(const key of findNextFoods(pet,'',food.slug))assert.ok(html.includes(`href="/${lang}/${key}/"`),'Static discovery links must work without JS');
 }
 for(const file of ['index.html','en/index.html'])assert.ok((await read(file)).includes('data-saved-shelf'));
-const privacy=await read('policy/privacy/index.html');assert.ok(privacy.includes('localStorage'));assert.ok(privacy.includes('2026년 10월 26일'));
+const privacy=await read('policy/privacy/index.html');assert.ok(privacy.includes('localStorage'));assert.ok(privacy.includes('2026년 10월 31일'));
 const apple=await read('ko/dog/apple/index.html');assert.ok(apple.includes('food-questions'));assert.ok(apple.includes('씨와 심은 왜 따로 빼나요?'));
 const runtime=await read('food-discovery.js');assert.ok(!/fetch\(|sendBeacon|XMLHttpRequest/.test(runtime));
 console.log('Food discovery verified: 500 bilingual entry pages, species-specific search, explicit local saves, revisit, limit, corrupt/blocked storage, static links, apple questions and privacy.');

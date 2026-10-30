@@ -1,7 +1,7 @@
-import {getFoodRecord,foodStatus} from './food-page-content.js?v=10';
+import {getFoodRecord,foodStatus} from './food-page-content.js?v=12';
 import {petCatalog} from './food-page-catalog.js';
 import {savedFoodsKey,savedFoodsLimit,parseSavedFoods,changeSavedFoods,findNextFoods} from './food-discovery-model.js';
-import {foodDiscoveryCards,savedFoodsView} from './food-discovery-view.js';
+import {foodDiscoveryCards,savedFoodsView} from './food-discovery-view.js?v=2';
 const mounted=new WeakSet();
 let listening=false;
 const isEnglish=()=>document.documentElement.lang==='en';

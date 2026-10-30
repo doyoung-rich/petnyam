@@ -14,6 +14,7 @@ export function mountPetAge(root){
    root.querySelector('[data-age-foods]').innerHTML=ageFoodKeywordsView({species:species.value,size:size.value,years:Number(years.value),months:Number(months.value)},en);output.hidden=false;
   }catch{error.textContent=en?'Enter whole years from 0 to 30 and months from 0 to 11.':'나이는 0~30세, 개월은 0~11의 정수로 입력해 주세요.';}
  }
+ const requestedSpecies=new URLSearchParams(location.search).get('species');if(['dog','cat'].includes(requestedSpecies))species.value=requestedSpecies;
  form.addEventListener('input',inputChanged);form.addEventListener('change',inputChanged);form.addEventListener('submit',render);form.addEventListener('reset',()=>{setTimeout(()=>{inputChanged();render();},0);});inputChanged();render();
 }
 if(typeof document!=='undefined')for(const root of document.querySelectorAll('[data-pet-age]'))mountPetAge(root);

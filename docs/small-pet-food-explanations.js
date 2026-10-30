@@ -125,7 +125,7 @@ const parrotVegetables = {
 for (const [slug, [prepKo, prepEn, avoidKo, avoidEn, ref]] of Object.entries(parrotVegetables)) {
   const [koName, enName] = names[slug];
   smallPetFoodExplanations.parrot[slug] = make('caution', slug === 'lettuce' ? 'category' : 'direct', [ref, sources.merckBird], [
-    `${koName}은 종별 식단에 맞는 경우 채소 후보로 사용할 수 있습니다.`, '먹을 수 있다는 설명은 마음껏 주거나 이것 하나로 영양을 채우라는 뜻이 아닙니다. 로리·로리킷 등 특수 식단이 필요한 종은 별도 안내를 받으세요.', prepKo, avoidKo,
+    `${koName}${(koName.charCodeAt(koName.length-1)-0xAC00)%28 ? '은' : '는'} 종별 식단에 맞는 경우 채소 후보로 사용할 수 있습니다.`, '먹을 수 있다는 설명은 마음껏 주거나 이것 하나로 영양을 채우라는 뜻이 아닙니다. 로리·로리킷 등 특수 식단이 필요한 종은 별도 안내를 받으세요.', prepKo, avoidKo,
   ], [`${enName} can be a vegetable option within a suitable species-specific diet.`, 'An edible option is neither unlimited nor a complete diet. Lories, lorikeets and other specialized feeders need separate guidance.', prepEn, avoidEn]);
 }
 
