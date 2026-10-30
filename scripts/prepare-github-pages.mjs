@@ -9,6 +9,7 @@ for (const file of ["index.html", "CNAME", "robots.txt", ".nojekyll"]) {
   await access(join(docs, file));
 }
 
+await import("./sync-supplemental-food-search.mjs");
 await import("./generate-static-details.mjs");
 await import("./generate-discovery.mjs");
 await import("./update-priority-pages.mjs");

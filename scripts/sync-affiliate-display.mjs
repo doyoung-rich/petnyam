@@ -15,7 +15,7 @@ let updated=0;
 for(const file of await readdir(docs,{recursive:true})){
  if(!file.endsWith('.html'))continue;
  const path=new URL(file.replaceAll('\\','/'),docs),source=await readFile(path,'utf8');
- const html=source.replace(/convenience\.js\?v=\d+/g,'convenience.js?v=9');
+ const html=source.replace(/convenience\.js\?v=\d+/g,'convenience.js?v=10');
  if(source!==html){await writeFile(path,html);updated++;}
 }
 console.log(`Affiliate shopping ${active?'enabled':'paused for all visitors'}; refreshed ${updated} script references.`);

@@ -8,6 +8,12 @@ on:
       - scripts/update-priority-pages.mjs
       - scripts/update-feature-articles.mjs
       - docs/feature-articles.js
+      - docs/expanded-food-guides.js
+      - docs/expanded-food-guides.css
+      - docs/extra-food-index.js
+      - docs/meat-material-reference.js
+      - scripts/sync-supplemental-food-search.mjs
+      - scripts/verify-expanded-foods.mjs
       - docs/feed-material-articles.js
       - docs/feed-material-view.js
       - docs/feed-materials.js
@@ -98,6 +104,7 @@ jobs:
           node scripts/verify-titles.mjs
           node scripts/verify-food-discovery.mjs
           node scripts/verify-result-experience.mjs
+          node scripts/verify-expanded-foods.mjs
           node scripts/verify-rescue-home.mjs
           node scripts/verify-pet-age.mjs
           node scripts/verify-operator-story.mjs

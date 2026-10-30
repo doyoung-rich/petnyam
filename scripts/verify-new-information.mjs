@@ -12,5 +12,5 @@ for(const [path,a]of Object.entries(newInformationArticles)){
 for(const path of ['index.html','en/index.html']){const html=await readFile(new URL(path,docs),'utf8');assert.ok(html.includes('data-home-information'));for(const name of ['hong-apple','seol-apple'])assert.ok(html.includes('/images/owner/'+name+'.webp'));}
 const foods=await readFile(new URL('foods/index.html',docs),'utf8');assert.ok(foods.includes('/guides/can-dogs-eat-kiwi/'));assert.ok(foods.includes('/guides/can-dogs-eat-raspberries/'));
 const guide=await readFile(new URL('guides/index.html',docs),'utf8');assert.ok(guide.includes('id="guide-travel"'));
-for(const file of ['convenience.js']){const text=await readFile(new URL(file,docs),'utf8');assert.ok(text.includes("pet==='dog'"));assert.ok(text.includes('matchingSupplementalFoods(q)'));}
-console.log('New information verified: six bilingual pages, primary sources, alternates, working internal links, home photo cards, travel category and dog-only food-guide discovery.');
+for(const file of ['convenience.js']){const text=await readFile(new URL(file,docs),'utf8');assert.ok(text.includes('f.pets.includes(pet)'));assert.ok(text.includes('matchingSupplementalFoods(q)'));}
+console.log('New information verified: six bilingual pages, primary sources, alternates, working internal links, home photo cards, travel category and species-scoped food-guide discovery.');

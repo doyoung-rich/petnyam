@@ -32,7 +32,7 @@ for(const file of (await readdir(docs,{recursive:true})).filter(f=>f.endsWith('.
 const h1={},og={},twitter={};globalThis.location={pathname:'/en/'};
 globalThis.document={title:'Old title',querySelector:s=>({'#app h1':h1,'meta[property="og:title"]':og,'meta[name="twitter:title"]':twitter}[s])};
 try{applySiteTitle();assert.equal(document.title,titleWithBrand(siteTitles['/en/']));assert.equal(h1.textContent,siteTitles['/en/']);assert.equal(og.content,document.title);assert.equal(twitter.content,document.title);}finally{delete globalThis.document;delete globalThis.location;}
-assert.equal(foodCount,500);assert.equal(count,537);
+assert.equal(foodCount,500);assert.equal(count,545);
 const report=JSON.parse(await readFile(new URL('../reports/title-review.json',import.meta.url),'utf8'));
 assert.equal(report.pages,count);assert.equal(report.review.length,count);
 for(const page of report.review){assert.ok(page.before&&page.final&&page.keyword&&page.reason.length&&page.thumbnail.ratio==='1:1');assert.ok(page.bodyOpening.length>=1);}

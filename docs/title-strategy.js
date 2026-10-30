@@ -2,6 +2,14 @@
 // Hooks must be supported by the existing food explanation; uncertainty stays explicit.
 export const titleStrategyVersion='doyounglab-v1';
 export const siteTitles={
+ '/guides/dog-fruit-preparation/':'강아지 과일 먹어도 될까? 귤·멜론·베리 등 8종 손질법',
+ '/guides/dog-fruit-preparation-en/':'Can Dogs Eat These Fruits? Preparation for 8 More Fruits',
+ '/guides/pork-belly-for-pets/':'강아지·고양이 삼겹살 먹어도 될까? 지방·양념·생고기 구분',
+ '/guides/pork-belly-for-pets-en/':'Can Dogs and Cats Eat Pork Belly? Fat, Seasoning and Raw Meat',
+ '/guides/beef-cuts-for-pets/':'강아지·고양이 소고기, 안심·등심은 다를까? 부위별 확인',
+ '/guides/beef-cuts-for-pets-en/':'Beef for Dogs and Cats: Do Tenderloin, Ribeye and Ribs Differ?',
+ '/guides/ground-meat-for-pets/':'강아지·고양이 다짐육 먹어도 될까? 생고기·햄버거와 구분',
+ '/guides/ground-meat-for-pets-en/':'Can Dogs and Cats Eat Ground Meat? Cooking and Burger Ingredients',
  '/guides/feed-ingredients/':'반려동물 사료 원료, 어떤 성분이 있을까? 농사로 원료 검색',
  '/guides/feed-ingredients-en/':'Pet Food Ingredients: What Is in Them? Search Nongsaro Composition Data',
  '/guides/dog-friendly-places-korea/':'강아지와 가볼만한곳, 어디가 좋을까? 춘천·대전·의성 동반 규정 비교',

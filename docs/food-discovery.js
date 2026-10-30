@@ -1,7 +1,8 @@
-import {getFoodRecord,foodStatus} from './food-page-content.js?v=13';
+import {getFoodRecord,foodStatus} from './food-page-content.js?v=14';
 import {petCatalog} from './food-page-catalog.js';
 import {savedFoodsKey,savedFoodsLimit,parseSavedFoods,changeSavedFoods,findNextFoods} from './food-discovery-model.js';
 import {foodDiscoveryCards,savedFoodsView} from './food-discovery-view.js?v=2';
+import {findExtraFoods,extraFoodLinksView} from './extra-food-index.js?v=1';
 const mounted=new WeakSet();
 let listening=false;
 const isEnglish=()=>document.documentElement.lang==='en';
@@ -34,10 +35,10 @@ function bindDiscovery(root){
  const results=root.querySelector('[data-next-food-results]'),count=root.querySelector('[data-next-food-count]');
  function update(event){
   event?.preventDefault();
-  const keys=findNextFoods(pet.value,query.value,currentSlug);
-  results.innerHTML=foodDiscoveryCards(keys.map(getFoodRecord),en,foodStatus);
+  const keys=findNextFoods(pet.value,query.value,currentSlug),extras=findExtraFoods(pet.value,query.value);
+  results.innerHTML=foodDiscoveryCards(keys.map(getFoodRecord),en,foodStatus)+extraFoodLinksView(extras,en);
   const animal=petCatalog[pet.value]?.[en?'en':'ko']||'';
-  count.textContent=keys.length?(en?`${animal} · ${keys.length} foods. Open a result for preparation and cautions.`:`${animal} · ${keys.length}개 음식 · 눌러서 이유와 손질 조건을 확인하세요.`):(en?'No match. Try an ingredient such as apple, or browse all foods.':'일치하는 음식이 없습니다. 재료 이름으로 검색하거나 전체 목록을 확인하세요.');
+  const total=keys.length+extras.length;count.textContent=total?(en?`${animal} · ${total} results. Open a result for preparation and cautions.`:`${animal} · ${total}개 결과 · 눌러서 이유와 손질 조건을 확인하세요.`):(en?'No match. Try an ingredient such as apple, or browse all foods.':'일치하는 음식이 없습니다. 재료 이름으로 검색하거나 전체 목록을 확인하세요.');
  }
  form.hidden=false;form.addEventListener('submit',update);query.addEventListener('input',update);pet.addEventListener('change',update);
 }

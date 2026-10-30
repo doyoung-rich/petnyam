@@ -1,6 +1,6 @@
 import {priorityContent} from './priority-content.js';
-import {featureArticles} from './feature-articles.js?v=11';
-import {getFoodRecord,foodUpdated} from './food-page-content.js?v=13';
+import {featureArticles} from './feature-articles.js?v=12';
+import {getFoodRecord,foodUpdated} from './food-page-content.js?v=14';
 export function pageGraph(url,title,description,lang){
  const origin='https://petnyam.com', path=new URL(url).pathname;
  const match=path.match(/^\/(ko|en)\/([^/]+\/[^/]+)\/$/);

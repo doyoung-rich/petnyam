@@ -8,6 +8,7 @@ import {foodDiscoveryView,quickFoodSaveView} from './food-discovery-view.js?v=2'
 import {foodTitle,titleWithBrand} from './title-strategy.js?v=1';
 import {resultJourneyView,resultRescueView} from './result-journey.js';
 import {contentContinuationView} from './content-continuation.js?v=1';
+import {meatDetailLinks} from './extra-food-index.js?v=1';
 
 export const foodUpdated = '2026-10-07';
 const explanations = {...dogCatFoodExplanations, rabbit:rabbitFoodExplanations, ...smallPetFoodExplanations};
@@ -48,6 +49,7 @@ export function foodArticle(key,english=false) {
   + section('food-why',english?'Why this recommendation?':'왜 이렇게 안내하나요?',c.why)
   + section('food-preparation',english?'What to prepare or check':'준비·급여 전에 확인하세요',c.preparation)
   + section('food-avoid',english?'When not to offer it':'이 경우에는 주지 마세요',c.avoid)
+  + meatDetailLinks(r,english)
   + (pc?`<section class="info food-explanation"><h2>${english?'More detail for this food':'이 음식에 대해 더 알아보기'}</h2><p>${escape(pc[1])}</p><h3>${escape(pc[2])}</h3><p>${escape(pc[3])}</p><h3>${escape(pc[4])}</h3><p>${escape(pc[5])}</p></section>`:'')
   + (r.faq?.[lang]?.length?`<section class="info food-explanation food-questions" id="food-questions"><h2>${english?'Questions about this food':'많이 궁금해하는 질문'}</h2>${r.faq[lang].map(([question,answer])=>`<details><summary>${escape(question)}</summary><p>${escape(answer)}</p></details>`).join('')}</section>`:'')
   + `<section class="info food-explanation food-eaten" id="food-eaten"><h2>${english?'Already eaten? Start here':'이미 먹었다면 이렇게 확인하세요'}</h2><p>${english?'An “avoid” recommendation does not mean every accidental bite is poisoning. Ingredients, amount, time and the animal matter.':'‘주지 마세요’가 모든 한 입의 중독을 뜻하지는 않습니다. 성분·먹은 양·시각·동물 상태를 함께 확인해야 합니다.'}</p><ol><li>${english?'Stop further access and keep the food or packaging.':'더 먹지 않도록 치우고 음식이나 포장지를 보관하세요.'}</li><li>${english?'Record the species, product, estimated amount and time; say when an amount is unknown.':'동물종·제품명·추정량·먹은 시각을 기록하세요. 모르는 양은 모른다고 적으세요.'}</li><li>${emergency}</li></ol><p>${r.petKey==='rabbit'?(english?'Do not give human medicines or attempt home treatment.':'사람 약을 먹이거나 집에서 임의로 치료하지 마세요.'):(english?'Do not induce vomiting or give human medicines on your own.':'임의로 구토를 유도하거나 사람 약을 먹이지 마세요.')}</p><a href="/guides/food-emergency/">${english?'What to tell the vet (Korean)':'병원에 전달할 기록 보기'} →</a></section>`

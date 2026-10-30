@@ -26,7 +26,7 @@ for(const file of await readdir(docs,{recursive:true})){
  if(!file.endsWith('.html'))continue;
  const html=await readFile(new URL(file.replaceAll('\\','/'),docs),'utf8');
  assert.ok(!/href=["'][^"']*(?:link\.coupang|link\.amazon|amazon\.com\/dp)/i.test(html));
- if(html.includes('convenience.js')){assert.ok(html.includes('convenience.js?v=9'));pages++;}
+ if(html.includes('convenience.js')){assert.ok(html.includes('convenience.js?v=10'));pages++;}
 }
 const home=await readFile(new URL('index.html',docs),'utf8');
 assert.ok(home.includes('index,follow'));assert.ok(!home.includes('noindex'));

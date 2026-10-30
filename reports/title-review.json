@@ -1,6 +1,6 @@
 {
   "strategy": "doyounglab-v1",
-  "pages": 537,
+  "pages": 545,
   "review": [
     {
       "path": "/404.html",
@@ -13081,17 +13081,17 @@
       "proof": "danger"
     },
     {
-      "path": "/foods/",
+      "path": "/guides/",
       "language": "ko",
-      "keyword": "반려동물 음식 목록",
+      "keyword": "반려동물 음식 가이드",
       "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "강아지·고양이·토끼·햄스터·앵무새 음식 목록 | 펫냠",
-      "final": "반려동물 음식 목록, 무엇을 확인할까? 동물별 판정 찾기",
+      "final": "반려동물 음식 가이드, 어떻게 확인할까? 급여·성분·섭취 후 대처",
       "changed": true,
       "candidates": [
         {
           "type": "종합 추천형",
-          "title": "반려동물 음식 목록, 무엇을 확인할까? 동물별 판정 찾기"
+          "title": "반려동물 음식 가이드, 어떻게 확인할까? 급여·성분·섭취 후 대처"
         },
         {
           "type": "숫자형",
@@ -13116,7 +13116,7 @@
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "반려동물 음식 목록"
+        "text": "반려동물 음식 가이드"
       },
       "proof": "page-content"
     },
@@ -13197,6 +13197,86 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "반려동물 음식 정보"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/beef-cuts-for-pets-en/",
+      "language": "en",
+      "keyword": "Beef for Dogs and Cats",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Beef for Dogs and Cats: Do Tenderloin, Ribeye and Ribs Differ? | PetNyam",
+      "final": "Beef for Dogs and Cats: Do Tenderloin, Ribeye and Ribs Differ?",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Beef for Dogs and Cats: Do Tenderloin, Ribeye and Ribs Differ?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "“Beef” is not a complete description. Tenderloin, ribeye, brisket and ribs differ in the part sold, visible fat, bones and preparation. This is a checklist for dogs and cats, not a ranking of universally safe cuts.",
+        "These Nongsaro entries all say raw, but grade and naming differ. The tenderloin entry explicitly says Korean beef grade 1++; several others do not specify that same grade. They must not be treated as a controlled trial or an identical retail comparison.",
+        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-10-30T19:32:36.147Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Beef for Dogs and Cats"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/beef-cuts-for-pets/",
+      "language": "ko",
+      "keyword": "강아지·고양이 소고기",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지·고양이 소고기, 안심·등심은 다를까? 부위별 확인 | PetNyam",
+      "final": "강아지·고양이 소고기, 안심·등심은 다를까? 부위별 확인",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지·고양이 소고기, 안심·등심은 다를까? 부위별 확인"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "‘소고기’라는 이름만으로는 부족합니다. 안심·등심·양지·갈비는 판매되는 부위, 보이는 지방, 뼈와 조리 방식까지 확인해야 합니다. 다음 내용은 강아지·고양이에게 확인할 항목이며 ‘무조건 안전한 부위 순위’가 아닙니다.",
+        "아래 농사로 기록은 모두 생것이지만 등급과 표기가 동일하다고 볼 수 없습니다. 안심 기록은 한우 1++등급으로 명시되어 있고, 다른 일부 기록은 같은 등급 조건이 표시되어 있지 않습니다. 동일 조건의 실험이나 매장에서 구입하는 모든 고기의 비교표로 해석하지 마세요.",
+        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-10-30T19:32:36.147Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지·고양이 소고기"
       },
       "proof": "page-content"
     },
@@ -13641,6 +13721,86 @@
       "proof": "page-content"
     },
     {
+      "path": "/guides/dog-fruit-preparation-en/",
+      "language": "en",
+      "keyword": "Can Dogs Eat These Fruits",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Can Dogs Eat These Fruits? Preparation for 8 More Fruits | PetNyam",
+      "final": "Can Dogs Eat These Fruits? Preparation for 8 More Fruits",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Can Dogs Eat These Fruits? Preparation for 8 More Fruits"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "Eight additional fruits can be considered only with preparation and individual-diet checks. This page concerns dogs; it does not establish feeding advice for cats, rabbits, hamsters or parrots. The fruit name alone is not enough to decide what to share.",
+        "Offer only a small amount of peeled, seed-free flesh. PetMD explicitly includes mandarins and tangerines in its citrus guidance.",
+        "A whole unpeeled fruit or juice is a different product. Sugar matters for a dog with diabetes or weight concerns; ask the veterinarian managing that diet."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Can Dogs Eat These Fruits"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/dog-fruit-preparation/",
+      "language": "ko",
+      "keyword": "강아지 과일 먹어도 될까",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지 과일 먹어도 될까? 귤·멜론·베리 등 8종 손질법 | PetNyam",
+      "final": "강아지 과일 먹어도 될까? 귤·멜론·베리 등 8종 손질법",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지 과일 먹어도 될까? 귤·멜론·베리 등 8종 손질법"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "기존 사과·바나나 안내에서 더 나아가 과일 8종의 손질과 제품 차이를 정리했습니다. 이 글은 강아지 자료를 확인한 안내이며 고양이·토끼·햄스터·앵무새에게 같은 판정으로 적용하지 않습니다. ‘먹을 수 있다’는 말은 많이 주거나 주식을 대신해도 된다는 뜻이 아닙니다.",
+        "껍질과 씨를 제거한 과육만, 작은 간식으로 생각하세요. 귤·만다린을 다루는 PetMD 안내를 참고했습니다.",
+        "껍질째 주거나 주스로 바꾸면 같은 조건이 아닙니다. 당이 있는 과일이므로 당뇨·체중 관리 중이라면 기존 식단 담당 수의사에게 확인하세요."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지 과일 먹어도 될까"
+      },
+      "proof": "page-content"
+    },
+    {
       "path": "/guides/feed-ingredients-en/",
       "language": "en",
       "keyword": "Pet Food Ingredients",
@@ -13797,6 +13957,86 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "사료·간식 포장지"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/ground-meat-for-pets-en/",
+      "language": "en",
+      "keyword": "Can Dogs and Cats Eat Ground Meat",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Can Dogs and Cats Eat Ground Meat? Cooking and Burger Ingredients | PetNyam",
+      "final": "Can Dogs and Cats Eat Ground Meat? Cooking and Burger Ingredients",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Can Dogs and Cats Eat Ground Meat? Cooking and Burger Ingredients"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "Plain minced meat and a ready-made burger patty are different foods. For dogs and cats, check the animal ingredients, fat content and cooking state before considering any dietary use. “Ground beef” does not mean “complete pet food.”",
+        "FoodSafety.gov distinguishes intact beef or pork steaks, roasts and chops from ground meat. Its human-food handling chart lists 63°C with a three-minute rest for those intact cuts, and 71°C for ground beef or pork. Use a food thermometer rather than judging only by exterior color.",
+        "These are food-safety cooking thresholds, not a pet-food recipe, serving amount or guarantee that every ingredient is suitable. They do not make a seasoned burger appropriate for a pet."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Can Dogs and Cats Eat Ground Meat"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/ground-meat-for-pets/",
+      "language": "ko",
+      "keyword": "강아지·고양이 다짐육 먹어도 될까",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지·고양이 다짐육 먹어도 될까? 생고기·햄버거와 구분 | PetNyam",
+      "final": "강아지·고양이 다짐육 먹어도 될까? 생고기·햄버거와 구분",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지·고양이 다짐육 먹어도 될까? 생고기·햄버거와 구분"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "무양념 다짐육과 완성된 햄버거 패티는 다른 식품입니다. 강아지·고양이에게 주기 전 고기 원료·지방 비율·조리 상태를 확인해야 합니다. ‘다진 소고기’라는 이름만으로 균형 잡힌 반려동물 식품이 되는 것은 아닙니다.",
+        "FoodSafety.gov는 소·돼지의 스테이크·로스트·찹 같은 통고기와 다짐육을 구분합니다. 사람 음식 취급 기준표는 해당 통고기에 중심온도 63°C와 3분 휴지, 소·돼지 다짐육에 71°C를 제시합니다. 겉의 색만 보지 말고 식품 온도계를 사용해 확인하는 기준입니다.",
+        "이 숫자는 식품 위생의 가열 기준이지 반려동물 식단 처방·급여량·모든 재료의 안전 보증이 아닙니다. 온도를 맞췄다고 양념이 든 햄버거가 적합한 간식이 되는 것도 아닙니다."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지·고양이 다짐육 먹어도 될까"
       },
       "proof": "page-content"
     },
@@ -14077,6 +14317,86 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "반려동물 간식 비용 계산기"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/pork-belly-for-pets-en/",
+      "language": "en",
+      "keyword": "Can Dogs and Cats Eat Pork Belly",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Can Dogs and Cats Eat Pork Belly? Fat, Seasoning and Raw Meat | PetNyam",
+      "final": "Can Dogs and Cats Eat Pork Belly? Fat, Seasoning and Raw Meat",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Can Dogs and Cats Eat Pork Belly? Fat, Seasoning and Raw Meat"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "Plain cooked pork and a piece of fatty pork belly from a shared dinner are different questions. For dogs, the cited pork guidance favors lean, fully cooked, unseasoned, boneless meat. That does not make pork belly a routine treat or establish a safe portion for every dog or cat.",
+        "Check the visible fat, the exact cut and the preparation. The Nongsaro records below illustrate how much the composition can differ. They are not feeding recommendations.",
+        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-10-30T19:32:36.147Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Can Dogs and Cats Eat Pork Belly"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/pork-belly-for-pets/",
+      "language": "ko",
+      "keyword": "강아지·고양이 삼겹살 먹어도 될까",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지·고양이 삼겹살 먹어도 될까? 지방·양념·생고기 구분 | PetNyam",
+      "final": "강아지·고양이 삼겹살 먹어도 될까? 지방·양념·생고기 구분",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지·고양이 삼겹살 먹어도 될까? 지방·양념·생고기 구분"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "‘돼지고기를 먹을 수 있다’와 ‘식탁의 삼겹살을 나눠 줘도 된다’는 다른 질문입니다. 강아지 돼지고기 자료는 충분히 익힌 무양념·뼈 없는 살코기와 과한 지방 제거를 조건으로 설명합니다. 그 안내만으로 삼겹살을 일상 간식으로 추천하거나 강아지·고양이 모두의 안전량을 정할 수는 없습니다.",
+        "눈에 보이는 지방, 정확한 부위, 가공 상태를 확인하세요. 농사로의 다음 원료 기록은 이름과 조리 상태에 따라 지방 비율이 다름을 보여 줍니다. 급여 권장표는 아닙니다.",
+        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-10-30T19:32:36.147Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지·고양이 삼겹살 먹어도 될까"
       },
       "proof": "page-content"
     },
