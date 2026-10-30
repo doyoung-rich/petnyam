@@ -2,6 +2,8 @@
 // Hooks must be supported by the existing food explanation; uncertainty stays explicit.
 export const titleStrategyVersion='doyounglab-v1';
 export const siteTitles={
+ '/guides/feed-ingredients/':'반려동물 사료 원료, 어떤 성분이 있을까? 농사로 원료 검색',
+ '/guides/feed-ingredients-en/':'Pet Food Ingredients: What Is in Them? Search Nongsaro Composition Data',
  '/guides/dog-friendly-places-korea/':'강아지와 가볼만한곳, 어디가 좋을까? 춘천·대전·의성 동반 규정 비교',
  '/guides/dog-friendly-places-korea-en/':'Dog-Friendly Places in Korea: Compare Chuncheon, Daejeon and Uiseong',
  '/guides/can-dogs-eat-kiwi/':'강아지 키위 먹어도 될까? 껍질·통째 급여와 작은 조각의 차이',

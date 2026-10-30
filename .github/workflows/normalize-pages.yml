@@ -8,6 +8,11 @@ on:
       - scripts/update-priority-pages.mjs
       - scripts/update-feature-articles.mjs
       - docs/feature-articles.js
+      - docs/feed-material-articles.js
+      - docs/feed-material-view.js
+      - docs/feed-materials.js
+      - docs/feed-materials.css
+      - scripts/verify-feed-materials.mjs
       - docs/keyword-articles.js
       - docs/about-petnyam.js
       - docs/operator-story.js
@@ -91,6 +96,7 @@ jobs:
           node scripts/verify-operator-story.mjs
           node scripts/verify-visitor-flow.mjs
           node scripts/verify-new-information.mjs
+          node scripts/verify-feed-materials.mjs
           node scripts/sync-affiliate-display.mjs
       - name: Commit generated pages
         run: |

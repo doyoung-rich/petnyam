@@ -1,3 +1,4 @@
+import {feedMaterialArticles} from './feed-material-articles.js';
 import { keywordArticles } from './keyword-articles.js?v=9';
 import { cotonArticles } from './coton-articles.js';
 import { cotonIntroduction } from './coton-introduction.js';
@@ -6,6 +7,7 @@ import {petAgeArticles} from './pet-age-articles.js';
 import {newInformationArticles} from './new-information-articles.js';
 import {siteTitles} from './title-strategy.js?v=1';
 export const featureArticles = {
+ ...feedMaterialArticles,
  ...newInformationArticles,
  ...petAgeArticles,
  ...aboutPetnyam,
