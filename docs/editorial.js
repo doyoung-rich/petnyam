@@ -1,10 +1,10 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
 import {normalizeVisibleAddresses} from './addresses.js?v=2';
-import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=12';
-import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=12';
-import {mountFoodDiscovery} from './food-discovery.js?v=2';
-import {mountRescueHome} from './rescue-home.js?v=2';
-import {mountHomeInformation} from './home-information.js?v=1';
+import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=13';
+import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=13';
+import {mountFoodDiscovery} from './food-discovery.js?v=3';
+import {mountRescueHome} from './rescue-home.js?v=3';
+import {mountHomeInformation} from './home-information.js?v=2';
 import {mountResultExperience} from './result-interactions.js?v=1';
 import {applySiteTitle} from './title-strategy.js?v=1';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';

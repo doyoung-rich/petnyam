@@ -53,6 +53,7 @@ on:
       - docs/priority-content.js
       - docs/food-page-content.js
       - docs/result-journey.js
+      - docs/content-continuation.js
       - docs/result-interactions.js
       - docs/result-experience.css
       - docs/food-discovery-view.js

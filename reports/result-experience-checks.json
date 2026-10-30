@@ -6,10 +6,10 @@
   "tracking": "Local DOM events only; no analytics transmission added",
   "parrotExampleBytes": {
     "before": 12391,
-    "after": 15970
+    "after": 18050
   },
-  "averageFoodPageBytes": 16675,
-  "maximumFoodPageBytes": 22380,
+  "averageFoodPageBytes": 18653,
+  "maximumFoodPageBytes": 24451,
   "newRuntimeBytes": 4565,
   "notes": "Byte measurements are not a Core Web Vitals or real-user latency measurement. Existing AdSense remains unchanged."
 }
