@@ -1,5 +1,5 @@
 import {sameSpeciesNotices} from './result-journey.js';
-import {rescueCards} from './rescue-home.js?v=3';
+import {rescueCards} from './rescue-home.js?v=4';
 import {isFoodKey} from './food-discovery-model.js';
 const events=new Set(['result_view','related_food','ingredient_search','age_calculator','rescue_notice','registration_info','related_content']);
 export function resultEventDetail(event,key,language){if(!events.has(event)||!isFoodKey(key)||!['ko','en'].includes(language))return null;const [species,food]=key.split('/');return {event,species,food,language};}

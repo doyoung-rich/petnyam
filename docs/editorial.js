@@ -1,11 +1,11 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
 import {normalizeVisibleAddresses} from './addresses.js?v=2';
-import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=15';
+import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=16';
 import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=14';
 import {mountFoodDiscovery} from './food-discovery.js?v=4';
-import {mountRescueHome} from './rescue-home.js?v=3';
+import {mountRescueHome} from './rescue-home.js?v=4';
 import {mountHomeInformation} from './home-information.js?v=4';
-import {mountResultExperience} from './result-interactions.js?v=1';
+import {mountResultExperience} from './result-interactions.js?v=2';
 import {applySiteTitle} from './title-strategy.js?v=1';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';

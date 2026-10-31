@@ -11,5 +11,5 @@ assert.ok(safePhoto('https://www.animal.go.kr/a'));
 for(const en of [false,true]){const panel=rescuePanel(en);assert.ok(panel.includes('data-rescue-next'));assert.ok(panel.includes('data-rescue-region'));assert.ok(panel.includes('publicList.do'));assert.ok(registrationBanner(en).includes('recordAgencyList.do'));}
 // Provider failure cannot replace a last successful public snapshot.
 await assert.rejects(syncRescueAnimals({ANIMAL_GO_KR_API_KEY:'test'},async()=>({ok:false})),/HTTP/);
-for(const path of ['docs/index.html','docs/en/index.html']){const html=await readFile(new URL('../'+path,import.meta.url),'utf8');assert.ok(html.includes('data-rescue-panel'));assert.ok(html.includes('data-registration-banner'));assert.ok(html.includes('editorial.js?v=17'));}
+for(const path of ['docs/index.html','docs/en/index.html']){const html=await readFile(new URL('../'+path,import.meta.url),'utf8');assert.ok(html.includes('data-rescue-panel'));assert.ok(html.includes('data-registration-banner'));assert.ok(html.includes('editorial.js?v=19'));}
 console.log('Rescue homepage: safe public fields, image hosts, escaped cards, bilingual controls, registration destination and failure retention verified.');

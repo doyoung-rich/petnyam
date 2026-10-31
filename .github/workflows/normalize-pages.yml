@@ -41,6 +41,10 @@ on:
       - docs/coton-introduction.js
       - scripts/enhance-search.mjs
       - scripts/verify-search.mjs
+      - docs/site-signals.js
+      - docs/logo.svg
+      - scripts/update-site-signals.mjs
+      - scripts/verify-site-signals.mjs
       - docs/search-metadata.js
       - docs/editorial.js
       - docs/rescue-home.js
@@ -101,6 +105,7 @@ jobs:
           node scripts/verify-github-pages.mjs
           node scripts/verify-addresses.mjs
           node scripts/verify-search.mjs
+          node scripts/verify-site-signals.mjs
           node scripts/verify-food-pages.mjs
           node scripts/verify-content-value.mjs
           node scripts/verify-titles.mjs
