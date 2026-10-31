@@ -1,14 +1,14 @@
 {
-  "checkedFoodPages": 500,
+  "checkedFoodPages": 434,
   "statusesAndSourceTextPreserved": true,
   "uniqueIdsAndRealDestinations": true,
   "cachedSnapshotRequests": true,
   "tracking": "Local DOM events only; no analytics transmission added",
   "parrotExampleBytes": {
     "before": 12391,
-    "after": 18544
+    "after": 18580
   },
-  "averageFoodPageBytes": 19193,
+  "averageFoodPageBytes": 19386,
   "maximumFoodPageBytes": 24979,
   "newRuntimeBytes": 4565,
   "notes": "Byte measurements are not a Core Web Vitals or real-user latency measurement. Existing AdSense remains unchanged."

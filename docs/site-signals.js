@@ -1,4 +1,4 @@
-import {featureArticles} from './feature-articles.js?v=13';
+import {featureArticles} from './feature-articles.js?v=14';
 export const siteIdentity={
  name:'PetNyam',alternateName:['펫냠','PetNyam 펫냠','petnyam.com'],
  logo:{'@type':'ImageObject',url:'https://petnyam.com/logo.svg',width:256,height:256}

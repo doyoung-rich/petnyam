@@ -2,6 +2,10 @@
 // Hooks must be supported by the existing food explanation; uncertainty stays explicit.
 export const titleStrategyVersion='doyounglab-v1';
 export const siteTitles={
+ '/guides/hamster-food-evidence/':"햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
+ '/guides/hamster-food-evidence-en/':"Hamster Foods: Conflicting Answers? Check the Species and Source",
+ '/guides/parrot-food-evidence/':"앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
+ '/guides/parrot-food-evidence-en/':"Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
  '/guides/halloween-pet-safety/':'강아지 핼러윈 초콜릿 먹어도 될까? 사탕·코스튬까지 조심해야 하는 이유',
  '/guides/halloween-pet-safety-en/':'Can Dogs Eat Halloween Candy? Chocolate, Xylitol and Costume Safety Explained',
  '/guides/dog-fruit-preparation/':'강아지 과일 먹어도 될까? 귤·멜론·베리 등 8종 손질법',

@@ -6,6 +6,7 @@ const docs=new URL('../docs/',import.meta.url),origin='https://petnyam.com';
 const pages=new Map();
 for(const f of (await readdir(docs,{recursive:true})).filter(f=>f.endsWith('.html')&&f!=='404.html')){
  const h=await readFile(new URL(f.replaceAll('\\','/'),docs),'utf8');
+ if(h.includes('name="petnyam-consolidated-from"'))continue;
  const url=h.match(/rel="canonical" href="([^"]+)"/)?.[1];if(url)pages.set(url,h);
 }
 let paired=0,images=0;

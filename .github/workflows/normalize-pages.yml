@@ -9,6 +9,11 @@ on:
       - scripts/update-feature-articles.mjs
       - docs/halloween-articles.js
       - docs/halloween-articles.css
+      - docs/content-consolidation.js
+      - docs/food-evidence-guides.js
+      - docs/food-evidence-guides.css
+      - scripts/apply-content-consolidation.mjs
+      - scripts/verify-content-consolidation.mjs
       - docs/feature-articles.js
       - docs/expanded-food-guides.js
       - docs/expanded-food-guides.css
@@ -105,6 +110,7 @@ jobs:
           node scripts/verify-github-pages.mjs
           node scripts/verify-addresses.mjs
           node scripts/verify-search.mjs
+          node scripts/verify-content-consolidation.mjs
           node scripts/verify-site-signals.mjs
           node scripts/verify-food-pages.mjs
           node scripts/verify-content-value.mjs

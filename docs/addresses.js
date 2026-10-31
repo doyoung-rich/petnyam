@@ -1,3 +1,4 @@
+import {resolveConsolidatedHref} from './content-consolidation.js?v=1';
 export function finalAddress(value,base='https://petnyam.com/'){
  if(!value||value.startsWith('#')||value.includes('${'))return value;
  let u;try{u=new URL(value,base);}catch{return value;}
@@ -6,7 +7,7 @@ export function finalAddress(value,base='https://petnyam.com/'){
  return /^https?:/.test(value)?u.href:u.pathname+u.search+u.hash;
 }
 export function normalizeVisibleAddresses(){
- for(const a of document.querySelectorAll('a[href]')){const old=a.getAttribute('href');const next=finalAddress(old,location.href);if(old!==next)a.setAttribute('href',next);}
+ for(const a of document.querySelectorAll('a[href]')){const old=a.getAttribute('href');const next=resolveConsolidatedHref(finalAddress(old,location.href));if(old!==next)a.setAttribute('href',next);}
  const path=location.pathname;
  const isPage=path==='/'||/^\/(?:en|foods|(?:ko|en)\/[^/]+\/[^/]+|guides(?:\/[^/]+)?|policy\/[^/]+)\/?$/.test(path);
  const canonical=document.querySelector('link[rel="canonical"]');

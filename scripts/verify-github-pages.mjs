@@ -39,12 +39,12 @@ for (const [file, expected] of required) {
 
 const sitemap = await readFile(join(docs, "sitemap.xml"), "utf8");
 const count = (sitemap.match(/<loc>/g) ?? []).length;
-if (count !== 546) throw new Error(`Expected 546 sitemap URLs, found ${count}`);
+if (count !== 484) throw new Error(`Expected 484 sitemap URLs, found ${count}`);
 const icon = await readFile(join(docs, "favicon.ico"));
 if (icon.readUInt16LE(2) !== 1 || icon.readUInt16LE(4) !== 1) throw new Error("Invalid ICO header.");
 const directory = await readFile(join(docs, "foods/index.html"), "utf8");
 const foodLinks = [...directory.matchAll(/href="(\/ko\/[^\"]+)"/g)];
-if (foodLinks.length !== 250) throw new Error("Expected 250 food directory links.");
+if (foodLinks.length !== 217) throw new Error("Expected 217 detailed food directory links; 33 remaining questions lead to consolidated guides.");
 for (const [, route] of foodLinks) await stat(join(docs, route.slice(1), "index.html"));
 if (/\/(강아지|safe|Food search)</.test(sitemap)) throw new Error("Sitemap contains a non-route value.");
 console.log(`GitHub Pages deployment files verified: ${count} sitemap URLs.`);

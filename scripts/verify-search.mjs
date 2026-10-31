@@ -3,6 +3,7 @@ import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {priorityContent} from '../docs/priority-content.js';
 import {getFoodRecord} from '../docs/food-page-content.js';
+import {consolidatedFoodHref} from '../docs/content-consolidation.js';
 const docs=resolve(dirname(fileURLToPath(import.meta.url)),'../docs');let count=0,limited=0;
 for(const relative of readdirSync(docs,{recursive:true})){
  if(!relative.endsWith('.html')||relative==='404.html')continue;
@@ -20,7 +21,8 @@ for(const relative of readdirSync(docs,{recursive:true})){
  count++;
 }
 for(const [key,r] of Object.entries(priorityContent))for(const lang of ['ko','en']){
- const html=readFileSync(resolve(docs,lang,key,'index.html'),'utf8');
+ const target=consolidatedFoodHref(key,lang==='en');
+ const html=readFileSync(target?resolve(docs,'.'+target.split('#')[0],'index.html'):resolve(docs,lang,key,'index.html'),'utf8');
  if(!html.includes(r[lang][1])||!r.sources.every(([,url])=>html.includes(url)))throw Error(`Missing source or answer: ${lang}/${key}`);
 }
 console.log(JSON.stringify({checkedPages:count,detailedBilingualTopics:Object.keys(priorityContent).length,pagesStillNeedingSpecificEvidence:limited,note:'Technical checks passed; this is not a ranking or AI-citation score.'}));

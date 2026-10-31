@@ -1,8 +1,9 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
-import {normalizeVisibleAddresses} from './addresses.js?v=2';
-import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=16';
-import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=14';
-import {mountFoodDiscovery} from './food-discovery.js?v=4';
+import {consolidatedFoodHref} from './content-consolidation.js?v=1';
+import {normalizeVisibleAddresses} from './addresses.js?v=3';
+import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=17';
+import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=15';
+import {mountFoodDiscovery} from './food-discovery.js?v=5';
 import {mountRescueHome} from './rescue-home.js?v=4';
 import {mountHomeInformation} from './home-information.js?v=4';
 import {mountResultExperience} from './result-interactions.js?v=2';
@@ -45,6 +46,8 @@ if(typeof document!=='undefined'){
  window.petnyamFoodStatus=(pet,slug)=>getFoodRecord(pet+'/'+slug)?.status;
  window.petnyamFoodLabel=(status,english=false)=>foodStatus[status]?.[english?'shortEn':'shortKo'];
  function enrich(){
+  const legacy=location.pathname.match(/^\/(ko|en)\/([^/]+\/[^/]+)\/?$/),moved=legacy&&consolidatedFoodHref(legacy[2],legacy[1]==='en');
+  if(moved){location.replace(moved);return;}
   normalizeVisibleAddresses();
   const app=document.querySelector('#app');if(!app)return;
   const hero=app.querySelector('.hero .copy');
@@ -72,4 +75,7 @@ if(typeof document!=='undefined'){
  function updateSearch(){enrich();mountHomeInformation();const app=document.querySelector('#app');if(app?.querySelector('.hero')&&!app.querySelector('[data-search-overview]'))app.insertAdjacentHTML('beforeend',evidenceOverview(document.documentElement.lang==='en'));const article=app?.querySelector('article');if(article&&(article.textContent.includes('상세 근거 설명이 아직 충분하지')||article.textContent.includes('has not yet been established'))){const checked=app.querySelector('.verdict span');if(checked)checked.textContent=document.documentElement.lang==='en'?'Legacy classification; detailed evidence incomplete. Not verified feeding advice.':'기존 데이터 분류 · 상세 근거 보강 필요 · 안전 보증 아님';}syncSearchMetadata();}
  new MutationObserver(updateSearch).observe(document.querySelector('#app'),{childList:true});updateSearch();
  document.dispatchEvent(new Event('petnyam:food-ready'));
+ // The bottom search dock lives outside #app, so normalize its newly-created
+ // links after input handlers too. This only changes local navigation links.
+ for(const event of ['input','change'])document.addEventListener(event,()=>queueMicrotask(normalizeVisibleAddresses));
 }

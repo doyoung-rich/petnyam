@@ -30,6 +30,7 @@ try{
 let count=0,totalBytes=0,priorBytes=0,maxBytes=0;
 for(const pet of Object.keys(petCatalog))for(const food of foodCatalog)for(const lang of ['ko','en']){
  const key=pet+'/'+food.slug,r=getFoodRecord(key),en=lang==='en',file=lang+'/'+key+'/index.html',html=await readFile(new URL(file,docs),'utf8');
+ if(html.includes('name="petnyam-consolidated-from"'))continue;
  assert.equal((html.match(/<h1>/g)||[]).length,1);assert.equal((html.match(/id="next-food"/g)||[]).length,1);assert.ok(html.includes('data-result-page'));assert.ok(html.includes(`data-verdict="${r.status}"`));assert.ok(html.includes(esc(r[lang].answer)));assert.ok(html.includes(foodStatus[r.status][lang]));
  for(const field of ['why','preparation','avoid'])assert.ok(html.includes(esc(r[lang][field])),key+' retains '+field);
  for(const ref of r.sources)assert.ok(html.includes(ref.url));
@@ -41,7 +42,7 @@ for(const pet of Object.keys(petCatalog))for(const food of foodCatalog)for(const
  assert.equal(html.includes('data-result-rescue data-rescue-species'),['dog','cat'].includes(pet));
  const suggestions=resultSuggestions(pet,en);assert.ok(suggestions.length<=3);
  if(!['dog','cat'].includes(pet))assert.ok(!suggestions.some(c=>/age-calculator|feed-ingredients/.test(c.href)));
- const continuation=continuationLinks(en,pet);assert.equal(continuation.length,4);assert.ok(html.indexOf('data-content-continuation')<html.indexOf('class="result-overview"'));if(r.status==='danger')assert.ok(html.indexOf('class="result-urgent"')<html.indexOf('data-content-continuation'));
+ const continuation=continuationLinks(en,pet);assert.equal(continuation.length,4);assert.ok(html.indexOf('id="food-sources"')<html.indexOf('data-content-continuation')&&html.indexOf('data-content-continuation')<html.indexOf('id="next-food"'));if(r.status==='danger')assert.ok(html.indexOf('class="result-urgent"')<html.indexOf('data-content-continuation'));
  for(const link of continuation)assert.ok(html.includes(esc(link.href)));
  if(['dog','cat'].includes(pet))assert.ok(continuation.some(c=>c.kind==='age'&&c.href.endsWith('?species='+pet)));
  for(const c of suggestions){const path=c.href.split(/[?#]/)[0];await access(new URL('.'+path+'index.html',docs));}

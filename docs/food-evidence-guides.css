@@ -1,0 +1,3 @@
+.evidence-food-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0!important;list-style:none}.evidence-food-list>li{padding:12px;border:1px solid #dce6eb;border-radius:8px;background:#f7fafc;scroll-margin-top:110px}.evidence-food-list>li:has(p){grid-column:1/-1}.evidence-food-list>li:target{outline:3px solid #377fb3;outline-offset:2px}@media(max-width:600px){.evidence-food-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+@media(max-width:600px){.policy.guide h1{font-size:1.7rem;line-height:1.4}.policy.guide h2{font-size:1.3rem;line-height:1.5}}
