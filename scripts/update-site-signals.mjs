@@ -8,11 +8,11 @@ for(const file of (await readdir(docs,{recursive:true})).filter(f=>f.endsWith('.
  if(file==='404.html')continue;
  const canonical=html.match(/rel="canonical" href="([^"]+)"/)?.[1];if(!canonical)continue;
  const path=new URL(canonical).pathname,english=html.includes('<html lang="en"'),pair=languagePair(path);
- html=html.replace(/<meta\b[^>]*property="og:(?:site_name|locale(?::alternate)?)"[^>]*>/g,'');
+ html=html.replace(/<meta\b[^>]*property="og:(?:site_name|locale(?::alternate)?)"[^>]*>/g,'')
+  .replace(/<link\b[^>]*hreflang="[^"]*"[^>]*>/g,'');
  let tags=`<meta property="og:site_name" content="PetNyam 펫냠"><meta property="og:locale" content="${english?'en_US':'ko_KR'}">`;
  if(pair){
   for(const route of Object.values(pair))await access(new URL('.'+route+'index.html',docs));
-  html=html.replace(/<link\b[^>]*hreflang="[^"]*"[^>]*>/g,'');
   tags+=Object.entries({...pair,'x-default':pair.ko}).map(([language,route])=>`<link rel="alternate" hreflang="${language}" href="${origin}${route}">`).join('');
   tags+=`<meta property="og:locale:alternate" content="${english?'ko_KR':'en_US'}">`;
  }

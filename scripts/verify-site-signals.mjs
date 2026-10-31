@@ -30,6 +30,7 @@ for(const [url,h]of pages){
 }
 for(const url of [origin+'/',origin+'/en/']){const h=pages.get(url);for(const [lang,path]of [['ko','/'],['en','/en/'],['x-default','/']])assert.ok(h.includes(`hreflang="${lang}" href="${origin}${path}"`));}
 const rendered=rescueCards([{photo:'https://www.animal.go.kr/photo.jpg',kind:'Dog'}]);assert.ok(rendered.includes('width="240" height="190"'));
+for(const route of ['/policy/terms/','/guides/'])assert.ok(!pages.get(origin+route).includes('hreflang='),'Do not inherit homepage translations into '+route);
 for(const lang of ['ko','en']){
  const file=lang==='en'?'rss-en.xml':'rss.xml',rss=await readFile(new URL(file,docs),'utf8');
  assert.ok(rss.startsWith('<?xml version="1.0" encoding="UTF-8"?>'));assert.ok(rss.includes(`<language>${lang}</language>`));
