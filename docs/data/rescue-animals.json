@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T12:26:52.712Z",
+  "updatedAt": "2026-10-31T19:16:40.058Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
     {
@@ -20,6 +20,15 @@
       "age": "2022(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610312010730.jpg"
+    },
+    {
+      "notice": "경남-창녕-2026-00499",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 창녕군",
+      "foundDate": "2026-10-31",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610312110983.jpg"
     },
     {
       "notice": "경남-거제-2026-00549",
@@ -56,6 +65,24 @@
       "age": "2023(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610311010273.jpg"
+    },
+    {
+      "notice": "경북-안동-2026-00178",
+      "kind": "[개] 그레이트 덴",
+      "region": "경상북도 안동시",
+      "foundDate": "2026-10-31",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610312310818[1].jpg"
+    },
+    {
+      "notice": "경북-안동-2026-00177",
+      "kind": "[개] 골든 리트리버",
+      "region": "경상북도 안동시",
+      "foundDate": "2026-10-31",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610312310776.jpg"
     },
     {
       "notice": "전북-군산-2026-00943",
@@ -875,33 +902,6 @@
       "age": "2017(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610301010867.jpg"
-    },
-    {
-      "notice": "제주-제주-2026-02601",
-      "kind": "[고양이] 한국 고양이",
-      "region": "제주특별자치도",
-      "foundDate": "2026-10-30",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610301010992.jpg"
-    },
-    {
-      "notice": "경남-창원1-2026-00774",
-      "kind": "[개] 보더 콜리",
-      "region": "경상남도 창원시 의창성산구",
-      "foundDate": "2026-10-30",
-      "age": "2018(년생)",
-      "status": "종료(반환)",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610301610607[2].jpg"
-    },
-    {
-      "notice": "경남-거창-2026-00333",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 거창군",
-      "foundDate": "2026-10-30",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202610301810373.jpeg"
     }
   ]
 }
