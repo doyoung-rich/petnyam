@@ -2,6 +2,8 @@
 // Hooks must be supported by the existing food explanation; uncertainty stays explicit.
 export const titleStrategyVersion='doyounglab-v1';
 export const siteTitles={
+ '/guides/halloween-pet-safety/':'강아지 핼러윈 초콜릿 먹어도 될까? 사탕·코스튬까지 조심해야 하는 이유',
+ '/guides/halloween-pet-safety-en/':'Can Dogs Eat Halloween Candy? Chocolate, Xylitol and Costume Safety Explained',
  '/guides/dog-fruit-preparation/':'강아지 과일 먹어도 될까? 귤·멜론·베리 등 8종 손질법',
  '/guides/dog-fruit-preparation-en/':'Can Dogs Eat These Fruits? Preparation for 8 More Fruits',
  '/guides/pork-belly-for-pets/':'강아지·고양이 삼겹살 먹어도 될까? 지방·양념·생고기 구분',

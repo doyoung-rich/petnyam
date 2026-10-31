@@ -7,6 +7,8 @@ on:
       - scripts/verify-addresses.mjs
       - scripts/update-priority-pages.mjs
       - scripts/update-feature-articles.mjs
+      - docs/halloween-articles.js
+      - docs/halloween-articles.css
       - docs/feature-articles.js
       - docs/expanded-food-guides.js
       - docs/expanded-food-guides.css

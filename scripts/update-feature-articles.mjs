@@ -13,6 +13,11 @@ for(const [route,a] of Object.entries(featureArticles)){
  if(a.published==='2026-10-06')html=html.replace('발행·자료 확인: 2026년 10월 5일.', '발행: 2026년 10월 6일. 계산 예시는 직접 검산했으며, 외부 자료가 있는 글은 같은 날짜에 확인했습니다.');
  if(a.footer)html=html.replace(/(<hr><p>)[\s\S]*?(<\/p><\/article><\/main>)/,`$1${esc(a.footer)}$2`);
  if(a.schemaType==='AboutPage')html=html.replace('PETNYAM • SOURCE-BASED GUIDE',a.lang==='en'?'PETNYAM • THE PERSON BEHIND THE SITE':'PETNYAM • 다섯 아이의 보호자가 만드는 곳');
+ if(a.category==='seasonal-safety')html=html.replace('class="policy guide"','class="policy guide halloween-guide"');
+ if(a.image){
+  if(!/^\/images\/guides\/[a-z0-9-]+\.jpg$/.test(a.image))throw new Error('Unexpected article image');
+  html=html.replace(/(<meta (?:property="og:image(?:\:secure_url)?"|name="twitter:image") content=")[^"]+"/g,`$1https://petnyam.com${a.image}"`).replace(/(<meta property="og:image:type" content=")[^"]+"/,'$1image/jpeg"').replace(/(<meta property="og:image:alt" content=")[^"]+"/,`$1${esc(a.imageAlt||a.title)}"`);
+ }
  if(a.alternates){
   const links=Object.entries(a.alternates).map(([lang,path])=>`<link rel="alternate" hreflang="${lang}" href="https://petnyam.com${path}">`).join('');
   html=html.replace('</head>',links+'</head>');

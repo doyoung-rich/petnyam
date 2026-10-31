@@ -1,5 +1,5 @@
 import {priorityContent} from './priority-content.js';
-import {featureArticles} from './feature-articles.js?v=12';
+import {featureArticles} from './feature-articles.js?v=13';
 import {getFoodRecord,foodUpdated} from './food-page-content.js?v=14';
 export function pageGraph(url,title,description,lang){
  const origin='https://petnyam.com', path=new URL(url).pathname;
@@ -10,6 +10,7 @@ export function pageGraph(url,title,description,lang){
  const food=match&&getFoodRecord(match[2]);
  if(food)Object.assign(page,{'@type':'Article',headline:title.replace(' | PetNyam',''),dateModified:food.updated||foodUpdated,citation:[...new Set([...(food.sources||[]).map(s=>s.url),...(record?.sources||[]).map(([,source])=>source)])]});
  const feature=featureArticles[path];
+ if(feature?.image)page.image=origin+feature.image;
  if(feature)Object.assign(page,{'@type':feature.schemaType||'Article',headline:title.replace(' | PetNyam',''),datePublished:feature.published || '2026-10-05',dateModified:feature.modified||feature.published || '2026-10-05',citation:feature.sources});
  const graph=[{'@type':'Organization','@id':origin+'/#publisher',name:'PetNyam',url:origin+'/'},{'@type':'WebSite','@id':origin+'/#website',name:'PetNyam',url:origin+'/',publisher:{'@id':origin+'/#publisher'}},page];
  if(path!=='/')graph.push({'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'PetNyam',item:origin+'/'},{'@type':'ListItem',position:2,name:title,item:url}]});

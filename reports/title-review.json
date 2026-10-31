@@ -1,6 +1,6 @@
 {
   "strategy": "doyounglab-v1",
-  "pages": 545,
+  "pages": 547,
   "review": [
     {
       "path": "/404.html",
@@ -13081,17 +13081,17 @@
       "proof": "danger"
     },
     {
-      "path": "/guides/",
+      "path": "/foods/",
       "language": "ko",
-      "keyword": "반려동물 음식 가이드",
+      "keyword": "반려동물 음식 목록",
       "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "강아지·고양이·토끼·햄스터·앵무새 음식 목록 | 펫냠",
-      "final": "반려동물 음식 가이드, 어떻게 확인할까? 급여·성분·섭취 후 대처",
+      "final": "반려동물 음식 목록, 무엇을 확인할까? 동물별 판정 찾기",
       "changed": true,
       "candidates": [
         {
           "type": "종합 추천형",
-          "title": "반려동물 음식 가이드, 어떻게 확인할까? 급여·성분·섭취 후 대처"
+          "title": "반려동물 음식 목록, 무엇을 확인할까? 동물별 판정 찾기"
         },
         {
           "type": "숫자형",
@@ -13116,7 +13116,7 @@
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "반려동물 음식 가이드"
+        "text": "반려동물 음식 목록"
       },
       "proof": "page-content"
     },
@@ -14037,6 +14037,86 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "강아지·고양이 다짐육 먹어도 될까"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/halloween-pet-safety-en/",
+      "language": "en",
+      "keyword": "Can Dogs Eat Halloween Candy",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "Can Dogs Eat Halloween Candy? Chocolate, Xylitol and Costume Safety Explained | PetNyam",
+      "final": "Can Dogs Eat Halloween Candy? Chocolate, Xylitol and Costume Safety Explained",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "Can Dogs Eat Halloween Candy? Chocolate, Xylitol and Costume Safety Explained"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "Dogs should not eat Halloween candy. Keep human sweets out of reach, especially chocolate and products containing xylitol. If either may have been eaten, contact a veterinarian immediately rather than waiting for symptoms.",
+        "Halloween brings extra treats, costumes and decorations into a home. Here is what to check for dogs and cats, and what information to collect if a pet gets into the candy.",
+        "Save the packaging and ingredient list. Tell your veterinarian the estimated amount, time of ingestion and your pet’s weight. Do not induce vomiting or give human medication on your own."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "Can Dogs Eat Halloween Candy"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/halloween-pet-safety/",
+      "language": "ko",
+      "keyword": "강아지 핼러윈 초콜릿 먹어도 될까",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지 핼러윈 초콜릿 먹어도 될까? 사탕·코스튬까지 조심해야 하는 이유 | PetNyam",
+      "final": "강아지 핼러윈 초콜릿 먹어도 될까? 사탕·코스튬까지 조심해야 하는 이유",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지 핼러윈 초콜릿 먹어도 될까? 사탕·코스튬까지 조심해야 하는 이유"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "핼러윈 초콜릿과 사탕은 강아지에게 주지 마세요. 특히 초콜릿이나 자일리톨 함유 제품을 먹었을 가능성이 있다면 증상을 기다리지 말고 동물병원에 즉시 연락하세요. 코스튬과 장식도 귀여운 모습보다 편안함과 안전을 먼저 확인해야 합니다.",
+        "핼러윈에는 집에 간식이 많아지고 반려동물에게 옷을 입혀 사진을 찍기도 합니다. 강아지와 고양이에게 평범한 간식·장식이 어떤 위험을 만들 수 있는지, 이미 먹었다면 무엇을 전달해야 하는지 함께 정리했습니다.",
+        "먹은 제품의 포장지와 성분표를 확보하고, 대략적인 섭취량·섭취 시각·반려동물의 몸무게를 병원에 알려주세요. 임의로 토하게 하거나 사람용 약을 먹이지 마세요."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지 핼러윈 초콜릿 먹어도 될까"
       },
       "proof": "page-content"
     },

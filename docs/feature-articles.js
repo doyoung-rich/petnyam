@@ -1,3 +1,4 @@
+import {halloweenArticles} from './halloween-articles.js?v=1';
 import {feedMaterialArticles} from './feed-material-articles.js';
 import {expandedFoodGuides} from './expanded-food-guides.js';
 import { keywordArticles } from './keyword-articles.js?v=9';
@@ -8,6 +9,7 @@ import {petAgeArticles} from './pet-age-articles.js';
 import {newInformationArticles} from './new-information-articles.js';
 import {siteTitles} from './title-strategy.js?v=1';
 export const featureArticles = {
+ ...halloweenArticles,
  ...expandedFoodGuides,
  ...feedMaterialArticles,
  ...newInformationArticles,

@@ -13,7 +13,7 @@ for(const lang of ['ko','en'])for(const pet of Object.keys(petCatalog))for(const
   .replace(/<title>[^<]*<\/title>/,`<title>${esc(meta.title)}</title>`)
   .replace(/(name="description"|property="og:description") content="[^"]*"/g,`$1 content="${esc(meta.description)}"`)
   .replace(/property="og:title" content="[^"]*"/,`property="og:title" content="${esc(meta.title)}"`)
-  .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=17').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=8')
+  .replace(/editorial\.js\?v=\d+/g,'editorial.js?v=18').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=8')
   .replace(/app\.js\?v=\d+/g,'app.js?v=9').replace(/convenience\.js\?v=\d+/g,'convenience.js?v=10');
  html=html.replace(/<link rel="stylesheet" href="\/result-experience\.css(?:\?v=\d+)?">/g,'').replace('</head>','<link rel="stylesheet" href="/result-experience.css?v=1"></head>');
  html=html.replace(/<link rel="stylesheet" href="\/expanded-food-guides\.css(?:\?v=\d+)?">/g,'');
@@ -22,7 +22,7 @@ for(const lang of ['ko','en'])for(const pet of Object.keys(petCatalog))for(const
 }
 for(const name of ['index.html','en/index.html','404.html']){
  const file=new URL(name,docs);let html=await readFile(file,'utf8');
- html=html.replace(/editorial\.js\?v=\d+/g,'editorial.js?v=17').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=8')
+ html=html.replace(/editorial\.js\?v=\d+/g,'editorial.js?v=18').replace(/editorial\.css\?v=\d+/g,'editorial.css?v=8')
   .replace(/app\.js\?v=\d+/g,'app.js?v=9').replace(/convenience\.js\?v=\d+/g,'convenience.js?v=10');
  if(name==='en/index.html')html=html.replace('<html lang="ko"','<html lang="en"');
  await writeFile(file,tidy(html));
