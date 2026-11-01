@@ -1,13 +1,13 @@
 import {priorityArticle,priorityContent} from './priority-content.js';
 import {consolidatedFoodHref} from './content-consolidation.js?v=1';
 import {normalizeVisibleAddresses} from './addresses.js?v=3';
-import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=17';
-import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=15';
+import {syncSearchMetadata,evidenceOverview} from './search-metadata.js?v=18';
+import {getFoodRecord,foodArticle,foodPageInner,foodPageMeta,foodStatus} from './food-page-content.js?v=16';
 import {mountFoodDiscovery} from './food-discovery.js?v=5';
 import {mountRescueHome} from './rescue-home.js?v=4';
 import {mountHomeInformation} from './home-information.js?v=4';
 import {mountResultExperience} from './result-interactions.js?v=2';
-import {applySiteTitle} from './title-strategy.js?v=1';
+import {applySiteTitle} from './title-strategy.js?v=2';
 const merck='https://www.merckvetmanual.com/special-pet-topics/poisoning/food-hazards';
 const aspca='https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets';
 const akc='https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/';

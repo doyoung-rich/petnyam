@@ -1,5 +1,6 @@
 // 도영랩식 공통 전략: keyword → real question → supported answer direction.
 // Hooks must be supported by the existing food explanation; uncertainty stays explicit.
+import {searchTitleExperiment} from './search-title-experiment.js?v=1';
 export const titleStrategyVersion='doyounglab-v1';
 export const siteTitles={
  '/guides/hamster-food-evidence/':"햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
@@ -94,7 +95,7 @@ export function foodTitleParts(record,english=false){
  if(!english&&record.evidence!=='limited'&&record.status!=='danger'&&['chicken','pork','beef','egg'].includes(food.slug)&&/익힌|익힘|익혀/.test(corpus))question=`${keyword}, 익히면 괜찮을까?`;
  if(!english&&record.evidence!=='limited'&&record.status!=='danger'&&['banana','strawberry','blueberry','watermelon','pear'].includes(food.slug)&&/가끔/.test(corpus))question=`${keyword}, 매일 줘도 될까?`;
  // No food is called safe solely to make the title more clickable.
- return {keyword,question,direction,proof,lang,title:question+' '+direction};
+ return {keyword,question,direction,proof,lang,title:searchTitleExperiment[record.key]?.[lang]?.title||question+' '+direction};
 }
 export function foodTitle(record,english=false){return foodTitleParts(record,english).title;}
 export const titleWithBrand=heading=>heading+' | PetNyam';

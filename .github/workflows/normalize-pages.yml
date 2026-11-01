@@ -63,6 +63,8 @@ on:
       - docs/pet-age-banner.js
       - docs/pet-age-calculator.css
       - scripts/verify-pet-age.mjs
+      - docs/search-title-experiment.js
+      - scripts/verify-search-title-experiment.mjs
       - docs/title-strategy.js
       - scripts/apply-title-strategy.mjs
       - scripts/verify-titles.mjs
@@ -115,6 +117,7 @@ jobs:
           node scripts/verify-food-pages.mjs
           node scripts/verify-content-value.mjs
           node scripts/verify-titles.mjs
+          node scripts/verify-search-title-experiment.mjs
           node scripts/verify-food-discovery.mjs
           node scripts/verify-result-experience.mjs
           node scripts/verify-expanded-foods.mjs

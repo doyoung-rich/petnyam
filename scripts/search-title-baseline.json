@@ -1,0 +1,62 @@
+[
+  {
+    "title": "고양이 땅콩, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보 | PetNyam",
+    "file": "docs/ko/cat/peanut/index.html",
+    "description": "일반 땅콩의 급여 적합성을 충분히 확인하지 못했습니다. 땅콩버터와도 구분하세요.",
+    "articleHash": "144513abefe09913f1bb15eecb22b899b369eccfdb2298c7245c21121be47f7e"
+  },
+  {
+    "title": "Can cats eat peanuts? Evidence Gaps and What to Check | PetNyam",
+    "file": "docs/en/cat/peanut/index.html",
+    "description": "Plain-peanut suitability has not been sufficiently assessed; peanuts are not peanut butter.",
+    "articleHash": "6d81f51d821411b5bae2eb6b779667ad3fa325a78748b7ce0607d0dd78577f6b"
+  },
+  {
+    "title": "고양이 망고 먹어도 될까? 껍질·씨와 과육의 차이 | PetNyam",
+    "file": "docs/ko/cat/mango/index.html",
+    "description": "고양이에게 망고는 필수가 아닙니다. 건강한 고양이도 새 간식으로 주기 전 식단 조건을 확인하세요.",
+    "articleHash": "ff418652320ff626e8cf9be5c343460df1e8c095e6e261ed779b7d577ddd6204"
+  },
+  {
+    "title": "Can cats eat mangoes? Skin, Seeds and Preparation | PetNyam",
+    "file": "docs/en/cat/mango/index.html",
+    "description": "Mango is optional, not necessary for cats. Check dietary restrictions before offering it as a new treat.",
+    "articleHash": "7a0158a4ed2e2a344e1dcc0c1e3d1a0f5491185d1099892387bd3b83385f61fc"
+  },
+  {
+    "title": "앵무새 포도 먹어도 될까? 간식·주식 구분과 급여 조건 | PetNyam",
+    "file": "docs/ko/parrot/grape/index.html",
+    "description": "포도 과육은 해당 종의 식단에서 허용된 경우 곁들이세요.",
+    "articleHash": "b36f8c29992149425944d7107ac329fc86aa262636cc18720c606d1f8805ca2b"
+  },
+  {
+    "title": "Can parrots eat grapes? Treats, Meals and Precautions | PetNyam",
+    "file": "docs/en/parrot/grape/index.html",
+    "description": "Grapes flesh can supplement a diet when appropriate for that species.",
+    "articleHash": "517a5d74f1f5ac826a8316f2c669e1276b6fa66acb9d3d8040f1561f9d0cd91e"
+  },
+  {
+    "title": "고양이 바나나, 매일 줘도 될까? 껍질·손질과 급여 전 주의사항 | PetNyam",
+    "file": "docs/ko/cat/banana/index.html",
+    "description": "바나나: 아래 준비 조건을 지킨 음식만 가끔 간식으로 고려하세요. 주식을 대신하지 않습니다.",
+    "articleHash": "b027c9b79118e3ad47549b096eeb180f5cd1802fd5fa4eae7cb44401c1c66dda"
+  },
+  {
+    "title": "Can cats eat bananas? Skin and Preparation Tips | PetNyam",
+    "file": "docs/en/cat/banana/index.html",
+    "description": "Banana: consider only an occasional treat prepared as described below, not a replacement meal.",
+    "articleHash": "108d71bd260f04f4116e2898168f36a465ebc0c8ca16f564675b5b7ac609b5c7"
+  },
+  {
+    "title": "햄스터 사과 먹어도 될까? 씨·심 제거와 과육 급여 조건 | PetNyam",
+    "file": "docs/ko/hamster/apple/index.html",
+    "description": "사과 과육은 가끔 주는 간식으로만 생각하세요.",
+    "articleHash": "495933caff6c4229267729dd78a9feeac6296c0a603b84716b748bf32ff396ff"
+  },
+  {
+    "title": "Can hamsters eat apples? Seeds, Core and Preparation | PetNyam",
+    "file": "docs/en/hamster/apple/index.html",
+    "description": "Apple flesh is an occasional treat, not a meal.",
+    "articleHash": "716cd13d9002f5bbe58d389b1ed44a7cc94509e1f4b6d14e9285c97aae0e6140"
+  }
+]

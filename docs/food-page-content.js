@@ -1,11 +1,12 @@
 import {foodCatalog, petCatalog} from './food-page-catalog.js';
+import {searchTitleExperiment} from './search-title-experiment.js?v=1';
 import {rabbitFoodExplanations} from './rabbit-food-explanations.js';
 import {dogCatFoodExplanations} from './dog-cat-food-explanations.js?v=10';
 import {smallPetFoodExplanations} from './small-pet-food-explanations.js?v=10';
 import {priorityContent} from './priority-content.js';
 import {findNextFoods} from './food-discovery-model.js';
 import {foodDiscoveryView,quickFoodSaveView} from './food-discovery-view.js?v=3';
-import {foodTitle,titleWithBrand} from './title-strategy.js?v=1';
+import {foodTitle,titleWithBrand} from './title-strategy.js?v=2';
 import {resultJourneyView,resultRescueView} from './result-journey.js';
 import {contentContinuationView} from './content-continuation.js?v=1';
 import {meatDetailLinks} from './extra-food-index.js?v=1';
@@ -30,7 +31,7 @@ export function getFoodRecord(key) {
 }
 export function foodPageMeta(key,english=false) {
  const record=getFoodRecord(key); if(!record)return null;
- return {title:titleWithBrand(foodTitle(record,english)),description:text(record[english?'en':'ko'].answer)};
+ return {title:titleWithBrand(foodTitle(record,english)),description:searchTitleExperiment[key]?.[english?'en':'ko']?.description||text(record[english?'en':'ko'].answer)};
 }
 function section(id,title,body) {
  return `<section class="info food-explanation food-step" id="${id}"><h2>${title}</h2><p>${escape(text(body))}</p></section>`;
