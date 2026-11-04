@@ -1,3 +1,4 @@
+import {familyLifeArticles} from './family-life-articles.js?v=1';
 import {foodEvidenceGuides} from './food-evidence-guides.js?v=1';
 import {halloweenArticles} from './halloween-articles.js?v=1';
 import {feedMaterialArticles} from './feed-material-articles.js';
@@ -10,6 +11,7 @@ import {petAgeArticles} from './pet-age-articles.js';
 import {newInformationArticles} from './new-information-articles.js';
 import {siteTitles} from './title-strategy.js?v=2';
 export const featureArticles = {
+ ...familyLifeArticles,
  ...foodEvidenceGuides,
  ...halloweenArticles,
  ...expandedFoodGuides,

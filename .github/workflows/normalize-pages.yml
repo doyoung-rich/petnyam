@@ -15,6 +15,7 @@ on:
       - scripts/apply-content-consolidation.mjs
       - scripts/verify-content-consolidation.mjs
       - docs/feature-articles.js
+      - docs/family-life-articles.js
       - docs/expanded-food-guides.js
       - docs/expanded-food-guides.css
       - docs/extra-food-index.js

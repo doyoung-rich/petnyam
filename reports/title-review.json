@@ -1,6 +1,6 @@
 {
   "strategy": "doyounglab-v1",
-  "pages": 551,
+  "pages": 552,
   "review": [
     {
       "path": "/404.html",
@@ -5241,34 +5241,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/en/hamster/alcohol/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster alcohol",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat alcohol? | PetNyam",
-      "final": "Can hamsters drink alcohol? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters drink alcohol? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters drink alcohol? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters drink alcohol? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters drink alcohol? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -5278,19 +5266,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Alcohol: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Alcohol",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Alcohol · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/almond/",
@@ -5397,34 +5383,22 @@
       "proof": "씨.*심|심.*씨"
     },
     {
-      "path": "/en/hamster/avocado/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster avocado",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat avocado? | PetNyam",
-      "final": "Can hamsters eat avocado? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat avocado? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat avocado? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat avocado? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat avocado? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -5434,19 +5408,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Avocado: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Avocado",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Avocado · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/banana/",
@@ -5501,34 +5473,22 @@
       "proof": "껍질"
     },
     {
-      "path": "/en/hamster/beef/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster beef",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat beef? | PetNyam",
-      "final": "Can hamsters eat beef? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat beef? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat beef? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat beef? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat beef? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -5538,49 +5498,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Beef: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Beef",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Beef · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/hamster/blueberry/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster blueberries",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat blueberries? | PetNyam",
-      "final": "Can hamsters eat blueberries? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat blueberries? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat blueberries? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat blueberries? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat blueberries? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -5590,49 +5536,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Blueberries: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Blueberry",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Blueberry · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/hamster/bread/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster bread",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat bread? | PetNyam",
-      "final": "Can hamsters eat bread? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat bread? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat bread? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat bread? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat bread? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -5642,19 +5574,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Bread: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Bread",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Bread · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/broccoli/",
@@ -5813,34 +5743,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/en/hamster/cheese/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster cheese",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat cheese? | PetNyam",
-      "final": "Can hamsters eat cheese? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat cheese? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat cheese? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat cheese? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat cheese? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -5850,49 +5768,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Cheese: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Cheese",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Cheese · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/hamster/chicken/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster chicken",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat chicken? | PetNyam",
-      "final": "Can hamsters eat chicken? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat chicken? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat chicken? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat chicken? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat chicken? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -5902,19 +5806,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Chicken: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Chicken",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Chicken · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/chocolate/",
@@ -5969,34 +5871,22 @@
       "proof": "danger"
     },
     {
-      "path": "/en/hamster/coffee/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster coffee",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat coffee? | PetNyam",
-      "final": "Can hamsters drink coffee? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters drink coffee? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters drink coffee? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters drink coffee? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters drink coffee? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -6006,19 +5896,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Coffee: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Coffee",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Coffee · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/cucumber/",
@@ -6177,34 +6065,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/hamster/garlic/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster garlic",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat garlic? | PetNyam",
-      "final": "Can hamsters eat garlic? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat garlic? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat garlic? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat garlic? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat garlic? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -6214,19 +6090,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Garlic: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Garlic",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Garlic · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/grape/",
@@ -6281,34 +6155,22 @@
       "proof": "conflicting-guidance"
     },
     {
-      "path": "/en/hamster/green-onion/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster green onion",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat green onion? | PetNyam",
-      "final": "Can hamsters eat green onion? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat green onion? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat green onion? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat green onion? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat green onion? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -6318,19 +6180,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Green onion: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Green onion",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Green onion · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/ham/",
@@ -6489,34 +6349,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/hamster/lettuce/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster lettuce",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat lettuce? | PetNyam",
-      "final": "Can hamsters eat lettuce? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat lettuce? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat lettuce? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat lettuce? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat lettuce? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -6526,19 +6374,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Lettuce: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Lettuce",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Lettuce · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/macadamia/",
@@ -6593,34 +6439,22 @@
       "proof": "limited"
     },
     {
-      "path": "/en/hamster/mango/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster mangoes",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat mangoes? | PetNyam",
-      "final": "Can hamsters eat mangoes? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat mangoes? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat mangoes? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat mangoes? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat mangoes? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -6630,19 +6464,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Mango: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Mango",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Mango · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/milk/",
@@ -6697,34 +6529,22 @@
       "proof": "milk-adult-pup"
     },
     {
-      "path": "/en/hamster/mushroom/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster mushrooms",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat mushrooms? | PetNyam",
-      "final": "Can hamsters eat mushrooms? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat mushrooms? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat mushrooms? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat mushrooms? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat mushrooms? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -6734,19 +6554,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Mushrooms: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Mushroom",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Mushroom · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/onion/",
@@ -7009,34 +6827,22 @@
       "proof": "씨.*심|심.*씨"
     },
     {
-      "path": "/en/hamster/pineapple/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster pineapple",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat pineapple? | PetNyam",
-      "final": "Can hamsters eat pineapple? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat pineapple? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat pineapple? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat pineapple? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat pineapple? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7046,49 +6852,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Pineapple: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Pineapple",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Pineapple · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/hamster/pork/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster pork",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat pork? | PetNyam",
-      "final": "Can hamsters eat pork? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat pork? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat pork? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat pork? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat pork? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7098,49 +6890,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Pork: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Pork",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Pork · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/hamster/potato/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster potatoes",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat potatoes? | PetNyam",
-      "final": "Can hamsters eat potatoes? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat potatoes? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat potatoes? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat potatoes? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat potatoes? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7150,19 +6928,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Potato: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Potato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Potato · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/pumpkin/",
@@ -7269,34 +7045,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/hamster/rice/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster cooked rice",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat cooked rice? | PetNyam",
-      "final": "Can hamsters eat cooked rice? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat cooked rice? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat cooked rice? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat cooked rice? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat cooked rice? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7306,49 +7070,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Cooked rice: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Cooked rice",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Cooked rice · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/hamster/salmon/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster salmon",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat salmon? | PetNyam",
-      "final": "Can hamsters eat salmon? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat salmon? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat salmon? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat salmon? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat salmon? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7358,19 +7108,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Salmon: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Salmon",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Salmon · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/sausage/",
@@ -7529,34 +7277,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/en/hamster/sweet-potato/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster sweet potato",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat sweet potato? | PetNyam",
-      "final": "Can hamsters eat sweet potato? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat sweet potato? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat sweet potato? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat sweet potato? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat sweet potato? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7566,19 +7302,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Sweet potato: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Sweet potato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Sweet potato · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/tomato/",
@@ -7633,34 +7367,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/hamster/tuna/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster tuna",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat tuna? | PetNyam",
-      "final": "Can hamsters eat tuna? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat tuna? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat tuna? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat tuna? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat tuna? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7670,49 +7392,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Tuna: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Tuna",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Tuna · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/hamster/watermelon/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster watermelon",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat watermelon? | PetNyam",
-      "final": "Can hamsters eat watermelon? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat watermelon? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat watermelon? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat watermelon? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat watermelon? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7722,19 +7430,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Watermelon: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Watermelon",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Watermelon · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/hamster/xylitol/",
@@ -7789,34 +7495,22 @@
       "proof": "limited"
     },
     {
-      "path": "/en/hamster/yogurt/",
+      "path": "/guides/hamster-food-evidence-en/",
       "language": "en",
-      "keyword": "Hamster yogurt",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Hamster Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can hamsters eat yogurt? | PetNyam",
-      "final": "Can hamsters eat yogurt? Evidence Gaps and What to Check",
+      "final": "Hamster Foods: Conflicting Answers? Check the Species and Source",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can hamsters eat yogurt? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can hamsters eat yogurt? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can hamsters eat yogurt? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can hamsters eat yogurt? Evidence Gaps and What to Check"
+          "title": "Hamster Foods: Conflicting Answers? Check the Species and Source"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7826,19 +7520,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Yogurt: do not offer it before checking with a hamster-experienced veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Yogurt",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Yogurt · Check first"
+        "text": "Hamster Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/",
@@ -7933,34 +7625,22 @@
       "proof": "danger"
     },
     {
-      "path": "/en/parrot/almond/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot almonds",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat almonds? | PetNyam",
-      "final": "Can parrots eat almonds? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat almonds? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat almonds? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat almonds? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat almonds? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -7970,19 +7650,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Almonds: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Almond",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Almond · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/apple/",
@@ -8141,34 +7819,22 @@
       "proof": "껍질"
     },
     {
-      "path": "/en/parrot/beef/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot beef",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat beef? | PetNyam",
-      "final": "Can parrots eat beef? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat beef? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat beef? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat beef? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat beef? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -8178,19 +7844,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Beef: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Beef",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Beef · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/blueberry/",
@@ -8505,34 +8169,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/parrot/chicken/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot chicken",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat chicken? | PetNyam",
-      "final": "Can parrots eat chicken? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat chicken? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat chicken? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat chicken? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat chicken? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -8542,19 +8194,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Chicken: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Chicken",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Chicken · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/chocolate/",
@@ -8921,34 +8571,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/parrot/green-onion/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot green onion",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat green onion? | PetNyam",
-      "final": "Can parrots eat green onion? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat green onion? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat green onion? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat green onion? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat green onion? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -8958,19 +8596,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Green onion: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Green onion",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Green onion · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/ham/",
@@ -9337,34 +8973,22 @@
       "proof": "lactose-content"
     },
     {
-      "path": "/en/parrot/mushroom/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot mushrooms",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat mushrooms? | PetNyam",
-      "final": "Can parrots eat mushrooms? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat mushrooms? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat mushrooms? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat mushrooms? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat mushrooms? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -9374,19 +8998,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Mushrooms: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Mushroom",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Mushroom · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/onion/",
@@ -9545,34 +9167,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/parrot/peanut/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot peanuts",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat peanuts? | PetNyam",
-      "final": "Can parrots eat peanuts? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat peanuts? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat peanuts? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat peanuts? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat peanuts? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -9582,19 +9192,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Peanuts: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Peanut",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Peanut · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/pear/",
@@ -9701,34 +9309,22 @@
       "proof": "껍질"
     },
     {
-      "path": "/en/parrot/pork/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot pork",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat pork? | PetNyam",
-      "final": "Can parrots eat pork? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat pork? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat pork? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat pork? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat pork? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -9738,49 +9334,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Pork: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Pork",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Pork · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/parrot/potato/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot potatoes",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat potatoes? | PetNyam",
-      "final": "Can parrots eat potatoes? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat potatoes? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat potatoes? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat potatoes? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat potatoes? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -9790,19 +9372,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Potato: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Potato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Potato · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/pumpkin/",
@@ -9961,34 +9541,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/en/parrot/salmon/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot salmon",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat salmon? | PetNyam",
-      "final": "Can parrots eat salmon? Species, Raw Fish and Smoked Products",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat salmon? Species, Raw Fish and Smoked Products"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat salmon? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat salmon? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat salmon? Species, Raw Fish and Smoked Products"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -9998,19 +9566,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Salmon: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Salmon",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Salmon · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "species-preparation"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/sausage/",
@@ -10221,34 +9787,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/en/parrot/tomato/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot tomatoes",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat tomatoes? | PetNyam",
-      "final": "Can parrots eat tomatoes? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat tomatoes? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat tomatoes? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat tomatoes? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat tomatoes? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -10258,49 +9812,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Tomato: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Tomato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Tomato · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/en/parrot/tuna/",
+      "path": "/guides/parrot-food-evidence-en/",
       "language": "en",
-      "keyword": "Parrot tuna",
-      "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
+      "keyword": "Parrot Foods",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "Can parrots eat tuna? | PetNyam",
-      "final": "Can parrots eat tuna? Evidence Gaps and What to Check",
+      "final": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "Can parrots eat tuna? Evidence Gaps and What to Check"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "Can parrots eat tuna? Preparation and Product Differences"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "Can parrots eat tuna? What to Check Before Feeding"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "Can parrots eat tuna? Evidence Gaps and What to Check"
+          "title": "Parrot Foods: Does the Species Matter? Check Evidence Before Sharing"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -10310,19 +9850,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Tuna: do not offer it before checking with a avian veterinarian.",
-        "Identify the ingredient, preparation and exact pet species.",
-        "Do not transfer another species’ verdict, a human serving size or a universal gram limit to your pet."
+        "Repeated individual evidence-gap pages have been combined into one practical source-checking and consultation guide."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Tuna",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "Tuna · Check first"
+        "text": "Parrot Foods"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/en/parrot/watermelon/",
@@ -13228,7 +12766,7 @@
       "bodyOpening": [
         "“Beef” is not a complete description. Tenderloin, ribeye, brisket and ribs differ in the part sold, visible fat, bones and preparation. This is a checklist for dogs and cats, not a ranking of universally safe cuts.",
         "These Nongsaro entries all say raw, but grade and naming differ. The tenderloin entry explicitly says Korean beef grade 1++; several others do not specify that same grade. They must not be treated as a controlled trial or an identical retail comparison.",
-        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-10-30T19:32:36.147Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
+        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-11-01T23:00:36.094Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -13268,7 +12806,7 @@
       "bodyOpening": [
         "‘소고기’라는 이름만으로는 부족합니다. 안심·등심·양지·갈비는 판매되는 부위, 보이는 지방, 뼈와 조리 방식까지 확인해야 합니다. 다음 내용은 강아지·고양이에게 확인할 항목이며 ‘무조건 안전한 부위 순위’가 아닙니다.",
         "아래 농사로 기록은 모두 생것이지만 등급과 표기가 동일하다고 볼 수 없습니다. 안심 기록은 한우 1++등급으로 명시되어 있고, 다른 일부 기록은 같은 등급 조건이 표시되어 있지 않습니다. 동일 조건의 실험이나 매장에서 구입하는 모든 고기의 비교표로 해석하지 마세요.",
-        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-10-30T19:32:36.147Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
+        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-11-01T23:00:36.094Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -13797,6 +13335,46 @@
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "강아지 과일 먹어도 될까"
+      },
+      "proof": "page-content"
+    },
+    {
+      "path": "/guides/dogs-and-cats-living-together/",
+      "language": "ko",
+      "keyword": "강아지랑 고양이 같이 키우면 안 싸우나요",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "강아지랑 고양이 같이 키우면 안 싸우나요? 처음엔 하악질, 지금은 나란히 쉬어요 | PetNyam",
+      "final": "강아지랑 고양이 같이 키우면 안 싸우나요? 처음엔 하악질, 지금은 나란히 쉬어요",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "강아지랑 고양이 같이 키우면 안 싸우나요? 처음엔 하악질, 지금은 나란히 쉬어요"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "저희 집 미니·레옹이·홍이가 함께 있는 사진을 보면 궁금하실 수 있는 질문입니다.",
+        "강아지와 고양이가 같은 집에서 지내는 건 가능합니다. 하지만 저희 집도 처음부터 지금 사진처럼 지냈던 것은 아닙니다. 첫 만남에는 하악질도 있었고, 강아지들이 고양이에게 한 대 맞기도 했습니다.",
+        "저는 보스턴테리어 홍이, 포메라니안 설이, 그리고 고양이 레옹이·쪼꼬미·미니와 함께 살고 있습니다."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "강아지랑 고양이 같이 키우면 안 싸우나요"
       },
       "proof": "page-content"
     },
@@ -14588,7 +14166,7 @@
       "bodyOpening": [
         "Plain cooked pork and a piece of fatty pork belly from a shared dinner are different questions. For dogs, the cited pork guidance favors lean, fully cooked, unseasoned, boneless meat. That does not make pork belly a routine treat or establish a safe portion for every dog or cat.",
         "Check the visible fat, the exact cut and the preparation. The Nongsaro records below illustrate how much the composition can differ. They are not feeding recommendations.",
-        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-10-30T19:32:36.147Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
+        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-11-01T23:00:36.094Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -14628,7 +14206,7 @@
       "bodyOpening": [
         "‘돼지고기를 먹을 수 있다’와 ‘식탁의 삼겹살을 나눠 줘도 된다’는 다른 질문입니다. 강아지 돼지고기 자료는 충분히 익힌 무양념·뼈 없는 살코기와 과한 지방 제거를 조건으로 설명합니다. 그 안내만으로 삼겹살을 일상 간식으로 추천하거나 강아지·고양이 모두의 안전량을 정할 수는 없습니다.",
         "눈에 보이는 지방, 정확한 부위, 가공 상태를 확인하세요. 농사로의 다음 원료 기록은 이름과 조리 상태에 따라 지방 비율이 다름을 보여 줍니다. 급여 권장표는 아닙니다.",
-        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-10-30T19:32:36.147Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
+        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-11-01T23:00:36.094Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -20081,34 +19659,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/ko/hamster/alcohol/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 술",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 술 먹어도 될까? | PetNyam",
-      "final": "햄스터 술, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 술, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 술, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 술, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 술, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20118,19 +19684,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "술: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 술의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Alcohol",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "술 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/almond/",
@@ -20237,34 +19801,22 @@
       "proof": "씨.*심|심.*씨"
     },
     {
-      "path": "/ko/hamster/avocado/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 아보카도",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 아보카도 먹어도 될까? | PetNyam",
-      "final": "햄스터 아보카도, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 아보카도, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 아보카도, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 아보카도, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 아보카도, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20274,19 +19826,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "아보카도: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 아보카도의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Avocado",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "아보카도 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/banana/",
@@ -20341,34 +19891,22 @@
       "proof": "껍질"
     },
     {
-      "path": "/ko/hamster/beef/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 소고기",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 소고기 먹어도 될까? | PetNyam",
-      "final": "햄스터 소고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 소고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 소고기, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 소고기, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 소고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20378,49 +19916,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "소고기: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 소고기의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Beef",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "소고기 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/hamster/blueberry/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 블루베리",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 블루베리 먹어도 될까? | PetNyam",
-      "final": "햄스터 블루베리, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 블루베리, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 블루베리, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 블루베리, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 블루베리, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20430,49 +19954,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "블루베리: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 블루베리의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Blueberry",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "블루베리 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/hamster/bread/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 빵",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 빵 먹어도 될까? | PetNyam",
-      "final": "햄스터 빵, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 빵, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 빵, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 빵, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 빵, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20482,19 +19992,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "빵: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 빵의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Bread",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "빵 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/broccoli/",
@@ -20653,34 +20161,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/ko/hamster/cheese/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 치즈",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 치즈 먹어도 될까? | PetNyam",
-      "final": "햄스터 치즈, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 치즈, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 치즈, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 치즈, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 치즈, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20690,49 +20186,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "치즈: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 치즈의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Cheese",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "치즈 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/hamster/chicken/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 닭고기",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 닭고기 먹어도 될까? | PetNyam",
-      "final": "햄스터 닭고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 닭고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 닭고기, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 닭고기, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 닭고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20742,19 +20224,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "닭고기: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 닭고기의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Chicken",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "닭고기 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/chocolate/",
@@ -20809,34 +20289,22 @@
       "proof": "danger"
     },
     {
-      "path": "/ko/hamster/coffee/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 커피",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 커피 먹어도 될까? | PetNyam",
-      "final": "햄스터 커피, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 커피, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 커피, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 커피, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 커피, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -20846,19 +20314,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "커피: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 커피의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Coffee",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "커피 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/cucumber/",
@@ -21017,34 +20483,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/hamster/garlic/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 마늘",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 마늘 먹어도 될까? | PetNyam",
-      "final": "햄스터 마늘, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 마늘, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 마늘, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 마늘, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 마늘, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21054,19 +20508,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "마늘: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 마늘의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Garlic",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "마늘 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/grape/",
@@ -21121,34 +20573,22 @@
       "proof": "conflicting-guidance"
     },
     {
-      "path": "/ko/hamster/green-onion/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 대파",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 대파 먹어도 될까? | PetNyam",
-      "final": "햄스터 대파, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 대파, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 대파, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 대파, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 대파, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21158,19 +20598,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "대파: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 대파의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Green onion",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "대파 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/ham/",
@@ -21329,34 +20767,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/hamster/lettuce/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 상추",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 상추 먹어도 될까? | PetNyam",
-      "final": "햄스터 상추, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 상추, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 상추, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 상추, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 상추, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21366,19 +20792,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "상추: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 상추의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Lettuce",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "상추 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/macadamia/",
@@ -21433,34 +20857,22 @@
       "proof": "limited"
     },
     {
-      "path": "/ko/hamster/mango/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 망고",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 망고 먹어도 될까? | PetNyam",
-      "final": "햄스터 망고, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 망고, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 망고, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 망고, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 망고, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21470,19 +20882,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "망고: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 망고의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Mango",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "망고 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/milk/",
@@ -21537,34 +20947,22 @@
       "proof": "milk-adult-pup"
     },
     {
-      "path": "/ko/hamster/mushroom/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 버섯",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 버섯 먹어도 될까? | PetNyam",
-      "final": "햄스터 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 버섯, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 버섯, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21574,19 +20972,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "버섯: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 버섯의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Mushroom",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "버섯 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/onion/",
@@ -21849,34 +21245,22 @@
       "proof": "씨.*심|심.*씨"
     },
     {
-      "path": "/ko/hamster/pineapple/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 파인애플",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 파인애플 먹어도 될까? | PetNyam",
-      "final": "햄스터 파인애플, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 파인애플, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 파인애플, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 파인애플, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 파인애플, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21886,49 +21270,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "파인애플: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 파인애플의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Pineapple",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "파인애플 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/hamster/pork/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 돼지고기",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 돼지고기 먹어도 될까? | PetNyam",
-      "final": "햄스터 돼지고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 돼지고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 돼지고기, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 돼지고기, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 돼지고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21938,49 +21308,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "돼지고기: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 돼지고기의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Pork",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "돼지고기 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/hamster/potato/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 감자",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 감자 먹어도 될까? | PetNyam",
-      "final": "햄스터 감자, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 감자, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 감자, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 감자, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 감자, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -21990,19 +21346,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "감자: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 감자의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Potato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "감자 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/pumpkin/",
@@ -22109,34 +21463,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/hamster/rice/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 쌀밥",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 쌀밥 먹어도 될까? | PetNyam",
-      "final": "햄스터 쌀밥, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 쌀밥, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 쌀밥, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 쌀밥, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 쌀밥, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22146,49 +21488,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "쌀밥: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 쌀밥의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Cooked rice",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "쌀밥 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/hamster/salmon/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 연어",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 연어 먹어도 될까? | PetNyam",
-      "final": "햄스터 연어, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 연어, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 연어, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 연어, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 연어, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22198,19 +21526,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "연어: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 연어의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Salmon",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "연어 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/sausage/",
@@ -22369,34 +21695,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/ko/hamster/sweet-potato/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 고구마",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 고구마 먹어도 될까? | PetNyam",
-      "final": "햄스터 고구마, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 고구마, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 고구마, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 고구마, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 고구마, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22406,19 +21720,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "고구마: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 고구마의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Sweet potato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "고구마 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/tomato/",
@@ -22473,34 +21785,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/hamster/tuna/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 참치",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 참치 먹어도 될까? | PetNyam",
-      "final": "햄스터 참치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 참치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 참치, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 참치, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 참치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22510,49 +21810,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "참치: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 참치의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Tuna",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "참치 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/hamster/watermelon/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 수박",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 수박 먹어도 될까? | PetNyam",
-      "final": "햄스터 수박, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 수박, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 수박, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 수박, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 수박, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22562,19 +21848,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "수박: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 수박의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Watermelon",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "수박 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/hamster/xylitol/",
@@ -22629,34 +21913,22 @@
       "proof": "limited"
     },
     {
-      "path": "/ko/hamster/yogurt/",
+      "path": "/guides/hamster-food-evidence/",
       "language": "ko",
-      "keyword": "햄스터 요거트",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "햄스터 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "햄스터 요거트 먹어도 될까? | PetNyam",
-      "final": "햄스터 요거트, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "햄스터 요거트, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "햄스터 요거트, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "햄스터 요거트, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "햄스터 요거트, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "햄스터 먹이, 검색해도 답이 다를 때 무엇을 확인할까?"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22666,19 +21938,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "요거트: 먼저 급여하지 말고, 햄스터 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 요거트의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Hamster and Yogurt",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "요거트 · 급여 전 확인"
+        "text": "햄스터 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/alcohol/",
@@ -22733,34 +22003,22 @@
       "proof": "danger"
     },
     {
-      "path": "/ko/parrot/almond/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 아몬드",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 아몬드 먹어도 될까? | PetNyam",
-      "final": "앵무새 아몬드, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 아몬드, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 아몬드, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 아몬드, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 아몬드, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22770,19 +22028,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "아몬드: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 아몬드의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Almond",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "아몬드 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/apple/",
@@ -22941,34 +22197,22 @@
       "proof": "껍질"
     },
     {
-      "path": "/ko/parrot/beef/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 소고기",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 소고기 먹어도 될까? | PetNyam",
-      "final": "앵무새 소고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 소고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 소고기, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 소고기, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 소고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -22978,19 +22222,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "소고기: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 소고기의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Beef",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "소고기 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/blueberry/",
@@ -23305,34 +22547,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/parrot/chicken/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 닭고기",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 닭고기 먹어도 될까? | PetNyam",
-      "final": "앵무새 닭고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 닭고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 닭고기, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 닭고기, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 닭고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -23342,19 +22572,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "닭고기: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 닭고기의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Chicken",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "닭고기 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/chocolate/",
@@ -23721,34 +22949,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/parrot/green-onion/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 대파",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 대파 먹어도 될까? | PetNyam",
-      "final": "앵무새 대파, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 대파, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 대파, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 대파, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 대파, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -23758,19 +22974,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "대파: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 대파의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Green onion",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "대파 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/ham/",
@@ -24137,34 +23351,22 @@
       "proof": "lactose-content"
     },
     {
-      "path": "/ko/parrot/mushroom/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 버섯",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 버섯 먹어도 될까? | PetNyam",
-      "final": "앵무새 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 버섯, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 버섯, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -24174,19 +23376,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "버섯: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 버섯의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Mushroom",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "버섯 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/onion/",
@@ -24345,34 +23545,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/parrot/peanut/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 땅콩",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 땅콩 먹어도 될까? | PetNyam",
-      "final": "앵무새 땅콩, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 땅콩, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 땅콩, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 땅콩, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 땅콩, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -24382,19 +23570,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "땅콩: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 땅콩의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Peanut",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "땅콩 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/pear/",
@@ -24501,34 +23687,22 @@
       "proof": "껍질"
     },
     {
-      "path": "/ko/parrot/pork/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 돼지고기",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 돼지고기 먹어도 될까? | PetNyam",
-      "final": "앵무새 돼지고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 돼지고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 돼지고기, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 돼지고기, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 돼지고기, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -24538,49 +23712,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "돼지고기: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 돼지고기의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Pork",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "돼지고기 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/parrot/potato/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 감자",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 감자 먹어도 될까? | PetNyam",
-      "final": "앵무새 감자, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 감자, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 감자, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 감자, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 감자, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -24590,19 +23750,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "감자: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 감자의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Potato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "감자 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/pumpkin/",
@@ -24761,34 +23919,22 @@
       "proof": "주식|식단|간식"
     },
     {
-      "path": "/ko/parrot/salmon/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 연어",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 연어 먹어도 될까? | PetNyam",
-      "final": "앵무새 연어, 줘도 괜찮을까? 종·생연어·훈제 제품 확인",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 연어, 줘도 괜찮을까? 종·생연어·훈제 제품 확인"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 연어, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 연어, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 연어, 줘도 괜찮을까? 종·생연어·훈제 제품 확인"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -24798,19 +23944,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "연어: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 연어의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Salmon",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "연어 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "species-preparation"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/sausage/",
@@ -25021,34 +24165,22 @@
       "proof": "가당|설탕|시럽"
     },
     {
-      "path": "/ko/parrot/tomato/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 토마토",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 토마토 먹어도 될까? | PetNyam",
-      "final": "앵무새 토마토, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 토마토, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 토마토, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 토마토, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 토마토, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -25058,49 +24190,35 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "토마토: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 토마토의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Tomato",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "토마토 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
-      "path": "/ko/parrot/tuna/",
+      "path": "/guides/parrot-food-evidence/",
       "language": "ko",
-      "keyword": "앵무새 참치",
-      "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
+      "keyword": "앵무새 먹이",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
       "before": "앵무새 참치 먹어도 될까? | PetNyam",
-      "final": "앵무새 참치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비",
       "changed": true,
       "candidates": [
         {
-          "type": "검색 + 궁금증형",
-          "title": "앵무새 참치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
-        },
-        {
-          "type": "검색 + 비교형",
-          "title": "앵무새 참치, 준비·가공 형태에 따라 다를까? 확인할 조건"
-        },
-        {
-          "type": "검색 + 해결형",
-          "title": "앵무새 참치, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
-        },
-        {
-          "type": "검색 + 숫자형",
-          "title": null,
-          "note": "본문에서 확인되는 문답 개수만 사용. 고정 급여량·성과 숫자는 생성하지 않음."
-        },
-        {
           "type": "종합 추천형",
-          "title": "앵무새 참치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "앵무새 먹이, 같은 음식도 종마다 다를까? 자료 확인과 상담 준비"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
         }
       ],
       "reason": [
@@ -25110,19 +24228,17 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "참치: 먼저 급여하지 말고, 조류 진료가 가능한 수의사에게 확인하세요.",
-        "다른 동물의 먹이 판정, 사람용 권장량, 인터넷의 일률적인 몇 g 기준을 그대로 적용하지 마세요.",
-        "확인한 자료만으로 참치의 해당 동물 급여 조건을 정할 수 없습니다. 정보부족은 독성이 입증되었다는 뜻도, 안전하다는 뜻도 아닙니다. 아래 자료는 기본 식단 설명이며 이 음식의 안전성을 보증하지 않습니다."
+        "반복되던 개별 근거 부족 페이지를 자료 확인·상담 준비 안내로 모았습니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
-        "subject": "Parrot and Tuna",
+        "subject": "본문의 실제 대상 또는 도구 화면",
         "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
         "composition": "대상과 문구는 중앙 안전 영역에 배치",
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
-        "text": "참치 · 급여 전 확인"
+        "text": "앵무새 먹이"
       },
-      "proof": "limited"
+      "proof": "page-content"
     },
     {
       "path": "/ko/parrot/watermelon/",

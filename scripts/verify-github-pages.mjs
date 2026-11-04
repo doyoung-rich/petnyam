@@ -39,7 +39,7 @@ for (const [file, expected] of required) {
 
 const sitemap = await readFile(join(docs, "sitemap.xml"), "utf8");
 const count = (sitemap.match(/<loc>/g) ?? []).length;
-if (count !== 484) throw new Error(`Expected 484 sitemap URLs, found ${count}`);
+if (count !== 485) throw new Error(`Expected 485 sitemap URLs, found ${count}`);
 const icon = await readFile(join(docs, "favicon.ico"));
 if (icon.readUInt16LE(2) !== 1 || icon.readUInt16LE(4) !== 1) throw new Error("Invalid ICO header.");
 const directory = await readFile(join(docs, "foods/index.html"), "utf8");

@@ -8,8 +8,8 @@
     "before": 12391,
     "after": 18580
   },
-  "averageFoodPageBytes": 19400,
-  "maximumFoodPageBytes": 25053,
+  "averageFoodPageBytes": 19388,
+  "maximumFoodPageBytes": 25001,
   "newRuntimeBytes": 4565,
   "notes": "Byte measurements are not a Core Web Vitals or real-user latency measurement. Existing AdSense remains unchanged."
 }

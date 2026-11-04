@@ -1,6 +1,6 @@
 // Public Nongsaro fields only; source values retained.
 export const meatMaterialReference={
-  "updatedAt": "2026-10-30T19:32:36.147Z",
+  "updatedAt": "2026-11-01T23:00:36.094Z",
   "items": [
     {
       "feedSeqNo": "1101",
