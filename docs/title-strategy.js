@@ -47,6 +47,7 @@ export const siteTitles={
  '/guides/coton-de-tulear-life-en/':'Do Coton de Tulear Dogs Bark a Lot? One Owner’s Café Experience',
  '/guides/what-is-coton-de-tulear/':'꽃동강아지, 꼬똥 드 툴레아란? 성격·털빠짐과 키우기 전 확인',
  '/guides/what-is-coton-de-tulear-en/':'What Is a Coton de Tulear? Temperament, Shedding and Daily Care',
+ '/guides/cavalier-king-charles-spaniel/':'카발리에 킹 찰스 스패니얼, 순하다고 키우기 쉬울까? 성격·심장 건강·사료 선택까지',
  '/guides/dogs-and-cats-living-together/':'강아지랑 고양이 같이 키우면 안 싸우나요? 처음엔 하악질, 지금은 나란히 쉬어요',
  '/guides/about-petnyam/':'반려동물 음식 정보, 왜 직접 찾았을까? 다섯 아이와 펫냠을 운영하는 이유',
  '/guides/about-petnyam-en/':'Why I Built PetNyam: Two Dogs, Three Cats and Food Questions',
