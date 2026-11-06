@@ -1,5 +1,8 @@
 import {homeToolLinksView} from './content-continuation.js?v=1';
 const text=(ko,en,english)=>english?en:ko;
+export function homeStoryBanner(english=false){
+ return english?'':`<section class="home-story-feature" data-home-story-banner aria-label="함께 사는 이야기"><a href="/guides/dogs-and-cats-living-together/"><img src="/images/guides/dog-cat-family-hong-leon-mini.jpg" alt="고양이 미니·레옹이와 강아지 홍이가 나란히 쉬는 실제 사진" width="1400" height="1050" decoding="async"><div class="home-story-feature-copy"><span class="home-story-feature-label">함께 사는 이야기 · 우리 집 실제 사진</span><h2>강아지랑 고양이,<br>같이 살면 안 싸울까요?</h2><p>처음엔 레옹이의 하악질, 지금은 나란히.<br>미니·레옹이·홍이가 함께 지내는 이야기를 만나보세요.</p><span class="home-story-feature-cta">세 아이의 이야기 읽기 <span aria-hidden="true">→</span></span></div></a></section>`;
+}
 export function homeInformationView(english=false){
  const suffix=english?'-en':'';
  const cards=[
@@ -12,7 +15,12 @@ export function homeInformationView(english=false){
  return `<section class="section home-information" id="information" data-home-information><div class="home-info-heading"><div><div class="label">${text('정보 글','STORIES & GUIDES',english)}</div><h2><a href="/guides/about-petnyam${suffix}/">${text('사과 한 조각이 궁금했던 보호자, 왜 펫냠을 만들었을까요?','An apple, five pets—why did I build PetNyam?',english)}</a></h2></div><a href="/guides/">${text('정보 글 전체 보기 →','Browse all guides →',english)}</a></div><a class="home-owner-story" href="/guides/about-petnyam${suffix}/"><div class="home-owner-pictures"><img src="/images/owner/hong-apple.webp" alt="${text('사과에 관심을 보이는 홍이','Hong-i beside an apple',english)}" width="960" height="1280" loading="lazy"><img src="/images/owner/seol-apple.webp" alt="${text('사과 옆의 설이','Seol-i beside an apple',english)}" width="960" height="1280" loading="lazy"></div><div class="home-owner-copy"><span>${text('운영자의 실제 이야기','The operator’s firsthand story',english)}</span><h3>${text('홍이·설이에게 사과를 줘도 될까? 펫냠이 시작된 이야기','Could Hong-i and Seol-i eat an apple? The story behind PetNyam',english)}</h3><p>${text('사과를 먹여도 될까 궁금했던 순간부터, 햄스터 음식의 근거를 찾기 어려웠던 경험까지. 직접 전한 이야기와 사진을 담았습니다.','From wondering about apples to struggling to find supported hamster-food information. Read the story behind PetNyam and see the family photos.',english)}</p><strong>${text('홍이·설이 이야기 읽기 →','Read the family story →',english)}</strong></div></a>${homeToolLinksView(english)}<div class="home-info-grid">${cards.map(([slug,image,category,title,description])=>`<a class="home-info-card" href="/guides/${slug}${suffix}/"><img src="/images/guides/${image.includes('.')?image:image+'.svg'}" alt="" width="800" height="500" loading="lazy"><div><span>${category}</span><h3>${title}</h3><p>${description}</p><strong>${text('글 읽기 →','Read guide →',english)}</strong></div></a>`).join('')}</div></section>`;
 }
 export function mountHomeInformation(){
- const app=document.querySelector('#app');if(!app?.querySelector('.hero')||app.querySelector('[data-home-information]'))return;
+ const app=document.querySelector('#app'),hero=app?.querySelector('.hero');if(!hero)return;
+ if(document.documentElement.lang!=='en'){
+  if(!document.querySelector('link[href="/home-story-banner.css?v=1"]')){const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href='/home-story-banner.css?v=1';document.head.append(sheet);}
+  if(!app.querySelector('[data-home-story-banner]'))hero.insertAdjacentHTML('afterend',homeStoryBanner());
+ }
+ if(app.querySelector('[data-home-information]'))return;
  const english=document.documentElement.lang==='en',reader=app.querySelector('.reader-guide'),trust=app.querySelector('#trust');
  if(reader)reader.insertAdjacentHTML('afterend',homeInformationView(english));else if(trust)trust.insertAdjacentHTML('beforebegin',homeInformationView(english));else app.insertAdjacentHTML('beforeend',homeInformationView(english));
 }

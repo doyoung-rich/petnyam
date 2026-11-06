@@ -2,7 +2,7 @@ import { detailArticle, introEn, introKo } from '../docs/editorial.js';
 import {savedFoodsView} from '../docs/food-discovery-view.js';
 import {rescuePanel,registrationBanner} from '../docs/rescue-home.js';
 import {petAgeBanner} from '../docs/pet-age-banner.js';
-import {homeInformationView} from '../docs/home-information.js';
+import {homeInformationView,homeStoryBanner} from '../docs/home-information.js';
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -31,9 +31,9 @@ const foods = [...(`${app}\n${convenience}`).matchAll(
 )].map((match) => ({ slug: match[1], ko: match[2], en: match[3], emoji: match[4], results: match.slice(5) }));
 const uniqueFoods = [...new Map(foods.map((food) => [food.slug, food])).values()];
 let rescueData;try{rescueData=JSON.parse(await readFile(join(docs,'data/rescue-animals.json'),'utf8'));}catch{}
-const homeTemplate=(await readFile(join(docs, "index.html"), "utf8")).replace(/<main id="app">[\s\S]*?<\/main>/,`<main id="app"><section class="hero"><div class="copy">${introKo}${petAgeBanner(false)}<a href="/guides/">이용 가이드 보기 →</a></div><div class="visual rescue-visual">${rescuePanel(false,rescueData)}</div></section>${registrationBanner(false)}${savedFoodsView(false)}${homeInformationView(false)}</main>`);
-await writeFile(join(docs,'index.html'),homeTemplate);
-const template = homeTemplate.replace(/<main id="app">[\s\S]*?<\/main>/,'<main id="app"></main>');
+const homeTemplate=(await readFile(join(docs, "index.html"), "utf8")).replace(/<main id="app">[\s\S]*?<\/main>/,`<main id="app"><section class="hero"><div class="copy">${introKo}${petAgeBanner(false)}<a href="/guides/">이용 가이드 보기 →</a></div><div class="visual rescue-visual">${rescuePanel(false,rescueData)}</div></section>${homeStoryBanner(false)}${registrationBanner(false)}${savedFoodsView(false)}${homeInformationView(false)}</main>`);
+await writeFile(join(docs,'index.html'),homeTemplate.replace(/<link rel="stylesheet" href="\/home-story-banner\.css\?v=\d+">/g,'').replace('</head>','<link rel="stylesheet" href="/home-story-banner.css?v=1"></head>'));
+const template = homeTemplate.replace(/<link rel="stylesheet" href="\/home-story-banner\.css\?v=\d+">/g,'').replace(/<main id="app">[\s\S]*?<\/main>/,'<main id="app"></main>');
 const contentTemplate = template.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<div class="language">[\s\S]*?<\/div><\/div>/,'<a href="/en/">EN</a>');
 
 function escapeHtml(value) {

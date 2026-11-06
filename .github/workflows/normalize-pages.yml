@@ -35,6 +35,7 @@ on:
       - docs/guide-library.js
       - docs/new-information-articles.js
       - docs/home-information.js
+      - docs/home-story-banner.css
       - scripts/verify-new-information.mjs
       - docs/guide-library.css
       - docs/images/guides/**
