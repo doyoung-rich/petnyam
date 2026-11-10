@@ -1,6 +1,6 @@
 {
   "strategy": "doyounglab-v1",
-  "pages": 553,
+  "pages": 554,
   "review": [
     {
       "path": "/404.html",
@@ -13228,7 +13228,7 @@
       "bodyOpening": [
         "“Beef” is not a complete description. Tenderloin, ribeye, brisket and ribs differ in the part sold, visible fat, bones and preparation. This is a checklist for dogs and cats, not a ranking of universally safe cuts.",
         "These Nongsaro entries all say raw, but grade and naming differ. The tenderloin entry explicitly says Korean beef grade 1++; several others do not specify that same grade. They must not be treated as a controlled trial or an identical retail comparison.",
-        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-11-01T23:00:36.094Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
+        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-11-08T23:06:02.066Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -13268,7 +13268,7 @@
       "bodyOpening": [
         "‘소고기’라는 이름만으로는 부족합니다. 안심·등심·양지·갈비는 판매되는 부위, 보이는 지방, 뼈와 조리 방식까지 확인해야 합니다. 다음 내용은 강아지·고양이에게 확인할 항목이며 ‘무조건 안전한 부위 순위’가 아닙니다.",
         "아래 농사로 기록은 모두 생것이지만 등급과 표기가 동일하다고 볼 수 없습니다. 안심 기록은 한우 1++등급으로 명시되어 있고, 다른 일부 기록은 같은 등급 조건이 표시되어 있지 않습니다. 동일 조건의 실험이나 매장에서 구입하는 모든 고기의 비교표로 해석하지 마세요.",
-        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-11-01T23:00:36.094Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
+        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-11-08T23:06:02.066Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -14041,6 +14041,46 @@
       "proof": "page-content"
     },
     {
+      "path": "/guides/gogunsan-dog-travel/",
+      "language": "ko",
+      "keyword": "고군산군도 강아지 동반 여행",
+      "intent": "본문의 안내·도구·운영 정보를 찾는 검색",
+      "before": "고군산군도 강아지 동반 여행, 섬잇길도 함께 걸을 수 있을까? 배편부터 선유도 산책까지 | PetNyam",
+      "final": "고군산군도 강아지 동반 여행, 섬잇길도 함께 걸을 수 있을까? 배편부터 선유도 산책까지",
+      "changed": false,
+      "candidates": [
+        {
+          "type": "종합 추천형",
+          "title": "고군산군도 강아지 동반 여행, 섬잇길도 함께 걸을 수 있을까? 배편부터 선유도 산책까지"
+        },
+        {
+          "type": "숫자형",
+          "title": null,
+          "note": "정책·소개·안내에 인위적인 숫자나 질문을 넣지 않음."
+        }
+      ],
+      "reason": [
+        "핵심 주제를 앞에 배치",
+        "기존 본문이 답하는 궁금증과 해결 정보만 사용",
+        "모바일에서 앞부분만 보여도 주제 확인",
+        "클릭률·순위 향상을 보장하지 않음"
+      ],
+      "bodyOpening": [
+        "강아지와 함께 바다 여행을 준비하고 있다면 군산 고군산군도도 눈여겨볼 만한 곳입니다. 선유도와 장자도는 바다 풍경을 감상하며 여행할 수 있는 지역인데요.",
+        "최근에는 말도·명도·방축도 등을 연결한 고군산군도 섬잇길까지 화제가 되면서 반려견과 함께 방문할 수 있는지 궁금해하는 보호자도 있을 것 같습니다.",
+        "현재 확인한 공개 자료만으로는 섬잇길 전 구간의 반려견 출입 허용 여부를 확정하기 어렵습니다. 사람이 들어갈 수 있는 관광지라고 해서 반려견도 반드시 출입할 수 있는 것은 아닙니다. 여객선 탑승과 탐방로 출입 조건을 각각 확인해야 합니다."
+      ],
+      "thumbnail": {
+        "ratio": "1:1",
+        "subject": "본문의 실제 대상 또는 도구 화면",
+        "action": "음식의 상태·손질 부위를 보여 주는 구도. 섭취 실험이나 수의사 감수 장면 연출 금지.",
+        "composition": "대상과 문구는 중앙 안전 영역에 배치",
+        "expression": "자연스러운 표정, 위험 상황 과장 금지",
+        "text": "고군산군도 강아지 동반 여행"
+      },
+      "proof": "page-content"
+    },
+    {
       "path": "/guides/ground-meat-for-pets-en/",
       "language": "en",
       "keyword": "Can Dogs and Cats Eat Ground Meat",
@@ -14668,7 +14708,7 @@
       "bodyOpening": [
         "Plain cooked pork and a piece of fatty pork belly from a shared dinner are different questions. For dogs, the cited pork guidance favors lean, fully cooked, unseasoned, boneless meat. That does not make pork belly a routine treat or establish a safe portion for every dog or cat.",
         "Check the visible fat, the exact cut and the preparation. The Nongsaro records below illustrate how much the composition can differ. They are not feeding recommendations.",
-        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-11-01T23:00:36.094Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
+        "Source: Nongsaro, original source field “식품 DB”. Snapshot retrieved 2026-11-08T23:06:02.066Z. These are composition records, not safe portions, veterinary targets or a claim about every retail sample."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -14708,7 +14748,7 @@
       "bodyOpening": [
         "‘돼지고기를 먹을 수 있다’와 ‘식탁의 삼겹살을 나눠 줘도 된다’는 다른 질문입니다. 강아지 돼지고기 자료는 충분히 익힌 무양념·뼈 없는 살코기와 과한 지방 제거를 조건으로 설명합니다. 그 안내만으로 삼겹살을 일상 간식으로 추천하거나 강아지·고양이 모두의 안전량을 정할 수는 없습니다.",
         "눈에 보이는 지방, 정확한 부위, 가공 상태를 확인하세요. 농사로의 다음 원료 기록은 이름과 조리 상태에 따라 지방 비율이 다름을 보여 줍니다. 급여 권장표는 아닙니다.",
-        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-11-01T23:00:36.094Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
+        "출처: 농사로, 원자료 출처 항목 ‘식품 DB’. 자료 수집: 2026-11-08T23:06:02.066Z. 개별 분석일·급여 가능량·수의학적 목표값이 아닙니다. 시판되는 모든 고기가 이 수치라는 뜻도 아닙니다."
       ],
       "thumbnail": {
         "ratio": "1:1",

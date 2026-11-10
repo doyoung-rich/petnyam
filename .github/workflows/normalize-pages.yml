@@ -17,6 +17,7 @@ on:
       - docs/feature-articles.js
       - docs/family-life-articles.js
       - docs/cavalier-article.js
+      - docs/gogunsan-dog-travel.js
       - docs/expanded-food-guides.js
       - docs/expanded-food-guides.css
       - docs/extra-food-index.js

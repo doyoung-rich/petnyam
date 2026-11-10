@@ -1,3 +1,4 @@
+import {gogunsanDogTravel} from './gogunsan-dog-travel.js?v=1';
 import {cavalierArticle} from './cavalier-article.js?v=1';
 import {familyLifeArticles} from './family-life-articles.js?v=1';
 import {foodEvidenceGuides} from './food-evidence-guides.js?v=1';
@@ -12,6 +13,7 @@ import {petAgeArticles} from './pet-age-articles.js';
 import {newInformationArticles} from './new-information-articles.js';
 import {siteTitles} from './title-strategy.js?v=2';
 export const featureArticles = {
+ ...gogunsanDogTravel,
  ...cavalierArticle,
  ...familyLifeArticles,
  ...foodEvidenceGuides,
