@@ -1,7 +1,7 @@
 import {foodCatalog, petCatalog} from './food-page-catalog.js';
 import {searchTitleExperiment} from './search-title-experiment.js?v=1';
 import {rabbitFoodExplanations} from './rabbit-food-explanations.js';
-import {dogCatFoodExplanations} from './dog-cat-food-explanations.js?v=10';
+import {dogCatFoodExplanations} from './dog-cat-food-explanations.js?v=11';
 import {smallPetFoodExplanations} from './small-pet-food-explanations.js?v=10';
 import {priorityContent} from './priority-content.js';
 import {findNextFoods} from './food-discovery-model.js';

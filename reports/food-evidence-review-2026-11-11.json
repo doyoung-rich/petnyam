@@ -1,0 +1,280 @@
+{
+  "reviewed": "2026-11-11",
+  "scope": "Existing evidence-gap inventory; six combinations re-researched. Remaining entries are an open editorial backlog, not proof of AdSense rejection.",
+  "improved": [
+    "dog/peanut",
+    "dog/spinach",
+    "dog/mushroom",
+    "cat/peach",
+    "cat/pineapple",
+    "cat/sweet-potato"
+  ],
+  "preservedUrls": true,
+  "newRedirects": 0,
+  "remaining": [
+    {
+      "key": "dog/cabbage",
+      "reason": "배추 잎·줄기와 김치·절임배추를 구분해야 합니다. 양배추 등 다른 채소 자료를 배추의 직접 근거로 옮기지 않았으며, 이번 확인에서는 배추 자체의 종별 급여 안내를 충분히 확보하지 못했습니다.",
+      "sources": [
+        {
+          "title": "PDSA veterinary team: dog diet and prepared fruit",
+          "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/puppies-dogs/your-dogs-diet"
+        }
+      ]
+    },
+    {
+      "key": "cat/xylitol",
+      "reason": "전문 독성 자료는 강아지형 저혈당·간 손상 위험을 종별로 구분합니다. 이것이 자일리톨 제품 전체를 고양이 간식으로 승인한다는 뜻은 아닙니다.",
+      "sources": [
+        {
+          "title": "Merck Veterinary Manual: xylitol risk is species-specific",
+          "url": "https://www.merckvetmanual.com/toxicology/food-hazards/xylitol-toxicosis-in-dogs"
+        },
+        {
+          "title": "FDA: xylitol and dogs",
+          "url": "https://www.fda.gov/consumers/consumer-updates/paws-xylitol-its-dangerous-dogs"
+        }
+      ]
+    },
+    {
+      "key": "cat/cabbage",
+      "reason": "배추 잎·줄기와 김치·절임배추를 구분해야 합니다. 양배추 등 다른 채소 자료를 배추의 직접 근거로 옮기지 않았으며, 이번 확인에서는 배추 자체의 종별 급여 안내를 충분히 확보하지 못했습니다.",
+      "sources": [
+        {
+          "title": "Cornell Feline Health Center: diet context, not approval of every food",
+          "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat"
+        }
+      ]
+    },
+    {
+      "key": "cat/pear",
+      "reason": "배 과육·씨·심·배즙은 구분할 대상입니다. 강아지 과일 안내를 고양이의 급여량으로 옮기지 않았습니다.",
+      "sources": [
+        {
+          "title": "Cornell Feline Health Center: diet context, not approval of every food",
+          "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat"
+        }
+      ]
+    },
+    {
+      "key": "cat/potato",
+      "reason": "익힌 감자가 들어간 사료와 감자를 별도 간식으로 주는 것은 다릅니다. 생감자·싹·녹색 부위를 허용하는 안내가 아닙니다.",
+      "sources": [
+        {
+          "title": "Cornell Feline Health Center: diet context, not approval of every food",
+          "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat"
+        }
+      ]
+    },
+    {
+      "key": "cat/lettuce",
+      "reason": "상추라는 이름만으로 모든 식용 잎을 같은 식품으로 묶지 않았습니다. 드레싱이 든 샐러드의 성분은 더욱 별도로 확인해야 합니다.",
+      "sources": [
+        {
+          "title": "Cornell Feline Health Center: diet context, not approval of every food",
+          "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat"
+        }
+      ]
+    },
+    {
+      "key": "cat/spinach",
+      "reason": "다른 잎채소가 가능하다고 시금치까지 같은 판정으로 묶지 않았습니다. 처방식·질환이 있으면 재료 적합성을 별도로 확인하세요.",
+      "sources": [
+        {
+          "title": "Cornell Feline Health Center: diet context, not approval of every food",
+          "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat"
+        }
+      ]
+    },
+    {
+      "key": "cat/mushroom",
+      "reason": "식용 판매 버섯과 독버섯을 하나의 음식으로 묶을 수 없습니다. 전문가가 확인하지 않은 버섯은 사진이나 외형만으로 판단하지 않습니다.",
+      "sources": [
+        {
+          "title": "Pet Poison Helpline: unidentified mushroom exposure",
+          "url": "https://www.petpoisonhelpline.com/poison/mushrooms/"
+        }
+      ]
+    },
+    {
+      "key": "cat/peanut",
+      "reason": "땅콩버터의 첨가 성분 주의사항은 땅콩 원물의 안전량을 정한 근거가 아닙니다.",
+      "sources": [
+        {
+          "title": "VCA: foods listed as cat training treats",
+          "url": "https://vcahospitals.com/know-your-pet/using-food-and-treats-for-training-cats"
+        }
+      ]
+    },
+    {
+      "key": "cat/macadamia",
+      "reason": "전문 자료의 마카다미아 중독 증후군은 강아지에서 보고된 것입니다. 고양이의 안전을 확인한 급여 시험으로 볼 수는 없습니다.",
+      "sources": [
+        {
+          "title": "Merck Veterinary Manual: macadamia syndrome reported in dogs",
+          "url": "https://www.merckvetmanual.com/toxicology/food-hazards/macadamia-nut-toxicosis-in-dogs"
+        }
+      ]
+    },
+    {
+      "key": "rabbit/xylitol",
+      "reason": "확인한 자료로 토끼의 안전 급여 조건을 정할 수 없습니다. 강아지의 저혈당·간 손상 사례를 토끼에게 똑같이 단정하지도 않습니다.",
+      "sources": [
+        {
+          "title": "Merck Veterinary Manual · Diet for rabbits",
+          "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/diet-for-rabbits"
+        }
+      ]
+    },
+    {
+      "key": "rabbit/lemon",
+      "reason": "확인한 토끼 급여 자료만으로 레몬의 급여 조건을 정하기 어렵습니다. 신맛만 보고 독성이나 안전을 단정하지 않습니다.",
+      "sources": [
+        {
+          "title": "Merck Veterinary Manual · Diet for rabbits",
+          "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/diet-for-rabbits"
+        }
+      ]
+    },
+    {
+      "key": "hamster/grape",
+      "reason": "기관의 햄스터 안내가 서로 다릅니다. RSPCA는 피하도록 안내하지만 Woodgreen은 간식 예시에 포함합니다. 펫냠은 이 차이를 숨기고 안전하다고 단정하지 않습니다.",
+      "sources": [
+        {
+          "title": "RSPCA: Feeding hamsters",
+          "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet"
+        },
+        {
+          "title": "Woodgreen: Hamster care guide",
+          "url": "https://woodgreen.org.uk/wp-content/uploads/2025/12/Hamster-Care-Guide-2025.pdf"
+        }
+      ]
+    },
+    {
+      "key": "hamster/onion",
+      "reason": "확인한 햄스터 먹이 목록이 서로 다릅니다. PDSA는 목록에 포함하지만 AWLA는 피하도록 안내합니다. 안전량과 조건을 여기서 정하지 않습니다.",
+      "sources": [
+        {
+          "title": "PDSA: Hamster diet and food FAQs",
+          "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets"
+        },
+        {
+          "title": "Animal Welfare League of Arlington: Caring for hamsters",
+          "url": "https://www.awla.org/wp-content/uploads/2020/10/Hamster.pdf"
+        }
+      ]
+    },
+    {
+      "key": "hamster/xylitol",
+      "reason": "확인한 자료로는 이 동물의 자일리톨 안전량을 정할 수 없습니다. 강아지에서 알려진 위험과 같은 정도의 독성이 이 종에서도 입증되었다고 옮겨 쓰지 않습니다. 그렇다고 안전한 감미료로 권하지도 않습니다.",
+      "sources": [
+        {
+          "title": "RSPCA: Feeding hamsters",
+          "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet"
+        }
+      ]
+    },
+    {
+      "key": "hamster/cabbage",
+      "reason": "이 사이트의 배추 항목은 영어로 Cabbage라고 표시되어 왔습니다. 자료의 cabbage 일반 안내만으로 한국어 배추와 모든 품종의 급여 조건이 확인된 것은 아닙니다.",
+      "sources": [
+        {
+          "title": "PDSA: Hamster diet and food FAQs",
+          "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets"
+        }
+      ]
+    },
+    {
+      "key": "hamster/milk",
+      "reason": "기본 사육 자료는 신선한 물 제공을 안내합니다. 펫냠은 이를 바탕으로 우유를 음료 대체물로 권하지 않습니다. 해당 자료가 우유의 안전량·독성량이나 모든 햄스터의 유당 소화 능력을 입증하는 것은 아닙니다.",
+      "sources": [
+        {
+          "title": "UC Davis School of Veterinary Medicine: hamster water and basic diet",
+          "url": "https://healthtopics.vetmed.ucdavis.edu/health-topics/exotics/hamster-care"
+        },
+        {
+          "title": "RSPCA: Feeding hamsters",
+          "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet"
+        }
+      ]
+    },
+    {
+      "key": "hamster/peanut",
+      "reason": "일부 안내는 견과류를 간식으로 소개하지만, 땅콩은 별도로 피하라고 하는 안내도 있습니다. 견과류 전체에 대한 설명을 땅콩 안전성의 증거로 보지 않습니다.",
+      "sources": [
+        {
+          "title": "PDSA: Hamster diet and food FAQs",
+          "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets"
+        },
+        {
+          "title": "Animal Welfare League of Arlington: Caring for hamsters",
+          "url": "https://www.awla.org/wp-content/uploads/2020/10/Hamster.pdf"
+        }
+      ]
+    },
+    {
+      "key": "hamster/almond",
+      "reason": "견과류 일반 안내와 아몬드 제외 안내가 함께 존재합니다. 종류가 불분명한 아몬드를 안전한 햄스터 간식으로 권하지 않습니다.",
+      "sources": [
+        {
+          "title": "PDSA: Hamster diet and food FAQs",
+          "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/hamsters-as-pets"
+        },
+        {
+          "title": "Animal Welfare League of Arlington: Caring for hamsters",
+          "url": "https://www.awla.org/wp-content/uploads/2020/10/Hamster.pdf"
+        }
+      ]
+    },
+    {
+      "key": "hamster/macadamia",
+      "reason": "강아지의 마카다미아 위험 설명만으로 이 동물의 독성 여부나 안전량을 판단할 수 없습니다. 해당 종에 맞는 직접 근거가 부족해 급여를 권하지 않습니다.",
+      "sources": [
+        {
+          "title": "RSPCA: Feeding hamsters",
+          "url": "https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters/diet"
+        }
+      ]
+    },
+    {
+      "key": "parrot/xylitol",
+      "reason": "확인한 자료로는 이 동물의 자일리톨 안전량을 정할 수 없습니다. 강아지에서 알려진 위험과 같은 정도의 독성이 이 종에서도 입증되었다고 옮겨 쓰지 않습니다. 그렇다고 안전한 감미료로 권하지도 않습니다.",
+      "sources": [
+        {
+          "title": "Merck Veterinary Manual: Nutrition in psittacines",
+          "url": "https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-psittacines"
+        }
+      ]
+    },
+    {
+      "key": "parrot/cabbage",
+      "reason": "이 사이트의 배추 항목은 영어로 Cabbage라고 표시되어 왔습니다. 자료의 cabbage 일반 안내만으로 한국어 배추와 모든 품종의 급여 조건이 확인된 것은 아닙니다.",
+      "sources": [
+        {
+          "title": "VCA: Fruits and vegetables in bird diets",
+          "url": "https://vcahospitals.com/spring-creek/know-your-pet/fruits-and-vegetables-in-bird-diets"
+        }
+      ]
+    },
+    {
+      "key": "parrot/lemon",
+      "reason": "일부 꿀먹이 조류의 감귤류 제한은 확인되지만, 레몬을 모든 앵무새에게 권할 조건은 확보하지 못했습니다.",
+      "sources": [
+        {
+          "title": "Merck Veterinary Manual: Feeding a pet bird",
+          "url": "https://www.merckvetmanual.com/en-us/veterinary/bird-owners/choosing-and-taking-care-of-a-pet-bird/feeding-a-pet-bird"
+        }
+      ]
+    },
+    {
+      "key": "parrot/macadamia",
+      "reason": "강아지의 마카다미아 위험 설명만으로 이 동물의 독성 여부나 안전량을 판단할 수 없습니다. 해당 종에 맞는 직접 근거가 부족해 급여를 권하지 않습니다.",
+      "sources": [
+        {
+          "title": "Merck Veterinary Manual: Nutrition in psittacines",
+          "url": "https://www.merckvetmanual.com/management-and-nutrition/nutrition-exotic-and-zoo-animals/nutrition-in-psittacines"
+        }
+      ]
+    }
+  ]
+}

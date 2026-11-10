@@ -271,6 +271,86 @@ dogCatFoodExplanations.dog.apple.faq={
  ]
 };
 
+// 2026-11-11: replace research gaps only where the named species and food are addressed.
+dogCatFoodExplanations.dog.peanut = record('caution','direct',[
+ source('AKC: plain peanuts, shells, salt and fat','https://www.akc.org/expert-advice/nutrition/can-dogs-eat-peanuts/'),sources.dogXylitol
+],[
+ '껍질을 벗긴 무염·무양념 땅콩은 가끔 소량만 고려하세요. 매일 주는 간식으로 권하지 않습니다.',
+ '땅콩 원물과 가공 땅콩버터는 구분합니다. 땅콩은 지방이 많아 많이 먹거나 반복해서 먹으면 소화 불편과 췌장염 위험을 고려해야 합니다.',
+ '껍질을 완전히 제거하고 통째로 삼키지 않도록 준비하세요. 땅콩버터라면 자일리톨 등 성분을 먼저 확인하세요.',
+ '소금·꿀·향미를 더한 제품은 피하세요. 췌장염 병력이나 식이 제한이 있으면 수의사에게 먼저 확인하세요.'
+],[
+ 'Plain, unsalted, shelled peanuts are an occasional small treat, not a daily recommendation.',
+ 'Whole peanuts and peanut butter need different checks. High fat raises digestive and pancreatitis concerns with large or repeated servings.',
+ 'Remove shells and prevent swallowing whole. Check peanut-butter ingredients for xylitol.',
+ 'Avoid salted, honey-roasted or flavored products. Ask your vet first with pancreatitis or dietary restrictions.'
+]);
+dogCatFoodExplanations.dog.spinach = record('caution','direct',[
+ source('AKC: spinach, oxalates and kidney precautions','https://www.akc.org/expert-advice/nutrition/can-dogs-eat-spinach/')
+],[
+ '시금치는 꼭 필요한 간식이 아닙니다. 주려면 수의사에게 먼저 확인하고, 건강한 강아지에게 익힌 무양념 형태를 가끔 소량만 고려하세요.',
+ '시금치의 옥살산염은 칼슘 이용과 신장 부담에 관련됩니다. 소량을 먹은 경우와 많은 양을 장기간 먹는 경우를 같은 위험으로 단정하지 않습니다.',
+ '씻어 찐 뒤 잘게 자르세요. 소금·기름·마늘·양파를 넣은 시금치나물은 별도 음식입니다.',
+ '신장 질환이나 결석 경향이 있으면 임의로 추가하지 마세요. 시금치가 치료식이나 영양제를 대신하지는 않습니다.'
+],[
+ 'Spinach is optional. Ask your vet first; only consider small, occasional servings of plain steamed spinach for a healthy dog.',
+ 'Oxalates affect calcium availability and kidney burden. A small exposure differs from large, sustained intake.',
+ 'Wash, steam and chop. Seasoned spinach with salt, oil, onion or garlic needs a separate assessment.',
+ 'Do not add it without advice for kidney disease or stone risk. It does not replace therapeutic diets.'
+]);
+const catFruitReview=source('PetMD: veterinarian-written and reviewed cat fruit guidance','https://www.petmd.com/cat/nutrition/which-fruits-can-cats-eat');
+dogCatFoodExplanations.cat.peach=record('caution','direct',[catFruitReview],[
+ '고양이는 복숭아 과육을 소량 간식으로 먹을 수 있지만 필수 음식은 아닙니다.',
+ '과육 안내를 씨까지 먹어도 된다는 뜻으로 넓히지 마세요. 주식은 고양이용 완전균형식입니다.',
+ '씻고 씨를 제거한 과육만 작게 준비하세요.',
+ '씨가 남은 통과일이나 가공 디저트는 같은 판정이 아닙니다.'
+],[
+ 'Cats can have a little peach flesh as an optional treat.',
+ 'Flesh guidance does not approve the stone or replace complete cat food.',
+ 'Wash, remove the stone and cut the flesh.',
+ 'Whole fruit and desserts need separate checks.'
+]);
+dogCatFoodExplanations.cat.pineapple=record('caution','direct',[catFruitReview],[
+ '고양이는 손질한 생파인애플 과육을 소량 먹을 수 있습니다. 억지로 먹일 필요는 없습니다.',
+ '생과육 간식에 대한 안내입니다. 영양이 풍부하다는 이유로 주식 대신 주지는 마세요.',
+ '껍질과 단단한 부위를 제외한 과육을 작게 준비하세요.',
+ '통조림 시럽·주스·디저트는 생과육과 다릅니다.'
+],[
+ 'Small fresh pineapple pieces are an optional cat treat.',
+ 'This is flesh guidance, not a reason to replace meals.',
+ 'Offer small prepared flesh pieces without tough parts.',
+ 'Syrup, juice and desserts differ from fresh fruit.'
+]);
+dogCatFoodExplanations.dog.mushroom=record('caution','direct',[
+ source('PetMD: veterinary-reviewed store-bought versus wild mushrooms','https://www.petmd.com/dog/nutrition/can-dogs-eat-mushrooms'),sources.mushrooms
+],[
+ '식용으로 판매되는 버섯과 야생 버섯은 다릅니다. 모르는 버섯을 먹었다면 증상을 기다리지 말고 바로 동물병원에 연락하세요.',
+ '일부 야생 버섯은 심각한 중독을 일으킬 수 있습니다. 사진이나 모양만 보고 보호자가 식용 여부를 판별하지 마세요. 식용 판매 버섯도 반드시 먹여야 할 간식은 아닙니다.',
+ '급여를 고려한다면 종류와 판매 출처가 분명한 무양념 식용 버섯인지 확인하세요. 산책 중 발견한 버섯은 주지 마세요.',
+ '먹은 버섯의 사진·발견 장소·시각을 기록해 병원에 전달하세요. 버터·마늘·소스가 섞인 요리는 버섯 원물과 별도로 확인해야 합니다.'
+],[
+ 'Store-bought edible mushrooms differ from wild mushrooms. Call a vet immediately after unidentified mushroom ingestion, without waiting for symptoms.',
+ 'Some wild species cause serious poisoning. Do not identify edibility yourself from a photo or appearance. Cultivated mushrooms are not essential treats.',
+ 'Only consider plain edible mushrooms with a known identity and source. Never offer mushrooms found on walks.',
+ 'Tell the vet the time and location and provide a photo. Butter, garlic and sauces require separate checks.'
+]);
+dogCatFoodExplanations.cat['sweet-potato']=record('caution','direct',[
+ source('PetMD: veterinarian-written and reviewed cat sweet-potato guidance','https://www.petmd.com/cat/nutrition/can-cats-eat-sweet-potatoes')
+],[
+ '고양이는 푹 익힌 무양념 고구마를 소량 먹을 수 있습니다. 생고구마나 양념한 고구마와는 구분하세요.',
+ '고구마는 선택적인 간식일 뿐입니다. 많이 먹으면 소화 불편이나 추가 열량 문제가 생길 수 있어 고양이용 주식을 대신하지 않습니다.',
+ '완전히 익혀 부드럽게 으깨거나 작게 나누세요. 처음에는 적은 양으로 반응을 살피고 억지로 먹이지 마세요.',
+ '버터·설탕·기름·향신료를 넣은 요리나 튀김은 피하세요. 처방식이나 건강 문제가 있다면 먼저 수의사에게 확인하세요.'
+],[
+ 'Cats can have a little fully cooked, plain sweet potato. Raw or seasoned versions differ.',
+ 'It is optional, not a meal replacement. Excess can upset digestion and add unwanted calories.',
+ 'Cook until soft, then mash or cut small. Start small and do not force it.',
+ 'Avoid butter, sugar, oil, spices and fried versions. Check with a vet for illness or prescribed diets.'
+]);
+for(const key of ['dog/peanut','dog/spinach','dog/mushroom','cat/peach','cat/pineapple','cat/sweet-potato']){
+ const [pet,food]=key.split('/'); dogCatFoodExplanations[pet][food].updated='2026-11-11';
+}
+
 for (const species of ['dog','cat']) {
   if (Object.keys(dogCatFoodExplanations[species]).length !== 50) throw new Error(`Expected 50 food explanations for ${species}`);
   for (const [slug, item] of Object.entries(dogCatFoodExplanations[species])) for (const lang of ['ko','en']) for (const field of ['answer','why','preparation','avoid']) {

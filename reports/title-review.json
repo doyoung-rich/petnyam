@@ -1658,12 +1658,12 @@
       "keyword": "Cat peaches",
       "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
       "before": "Can cats eat peaches? | PetNyam",
-      "final": "Can cats eat peaches? Evidence Gaps and What to Check",
+      "final": "Can cats eat peaches? Treats, Meals and Precautions",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "Can cats eat peaches? Evidence Gaps and What to Check"
+          "title": "Can cats eat peaches? Treats, Meals and Precautions"
         },
         {
           "type": "검색 + 비교형",
@@ -1680,7 +1680,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "Can cats eat peaches? Evidence Gaps and What to Check"
+          "title": "Can cats eat peaches? Treats, Meals and Precautions"
         }
       ],
       "reason": [
@@ -1690,9 +1690,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "We have not sufficiently assessed peach as a treat for cats. Do not introduce it before checking.",
-        "Ask your veterinarian with the exact food, part, preparation and current diet.",
-        "Do not copy another species' verdict or treat an ingredient list as permission for unrestricted feeding."
+        "Cats can have a little peach flesh as an optional treat.",
+        "Wash, remove the stone and cut the flesh.",
+        "Whole fruit and desserts need separate checks."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -1702,7 +1702,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "Peach · Check first"
       },
-      "proof": "limited"
+      "proof": "주식|식단|간식"
     },
     {
       "path": "/en/cat/peanut/",
@@ -1814,12 +1814,12 @@
       "keyword": "Cat pineapple",
       "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
       "before": "Can cats eat pineapple? | PetNyam",
-      "final": "Can cats eat pineapple? Evidence Gaps and What to Check",
+      "final": "Can cats eat pineapple? Skin and Preparation Tips",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "Can cats eat pineapple? Evidence Gaps and What to Check"
+          "title": "Can cats eat pineapple? Skin and Preparation Tips"
         },
         {
           "type": "검색 + 비교형",
@@ -1836,7 +1836,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "Can cats eat pineapple? Evidence Gaps and What to Check"
+          "title": "Can cats eat pineapple? Skin and Preparation Tips"
         }
       ],
       "reason": [
@@ -1846,9 +1846,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "We have not sufficiently assessed pineapple as a treat for cats. Do not introduce it before checking.",
-        "Ask your veterinarian with the exact food, part, preparation and current diet.",
-        "Do not copy another species' verdict or treat an ingredient list as permission for unrestricted feeding."
+        "Small fresh pineapple pieces are an optional cat treat.",
+        "Offer small prepared flesh pieces without tough parts.",
+        "Syrup, juice and desserts differ from fresh fruit."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -1858,7 +1858,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "Pineapple · Check first"
       },
-      "proof": "limited"
+      "proof": "껍질"
     },
     {
       "path": "/en/cat/pork/",
@@ -2334,12 +2334,12 @@
       "keyword": "Cat sweet potato",
       "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
       "before": "Can cats eat sweet potato? | PetNyam",
-      "final": "Can cats eat sweet potato? Evidence Gaps and What to Check",
+      "final": "Can cats eat sweet potato? Plain Food vs Sweetened Products",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "Can cats eat sweet potato? Evidence Gaps and What to Check"
+          "title": "Can cats eat sweet potato? Plain Food vs Sweetened Products"
         },
         {
           "type": "검색 + 비교형",
@@ -2356,7 +2356,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "Can cats eat sweet potato? Evidence Gaps and What to Check"
+          "title": "Can cats eat sweet potato? Plain Food vs Sweetened Products"
         }
       ],
       "reason": [
@@ -2366,9 +2366,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "We have not sufficiently assessed sweet potato as a treat for cats. Do not introduce it before checking.",
-        "Ask your veterinarian with the exact food, part, preparation and current diet.",
-        "Do not copy another species' verdict or treat an ingredient list as permission for unrestricted feeding."
+        "Cats can have a little fully cooked, plain sweet potato. Raw or seasoned versions differ.",
+        "Cook until soft, then mash or cut small.",
+        "Avoid butter, sugar, oil, spices and fried versions."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -2378,7 +2378,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "Sweet potato · Check first"
       },
-      "proof": "limited"
+      "proof": "가당|설탕|시럽"
     },
     {
       "path": "/en/cat/tomato/",
@@ -4102,12 +4102,12 @@
       "keyword": "Dog mushrooms",
       "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
       "before": "Can dogs eat mushrooms? | PetNyam",
-      "final": "Can dogs eat mushrooms? Evidence Gaps and What to Check",
+      "final": "Can dogs eat mushrooms? Ingredients and Seasoning to Check",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "Can dogs eat mushrooms? Evidence Gaps and What to Check"
+          "title": "Can dogs eat mushrooms? Ingredients and Seasoning to Check"
         },
         {
           "type": "검색 + 비교형",
@@ -4124,7 +4124,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "Can dogs eat mushrooms? Evidence Gaps and What to Check"
+          "title": "Can dogs eat mushrooms? Ingredients and Seasoning to Check"
         }
       ],
       "reason": [
@@ -4134,9 +4134,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "The word mushroom is too broad for a safety verdict. Never offer wild mushrooms.",
-        "Confirm the exact species, food origin and preparation before considering a treat.",
-        "Call a veterinarian after an unidentified outdoor mushroom exposure rather than waiting for signs or guessing online."
+        "Store-bought edible mushrooms differ from wild mushrooms. Call a vet immediately after unidentified mushroom ingestion, without waiting for symptoms.",
+        "Only consider plain edible mushrooms with a known identity and source.",
+        "Tell the vet the time and location and provide a photo."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -4146,7 +4146,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "Mushroom · Check first"
       },
-      "proof": "limited"
+      "proof": "양파|마늘|대파"
     },
     {
       "path": "/en/dog/onion/",
@@ -4310,12 +4310,12 @@
       "keyword": "Dog peanuts",
       "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
       "before": "Can dogs eat peanuts? | PetNyam",
-      "final": "Can dogs eat peanuts? Evidence Gaps and What to Check",
+      "final": "Can dogs eat peanuts? Skin and Preparation Tips",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "Can dogs eat peanuts? Evidence Gaps and What to Check"
+          "title": "Can dogs eat peanuts? Skin and Preparation Tips"
         },
         {
           "type": "검색 + 비교형",
@@ -4332,7 +4332,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "Can dogs eat peanuts? Evidence Gaps and What to Check"
+          "title": "Can dogs eat peanuts? Skin and Preparation Tips"
         }
       ],
       "reason": [
@@ -4342,9 +4342,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "Plain-peanut suitability has not been sufficiently assessed; peanuts are not peanut butter.",
-        "Check the form and label with your veterinarian before introducing it.",
-        "Do not equate salted or sweetened products with plain nuts; xylitol is particularly hazardous for dogs."
+        "Plain, unsalted, shelled peanuts are an occasional small treat, not a daily recommendation.",
+        "Remove shells and prevent swallowing whole.",
+        "Avoid salted, honey-roasted or flavored products."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -4354,7 +4354,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "Peanut · Check first"
       },
-      "proof": "limited"
+      "proof": "껍질"
     },
     {
       "path": "/en/dog/pear/",
@@ -4830,12 +4830,12 @@
       "keyword": "Dog spinach",
       "intent": "Check whether this species can eat this food, preparation, exclusions and next action.",
       "before": "Can dogs eat spinach? | PetNyam",
-      "final": "Can dogs eat spinach? Evidence Gaps and What to Check",
+      "final": "Can dogs eat spinach? Ingredients and Seasoning to Check",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "Can dogs eat spinach? Evidence Gaps and What to Check"
+          "title": "Can dogs eat spinach? Ingredients and Seasoning to Check"
         },
         {
           "type": "검색 + 비교형",
@@ -4852,7 +4852,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "Can dogs eat spinach? Evidence Gaps and What to Check"
+          "title": "Can dogs eat spinach? Ingredients and Seasoning to Check"
         }
       ],
       "reason": [
@@ -4862,9 +4862,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "We have not sufficiently assessed spinach as a treat for dogs. Do not introduce it before checking.",
-        "Ask your veterinarian with the exact food, part, preparation and current diet.",
-        "Do not copy another species' verdict or treat an ingredient list as permission for unrestricted feeding."
+        "Spinach is optional. Ask your vet first; only consider small, occasional servings of plain steamed spinach for a healthy dog.",
+        "Do not add it without advice for kidney disease or stone risk.",
+        "Keep the product and record the amount, time and any changes."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -4874,7 +4874,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "Spinach · Check first"
       },
-      "proof": "limited"
+      "proof": "양파|마늘|대파"
     },
     {
       "path": "/en/dog/strawberry/",
@@ -16618,12 +16618,12 @@
       "keyword": "고양이 복숭아",
       "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
       "before": "고양이 복숭아 먹어도 될까? | PetNyam",
-      "final": "고양이 복숭아, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "고양이 복숭아 먹어도 될까? 간식·주식 구분과 급여 조건",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "고양이 복숭아, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "고양이 복숭아 먹어도 될까? 간식·주식 구분과 급여 조건"
         },
         {
           "type": "검색 + 비교형",
@@ -16631,7 +16631,7 @@
         },
         {
           "type": "검색 + 해결형",
-          "title": "고양이 복숭아, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
+          "title": "고양이 복숭아 먹어도 될까? 급여 전 확인할 조건과 출처"
         },
         {
           "type": "검색 + 숫자형",
@@ -16640,7 +16640,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "고양이 복숭아, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "고양이 복숭아 먹어도 될까? 간식·주식 구분과 급여 조건"
         }
       ],
       "reason": [
@@ -16650,9 +16650,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "복숭아의 고양이 급여 적합성을 충분히 확인하지 못했습니다. 확인 전에는 새 간식으로 주지 마세요.",
-        "수의사에게 정확한 식품명·부위·조리법과 현재 먹는 사료를 알려 적합성을 확인하세요.",
-        "다른 동물의 ‘가능’ 판정이나 사료의 원재료 표시를 이 음식의 자유 급여 허가로 사용하지 마세요."
+        "고양이는 복숭아 과육을 소량 간식으로 먹을 수 있지만 필수 음식은 아닙니다.",
+        "과육 안내를 씨까지 먹어도 된다는 뜻으로 넓히지 마세요. 주식은 고양이용 완전균형식입니다.",
+        "‘주지 마세요’가 모든 한 입의 중독을 뜻하지는 않습니다. 성분·먹은 양·시각·동물 상태를 함께 확인해야 합니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -16662,7 +16662,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "복숭아 · 급여 전 확인"
       },
-      "proof": "limited"
+      "proof": "주식|식단|간식"
     },
     {
       "path": "/ko/cat/peanut/",
@@ -16774,12 +16774,12 @@
       "keyword": "고양이 파인애플",
       "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
       "before": "고양이 파인애플 먹어도 될까? | PetNyam",
-      "final": "고양이 파인애플, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "고양이 파인애플 먹어도 될까? 껍질·손질과 급여 전 주의사항",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "고양이 파인애플, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "고양이 파인애플 먹어도 될까? 껍질·손질과 급여 전 주의사항"
         },
         {
           "type": "검색 + 비교형",
@@ -16787,7 +16787,7 @@
         },
         {
           "type": "검색 + 해결형",
-          "title": "고양이 파인애플, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
+          "title": "고양이 파인애플 먹어도 될까? 급여 전 확인할 조건과 출처"
         },
         {
           "type": "검색 + 숫자형",
@@ -16796,7 +16796,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "고양이 파인애플, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "고양이 파인애플 먹어도 될까? 껍질·손질과 급여 전 주의사항"
         }
       ],
       "reason": [
@@ -16806,9 +16806,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "파인애플의 고양이 급여 적합성을 충분히 확인하지 못했습니다. 확인 전에는 새 간식으로 주지 마세요.",
-        "수의사에게 정확한 식품명·부위·조리법과 현재 먹는 사료를 알려 적합성을 확인하세요.",
-        "다른 동물의 ‘가능’ 판정이나 사료의 원재료 표시를 이 음식의 자유 급여 허가로 사용하지 마세요."
+        "고양이는 손질한 생파인애플 과육을 소량 먹을 수 있습니다. 억지로 먹일 필요는 없습니다.",
+        "생과육 간식에 대한 안내입니다. 영양이 풍부하다는 이유로 주식 대신 주지는 마세요.",
+        "‘주지 마세요’가 모든 한 입의 중독을 뜻하지는 않습니다. 성분·먹은 양·시각·동물 상태를 함께 확인해야 합니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -16818,7 +16818,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "파인애플 · 급여 전 확인"
       },
-      "proof": "limited"
+      "proof": "껍질"
     },
     {
       "path": "/ko/cat/pork/",
@@ -17294,12 +17294,12 @@
       "keyword": "고양이 고구마",
       "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
       "before": "고양이 고구마 먹어도 될까? | PetNyam",
-      "final": "고양이 고구마, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "고양이 고구마 먹어도 될까? 원물과 가당 제품의 차이",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "고양이 고구마, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "고양이 고구마 먹어도 될까? 원물과 가당 제품의 차이"
         },
         {
           "type": "검색 + 비교형",
@@ -17307,7 +17307,7 @@
         },
         {
           "type": "검색 + 해결형",
-          "title": "고양이 고구마, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
+          "title": "고양이 고구마 먹어도 될까? 급여 전 확인할 조건과 출처"
         },
         {
           "type": "검색 + 숫자형",
@@ -17316,7 +17316,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "고양이 고구마, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "고양이 고구마 먹어도 될까? 원물과 가당 제품의 차이"
         }
       ],
       "reason": [
@@ -17326,9 +17326,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "고구마의 고양이 급여 적합성을 충분히 확인하지 못했습니다. 확인 전에는 새 간식으로 주지 마세요.",
-        "수의사에게 정확한 식품명·부위·조리법과 현재 먹는 사료를 알려 적합성을 확인하세요.",
-        "다른 동물의 ‘가능’ 판정이나 사료의 원재료 표시를 이 음식의 자유 급여 허가로 사용하지 마세요."
+        "고양이는 푹 익힌 무양념 고구마를 소량 먹을 수 있습니다. 생고구마나 양념한 고구마와는 구분하세요.",
+        "고구마는 선택적인 간식일 뿐입니다. 많이 먹으면 소화 불편이나 추가 열량 문제가 생길 수 있어 고양이용 주식을 대신하지 않습니다.",
+        "완전히 익혀 부드럽게 으깨거나 작게 나누세요. 처음에는 적은 양으로 반응을 살피고 억지로 먹이지 마세요."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -17338,7 +17338,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "고구마 · 급여 전 확인"
       },
-      "proof": "limited"
+      "proof": "가당|설탕|시럽"
     },
     {
       "path": "/ko/cat/tomato/",
@@ -19062,12 +19062,12 @@
       "keyword": "강아지 버섯",
       "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
       "before": "강아지 버섯 먹어도 될까? | PetNyam",
-      "final": "강아지 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "강아지 버섯 먹어도 될까? 양념·성분을 따로 확인해야 하는 이유",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "강아지 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "강아지 버섯 먹어도 될까? 양념·성분을 따로 확인해야 하는 이유"
         },
         {
           "type": "검색 + 비교형",
@@ -19075,7 +19075,7 @@
         },
         {
           "type": "검색 + 해결형",
-          "title": "강아지 버섯, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
+          "title": "강아지 버섯 먹어도 될까? 급여 전 확인할 조건과 출처"
         },
         {
           "type": "검색 + 숫자형",
@@ -19084,7 +19084,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "강아지 버섯, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "강아지 버섯 먹어도 될까? 양념·성분을 따로 확인해야 하는 이유"
         }
       ],
       "reason": [
@@ -19094,9 +19094,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "‘버섯’이라는 이름만으로 안전 판정을 할 수 없습니다. 야생 버섯은 먹이지 마세요.",
-        "산책 중 버섯을 먹었다면 증상을 기다리지 말고 병원에 연락하세요.",
-        "식용 판매 버섯과 독버섯을 하나의 음식으로 묶을 수 없습니다. 전문가가 확인하지 않은 버섯은 사진이나 외형만으로 판단하지 않습니다."
+        "식용으로 판매되는 버섯과 야생 버섯은 다릅니다. 모르는 버섯을 먹었다면 증상을 기다리지 말고 바로 동물병원에 연락하세요.",
+        "급여를 고려한다면 종류와 판매 출처가 분명한 무양념 식용 버섯인지 확인하세요.",
+        "일부 야생 버섯은 심각한 중독을 일으킬 수 있습니다. 사진이나 모양만 보고 보호자가 식용 여부를 판별하지 마세요. 식용 판매 버섯도 반드시 먹여야 할 간식은 아닙니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -19106,7 +19106,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "버섯 · 급여 전 확인"
       },
-      "proof": "limited"
+      "proof": "양파|마늘|대파"
     },
     {
       "path": "/ko/dog/onion/",
@@ -19270,12 +19270,12 @@
       "keyword": "강아지 땅콩",
       "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
       "before": "강아지 땅콩 먹어도 될까? | PetNyam",
-      "final": "강아지 땅콩, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "강아지 땅콩 먹어도 될까? 껍질·손질과 급여 전 주의사항",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "강아지 땅콩, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "강아지 땅콩 먹어도 될까? 껍질·손질과 급여 전 주의사항"
         },
         {
           "type": "검색 + 비교형",
@@ -19283,7 +19283,7 @@
         },
         {
           "type": "검색 + 해결형",
-          "title": "강아지 땅콩, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
+          "title": "강아지 땅콩 먹어도 될까? 급여 전 확인할 조건과 출처"
         },
         {
           "type": "검색 + 숫자형",
@@ -19292,7 +19292,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "강아지 땅콩, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "강아지 땅콩 먹어도 될까? 껍질·손질과 급여 전 주의사항"
         }
       ],
       "reason": [
@@ -19302,9 +19302,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "일반 땅콩의 급여 적합성을 충분히 확인하지 못했습니다. 땅콩버터와도 구분하세요.",
-        "새 간식으로 주기 전에 원물·가공품 구분과 성분표를 확인해 상담하세요.",
-        "땅콩버터의 첨가 성분 주의사항은 땅콩 원물의 안전량을 정한 근거가 아닙니다."
+        "껍질을 벗긴 무염·무양념 땅콩은 가끔 소량만 고려하세요. 매일 주는 간식으로 권하지 않습니다.",
+        "땅콩 원물과 가공 땅콩버터는 구분합니다. 땅콩은 지방이 많아 많이 먹거나 반복해서 먹으면 소화 불편과 췌장염 위험을 고려해야 합니다.",
+        "껍질을 완전히 제거하고 통째로 삼키지 않도록 준비하세요. 땅콩버터라면 자일리톨 등 성분을 먼저 확인하세요."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -19314,7 +19314,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "땅콩 · 급여 전 확인"
       },
-      "proof": "limited"
+      "proof": "껍질"
     },
     {
       "path": "/ko/dog/pear/",
@@ -19790,12 +19790,12 @@
       "keyword": "강아지 시금치",
       "intent": "선택한 동물의 섭취 가능 여부·손질·제외 조건·다음 행동 확인",
       "before": "강아지 시금치 먹어도 될까? | PetNyam",
-      "final": "강아지 시금치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보",
+      "final": "강아지 시금치 먹어도 될까? 양념·성분을 따로 확인해야 하는 이유",
       "changed": true,
       "candidates": [
         {
           "type": "검색 + 궁금증형",
-          "title": "강아지 시금치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "강아지 시금치 먹어도 될까? 양념·성분을 따로 확인해야 하는 이유"
         },
         {
           "type": "검색 + 비교형",
@@ -19803,7 +19803,7 @@
         },
         {
           "type": "검색 + 해결형",
-          "title": "강아지 시금치, 줘도 괜찮을까? 급여 전 확인할 조건과 출처"
+          "title": "강아지 시금치 먹어도 될까? 급여 전 확인할 조건과 출처"
         },
         {
           "type": "검색 + 숫자형",
@@ -19812,7 +19812,7 @@
         },
         {
           "type": "종합 추천형",
-          "title": "강아지 시금치, 줘도 괜찮을까? 급여 보류 이유와 확인할 정보"
+          "title": "강아지 시금치 먹어도 될까? 양념·성분을 따로 확인해야 하는 이유"
         }
       ],
       "reason": [
@@ -19822,9 +19822,9 @@
         "클릭률·순위 향상을 보장하지 않음"
       ],
       "bodyOpening": [
-        "시금치의 강아지 급여 적합성을 충분히 확인하지 못했습니다. 확인 전에는 새 간식으로 주지 마세요.",
-        "수의사에게 정확한 식품명·부위·조리법과 현재 먹는 사료를 알려 적합성을 확인하세요.",
-        "다른 동물의 ‘가능’ 판정이나 사료의 원재료 표시를 이 음식의 자유 급여 허가로 사용하지 마세요."
+        "시금치는 꼭 필요한 간식이 아닙니다. 주려면 수의사에게 먼저 확인하고, 건강한 강아지에게 익힌 무양념 형태를 가끔 소량만 고려하세요.",
+        "시금치의 옥살산염은 칼슘 이용과 신장 부담에 관련됩니다. 소량을 먹은 경우와 많은 양을 장기간 먹는 경우를 같은 위험으로 단정하지 않습니다.",
+        "씻어 찐 뒤 잘게 자르세요. 소금·기름·마늘·양파를 넣은 시금치나물은 별도 음식입니다."
       ],
       "thumbnail": {
         "ratio": "1:1",
@@ -19834,7 +19834,7 @@
         "expression": "자연스러운 표정, 위험 상황 과장 금지",
         "text": "시금치 · 급여 전 확인"
       },
-      "proof": "limited"
+      "proof": "양파|마늘|대파"
     },
     {
       "path": "/ko/dog/strawberry/",
