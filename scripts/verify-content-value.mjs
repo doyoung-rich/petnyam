@@ -67,8 +67,9 @@ assert.equal(getFoodRecord('hamster/milk').evidence,'limited');
 assert.ok(getFoodRecord('hamster/milk').ko.why.includes('모든 햄스터의 유당'));
 for(const key of ['cat/mango','hamster/milk'])for(const lang of ['ko','en']){
   const html=await read(`${lang}/${key}/index.html`);
-  assert.ok(html.includes('Content updated: 2026-10-25')||html.includes('본문 업데이트: 2026-10-25'));
-  assert.ok(map.includes(`<loc>https://petnyam.com/${lang}/${key}/</loc><lastmod>2026-10-25</lastmod>`));
+  const updated=getFoodRecord(key).updated;assert.match(updated,/^\d{4}-\d{2}-\d{2}$/);
+  assert.ok(html.includes('Content updated: '+updated)||html.includes('본문 업데이트: '+updated));
+  assert.ok(map.includes(`<loc>https://petnyam.com/${lang}/${key}/</loc><lastmod>${updated}</lastmod>`));
 }
 for(const file of ['index.html','en/index.html']){
   const html=await read(file);assert.ok(html.includes('/guides/pet-treat-cost-calculator/'));assert.ok(html.includes('data-about-link="1"'));

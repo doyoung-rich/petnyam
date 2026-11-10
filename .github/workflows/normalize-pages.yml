@@ -90,6 +90,7 @@ on:
       - scripts/verify-food-discovery.mjs
       - docs/rabbit-food-explanations.js
       - docs/dog-cat-food-explanations.js
+      - docs/food-detail-notes.js
       - docs/small-pet-food-explanations.js
       - scripts/update-food-pages.mjs
       - scripts/sync-affiliate-display.mjs
@@ -120,6 +121,7 @@ jobs:
           node scripts/verify-site-signals.mjs
           node scripts/verify-food-pages.mjs
           node scripts/review-food-evidence.mjs
+          node scripts/verify-content-remediation.mjs
           node scripts/verify-content-value.mjs
           node scripts/verify-titles.mjs
           node scripts/verify-search-title-experiment.mjs

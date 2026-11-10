@@ -1,5 +1,5 @@
 import {foodCatalog, petCatalog} from './food-page-catalog.js';
-import {searchTitleExperiment} from './search-title-experiment.js?v=1';
+import {searchTitleExperiment} from './search-title-experiment.js?v=2';
 import {rabbitFoodExplanations} from './rabbit-food-explanations.js';
 import {dogCatFoodExplanations} from './dog-cat-food-explanations.js?v=11';
 import {smallPetFoodExplanations} from './small-pet-food-explanations.js?v=10';
@@ -7,9 +7,10 @@ import {priorityContent} from './priority-content.js';
 import {findNextFoods} from './food-discovery-model.js';
 import {foodDiscoveryView,quickFoodSaveView} from './food-discovery-view.js?v=3';
 import {foodTitle,titleWithBrand} from './title-strategy.js?v=2';
-import {resultJourneyView,resultRescueView} from './result-journey.js';
+import {resultJourneyView,resultRescueView} from './result-journey.js?v=2';
 import {contentContinuationView} from './content-continuation.js?v=1';
 import {meatDetailLinks} from './extra-food-index.js?v=1';
+import {foodDetailReading} from './food-detail-notes.js?v=1';
 
 export const foodUpdated = '2026-10-07';
 const explanations = {...dogCatFoodExplanations, rabbit:rabbitFoodExplanations, ...smallPetFoodExplanations};
@@ -27,7 +28,7 @@ export function getFoodRecord(key) {
  if(!food || !pet) return null;
  const record = explanations[petKey]?.[slug];
  if(!record) throw new Error(`Missing food explanation: ${key}`);
- return {...record,pet,food,key,petKey};
+ return {...record,updated:'2026-11-11',pet,food,key,petKey};
 }
 export function foodPageMeta(key,english=false) {
  const record=getFoodRecord(key); if(!record)return null;
@@ -35,6 +36,10 @@ export function foodPageMeta(key,english=false) {
 }
 function section(id,title,body) {
  return `<section class="info food-explanation food-step" id="${id}"><h2>${title}</h2><p>${escape(text(body))}</p></section>`;
+}
+function detailReading(record,english){
+ const c=foodDetailReading(record,english);
+ return `<section class="info food-explanation food-specific-questions" id="food-specific-questions"><h2>${c.heading}</h2>${c.items.map(([q,a])=>`<h3>${escape(q)}</h3><p>${escape(a)}</p>`).join('')}${c.unresolved?`<h3>${escape(c.unresolved.question)}</h3><p>${escape(c.unresolved.answer)}</p>`:''}</section>`;
 }
 export function foodArticle(key,english=false) {
  const r=getFoodRecord(key); if(!r)return '';
@@ -50,11 +55,12 @@ export function foodArticle(key,english=false) {
   + section('food-why',english?'Why this recommendation?':'왜 이렇게 안내하나요?',c.why)
   + section('food-preparation',english?'What to prepare or check':'준비·급여 전에 확인하세요',c.preparation)
   + section('food-avoid',english?'When not to offer it':'이 경우에는 주지 마세요',c.avoid)
+  + detailReading(r,english)
   + meatDetailLinks(r,english)
   + (pc?`<section class="info food-explanation"><h2>${english?'More detail for this food':'이 음식에 대해 더 알아보기'}</h2><p>${escape(pc[1])}</p><h3>${escape(pc[2])}</h3><p>${escape(pc[3])}</p><h3>${escape(pc[4])}</h3><p>${escape(pc[5])}</p></section>`:'')
   + (r.faq?.[lang]?.length?`<section class="info food-explanation food-questions" id="food-questions"><h2>${english?'Questions about this food':'많이 궁금해하는 질문'}</h2>${r.faq[lang].map(([question,answer])=>`<details><summary>${escape(question)}</summary><p>${escape(answer)}</p></details>`).join('')}</section>`:'')
-  + `<section class="info food-explanation food-eaten" id="food-eaten"><h2>${english?'Already eaten? Start here':'이미 먹었다면 이렇게 확인하세요'}</h2><p>${english?'An “avoid” recommendation does not mean every accidental bite is poisoning. Ingredients, amount, time and the animal matter.':'‘주지 마세요’가 모든 한 입의 중독을 뜻하지는 않습니다. 성분·먹은 양·시각·동물 상태를 함께 확인해야 합니다.'}</p><ol><li>${english?'Stop further access and keep the food or packaging.':'더 먹지 않도록 치우고 음식이나 포장지를 보관하세요.'}</li><li>${english?'Record the species, product, estimated amount and time; say when an amount is unknown.':'동물종·제품명·추정량·먹은 시각을 기록하세요. 모르는 양은 모른다고 적으세요.'}</li><li>${emergency}</li></ol><p>${r.petKey==='rabbit'?(english?'Do not give human medicines or attempt home treatment.':'사람 약을 먹이거나 집에서 임의로 치료하지 마세요.'):(english?'Do not induce vomiting or give human medicines on your own.':'임의로 구토를 유도하거나 사람 약을 먹이지 마세요.')}</p><a href="/guides/food-emergency/">${english?'What to tell the vet (Korean)':'병원에 전달할 기록 보기'} →</a></section>`
-  + `<section class="info food-explanation" id="food-sources"><h2>${english?'Sources and scope':'출처와 설명의 범위'}</h2><p class="food-evidence">${escape(evidence[r.evidence]||evidence.limited)}</p><p>${r.evidence==='direct'?(english?'The linked material addresses this food and animal. Individual health and preparation still matter.':'연결한 자료에 이 음식과 동물에 대한 안내가 있습니다. 그래도 개별 건강 상태와 준비 방식은 따로 확인해야 합니다.'):r.evidence==='category'?(english?'This recommendation applies the diet guidance for this species to the food category. It does not establish a toxic dose or prove every preparation safe.':'이 동물의 식단 원칙을 해당 식품군에 적용한 설명입니다. 독성량을 입증하거나 모든 조리 형태의 안전성을 보장하는 자료는 아닙니다.'):(english?'The checked sources do not resolve every detail for this combination. Do not turn that uncertainty into a safety claim.':'확인한 자료만으로 이 조합의 모든 세부 조건을 결정할 수는 없습니다. 정보의 빈칸을 안전하다는 뜻으로 해석하지 마세요.')}</p>${[...sources].map(([url,title])=>`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(title)} ↗</a>`).join('')}<p class="food-fineprint">${updatedNotice}</p><a href="/guides/read-a-verdict/">${english?'How to read a recommendation (Korean)':'판정 읽는 법과 한계'} →</a></section>`;
+  + `<section class="info food-explanation food-eaten" id="food-eaten"><h2>${english?'Already eaten? Start here':'이미 먹었다면'}</h2><p>${emergency}</p><p>${english?'Keep the product, estimated amount and time. Do not induce vomiting or give human medicine yourself.':'제품·추정량·시각을 기록하세요. 임의로 구토를 유도하거나 사람 약을 주지 마세요.'} <a href="/guides/food-emergency/">${english?'Full clinic checklist (Korean)':'병원에 전달할 기록·전체 대처 안내'} →</a></p></section>`
+  + `<section class="info food-explanation" id="food-sources"><h2>${english?'Sources and scope':'출처와 설명의 범위'}</h2><p class="food-evidence">${escape(evidence[r.evidence]||evidence.limited)}</p>${[...sources].map(([url,title])=>`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(title)} ↗</a>`).join('')}<p class="food-fineprint">${updatedNotice}</p><a href="/guides/read-a-verdict/">${english?'How to read a recommendation (Korean)':'판정 읽는 법과 한계'} →</a></section>`;
 }
 export function foodPageInner(key,english=false,context={}) {
  const r=getFoodRecord(key);if(!r)return '';

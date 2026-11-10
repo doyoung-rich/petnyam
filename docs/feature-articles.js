@@ -1,4 +1,4 @@
-import {gogunsanDogTravel} from './gogunsan-dog-travel.js?v=1';
+import {gogunsanDogTravel} from './gogunsan-dog-travel.js?v=2';
 import {cavalierArticle} from './cavalier-article.js?v=1';
 import {familyLifeArticles} from './family-life-articles.js?v=1';
 import {foodEvidenceGuides} from './food-evidence-guides.js?v=1';

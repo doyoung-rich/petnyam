@@ -16,8 +16,9 @@ for(const [route,a] of Object.entries(featureArticles)){
  if(a.category==='family-life')html=html.replace('PETNYAM • SOURCE-BASED GUIDE','PETNYAM • 함께 사는 실제 이야기');
  if(a.category==='seasonal-safety')html=html.replace('class="policy guide"','class="policy guide halloween-guide"');
  if(a.image){
-  if(!/^\/images\/guides\/[a-z0-9-]+\.jpg$/.test(a.image))throw new Error('Unexpected article image');
-  html=html.replace(/(<meta (?:property="og:image(?:\:secure_url)?"|name="twitter:image") content=")[^"]+"/g,`$1https://petnyam.com${a.image}"`).replace(/(<meta property="og:image:type" content=")[^"]+"/,'$1image/jpeg"').replace(/(<meta property="og:image:alt" content=")[^"]+"/,`$1${esc(a.imageAlt||a.title)}"`);
+  if(!/^\/images\/guides\/[a-z0-9-]+\.(jpg|svg)$/.test(a.image))throw new Error('Unexpected article image');
+  // SVG is used in the visible guide; keep the site's PNG sharing image for clients without SVG previews.
+  if(a.image.endsWith('.jpg'))html=html.replace(/(<meta (?:property="og:image(?:\:secure_url)?"|name="twitter:image") content=")[^"]+"/g,`$1https://petnyam.com${a.image}"`).replace(/(<meta property="og:image:type" content=")[^"]+"/,'$1image/jpeg"').replace(/(<meta property="og:image:alt" content=")[^"]+"/,`$1${esc(a.imageAlt||a.title)}"`);
  }
  if(a.alternates){
   const links=Object.entries(a.alternates).map(([lang,path])=>`<link rel="alternate" hreflang="${lang}" href="https://petnyam.com${path}">`).join('');

@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {createHash} from 'node:crypto';
+import {getFoodRecord} from '../docs/food-page-content.js';
 import {searchTitleExperiment,searchTitleControls} from '../docs/search-title-experiment.js';
+const feeding=JSON.parse(await readFile(new URL('./search-title-feeding-baseline.json',import.meta.url),'utf8'));
 const keys=Object.keys(searchTitleExperiment);
 assert.equal(keys.length,3);
 const plain=s=>s.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
@@ -25,8 +26,9 @@ for(const key of [...keys,...searchTitleControls])for(const lang of ['ko','en'])
  }
  const article=h=>h.match(/<article\b[\s\S]*?<\/article>/)?.[0];
  assert.ok(article(html),file+' article');
- // Only the headline may change inside the food article. Feeding advice,
- // evidence, sources, and safety labels must remain identical.
- assert.equal(createHash('sha256').update(article(html).replace(/<h1\b[^>]*>[\s\S]*?<\/h1>/,'')).digest('hex'),old.articleHash,file+' feeding content');
+ // The title-only observation ended on 2026-11-11. The global article layout
+ // now changes; independently preserve feeding facts, sources and verdicts.
+ const r=getFoodRecord(key);
+ assert.deepEqual({status:r.status,evidence:r.evidence,sources:r.sources,ko:r.ko,en:r.en},feeding.records[key],file+' feeding facts');
 }
-console.log('Verified 3 Korean title/description experiments, English and 2 controls, and unchanged feeding articles.');
+console.log('Verified 3 Korean title/description experiments, English and 2 controls, and unchanged underlying feeding facts after the documented end of the title-only window.');

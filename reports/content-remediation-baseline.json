@@ -1,0 +1,10 @@
+{
+  "captured": "2026-11-11",
+  "commit": "0f8fa9e1",
+  "averageFoodPageBytes": 19376,
+  "commonEmergencyBytes": {
+    "ko": 867,
+    "en": 719
+  },
+  "feedingSha256": "b5d63452f4f0decd2dd93dbcee56a6fc9360a83690ffad44a277639958f66b06"
+}

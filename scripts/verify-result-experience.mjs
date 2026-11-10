@@ -39,7 +39,8 @@ for(const pet of Object.keys(petCatalog))for(const food of foodCatalog)for(const
  else assert.ok(!html.includes('class="result-urgent"'));
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length,'No duplicate IDs: '+file);
  assert.ok(html.includes('/result-experience.css?v=1'));assert.ok(html.includes(`href="https://petnyam.com/${file.replace('index.html','')}"`));
- assert.equal(html.includes('data-result-rescue data-rescue-species'),['dog','cat'].includes(pet));
+ assert.ok(!html.includes('data-result-rescue data-rescue-species'),'Food pages must not repeat shelter-card payloads');
+ assert.equal(html.includes('data-result-compact-rescue'),['dog','cat'].includes(pet));
  const suggestions=resultSuggestions(pet,en);assert.ok(suggestions.length<=3);
  if(!['dog','cat'].includes(pet))assert.ok(!suggestions.some(c=>/age-calculator|feed-ingredients/.test(c.href)));
  const continuation=continuationLinks(en,pet);assert.equal(continuation.length,4);assert.ok(html.indexOf('id="food-sources"')<html.indexOf('data-content-continuation')&&html.indexOf('data-content-continuation')<html.indexOf('id="next-food"'));if(r.status==='danger')assert.ok(html.indexOf('class="result-urgent"')<html.indexOf('data-content-continuation'));

@@ -1,0 +1,23 @@
+{
+  "checked": "2026-11-11",
+  "foodPages": 434,
+  "comparisons": 50,
+  "limitedCombinationsRetained": 24,
+  "feedingVerdictsAndSourcesPreserved": true,
+  "withdrawnExternalImages": 5,
+  "commonEmergencyBytes": {
+    "before": {
+      "ko": 867,
+      "en": 719
+    },
+    "after": {
+      "ko": 525,
+      "en": 461
+    }
+  },
+  "averagePageBytes": {
+    "before": 19376,
+    "after": 17695
+  },
+  "note": "Editorial and technical checks; not veterinary approval, a copyright clearance opinion or an AdSense approval prediction."
+}

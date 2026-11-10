@@ -1,4 +1,4 @@
-import {officialAnimals,registrationAgency,rescueCards} from './rescue-home.js?v=3';
+import {officialAnimals} from './rescue-home.js?v=3';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function resultSuggestions(pet,en=false){
  const guide=(slug,ko,english,description,enDescription,icon,event='related_content',englishRoute=false)=>({href:'/guides/'+slug+(en&&englishRoute?'-en':'')+'/',title:en?english+(englishRoute?'':' (Korean)'):ko,description:en?enDescription:description,icon,event});
@@ -15,14 +15,13 @@ export function resultSuggestions(pet,en=false){
 }
 export function resultJourneyView(record,en=false){
  const cards=resultSuggestions(record.petKey,en);
- return `<section class="result-journey" id="pet-next-steps"><div class="result-section-heading"><span class="label">${en?'LIFE WITH YOUR PET':'검색 다음의 반려생활'}</span><h2>${en?'More to explore with your '+record.pet.en.toLowerCase():record.pet.ko+'와 더 알아보기'}</h2><p>${en?'Choose the next question that fits your situation.':'지금 궁금한 것에 맞춰 다음 질문을 골라보세요.'}</p></div><div class="result-service-grid">${cards.map(c=>`<a href="${esc(c.href)}" data-result-event="${c.event}"><span class="result-service-icon" aria-hidden="true">${c.icon}</span><h3>${esc(c.title)}</h3><p>${esc(c.description)}</p><span class="result-link-label">${en?'Explore':'자세히 보기'} →</span></a>`).join('')}</div></section>`;
+ return `<nav class="result-journey" id="pet-next-steps" aria-label="${en?'Related practical guides':'함께 읽을 실용 가이드'}"><h2>${en?'Related guides':'함께 읽으면 좋은 안내'}</h2><ul>${cards.map(c=>`<li><a href="${esc(c.href)}" data-result-event="${c.event}">${esc(c.title)} →</a></li>`).join('')}</ul></nav>`;
 }
 export function sameSpeciesNotices(data,pet){
  const pattern=pet==='dog'?/^\[개\]/:pet==='cat'?/^\[고양이\]/:null;
  return pattern&&Array.isArray(data?.items)?data.items.filter(i=>pattern.test(i.kind)&&i.status==='보호중').slice(0,3):[];
 }
-export function resultRescueView(record,en=false,data){
+export function resultRescueView(record,en=false){
  if(!['dog','cat'].includes(record.petKey))return '';
- const items=sameSpeciesNotices(data,record.petKey);
- return `<section class="result-other-services" aria-labelledby="result-other-heading"><div class="result-section-heading"><span class="label">${en?'MORE FROM PETNYAM':'펫냠에서 함께 살펴보기'}</span><h2 id="result-other-heading">${en?'Recent shelter notices':'보호동물의 최근 공고'}</h2><p>${en?'Collected public notices for this species. Check the official status; a notice does not confirm adoption availability.':'같은 동물종의 공개 공고 일부입니다. 현재 상태와 입양 가능 여부는 공식 공고에서 확인해 주세요.'}</p></div><div data-result-rescue data-rescue-species="${record.petKey}" data-rescue-language="${en?'en':'ko'}"><p class="result-rescue-time" data-result-rescue-status role="status">${data?.updatedAt?esc((en?'Snapshot: ':'자료 수집: ')+data.updatedAt):en?'Recent notices are available on the official site.':'최근 공고는 공식 사이트에서 확인할 수 있습니다.'}</p><div class="result-rescue-grid" data-result-rescue-cards>${items.length?rescueCards(items,en):`<p>${en?'No matching collected notices to show here. The official list may contain more.':'현재 수집 목록에 표시할 같은 종의 공고가 없습니다. 공식 전체 목록을 확인해 주세요.'}</p>`}</div><p class="result-rescue-source">${en?'Photos and notices: Animal Protection Information System. Collection covers only some recent notices.':'사진·공고 출처: 국가동물보호정보시스템. 최근 공고 일부를 수집하며 전국 전체 목록이 아닙니다.'} <a href="${officialAnimals}" target="_blank" rel="noopener noreferrer" data-result-event="rescue_notice">${en?'View official notices ↗':'공식 공고 보기 ↗'}</a></p></div>${record.petKey==='dog'?`<a class="result-registration" href="${registrationAgency}" target="_blank" rel="noopener noreferrer" data-result-event="registration_info"><span aria-hidden="true">⌂</span><span><strong>${en?'Need information about dog registration?':'강아지 동물등록, 어디서 하나요?'}</strong><small>${en?'Find an official agency. First registration requires a visit; no owner details are collected here.':'공식 대행기관과 방문 절차를 확인하세요. 펫냠에서는 소유자 정보를 입력받지 않습니다.'}</small></span><b aria-hidden="true">↗</b></a>`:''}</section>`;
+ return `<p class="result-rescue-compact" data-result-compact-rescue><a href="${en?'/en/':'/'}#rescue-heading">${en?'Browse collected shelter notices on the homepage':'지역별 보호동물 공고는 메인에서 살펴보세요'} →</a> · <a href="${officialAnimals}" target="_blank" rel="noopener noreferrer" data-result-event="rescue_notice">${en?'Official complete list ↗':'공식 전체 목록 ↗'}</a></p>`;
 }
