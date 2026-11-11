@@ -1,8 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-11T14:30:16.594Z",
+  "updatedAt": "2026-11-11T21:56:53.533Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
+    {
+      "notice": "강원-삼척-2026-00161",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 삼척시",
+      "foundDate": "2026-11-11",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511415.jpg"
+    },
     {
       "notice": "세종-세종-2026-00339",
       "kind": "[개] 믹스견",
@@ -893,15 +902,6 @@
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611626.png"
-    },
-    {
-      "notice": "경기-하남-2026-00163",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611105.png"
     }
   ]
 }
