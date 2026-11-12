@@ -1,907 +1,907 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-11T21:56:53.533Z",
+  "updatedAt": "2026-11-12T07:08:32.536Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
     {
-      "notice": "강원-삼척-2026-00161",
+      "notice": "제주-제주-2026-02712",
+      "kind": "[고양이] 한국 고양이",
+      "region": "제주특별자치도",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121011812.jpg"
+    },
+    {
+      "notice": "경남-창원1-2026-00797",
       "kind": "[개] 믹스견",
-      "region": "강원특별자치도 삼척시",
-      "foundDate": "2026-11-11",
+      "region": "경상남도 창원시 의창성산구",
+      "foundDate": "2026-11-12",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511415.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121311826.jpg"
     },
     {
-      "notice": "세종-세종-2026-00339",
-      "kind": "[개] 믹스견",
-      "region": "세종특별자치시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611112211416.jpeg"
-    },
-    {
-      "notice": "세종-세종-2026-00338",
-      "kind": "[개] 믹스견",
-      "region": "세종특별자치시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611112211786.jpeg"
-    },
-    {
-      "notice": "제주-제주-2026-02706",
-      "kind": "[고양이] 한국 고양이",
-      "region": "제주특별자치도",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611924.jpg"
-    },
-    {
-      "notice": "제주-제주-2026-02705",
-      "kind": "[고양이] 한국 고양이",
-      "region": "제주특별자치도",
-      "foundDate": "2026-11-11",
-      "age": "2021(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111311652.jpg"
-    },
-    {
-      "notice": "제주-제주-2026-02704",
-      "kind": "[고양이] 한국 고양이",
-      "region": "제주특별자치도",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111311796.jpg"
-    },
-    {
-      "notice": "경남-창원1-2026-00795",
-      "kind": "[개] 말티즈",
-      "region": "경상남도 창원시 의창성산구",
-      "foundDate": "2026-11-11",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511150.jpg"
-    },
-    {
-      "notice": "경남-창원1-2026-00794",
+      "notice": "경남-창원1-2026-00796",
       "kind": "[개] 믹스견",
       "region": "경상남도 창원시 의창성산구",
-      "foundDate": "2026-11-11",
-      "age": "2011(년생)",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111893.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121311936.jpg"
     },
     {
-      "notice": "경남-창녕-2026-00507",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 창녕군",
-      "foundDate": "2026-11-11",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611112011661.jpg"
-    },
-    {
-      "notice": "경남-의령-2026-00164",
+      "notice": "경남-의령-2026-00165",
       "kind": "[개] 믹스견",
       "region": "경상남도 의령군",
-      "foundDate": "2026-11-11",
-      "age": "2025(년생)",
+      "foundDate": "2026-11-12",
+      "age": "2024(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511162[1].jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261112131141.jpg"
     },
     {
-      "notice": "경남-거제-2026-00569",
+      "notice": "경남-거제-2026-00570",
       "kind": "[고양이] 한국 고양이",
       "region": "경상남도 거제시",
-      "foundDate": "2026-11-11",
-      "age": "2023(년생)",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111161102.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121111560.jpg"
     },
     {
-      "notice": "경남-밀양-2026-00655",
+      "notice": "경남-밀양-2026-00663",
       "kind": "[개] 믹스견",
       "region": "경상남도 밀양시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111311538.jpg"
-    },
-    {
-      "notice": "경남-밀양-2026-00654",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 밀양시",
-      "foundDate": "2026-11-11",
+      "foundDate": "2026-11-12",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111311709.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111374.jpg"
     },
     {
-      "notice": "경남-김해-2026-00948",
-      "kind": "[개] 시바",
-      "region": "경상남도 김해시",
-      "foundDate": "2026-11-11",
+      "notice": "경남-밀양-2026-00662",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 밀양시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111831.jpg"
+    },
+    {
+      "notice": "경남-밀양-2026-00661",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 밀양시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111902.jpg"
+    },
+    {
+      "notice": "경남-밀양-2026-00660",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 밀양시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111676.jpg"
+    },
+    {
+      "notice": "경남-밀양-2026-00659",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 밀양시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111271.jpg"
+    },
+    {
+      "notice": "경남-밀양-2026-00658",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 밀양시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111868.jpg"
+    },
+    {
+      "notice": "경남-밀양-2026-00657",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 밀양시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111410.jpg"
+    },
+    {
+      "notice": "경남-사천-2026-00341",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 사천시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611120911588.jpg"
+    },
+    {
+      "notice": "경남-진주-2026-00408",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 진주시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311418[2].jpg"
+    },
+    {
+      "notice": "경북-고령-2026-00122",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 고령군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121511115.jpg"
+    },
+    {
+      "notice": "경북-고령-2026-00119",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 고령군",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411191[1].jpg"
+    },
+    {
+      "notice": "경북-고령-2026-00118",
+      "kind": "[개] 말티푸",
+      "region": "경상북도 고령군",
+      "foundDate": "2026-11-12",
+      "age": "2022(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411437.jpg"
+    },
+    {
+      "notice": "경북-영주-2026-00292",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 영주시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611120911735.jpg"
+    },
+    {
+      "notice": "경북-영주-2026-00291",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 영주시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611120911343.jpg"
+    },
+    {
+      "notice": "경북-영주-2026-00290",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 영주시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611120911393.jpg"
+    },
+    {
+      "notice": "경북-영주-2026-00289",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 영주시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611120911244.jpg"
+    },
+    {
+      "notice": "경북-경주-2026-00930",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 경주시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411472[1].jpg"
+    },
+    {
+      "notice": "경북-경주-2026-00931",
+      "kind": "[고양이] 한국 고양이",
+      "region": "경상북도 경주시",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261112141187.jpg"
+    },
+    {
+      "notice": "경북-포항-2026-00737",
+      "kind": "[개] 라브라도 리트리버",
+      "region": "경상북도 포항시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511341[1].jpg"
+    },
+    {
+      "notice": "경북-포항-2026-00736",
+      "kind": "[개] 치와와",
+      "region": "경상북도 포항시",
+      "foundDate": "2026-11-12",
       "age": "2020(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611110911388.png"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511128.jpg"
     },
     {
-      "notice": "경남-김해-2026-00947",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 김해시",
-      "foundDate": "2026-11-11",
-      "age": "2021(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611110911765.png"
-    },
-    {
-      "notice": "경남-진주-2026-00404",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 진주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511775.jpg"
-    },
-    {
-      "notice": "경남-진주-2026-00403",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 진주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511568.jpg"
-    },
-    {
-      "notice": "경남-진주-2026-00402",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 진주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111111397.jpg"
-    },
-    {
-      "notice": "경남-진주-2026-00401",
-      "kind": "[개] 믹스견",
-      "region": "경상남도 진주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611110911574.jpg"
-    },
-    {
-      "notice": "경북-울진-2026-00209",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 울진군",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611110811753.jpg"
-    },
-    {
-      "notice": "경북-청도-2026-00266",
-      "kind": "[개] 보더콜리",
-      "region": "경상북도 청도군",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111311603.jpg"
-    },
-    {
-      "notice": "경북-청도-2026-00265",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 청도군",
-      "foundDate": "2026-11-11",
-      "age": "2025(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611110811678.jpg"
-    },
-    {
-      "notice": "경북-영덕-2026-00197",
-      "kind": "[고양이] 믹스묘",
-      "region": "경상북도 영덕군",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111211462.jpg"
-    },
-    {
-      "notice": "경북-경산-2026-00484",
-      "kind": "[개] 푸들",
-      "region": "경상북도 경산시",
-      "foundDate": "2026-11-11",
-      "age": "2016(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011629.jpg"
-    },
-    {
-      "notice": "경북-경산-2026-00483",
+      "notice": "전북-김제-2026-00323",
       "kind": "[고양이] 한국 고양이",
-      "region": "경상북도 경산시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011122.jpg"
-    },
-    {
-      "notice": "경북-경산-2026-00481",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경산시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011781.jpg"
-    },
-    {
-      "notice": "경북-경산-2026-00480",
-      "kind": "[고양이] 한국 고양이",
-      "region": "경상북도 경산시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011637.jpg"
-    },
-    {
-      "notice": "경북-경산-2026-00479",
-      "kind": "[개] 잉글리쉬 포인터",
-      "region": "경상북도 경산시",
-      "foundDate": "2026-11-11",
-      "age": "2019(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011713.jpg"
-    },
-    {
-      "notice": "경북-경산-2026-00478",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경산시",
-      "foundDate": "2026-11-11",
+      "region": "전북특별자치도 김제시",
+      "foundDate": "2026-11-12",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011691.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121111581.jpg"
     },
     {
-      "notice": "경북-문경-2026-00369",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 문경시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511991.jpg"
-    },
-    {
-      "notice": "경북-문경-2026-00368",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 문경시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511315.jpg"
-    },
-    {
-      "notice": "경북-문경-2026-00367",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 문경시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511691.jpg"
-    },
-    {
-      "notice": "경북-상주-2026-00379",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 상주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111111168.jpg"
-    },
-    {
-      "notice": "경북-상주-2026-00378",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 상주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111111106.jpg"
-    },
-    {
-      "notice": "경북-상주-2026-00377",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 상주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111111891.jpg"
-    },
-    {
-      "notice": "경북-상주-2026-00376",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 상주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111111125.jpg"
-    },
-    {
-      "notice": "경북-상주-2026-00375",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 상주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111111684.jpg"
-    },
-    {
-      "notice": "경북-상주-2026-00374",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 상주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111111336[1].jpg"
-    },
-    {
-      "notice": "경북-영주-2026-00288",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 영주시",
-      "foundDate": "2026-11-11",
-      "age": "2025(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111311350.jpg"
-    },
-    {
-      "notice": "경북-영주-2026-00287",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 영주시",
-      "foundDate": "2026-11-11",
-      "age": "2025(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611110911266.jpg"
-    },
-    {
-      "notice": "경북-김천-2026-00362",
-      "kind": "[개] 포메라니안",
-      "region": "경상북도 김천시",
-      "foundDate": "2026-11-11",
-      "age": "2016(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111711624.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00929",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111151173.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00928",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511917.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00927",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511506.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00926",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111151168.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00925",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111151127.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00924",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511434.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00923",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511618.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00922",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511521.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00921",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511870[1].jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00920",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111411223.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00919",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111411172[1].jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00918",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111411696.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00917",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261111141120.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00916",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2026(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111411402.jpg"
-    },
-    {
-      "notice": "경북-경주-2026-00915",
-      "kind": "[개] 믹스견",
-      "region": "경상북도 경주시",
-      "foundDate": "2026-11-11",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011235.jpg"
-    },
-    {
-      "notice": "전북-임실-2026-00182",
-      "kind": "[개] 믹스견",
-      "region": "전북특별자치도 임실군",
-      "foundDate": "2026-11-11",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111141118.jpg"
-    },
-    {
-      "notice": "전북-임실-2026-00181",
-      "kind": "[개] 포메라니안",
-      "region": "전북특별자치도 임실군",
-      "foundDate": "2026-11-11",
-      "age": "2018(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111411808.jpg"
-    },
-    {
-      "notice": "전북-김제-2026-00316",
+      "notice": "전북-김제-2026-00322",
       "kind": "[개] 믹스견",
       "region": "전북특별자치도 김제시",
-      "foundDate": "2026-11-11",
-      "age": "2022(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111511645.jpg"
-    },
-    {
-      "notice": "전북-익산-2026-01567",
-      "kind": "[개] 진도견",
-      "region": "전북특별자치도 익산시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111547.jpg"
-    },
-    {
-      "notice": "전북-전주-2026-01088",
-      "kind": "[고양이] 한국 고양이",
-      "region": "전북특별자치도 전주시",
-      "foundDate": "2026-11-11",
+      "foundDate": "2026-11-12",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111814.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121011337.jpg"
     },
     {
-      "notice": "전북-전주-2026-01087",
+      "notice": "전북-김제-2026-00321",
       "kind": "[개] 믹스견",
-      "region": "전북특별자치도 전주시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
+      "region": "전북특별자치도 김제시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111011303.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261112101153.jpg"
     },
     {
-      "notice": "충남-당진-2026-00542",
+      "notice": "전북-김제-2026-00320",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 김제시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121011213[1].jpg"
+    },
+    {
+      "notice": "전북-김제-2026-00319",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 김제시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121011143.jpg"
+    },
+    {
+      "notice": "전북-김제-2026-00318",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 김제시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121011339.jpg"
+    },
+    {
+      "notice": "전북-군산-2026-00984",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 군산시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121011411.jpg"
+    },
+    {
+      "notice": "전북-군산-2026-00983",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 군산시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261112101187.jpg"
+    },
+    {
+      "notice": "전북-군산-2026-00982",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 군산시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121011129.jpg"
+    },
+    {
+      "notice": "전북-군산-2026-00981",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 군산시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121011265.jpg"
+    },
+    {
+      "notice": "충남-당진-2026-00544",
       "kind": "[개] 믹스견",
       "region": "충청남도 당진시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611110911889.jpg"
-    },
-    {
-      "notice": "충남-금산-2026-00191",
-      "kind": "[개] 요크셔 테리어",
-      "region": "충청남도 금산군",
-      "foundDate": "2026-11-11",
-      "age": "2015(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011872.jpg"
-    },
-    {
-      "notice": "충남-서산-2026-00590",
-      "kind": "[고양이] 한국 고양이",
-      "region": "충청남도 서산시",
-      "foundDate": "2026-11-11",
-      "age": "2019(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261111181188.jpg"
-    },
-    {
-      "notice": "충남-서산-2026-00589",
-      "kind": "[고양이] 믹스묘",
-      "region": "충청남도 서산시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111375.jpg"
-    },
-    {
-      "notice": "충남-보령-2026-00373",
-      "kind": "[고양이] 한국 고양이",
-      "region": "충청남도 보령시",
-      "foundDate": "2026-11-11",
+      "foundDate": "2026-11-12",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111689.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311967.jpg"
     },
     {
-      "notice": "충남-보령-2026-00372",
-      "kind": "[고양이] 한국 고양이",
-      "region": "충청남도 보령시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111937.jpg"
+      "notice": "충남-당진-2026-00543",
+      "kind": "[개] 믹스견",
+      "region": "충청남도 당진시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "종료(반환)",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261112131185.jpg"
     },
     {
-      "notice": "충남-보령-2026-00371",
-      "kind": "[고양이] 한국 고양이",
-      "region": "충청남도 보령시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111364.jpg"
-    },
-    {
-      "notice": "충남-천안-2026-00619",
+      "notice": "충남-천안-2026-00626",
       "kind": "[고양이] 한국 고양이",
       "region": "충청남도 천안시",
-      "foundDate": "2026-11-11",
+      "foundDate": "2026-11-12",
       "age": "2021(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111311548.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121411649[1].jpg"
     },
     {
-      "notice": "충남-천안-2026-00618",
-      "kind": "[개] 스탠다드 닥스훈트",
-      "region": "충청남도 천안시",
-      "foundDate": "2026-11-11",
-      "age": "2015(년생)",
-      "status": "종료(반환)",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111011167[1].jpg"
+      "notice": "충북-음성-2026-00444",
+      "kind": "[개] 웰시 코기 카디건",
+      "region": "충청북도 음성군",
+      "foundDate": "2026-11-12",
+      "age": "2021(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511994.jpg"
     },
     {
-      "notice": "충북-청주-2026-00919",
+      "notice": "충북-음성-2026-00443",
+      "kind": "[고양이] 한국 고양이",
+      "region": "충청북도 음성군",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261112151168.jpg"
+    },
+    {
+      "notice": "충북-영동-2026-00178",
+      "kind": "[고양이] 한국 고양이",
+      "region": "충청북도 영동군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311154.jpg"
+    },
+    {
+      "notice": "충북-제천-2026-00132",
       "kind": "[개] 믹스견",
-      "region": "충청북도 청주시",
-      "foundDate": "2026-11-11",
+      "region": "충청북도 제천시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411881.jpg"
+    },
+    {
+      "notice": "강원-고성-2026-00283",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 고성군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411509.jpeg"
+    },
+    {
+      "notice": "강원-고성-2026-00284",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 고성군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411326.jpeg"
+    },
+    {
+      "notice": "강원-고성-2026-00285",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 고성군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411676.jpeg"
+    },
+    {
+      "notice": "강원-고성-2026-00286",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 고성군",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121411138.jpeg"
+    },
+    {
+      "notice": "강원-강릉-2026-00356",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 강릉시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121411599.jpeg"
+    },
+    {
+      "notice": "경기-화성-2026-01613",
+      "kind": "[개] 믹스견",
+      "region": "경기도 화성시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111142.jpg"
+    },
+    {
+      "notice": "경기-가평-2026-00100",
+      "kind": "[개] 푸들",
+      "region": "경기도 가평군",
+      "foundDate": "2026-11-12",
+      "age": "2016(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121511328.jpg"
+    },
+    {
+      "notice": "경기-가평-2026-00099",
+      "kind": "[개] 래빗 닥스훈트",
+      "region": "경기도 가평군",
+      "foundDate": "2026-11-12",
+      "age": "2024(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261112151116.jpg"
+    },
+    {
+      "notice": "경기-가평-2026-00098",
+      "kind": "[개] 믹스견",
+      "region": "경기도 가평군",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121511474.jpg"
+    },
+    {
+      "notice": "경기-시흥-2026-00415",
+      "kind": "[개] 믹스견",
+      "region": "경기도 시흥시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "종료(반환)",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121111574.jpg"
+    },
+    {
+      "notice": "경기-고양-2026-00708",
+      "kind": "[개] 믹스견",
+      "region": "경기도 고양시",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111485.jpg"
+    },
+    {
+      "notice": "경기-평택-2026-00799",
+      "kind": "[개] 믹스견",
+      "region": "경기도 평택시",
+      "foundDate": "2026-11-12",
       "age": "2022(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111711414.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511260.jpg"
     },
     {
-      "notice": "충북-청주-2026-00918",
-      "kind": "[개] 진도견",
-      "region": "충청북도 청주시",
+      "notice": "경기-평택-2026-00798",
+      "kind": "[개] 믹스견",
+      "region": "경기도 평택시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311973.jpg"
+    },
+    {
+      "notice": "경기-평택-2026-00797",
+      "kind": "[개] 믹스견",
+      "region": "경기도 평택시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261112131124.jpg"
+    },
+    {
+      "notice": "경기-성남-2026-00569",
+      "kind": "[개] 포메라니안",
+      "region": "경기도 성남시",
+      "foundDate": "2026-11-12",
+      "age": "2022(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121411700.jpg"
+    },
+    {
+      "notice": "경기-성남-2026-00568",
+      "kind": "[고양이] 한국 고양이",
+      "region": "경기도 성남시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121211383.jpg"
+    },
+    {
+      "notice": "울산-남구-2026-00589",
+      "kind": "[고양이] 한국 고양이",
+      "region": "울산광역시 남구",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121011714.jpg"
+    },
+    {
+      "notice": "인천-부평-2026-00485",
+      "kind": "[고양이] 한국 고양이",
+      "region": "인천광역시 부평구",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311253.png"
+    },
+    {
+      "notice": "인천-부평-2026-00484",
+      "kind": "[고양이] 한국 고양이",
+      "region": "인천광역시 부평구",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311810.png"
+    },
+    {
+      "notice": "인천-부평-2026-00483",
+      "kind": "[고양이] 한국 고양이",
+      "region": "인천광역시 부평구",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311704.png"
+    },
+    {
+      "notice": "인천-부평-2026-00482",
+      "kind": "[고양이] 한국 고양이",
+      "region": "인천광역시 부평구",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121311172.png"
+    },
+    {
+      "notice": "대구-수성-2026-00576",
+      "kind": "[고양이] 한국 고양이",
+      "region": "대구광역시 수성구",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511666[1].jpg"
+    },
+    {
+      "notice": "대구-서구-2026-00643",
+      "kind": "[고양이] 한국 고양이",
+      "region": "대구광역시 서구",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511874[1].jpg"
+    },
+    {
+      "notice": "대구-서구-2026-00642",
+      "kind": "[고양이] 브리티시 쇼트헤어",
+      "region": "대구광역시 서구",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511718.jpg"
+    },
+    {
+      "notice": "광주-영광-2026-00130",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 영광군",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261112101117.jpg"
+    },
+    {
+      "notice": "광주-영암-2026-00159",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 영암군",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111493.png"
+    },
+    {
+      "notice": "광주-영암-2026-00158",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 영암군",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261112101121.png"
+    },
+    {
+      "notice": "광주-장흥-2026-00217",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 장흥군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121111256.jpeg"
+    },
+    {
+      "notice": "광주-장흥-2026-00218",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 장흥군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121111417.jpeg"
+    },
+    {
+      "notice": "광주-장흥-2026-00219",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 장흥군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121111753.jpeg"
+    },
+    {
+      "notice": "광주-광산-2026-00186",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 광산구",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121511296.jpg"
+    },
+    {
+      "notice": "광주-광양-2026-00139",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 광양시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511133.png"
+    },
+    {
+      "notice": "광주-광양-2026-00138",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 광양시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511256.png"
+    },
+    {
+      "notice": "광주-광양-2026-00137",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 광양시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511501.jpg"
+    },
+    {
+      "notice": "광주-광양-2026-00136",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 광양시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511801.jpg"
+    },
+    {
+      "notice": "광주-광양-2026-00135",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 광양시",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511174[1].jpg"
+    },
+    {
+      "notice": "광주-광양-2026-00134",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 광양시",
+      "foundDate": "2026-11-12",
+      "age": "2021(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511611.jpg"
+    },
+    {
+      "notice": "광주-순천-2026-00184",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 순천시",
+      "foundDate": "2026-11-12",
+      "age": "2023(년생)",
+      "status": "종료(반환)",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121411102.jpg"
+    },
+    {
+      "notice": "서울-은평-2026-00227",
+      "kind": "[고양이] 한국 고양이",
+      "region": "서울특별시 은평구",
+      "foundDate": "2026-11-12",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121011965.jpg"
+    },
+    {
+      "notice": "경북-포항-2026-00735",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 포항시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511626.jpg"
+    },
+    {
+      "notice": "경북-포항-2026-00734",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 포항시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511767.jpg"
+    },
+    {
+      "notice": "경북-포항-2026-00733",
+      "kind": "[개] 믹스견",
+      "region": "경상북도 포항시",
+      "foundDate": "2026-11-12",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511588[2].jpg"
+    },
+    {
+      "notice": "강원-철원-2026-00178",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 철원군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511781.jpg"
+    },
+    {
+      "notice": "강원-철원-2026-00177",
+      "kind": "[개] 믹스견",
+      "region": "강원특별자치도 철원군",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121511298.jpg"
+    },
+    {
+      "notice": "충남-천안-2026-00625",
+      "kind": "[고양이] 한국 고양이",
+      "region": "충청남도 천안시",
+      "foundDate": "2026-11-12",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611121311701.jpg"
+    },
+    {
+      "notice": "제주-제주-2026-02711",
+      "kind": "[개] 포메라니안",
+      "region": "제주특별자치도",
+      "foundDate": "2026-11-11",
+      "age": "2016(년생)",
+      "status": "종료(반환)",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611120911925.jpg"
+    },
+    {
+      "notice": "제주-제주-2026-02710",
+      "kind": "[개] 믹스견",
+      "region": "제주특별자치도",
+      "foundDate": "2026-11-11",
+      "age": "2024(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611120911584.jpg"
+    },
+    {
+      "notice": "제주-제주-2026-02709",
+      "kind": "[개] 믹스견",
+      "region": "제주특별자치도",
       "foundDate": "2026-11-11",
       "age": "2016(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111711662.jpeg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611120911492.jpg"
     },
     {
-      "notice": "충북-옥천-2026-00460",
-      "kind": "[개] 믹스견",
-      "region": "충청북도 옥천군",
+      "notice": "제주-제주-2026-02708",
+      "kind": "[개] 스탠다드 닥스훈트",
+      "region": "제주특별자치도",
       "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
+      "age": "2019(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111411623.png"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611120911525.jpg"
     },
     {
-      "notice": "충북-옥천-2026-00459",
-      "kind": "[개] 믹스견",
-      "region": "충청북도 옥천군",
+      "notice": "제주-제주-2026-02707",
+      "kind": "[개] 포인터",
+      "region": "제주특별자치도",
       "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111411485.png"
+      "age": "2019(년생)",
+      "status": "종료(반환)",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261112091152.jpg"
     },
     {
-      "notice": "충북-옥천-2026-00458",
-      "kind": "[개] 믹스견",
-      "region": "충청북도 옥천군",
+      "notice": "경남-하동-2026-00161",
+      "kind": "[개] 골든 리트리버",
+      "region": "경상남도 하동군",
+      "foundDate": "2026-11-11",
+      "age": "2022(년생)",
+      "status": "종료(반환)",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111111186.jpg"
+    },
+    {
+      "notice": "경남-밀양-2026-00656",
+      "kind": "[고양이] 한국 고양이",
+      "region": "경상남도 밀양시",
       "foundDate": "2026-11-11",
       "age": "2025(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261111131170.png"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611121111680.jpg"
     },
     {
-      "notice": "충북-충주-2026-00234",
-      "kind": "[개] 믹스견",
-      "region": "충청북도 충주시",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111711746.jpg"
-    },
-    {
-      "notice": "강원-양구-2026-00057",
-      "kind": "[개] 믹스견",
-      "region": "강원특별자치도 양구군",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111811138.jpg"
-    },
-    {
-      "notice": "강원-양구-2026-00056",
-      "kind": "[개] 믹스견",
-      "region": "강원특별자치도 양구군",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111811204.jpg"
-    },
-    {
-      "notice": "강원-양구-2026-00055",
-      "kind": "[개] 믹스견",
-      "region": "강원특별자치도 양구군",
-      "foundDate": "2026-11-11",
-      "age": "2024(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111811146.jpg"
-    },
-    {
-      "notice": "강원-정선-2026-00107",
-      "kind": "[개] 믹스견",
-      "region": "강원특별자치도 정선군",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111411563.jpg"
-    },
-    {
-      "notice": "강원-속초-2026-00215",
-      "kind": "[개] 푸들",
-      "region": "강원특별자치도 속초시",
-      "foundDate": "2026-11-11",
-      "age": "2020(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111211549.jpg"
-    },
-    {
-      "notice": "강원-속초-2026-00214",
+      "notice": "경남-김해-2026-00949",
       "kind": "[고양이] 한국 고양이",
-      "region": "강원특별자치도 속초시",
+      "region": "경상남도 김해시",
       "foundDate": "2026-11-11",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611110911825.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611120911418.png"
     },
     {
-      "notice": "강원-속초-2026-00213",
-      "kind": "[고양이] 한국 고양이",
-      "region": "강원특별자치도 속초시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611110911437.jpg"
-    },
-    {
-      "notice": "강원-춘천-2026-00359",
+      "notice": "경남-통영-2026-00130",
       "kind": "[개] 믹스견",
-      "region": "강원특별자치도 춘천시",
+      "region": "경상남도 통영시",
+      "foundDate": "2026-11-11",
+      "age": "2024(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611929.jpg"
+    },
+    {
+      "notice": "경남-통영-2026-00129",
+      "kind": "[개] 믹스견",
+      "region": "경상남도 통영시",
       "foundDate": "2026-11-11",
       "age": "2026(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111711531.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611613.jpg"
     },
     {
-      "notice": "경기-여주-2026-00453",
+      "notice": "경남-통영-2026-00128",
       "kind": "[개] 믹스견",
-      "region": "경기도 여주시",
+      "region": "경상남도 통영시",
       "foundDate": "2026-11-11",
-      "age": "2018(년생)",
+      "age": "2024(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111711692.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611367.jpg"
     },
     {
-      "notice": "경기-여주-2026-00452",
+      "notice": "경남-통영-2026-00127",
       "kind": "[개] 믹스견",
-      "region": "경기도 여주시",
+      "region": "경상남도 통영시",
       "foundDate": "2026-11-11",
-      "age": "2018(년생)",
+      "age": "2024(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111711298.jpg"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111511927[1].jpg"
     },
     {
-      "notice": "경기-여주-2026-00451",
-      "kind": "[개] 푸들",
-      "region": "경기도 여주시",
-      "foundDate": "2026-11-11",
-      "age": "2015(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111711923.jpg"
-    },
-    {
-      "notice": "경기-양평-2026-00329",
-      "kind": "[개] 슈나우져",
-      "region": "경기도 양평군",
-      "foundDate": "2026-11-11",
-      "age": "2021(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111111369.jpg"
-    },
-    {
-      "notice": "경기-이천-2026-00475",
+      "notice": "경남-진주-2026-00407",
       "kind": "[개] 믹스견",
-      "region": "경기도 이천시",
+      "region": "경상남도 진주시",
       "foundDate": "2026-11-11",
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111811684.jpg"
-    },
-    {
-      "notice": "경기-이천-2026-00474",
-      "kind": "[개] 믹스견",
-      "region": "경기도 이천시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111811582.jpg"
-    },
-    {
-      "notice": "경기-이천-2026-00473",
-      "kind": "[개] 믹스견",
-      "region": "경기도 이천시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611111811861.jpg"
-    },
-    {
-      "notice": "경기-하남-2026-00171",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111711834.png"
-    },
-    {
-      "notice": "경기-하남-2026-00170",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111711939.png"
-    },
-    {
-      "notice": "경기-하남-2026-00169",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111711721.png"
-    },
-    {
-      "notice": "경기-하남-2026-00168",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611140.png"
-    },
-    {
-      "notice": "경기-하남-2026-00167",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611384.png"
-    },
-    {
-      "notice": "경기-하남-2026-00166",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611563.png"
-    },
-    {
-      "notice": "경기-하남-2026-00165",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611339.png"
-    },
-    {
-      "notice": "경기-하남-2026-00164",
-      "kind": "[개] 믹스견",
-      "region": "경기도 하남시",
-      "foundDate": "2026-11-11",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611111611626.png"
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611120811157.jpg"
     }
   ]
 }
