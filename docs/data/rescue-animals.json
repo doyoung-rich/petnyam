@@ -1,8 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T16:04:23.088Z",
+  "updatedAt": "2026-11-18T00:57:06.431Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
+    {
+      "notice": "경기-안성-2026-00674",
+      "kind": "[고양이] 한국 고양이",
+      "region": "경기도 안성시",
+      "foundDate": "2026-11-17",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611171711832.jpg"
+    },
     {
       "notice": "세종-세종-2026-00346",
       "kind": "[고양이] 한국 고양이",
@@ -893,15 +902,6 @@
       "age": "2026(60일미만)(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611172311473.jpg"
-    },
-    {
-      "notice": "전북-전주-2026-01109",
-      "kind": "[고양이] 한국 고양이",
-      "region": "전북특별자치도 전주시",
-      "foundDate": "2026-11-17",
-      "age": "2026(60일미만)(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611172311595.jpg"
     }
   ]
 }
