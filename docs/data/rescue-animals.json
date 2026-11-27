@@ -1,8 +1,44 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-27T12:17:01.230Z",
+  "updatedAt": "2026-11-27T21:25:45.456Z",
   "scope": "First page of up to 100 recent public rescue notices; not nationwide totals or owner-submitted missing reports.",
   "items": [
+    {
+      "notice": "광주-해남-2026-00132",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 해남군",
+      "foundDate": "2026-11-27",
+      "age": "2021(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261127171185.jpg"
+    },
+    {
+      "notice": "광주-해남-2026-00131",
+      "kind": "[개] 믹스견",
+      "region": "전남광주통합특별시 해남군",
+      "foundDate": "2026-11-27",
+      "age": "2025(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611271611929.jpg"
+    },
+    {
+      "notice": "세종-세종-2026-00361",
+      "kind": "[개] 믹스견",
+      "region": "세종특별자치시",
+      "foundDate": "2026-11-27",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611272111274.jpeg"
+    },
+    {
+      "notice": "세종-세종-2026-00360",
+      "kind": "[개] 믹스견",
+      "region": "세종특별자치시",
+      "foundDate": "2026-11-27",
+      "age": "2026(60일미만)(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/20261127211176.jpeg"
+    },
     {
       "notice": "경남-창원1-2026-00852",
       "kind": "[개] 알라스칸 말라뮤트",
@@ -407,6 +443,24 @@
       "age": "2013(년생)",
       "status": "종료(반환)",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611271611742.jpg"
+    },
+    {
+      "notice": "전북-전주-2026-01145",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 전주시",
+      "foundDate": "2026-11-27",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611272211329.jpg"
+    },
+    {
+      "notice": "전북-전주-2026-01144",
+      "kind": "[개] 믹스견",
+      "region": "전북특별자치도 전주시",
+      "foundDate": "2026-11-27",
+      "age": "2026(년생)",
+      "status": "보호중",
+      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611272211805.jpg"
     },
     {
       "notice": "전북-전주-2026-01143",
@@ -848,60 +902,6 @@
       "age": "2026(년생)",
       "status": "보호중",
       "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611271511651.jpg"
-    },
-    {
-      "notice": "광주-함평-2026-00177",
-      "kind": "[개] 말티즈",
-      "region": "전남광주통합특별시 함평군",
-      "foundDate": "2026-11-27",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261127151154.jpg"
-    },
-    {
-      "notice": "광주-강진-2026-00046",
-      "kind": "[개] 시베리안 허스키",
-      "region": "전남광주통합특별시 강진군",
-      "foundDate": "2026-11-27",
-      "age": "2025(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/10/202611271111625.jpeg"
-    },
-    {
-      "notice": "광주-고흥-2026-00149",
-      "kind": "[개] 믹스견",
-      "region": "전남광주통합특별시 고흥군",
-      "foundDate": "2026-11-27",
-      "age": "2021(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611271111577.jpg"
-    },
-    {
-      "notice": "광주-고흥-2026-00148",
-      "kind": "[개] 믹스견",
-      "region": "전남광주통합특별시 고흥군",
-      "foundDate": "2026-11-27",
-      "age": "2023(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611271011717.jpg"
-    },
-    {
-      "notice": "광주-고흥-2026-00147",
-      "kind": "[개] 믹스견",
-      "region": "전남광주통합특별시 고흥군",
-      "foundDate": "2026-11-27",
-      "age": "2022(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/202611271011154.jpg"
-    },
-    {
-      "notice": "광주-광산-2026-00222",
-      "kind": "[개] 믹스견",
-      "region": "전남광주통합특별시 광산구",
-      "foundDate": "2026-11-27",
-      "age": "2025(년생)",
-      "status": "보호중",
-      "photo": "https://openapi.animal.go.kr/openapi/service/rest/fileDownloadSrvc/files/shelter/2026/11/20261127131100.jpg"
     }
   ]
 }
